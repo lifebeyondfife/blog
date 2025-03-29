@@ -1,5 +1,7 @@
 import { marked } from 'marked';
 
+let postsMetadata = null;
+
 /**
  * Parse front matter metadata from Markdown content
  * @param {string} content - Raw markdown content
@@ -81,52 +83,36 @@ function markdownToHtml(markdown) {
 }
 
 /**
- * Load posts from the file system using webpack's require context
+ * Load metadata from the posts-metadata.json file
+ * @returns {Promise<Object>} - The metadata object
+ */
+async function loadMetadata() {
+  if (postsMetadata !== null) {
+    return postsMetadata;
+  }
+
+  try {
+    const response = await fetch('/data/posts-metadata.json');
+    
+    if (!response.ok) {
+      throw new Error(`Failed to load metadata: ${response.status} ${response.statusText}`);
+    }
+    
+    postsMetadata = await response.json();
+    console.log('Posts metadata loaded successfully');
+    return postsMetadata;
+  } catch (error) {
+    console.error('Error loading posts metadata:', error);
+  }
+}
+
+/**
+ * Load posts from the metadata file
  * @returns {Promise<Array>} - Array of post objects
  */
 export async function loadPosts() {
-  try {
-    const posts = [];
-
-    const postContext = require.context('../posts', false, /\.md$/);
-    const postFiles = postContext.keys();
-
-    console.log('Found post files:', postFiles);
-
-    for (const file of postFiles) {
-      try {
-        const content = postContext(file);
-        const { metadata, content: markdownContent } = parseFrontMatter(content);
-
-        const slug = file.replace(/^\.\//, '').replace(/\.md$/, '');
-
-        const post = {
-          id: posts.length + 1,
-          slug,
-          title: metadata.title || 'Untitled',
-          date: metadata.date || new Date().toISOString().split('T')[0],
-          categories: Array.isArray(metadata.categories)
-            ? metadata.categories
-            : (metadata.categories ? [metadata.categories] : []),
-          tags: metadata.tags ? (Array.isArray(metadata.tags) ? metadata.tags : [metadata.tags]) : [],
-          fullContent: null,
-          content: null,
-          excerpt: markdownContent.substring(0, 150) + '...',
-          _rawContent: markdownContent
-        };
-
-        posts.push(post);
-        console.log(`Loaded post: ${post.title}`);
-      } catch (fileError) {
-        console.error(`Error processing file ${file}:`, fileError);
-      }
-    }
-
-    return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
-  } catch (error) {
-    console.error('Error loading posts:', error);
-    return [];
-  }
+  const metadata = await loadMetadata();
+  return metadata.posts;
 }
 
 /**
@@ -135,14 +121,41 @@ export async function loadPosts() {
  * @returns {Promise<Object|null>} - Post object or null if not found
  */
 export async function getPostBySlug(slug) {
-  const posts = await loadPosts();
-  const post = posts.find(post => post.slug === slug);
+  const metadata = await loadMetadata();
+  const post = metadata.posts.find(post => post.slug === slug);
 
-  if (post && !post.content) {
-    post.content = markdownToHtml(post._rawContent);
+  if (!post) {
+    return null;
   }
 
-  return post || null;
+  if (!post.content) {
+    try {
+      const postContext = require.context('../posts', false, /\.md$/);
+      const fileName = post.fileName || `${slug}.md`;
+      const fileKey = `./${fileName}`;
+      
+      if (postContext.keys().includes(fileKey)) {
+        const content = postContext(fileKey);
+        const { content: markdownContent } = parseFrontMatter(content);
+        post.content = markdownToHtml(markdownContent);
+        post._rawContent = markdownContent;
+      } else {
+        for (const key of postContext.keys()) {
+          if (key.includes(slug)) {
+            const content = postContext(key);
+            const { content: markdownContent } = parseFrontMatter(content);
+            post.content = markdownToHtml(markdownContent);
+            post._rawContent = markdownContent;
+            break;
+          }
+        }
+      }
+    } catch (error) {
+      console.error(`Error loading post content for ${slug}:`, error);
+    }
+  }
+
+  return post;
 }
 
 /**
@@ -151,14 +164,19 @@ export async function getPostBySlug(slug) {
  * @returns {Promise<Object|null>} - Post object or null if not found
  */
 export async function getPostById(id) {
-  const posts = await loadPosts();
-  const post = posts.find(post => post.id === parseInt(id, 10));
-
-  if (post && !post.content) {
-    post.content = markdownToHtml(post._rawContent);
+  const metadata = await loadMetadata();
+  const post = metadata.posts.find(post => post.id === parseInt(id, 10));
+  
+  if (!post) {
+    return null;
+  }
+  
+  if (!post.content) {
+    const fullPost = await getPostBySlug(post.slug);
+    return fullPost;
   }
 
-  return post || null;
+  return post;
 }
 
 /**
@@ -167,8 +185,8 @@ export async function getPostById(id) {
  * @returns {Promise<Array>} - Array of post objects
  */
 export async function getPostsByCategory(category) {
-  const posts = await loadPosts();
-  return posts.filter(post =>
+  const metadata = await loadMetadata();
+  return metadata.posts.filter(post =>
     post.categories.some(cat =>
       cat.toLowerCase() === category.toLowerCase()
     )
@@ -181,8 +199,8 @@ export async function getPostsByCategory(category) {
  * @returns {Promise<Array>} - Array of post objects
  */
 export async function getPostsByTag(tag) {
-  const posts = await loadPosts();
-  return posts.filter(post =>
+  const metadata = await loadMetadata();
+  return metadata.posts.filter(post =>
     post.tags.some(t =>
       t.toLowerCase() === tag.toLowerCase()
     )
@@ -194,7 +212,16 @@ export async function getPostsByTag(tag) {
  * @returns {Promise<Array>} - Array of category objects with counts
  */
 export async function getAllCategories() {
-  const posts = await loadPosts();
+  const metadata = await loadMetadata();
+  return metadata.categories;
+}
+
+/**
+ * Legacy method to get all categories
+ * @returns {Promise<Array>} - Array of category objects with counts
+ */
+async function getAllCategoriesLegacy() {
+  const posts = await loadPostsLegacy();
   const categoryCounts = {};
 
   posts.forEach(post => {
@@ -219,7 +246,16 @@ export async function getAllCategories() {
  * @returns {Promise<Array>} - Array of tag objects with counts
  */
 export async function getAllTags() {
-  const posts = await loadPosts();
+  const metadata = await loadMetadata();
+  return metadata.tags;
+}
+
+/**
+ * Legacy method to get all tags
+ * @returns {Promise<Array>} - Array of tag objects with counts
+ */
+async function getAllTagsLegacy() {
+  const posts = await loadPostsLegacy();
   const tagCounts = {};
 
   posts.forEach(post => {

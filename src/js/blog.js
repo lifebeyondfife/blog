@@ -52,9 +52,9 @@ export async function renderBlogPosts(page = 1) {
         <div class="post-content">
           <div class="post-meta">
             <span><i class="far fa-calendar"></i> ${formattedDate}</span>
-            <span class="post-category"><i class="fas fa-folder"></i> <a href="/category/${categoryDisplay}">${categoryDisplay}</a></span>
+            <span class="post-category"><i class="fas fa-folder"></i> <a href="/category/${categoryDisplay.toLowerCase().replace(/ /g, '-')}">${categoryDisplay}</a></span>
           </div>
-          <h2 class="post-title">${post.title}</h2>
+          <h2 class="post-title"><a href="/post/${post.slug}">${post.title}</a></h2>
           <div class="post-excerpt">
             <p>${post.excerpt}</p>
           </div>
