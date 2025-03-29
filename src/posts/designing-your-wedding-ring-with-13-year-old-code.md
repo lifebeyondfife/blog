@@ -19,11 +19,11 @@ This idea came to the fore for me recently when I was presented with a real life
 
 First thing's first: I'm getting married. This means I'm about to get my first, and likely only, piece of jewellery ever. I therefore feel it's important to get it personalised to some degree, something that will make me happy everytime I look at it. Without going into too much detail, I'm having a few different symbols engraved on the ring one of which is an image from a website. It's a tiny bit of polar bear pixel art.
 
-![Polar Bear](../images/polar bear.png)
+![Polar Bear](/images/polar bear.png)
 
 I gave some vague instuctions to my designer along the lines of, "I'd like it to look like some kind of three dimensional tiled thing." Of all the elements I described, I was least clear about what I wanted or indeed what to expect in return. A week later I find a series of images attached to an email in my inbox. Here is the 3d tiled polar bear.
 
-![Ring Designer's Polar Bear](../images/polar bear ring.jpg)
+![Ring Designer's Polar Bear](/images/polar bear ring.jpg)
 
 My first impression was, "That doesn't look like the polar bear." I went back to the original pixel art and had a detailed look. The problem is that even though there are only four colours, they represent shade in some parts and lines in others. The only tool a 3d modeller has is depth. I started thinking about how I'd draw or make a physical 3d model before realising it would take far too long to do and I had no idea where to start.
 
@@ -48,15 +48,15 @@ I went to my backup files and within a few minutes I had found PracticalJ and a 
 
 ##### 2\. Recompile Code
 
-![](../images/recompile.png)
+![](/images/recompile.png)
 
 With only some deprecation warnings, the 13 year old system seemed to be in working order still. I direct appletviewer to the index.html file in the same directory and am faced with a sight I haven't seen in a long time.
 
-![Cow](../images/cow.png)
+![Cow](/images/cow.png)
 
 And after messing around rotating it into position and turning on the shaded model.
 
-![Shaded Cow](../images/shaded cow.png)
+![Shaded Cow](/images/shaded cow.png)
 
 Before I start ripping into my over a decade old code I should start with a little Woo Yay Houpla ;) that it works at all. Woo Yay!
 
@@ -86,11 +86,11 @@ The next step was a bit harder. Before deciding what the depth of each tile shou
 
 `4 x (x+1) (x+15) (x+14) 4 (x+1) x y (y+1) 4 x (x+14) (y+14) y 4 (x+14) (x+15) (y+15) (y+14) 4 (x+15) (x+1) (y+1) (y+15)`
 
-![Boxes](../images/boxes.png)
+![Boxes](/images/boxes.png)
 
 This was made possible by observing the numbering of the co-ordinates and deciding later which depth the point should be at.
 
-![Points to Polygons](../images/polar bear numbered.png)
+![Points to Polygons](/images/polar bear numbered.png)
 
 var points = new Dictionary< int, int >();
 
@@ -116,15 +116,15 @@ Before long I had a file representing a reworking of the 3d model that shaped th
 
 ##### 5\. Profit?
 
-![Polar Bear 3D with Key](../images/polar bear 3d with key.png)
+![Polar Bear 3D with Key](/images/polar bear 3d with key.png)
 
 After much deliberation and tile depth consideration, I was happy I'd come up with the reasonable 3d model shown above. I also tidied up the UI making the rotate actions triggered by mouse drags, and zooming in and out (scaling) triggered by the mouse wheel. Finally, I removed the confusing two buttons that represented three available states in favour of a radio button. I was suprised at how easy it was to modify considering I hadn't programmed in Java for ten years - despite all the [security flaws](http://www.huffingtonpost.com/2013/01/13/java-security-problem_n_2464656.html) and [Ask toolbar shenanigans](https://www.change.org/petitions/oracle-corporation-stop-bundling-ask-toolbar-with-the-java-installer), I still have a soft spot for the heavy lifting the JVM framework does for the programmer. If you're happy running Applets in your browser, here is what I hope to have on the ring finger of my left hand:
 
 [3d Polar Bear](http://lifebeyondfife.com/applets/PolarBear/)
 
-![](../images/bear1.png)
+![](/images/bear1.png)
 
-![](../images/bear2.png)
+![](/images/bear2.png)
 
 ## Time well spent?
 

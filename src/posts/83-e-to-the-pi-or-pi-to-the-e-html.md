@@ -62,7 +62,7 @@ $ f'(e) = e^e $
 
 The gradients are the same which means \(f\) and \(g\) _touch_ at \(x = e\) rather than _cross_. From earlier on above we also know that \(f\) is greater than \(g\) for larger and smaller values of \(x\). We can therefore produce the following sketch:
 
-![](../images/CrudeSketch1.png)
+![](/images/CrudeSketch1.png)
 
 Sketch is maybe giving it more credit than its due but whatever. As you can see we want to know which function has the greater value for \(x = \pi\) and from this sketch it looks like that's \(f\), therefore we can say that \( f(\pi) > g(\pi)\) or \(e^\pi > \pi^e\).
 
@@ -88,7 +88,7 @@ where \(ln(x)\) is the natural log of \(x\). Now compare the gradients of \(f\) 
 
 Cancelling out the common \(\pi^\pi\) term we can see that \( f'(\pi) = ln (\pi) . g'(\pi)\). We know that \(ln (e) = 1\) and because \( e < \pi \), \( ln (\pi) > 1 \), therefore \( f'(\pi) > g'(\pi) \). This means that when \(f\) and \(g\) meet at \(x = \pi\) they _cross_ each other. \(f\) has a steeper gradient so is greater than \(g\) _after_ \(x = \pi\) and smaller _before_ then. Taking what we've learned, here is the sketch of \(f(x)\) and \(g(x)\).
 
-![](../images/CrudeSketch2.png)
+![](/images/CrudeSketch2.png)
 
 Without knowing where the other point at which \(f\) and \(g\) meet is, we can't say with 100% certainty but it looks likely that \(f(e) < g(e)\), or more simply \(\pi^e < e^\pi\).
 
@@ -100,11 +100,11 @@ There is just one caveat with this tool, however. Bezier curves are fantastic at
 
 To get the ball rolling then, here are the two sketches from above recreated with the aid of my graphing tool:
 
-![](../images/AwesomeSketch1.png)
+![](/images/AwesomeSketch1.png)
 
 \[ f(x) = e^x, g(x) = x^e \]
 
-![](../images/AwesomeSketch2.png)
+![](/images/AwesomeSketch2.png)
 
 \[ f(x) = \pi^x, g(x) = x^\pi \]
 

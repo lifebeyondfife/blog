@@ -18,7 +18,7 @@ You've heard this expression many times I expect and it's especially true of bus
 
 Imagine that you're the owner of a small chain of ice-cream parlours. You've just created an amazing new flavour that's a hit with the public, you have a close working relationship with local dairy farmers to get a low cost deal for milk, and you've secured perfect sea-front locations with friendly, inviting facilities. You have considered every aspect of your business and you're ready to compete with anyone else when it comes to supplying the general public with ice-cream on a sunny day. And that's just it, you can plan for every eventuality except rain.
 
-![](../images/ice-cream.png)
+![](/images/ice-cream.png)
 
 Enter [weather derivatives](http://www.investopedia.com/articles/optioninvestor/05/052505.asp). The owner of the chain of ice-cream parlours can hedge against the risk of bad weather by buying weather derivatives that pay nothing if it's sunny, but pay a lot if it's unexpectedly inclement. This allows the owner to think about competing purely on selling ice-cream and ignore something that's outside the control of the business. If the idea of weather derivatives strikes you as strange, focus on the idea that gave birth to this multi-billion dollar industry: successful companies like to compete on their strengths and don't mind paying someone to make everything else go away.
 

@@ -31,7 +31,7 @@ The above categories can be thought of as points on a spectrum with endless divi
 
 ## Strength
 
-![](../images/Mariusz_Pudzianowski.jpg)
+![](/images/Mariusz_Pudzianowski.jpg)
 
 Mariusz Pudzianowski, photo by [Artur Andrezj](https://commons.wikimedia.org/wiki/File:Mariusz_Pudzianowski_7.JPG)
 
@@ -49,7 +49,7 @@ The first thing to give out in a test of strength are the body's muscles: you wi
 
 ## Power
 
-![](../images/Usain-Bolt.jpg)
+![](/images/Usain-Bolt.jpg)
 
 Usain Bolt, photo by [J. Brichto](https://en.wikipedia.org/wiki/File:Usain_Bolt,_Anniversary_Games,_London_2013.jpg)
 
@@ -67,7 +67,7 @@ The first thing to give out in a test of power are the body's lungs: you will as
 
 ## Endurance
 
-![](../images/Chris-Froome.jpg)
+![](/images/Chris-Froome.jpg)
 
 Chris Froome, photo by [Gyrostat](https://commons.wikimedia.org/wiki/File:Chris_Froome,_TDF_2015,_%C3%A9tape_13,_Montgiscard.jpg)
 

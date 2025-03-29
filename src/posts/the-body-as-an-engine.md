@@ -29,7 +29,7 @@ Every person has an engine within themselves that burns calories. It burns as th
 
 Let’s look at some cars. Here is a BMW Z4. It is small and sporty. Despite being only 1,555kg, it has an impressive bhp of 335 (brake horse power — a measure of its power output) and an mpg of 35.8 (miles per gallon — a measure of its fuel efficiency; the higher, the more efficient). Uses quite an amount of fuel but can move fast with a top speed of 155mph.
 
-![](../images/bmw-1024x615.jpg)
+![](/images/bmw-1024x615.jpg)
 
 BMW Z4
 
@@ -37,7 +37,7 @@ BMW Z4
 
 Next up the Audi Q3. As an SUV it’s a bulkier beast weighing in at 2,250kg, but the 400 bhp is larger than the BMW. The mpg is a thirstier 31.7, but with an identical top speed of 155mph. The Audi is more powerful but moves exactly as fast as the BMW, requiring more fuel to do so.
 
-![](../images/audi.jpg)
+![](/images/audi.jpg)
 
 Audi RS Q3
 
@@ -45,7 +45,7 @@ Audi RS Q3
 
 Let’s compare to the more ordinary Hyundai i10. Weighing in at just 921kg, this skinny vehicle can only muster a top speed of 97mph, with a bhp of 66. The economy of the car is clear in the fact it produces 56.5 mpg.
 
-![](../images/hyundai-1024x614.jpg)
+![](/images/hyundai-1024x614.jpg)
 
 Hyundai i10
 

@@ -21,11 +21,11 @@ Marilyn Monroe. She looked in great shape in countless celluloid classics, and s
 
   
 
-![](../images/marilyn-bench.jpg)
+![](/images/marilyn-bench.jpg)
 
 Bench press
 
-![Marilyn Monroe shoulder pressing a barbell](../images/marilyn-barbell.jpg)
+![Marilyn Monroe shoulder pressing a barbell](/images/marilyn-barbell.jpg)
 
 Overhead press
 

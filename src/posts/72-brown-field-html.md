@@ -34,17 +34,17 @@ No matter how experienced or inexperienced you are as a programmer, if you're ea
 
 We'll start by looking at what a lone programmer looks like when they're writing a small throwaway app for fun.
 
-![Now that's one happy stickman!](../images/first.png)
+![Now that's one happy stickman!](/images/first.png)
 
 Our little stickman is very happy. Code is written and sent to a compiler which in turn creates version 1.0 of the new software. Now let's move the scenario on a little further. Imagine our stickman is part of a team of developers working collaboratively on a software project.
 
-![Just as happy.](../images/second.png)
+![Just as happy.](/images/second.png)
 
 With more people on the team comes the need to effectively and safely handle multiple check-ins which leads to a Source Control Management system like [Git](http://git-scm.com/), [Mercurial](http://mercurial.selenic.com/), [Subversion](http://subversion.apache.org/) or my personal favourite [Perforce](http://www.perforce.com/) (in fact, even lone developers should use one of these). With multiple developers the code should still be internally consistent so there is a coding standards document that everyone adheres to. Also, to take more work away from the developers, a Continuous Integration Server e.g. [TeamCity](http://www.jetbrains.com/teamcity/) or [CruiseControl](http://cruisecontrol.sourceforge.net/), has been introduced. This periodically checks the Source Control Management system for changes and builds the sourcecode whenever it finds any. The compiled executable has a set of unit tests run on it to make sure nothing simple has been broken. The continuous integration server might even run an extended set of regression tests on a daily basis. And this of course assumes that the code compiles in the first place! Regardless, if there are any problems, the developer is notified and if the problems aren't fixed within a certain window their changes can be backed out.
 
 But now let us consider what happens when we're deep into Brownfield territory. Product management have voiced concerns over quality and development leadership has to ensure the rigorous checks and balances are employed to make sure the required standards are achieved.
 
-![Will stickman ever check-in code again?](../images/third.png)
+![Will stickman ever check-in code again?](/images/third.png)
 
 Even small teams should probably have some kind of Issue Tracking System such as [Bugzilla](http://www.bugzilla.org/) or [OnTime](http://www.axosoft.com/ontime). However, for the larger legacy projects, a system that can keep track of bugs and enhancements and prioritise and assign them for different release schedules becomes essential. They also help to ensure resources are managed as desired by development leadership and product management as no code check-ins can be made without a corresponding issue. Notice from the diagram that now before the code even gets checked into the SCM, there is a formal Code Review System e.g. [CodeCollaborator](http://smartbear.com/products/development-tools/code-review/). Code reviews within development teams have always been a part of producing good code but now these formal systems allow distributed teams to carefully inspect every single line of code before it is allowed to become part of the official live codestream.
 

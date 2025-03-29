@@ -19,7 +19,7 @@ EDIT: I've also added a Yahoo! version but beware, that problem has greatly skew
 
 ## Best Performers, Best Value or Follow the Crowd
 
-![](../images/FantasyFootball2012-13.png)
+![](/images/FantasyFootball2012-13.png)
 
 This year I'm not going to go into _too_ much detail over how the spreadsheet works. Put simply I've taken the list of premiership players available from the official Premier League website, their team and position and also how much they cost for the Fantasy Football game. Add to that some statistics about how they performed last season and how many people have already chosen them to be in their team. Those are all rolled up into an artificial intelligence constraint solver in the back of an Excel spreadsheet and it produces valid team selections for you to ponder.
 

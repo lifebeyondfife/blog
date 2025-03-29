@@ -17,7 +17,7 @@ OLE Automation Dates, or more simply OA dates is a Microsoft standard for specif
 
 My first encouter with this dreaded format came several years ago when I was modifying FX option pricing code. Most financial instrument valuation requires lots of different market data stretching over the lifetime of the trade, generally at points where something of interest is happening to the trade, say, a payment is made or an interest rate is updated. Debugging this process in real-time therefore presented me with lots of infuriating lists like this.
 
-![](../images/compactoadatelist.png)
+![](/images/compactoadatelist.png)
 
 Dates as doubles are handy for storage but not so much when you're trying to verify that the auto-generated list of dates for your valuation engine are correct. The non-programmatic practice for quickly converting between the two involved opening Excel, typing the number into a cell before changing its formatting to that of a date. Hardly convenient. For the debugging problem above, a Visual Studio plugin could be created but as double is an oft used value type, it didn't seem ideal.
 
@@ -25,10 +25,10 @@ I began thinking about how any two types of data - not just OA dates and human r
 
 The user would copy whatever they wanted converted into the clipboard, that only takes a couple of clicks or a keyboard shortcut. Next the cursor would hover over the icon in the system tray and the converted value would be shown as a tooltip.
 
-![](../images/tooltipdata.png)
+![](/images/tooltipdata.png)
 
 In this case the conversion handles OA dates and human readable dates but the different types could be anything with a little programming. Other enhancements were made such as double-clicking on the icon to convert the contents of the clipboard. The converted date field can then be pasted into another application. In this case, both data types are strings but the clipboard can hold all sorts of data. A graphic designer constantly performing the same complex operation on an image could make use of this style of user interface.
 
-![](../images/rightclick.png)
+![](/images/rightclick.png)
 
 The sourcecode for the conversion is done in just one function so it's ready to be opened up and tinkered with. Best of luck.

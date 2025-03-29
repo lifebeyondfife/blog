@@ -27,11 +27,11 @@ But I noticed there was one thing original about my idea and that was to do with
 
 Growing up my family moved every 2-3 years with my father's career. I've lived all over the UK and even in a couple of central European countries. There are several towns I know my way around even after not having seen them for decades. But there are also places that have never existed that I know equally well and for me the first of these is Liberty City.
 
-![](../images/libertycity.jpg)
+![](/images/libertycity.jpg)
 
 I remember being blown away by the first Grand Theft Auto game. Not GTA3, but the original top down quasi-3D game where the player was presented with a huge square city and allowed to go anywhere they liked. I loved how expansive and free-roaming the game was which was a breath of fresh air from the 90s' formulaic platform and FPS levels to be navigated in a set manner. GTA was finally picking up the baton left by the hugely enjoyable and, sadly, largely unheard of [N.Y.C.: The Big Apple](http://idiology.com/8b/bacardi/Synapse/Synapse_games_3.html) from 1984.
 
-![](../images/nyc.png) To get anywhere in GTA, players had to know the layout of the city before attempting the missions. Even more so by the time Grand Theft Auto 3 came out for the Playstation 2 in glorious 3D. Not since the original Tomb Raider or The Legend of Zelda: A Link to the Past had I become so lost in the landscape of a game. I'd drive around the city taking everything in, the locations, the scenery, the different radio stations. It was a virtual city but the locations were real in my head.
+![](/images/nyc.png) To get anywhere in GTA, players had to know the layout of the city before attempting the missions. Even more so by the time Grand Theft Auto 3 came out for the Playstation 2 in glorious 3D. Not since the original Tomb Raider or The Legend of Zelda: A Link to the Past had I become so lost in the landscape of a game. I'd drive around the city taking everything in, the locations, the scenery, the different radio stations. It was a virtual city but the locations were real in my head.
 
 And it got me thinking. If I can find my way around Liberty City, a place that doesn't exist, why can't I take advantage of the real places I already know within the environment of a computer game?
 
@@ -47,15 +47,15 @@ For those of you who use [Google](http://maps.google.co.uk/) or [Bing](http://ww
 
 ## Google Maps
 
-![](../images/googlekirk.png)
+![](/images/googlekirk.png)
 
 ## Open Street Map
 
-![](../images/osmkirk.png)
+![](/images/osmkirk.png)
 
 Google have employed costly information gathering techniques from multiple sources. Open Street Map have a bunch of avid enthusiasts with a desire to walk around carrying a GPS device and a notebook. But here's the really interesting thing that Open Street Map will give you that the big map providers won't.
 
-![](../images/xmlkirk.png)
+![](/images/xmlkirk.png)
 
 Extremely descriptive location based data detailing the make-up of the United Kingdom. And what is the screenshot of Open Street Map above but a graphics engine renderer? By cleaning up the XML format and combining it with global elevation data (for which there are many [datasets](http://vterrain.org/Elevation/global.html)) you have input for a 3D graphics engine. The granularity of the building and terrain descriptions is quite impressive: here's a residential house, there a hospital, church, school, there a golf course. The real world doesn't have to copied brick by brick in the virtual world, it can be seeded by these descriptions. In my original game idea I stated the landscape was a post-apocalyptic one. A building could look like the ruin of an existing one; it could look like an ancient Roman, Greek, Celtic variant; it could look like a futuristic bio-dome.
 

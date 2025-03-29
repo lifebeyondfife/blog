@@ -18,7 +18,7 @@ The selling points are convincing. Developers working in an Agile methodology wi
 
 Here is a representative example of the main communication flows from a development viewpoint of a traditional large software house making bespoke, enterprise level software.
 
-![](../images/oldworkflow.png)
+![](/images/oldworkflow.png)
 
 - **Client** - have a problem, want your company to write some software to solve it.
 - **Sales** - sell software, convince client they have exactly the resources and experience needed to solve their problem
@@ -31,7 +31,7 @@ Here is a representative example of the main communication flows from a developm
 
 After a successful agreement between the client and the sales team, software is commissioned and, with some variation depending on the practices of the software house involved, the following process starts where certain groups collaborate to produce the next stage of the software development cycle from initial contract to accepted, delivered software.
 
-![](../images/softwarecycle.gif)
+![](/images/softwarecycle.gif)
 
 The main thing to notice about this workflow is that all the tasks are done in one big cycle, one after the other. One party does as much work as it's possible to do before moving the task on to the next. Two problems are endemic of this system. Firstly, estimates can be wildly inaccurate because the complete development cost will always be held up by unforeseen difficulties i.e. ones which by their very nature cannot be estimated. Secondly, between the long trail of Chinese Whispers from the last moment the client defines their requirements to when the finished software is handed to them, all kinds of misunderstandings could have occurred. It's unlikely that the solution solves the client's problem in the way they expected.
 
@@ -41,7 +41,7 @@ Anyone who's had the misfortune of dealing with an unhappy, possibly outright an
 
 ## Chinese whispers via specifications
 
-![](../images/misunderstandings-300x200.jpg)
+![](/images/misunderstandings-300x200.jpg)
 
 With this high degree of separation between development and clients how on earth does working software that genuinely solves problems ever get produced? Ideally the developers will have a clear understanding of their clients' business so before any project even starts they know roughly what is required. There may be a few members of the development team who "wear two hats" and can act as an analyst too - a handy reference for the rest of the team. But if there is no specialist knowledge available all a developer can do is fall back on the specification.
 

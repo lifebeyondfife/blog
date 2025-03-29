@@ -18,7 +18,7 @@ To give a bit more background on just what the [previous blog post was about](ht
 
 The problem with the first attempt was that it didn't cope with different users and it was session based i.e. no external storage. A [recent post](https://twitter.com/#%21/koenmetsu/status/184198447161806848) on my twitter feed charted how to get started with NoSQL. For those of you who aren't in the know, NoSQL is a database platform but unlike most based on the classic SQL design, is non-relational. No joining queries across multiple tables. No guarantees about safety and synchronised operations. I'll include my obligatory link to the [wikipedia page](http://en.wikipedia.org/wiki/Nosql) but the best way to think about it is that a table is a collection of 'key => value' pairs.
 
-![](../images/address.png)
+![](/images/address.png)
 
 Above illustrates one entry in the Address table. Each value that makes up the address is keyed on another piece of data. The value could be a string, number, date etc. or even a list of these types.
 
@@ -28,7 +28,7 @@ Despite being a Scotsman I'm not cheap, but I do like to get away without paying
 
 On the plus side a recent release at the end of March has introduced LINQ support which makes searching for records a dream. On the downside, the API isn't documented and I found using it a bit random as to whether it would do what I expected. Some statements did update my tables as required, some didn't. Hopefully you'll be able to learn from the attached sourcecode. On the whole it didn't take long to get my head round using a NoSQL database and was quite impressed at how well the drivers mapped container classes I had constructed to and from the cloud.
 
-![](../images/mongo_csharp.png)
+![](/images/mongo_csharp.png)
 
 _Just a few of my favourite artists saved in the 'subscriptions' table_
 
@@ -45,13 +45,13 @@ There is no authentication required, a user must choose a significantly unique n
 
 The database schema is pretty straightforward so far. I've added a couple of 'freshness' tables that will let me know (a) when to refresh an artist's data in case they've released a new album, say, once a week and (b) when I should drop that user who hasn't been back in over a year.
 
-![](../images/mongo_tables.png)
+![](/images/mongo_tables.png)
 
 ## Cached and Optimised
 
 Those who read the previous blog post when this was an initial idea might recall one quite bad shortcoming. I'm getting data from [MusicBrainz](http://musicbrainz.org/) who ask users to send only one request per second. Fair enough really, they're hosting the details of every bit of music ever produced, like, ever. I therefore only ever want to ask MusicBrainz about an artist once and only go back to update at timely intervals. All album information from the last three years - I'm only really interested in telling users about new releases - gets committed to my Mongo DB instance. Further to that, I also use Microsoft Enterprise Library to automate [caching user data](http://msdn.microsoft.com/en-us/library/ff664753%28v=pandp.50%29.aspx) (though after looking for a link to the documentation, I discover that new projects should use the functionality in the [System.Runtime.Caching](http://msdn.microsoft.com/en-us/library/system.runtime.caching%28VS.100%29.aspx) namespace). Once a user checks their list, they can come back any time and unless the load on the server is busy, their artists will still be in memory. An added bonus is that any artist they're interested in will as a consequence be stored for all other users.
 
-![](../images/architecture.png)
+![](/images/architecture.png)
 
 ## Where Next?
 

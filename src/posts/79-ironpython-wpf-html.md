@@ -30,11 +30,11 @@ I've been around long enough to remember programming when it was done by having 
 
 After I installed IronPython, added the installation directory to my path and copied ipy.exe to python.exe, I fired up a console and typed 'python'.
 
-![](../images/python_cmd.png)
+![](/images/python_cmd.png)
 
 Worked pretty up as I expected / hoped. But before I moved on to setting up Django as I was originally meant to, I felt like a little digression (well, you're only on sabbatical once ;) If this was truly a .Net implementation, I should be able to use Visual Studio as my IDE and import the .Net libraries etc. This is indeed the case.
 
-![](../images/python_vs.png)
+![](/images/python_vs.png)
 
 Despite how easy it would probably have been to knock up a quick WinForms or Console project, I thought I'd try to keep my WPF skills up and see how easy it would be to implement an M-V-VM application with WPF and IronPython.
 
@@ -42,7 +42,7 @@ Despite how easy it would probably have been to knock up a quick WinForms or Con
 
 My favourite graphical user interface Hello World equivalent. Create a simple GUI with two text boxes and two labels. Every keystroke in either text box updates the converted value in the other. I started by designing this simple layout in XAML and even borrowed some gradient brushes from my [D-Lighted](http://www.lifebeyondfife.com/77-d-lighted.html) application. Were it not for the IronPython icon in the top left it would look like any other WPF application.
 
-![](../images/celsius_converter.png)
+![](/images/celsius_converter.png)
 
 The obvious implementation methodology for solving a conversion problem is to use a [two-way bound data value and an IValueConverter implementation](http://stackoverflow.com/questions/4617216/wpf-binding-doing-a-temperature-converter-app). Unfortunately, as indicated by [DevHawk](http://devhawk.net/2008/11/17/ironpython-and-wpf-part-3-data-binding/), "_...in order to use a custom IValueConverter from XAML, you need to declare it in XAML as a static resource. However ... dynamic IPy objects don’t work as static resources._" They suggest possibly writing a C# converter that wraps a call to generic python code however I think if you're going to go down that route, why use Python in the first place?
 
@@ -50,10 +50,10 @@ I decided to bind both text boxes to a value in my View-Model. The problem here 
 
 Binding a variable was a non trivial task and required getting hold of the python source code for [clrtype.py](https://ironpython.svn.codeplex.com/svn/IronPython_Main/Languages/IronPython/Samples/ClrType/clrtype.py). Another file from the IronPython tutorials was required, [pyevent.py](http://trac.geekisp.com/bleep/browser/trunk/IronPython/src/Tutorial/pyevent.py). Thanks also go to this hugely helpful blog post by Lukáš Čenovský on how to create a [notify property decorator and INotifyPropertyChanged implementation](http://gui-at.blogspot.com/2009/11/inotifypropertychanged-in-ironpython.html). Here is a code snippet from my View-Model:
 
-![](../images/bound_variable.png)
+![](/images/bound_variable.png)
 
 Another possible "gotcha" is that you can't access any named XAML controls in the code behind [without decorating the name as a property](http://stackoverflow.com/questions/5853812/gui-development-with-ironpython-and-visual-studio-2010) otherwise, ahem, IronPython's tools kinda crash Visual Studio a little ¬\_¬
 
-![](../images/code_behind.png)
+![](/images/code_behind.png)
 
 All in all, I'm quite happy with the Python implementation and the plug-in support for Visual Studio. The only real improvement I'd like to see is more online presence and support which is why, I think, I decided to write so much for such a small app and code sample. As always, feel free to download the entire GPL-ed source files in the [Downloads](https://github.com/lifebeyondfife/IronPythonWPF) section below.

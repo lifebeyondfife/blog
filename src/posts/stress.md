@@ -25,7 +25,7 @@ The training (structured exercise) which was introduced in the previous post wil
 
   
 
-![](../images/workout-1.png)
+![](/images/workout-1.png)
 
   
 
@@ -45,7 +45,7 @@ Without change, everything reverts to the mean. Your daily jog around the block 
 
   
 
-![](../images/workout-2.png)
+![](/images/workout-2.png)
 
   
 

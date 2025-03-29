@@ -13,15 +13,15 @@ By the end though I came to the realisation that being a modern software develop
 
 ## Learning to Code
 
-![](../images/Atari800xlProgram.png)
+![](/images/Atari800xlProgram.png)
 
-![](../images/Atari800xlRunning.png)
+![](/images/Atari800xlRunning.png)
 
 Like many children of the 80s who went on to become computer programmers, it all started with BASIC on the home computer. Mine was the [Atari 800XL](http://en.wikipedia.org/wiki/Atari_8-bit_family) which had an impressive 128K. I tinkered with a couple of variations at school e.g. [QBasic](http://en.wikipedia.org/wiki/QBasic), before starting an undergraduate Computer Science degree where they had their own implementation of [Algol](http://en.wikipedia.org/wiki/S-algol) designed specifically for teaching programming. It wasn't until my second year that I was introduced to something that was actually used by the wider industry. In [this GitHub repo](https://github.com/lifebeyondfife/SimpleCalculator) is a makefile, source and header files for my first ever C practical from the late nineties. From the console of a Unix system type 'make calculator' for a simple command line based calculator (I was pleasantly surprised it actually compiled, then disappointed at how unusable it was).
 
 It gave me a huge amount of confidence knowing that I was picking up the skills I needed to be a professional programmer. It was as if Mr Miagi who had for years being showing me "Wax on, wax off", had finally decided I could actually be shown how to do karate. A couple of years later I was making a desktop application with a rich Java Swing user interface for my senior honours project. I can't tell you just how bad this program actually was but I have a screenshot that shows off a passable use of menus and buttons along with a dog slow home rolled 3D library implementation.
 
-![](../images/RealWorldSim.png)
+![](/images/RealWorldSim.png)
 
 By the time I had finished my undergraduate degree I was still far from being what I'd call a competent software developer but I had confidence. Confidence I knew how to use the latest tools and I could build something kinda cool from scratch without anyone's help.
 

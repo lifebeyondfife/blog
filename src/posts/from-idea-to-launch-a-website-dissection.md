@@ -20,7 +20,7 @@ tags:
 
 At the beginning of the year I posed a [conundrum on Twitter](https://twitter.com/LifeBeyondFife/status/167536293658624000). I wanted some way to make sure I never missed out on a new release by one of the many bands I like. In the end, I had to build it myself. This would be my first website ever after a professional lifetime of enterprise code and it started something that would take up a large part of my free time for the next 9 months. I created and launched the website [What's New? MUSIC](http://whatsnewmusic.com). Here is my journey.
 
-![The tweeted challenge no-one answered](../images/challenge.png)
+![The tweeted challenge no-one answered](/images/challenge.png)
 
 _The tweet - which no-one replied to - that started it all_
 
@@ -62,7 +62,7 @@ Coming from a desktop background, some recalibration is required with regard to 
 
 From here an architecture evolved that allowed me to solve the initial problem and provide a sane abstraction for each task. Click for an enlarged version.
 
-![](../images/architecture.png)
+![](/images/architecture.png)
 
 The central WCF REST service server would allow five types of http request.
 
@@ -74,43 +74,43 @@ The central WCF REST service server would allow five types of http request.
 
 I was pleased by how minimal the interface was in the end. This central server would send out requests to music databases and store the results in a local [Enterprise Library](http://msdn.microsoft.com/en-us/library/ff648951.aspx) cache - although, Microsoft now advise you use the [System.Runtime.Caching](http://msdn.microsoft.com/en-us/library/system.runtime.caching.aspx) namespace - and also persist updates to the NoSQL database. The NoSQL database schema is recreated as a set of data contracts in this server and the MongoDB .Net libraries connect directly to the database in MongoLab's cloud. More about the specifics of this subset of the whole architecture were covered in a [blog post from earlier this year](http://www.lifebeyondfife.com/90-new-music-part-one.html). The exact nature of the music data requests to follow.
 
-![MongoDB C# Binding](../images/mongo_csharp.png)
+![MongoDB C# Binding](/images/mongo_csharp.png)
 
 _An example MongoDB record and the C# class it binds to_
 
-![MongoLab Table Dashboard](../images/mongo tables.png)
+![MongoLab Table Dashboard](/images/mongo tables.png)
 
 _A freshly created MongoDB in the cloud served by [MongoLab](http://mongolab.com/)_
 
 The ASP.Net web frontend communicates with the user directly and uses client-side scripting to render the UI and make AJAX requests via jQuery that are translated to calls to the central WCF REST Service which in turn provides lists of artist and album data structures in JSON.
 
-![](../images/wcf restful.png)
+![](/images/wcf restful.png)
 
 _Example of WCF binding to a RESTful http API_
 
 I'll not go into too much detail about how MVC works in general but I will briefly describe how this site uses it. Requests from a client browser map to specific code entry points in the Controller with http GET variables passed through as parameters. The specific Controller code communicates with the Model to get the artist or album specific data and uses dynamic functionality now available in .Net to create a property bag. This dynamically typed object is passed to the View where a skeleton HTML file and some final code structures are combined using [Razor](http://www.microsoft.com/web/category/razor) to produce the HTML, CSS and JavaScript that's sent back to the client's browser.
 
-![](../images/mvc restful.png)
+![](/images/mvc restful.png)
 
 _Now MVC's RESTful binding. This is one of the Controllers._
 
-![Razor in the View](../images/razor.png)
+![Razor in the View](/images/razor.png)
 
 _And this is a View. The syntax is mostly pure HTML with unobtrusive Razor coding constructs here and there (Visual Studio formats it like that though \*shakes head\*)._
 
 The web server also maintains a list of all the artists subscribed to by all the users to provide autocomplete functionality for the Add Artist textbox – again a piece of jQuery AJAX functionality. Both the WCF and ASP.Net MVC servers are hosted in [Microsoft's Azure](https://www.windowsazure.com/) cloud platform. This was my first experience with cloud computing and after a couple of small teething problems, I was up and running with their free [3 month trial](http://www.microsoft.com/web/category/razor).
 
-![AJAX Autocomplete](../images/autocomplete.png)
+![AJAX Autocomplete](/images/autocomplete.png)
 
 _The client side JavaScript jQuery code to produce AJAX autocomplete functionality for a text box_
 
-![Monitoring AJAX Request in Firebug](../images/autocomplete firebug.png)
+![Monitoring AJAX Request in Firebug](/images/autocomplete firebug.png)
 
 _Monitoring the AJAX web request and result using [Firebug](https://getfirebug.com/) in Firefox_
 
 And in addition to just monitoring traffic with Firebug, I could set breakpoints and query the stack in realtime (click for full size).
 
-![Debugging JavaScript with Firebug](../images/debug js.png)
+![Debugging JavaScript with Firebug](/images/debug js.png)
 
 Here is where I introduce (hopefully) my first bit of sub-par, non best practice web development. There is no test database, only production. I can run the web server instances locally but whether on my laptop or in the Azure cloud, they both connect to MongoLab's cloud. I know from my time working in enterprise land this is A BAD THING. But the database schema has remained fixed since its inception so I'm allowing this to slide for now at least. The other part that doesn't quite feel right is deployment. I maintain source control for the WCF REST service server and ASP.Net MVC web server via a couple of projects in one Visual Studio solution – which I manage in SVN locally and backup regularly. The way it's published is on a per project basis from a menu item in Visual Studio. A couple of clicks and I've updated the source code on my cloud instance and the service is instantly restarted. My enterprise coding self would prefer the ability to rollback or at least have some other kind of  safety net to this process.
 
@@ -140,7 +140,7 @@ Though this is a web service I personally want and can't see filled anywhere, th
 
 This is yet another thing that's time consuming and in all honesty a little more complicated than it needs to be. First off, Amazon require you to register for each separate territory and use a different site id. Registering for the UK and North American ones were easy enough. However, the European ones are slightly harder to navigate seeing as they aren't in English. Most went through fine though I was rejected from the Spanish site under the misunderstanding that a password was required.
 
-![Que?](../images/spanish reject.png)
+![Que?](/images/spanish reject.png)
 
 _Que?_
 
@@ -160,21 +160,21 @@ Firstly, I was told about [Google Fonts](http://www.google.com/webfonts) and urg
 
 By far the most annoying part of the soft launch was showing my dad the site one afternoon. The first link - a Bob Dylan album - didn't work (a rare dodgy album link provided by Amazon) but because HostIP couldn't locate my parent's house IP address, all the links were .com rather than .co.uk. I examined this further and found that the web service sometimes returns "xx" if the country code can't be found. Rather than find an alternative I decided to compromise and ask the user which country they were coming from.
 
-![jQuery dialog](../images/dialog.png)
+![jQuery dialog](/images/dialog.png)
 
 To persist this bit of user interaction I needed another bit of web help. I turned to a JavaScript library for taking the heavy lifting out of setting cookies with [jQuery Cookie](https://github.com/carhartl/jquery-cookie). By now it was becoming second nature to search out new web services and JavaScript libraries.
 
 But the most important thing I learned from the soft launch was that the message, the actual intention of the site was being lost as I had to explain time and again this site wasn't recommending new bands, but rather letting users know about new releases from bands they already liked. I'd send the link out and force myself not to say anything about what the site did or how it worked. If users couldn't work it out, the fault was with the site and thus me. For example, early on the only way to remove an artist from your favourites list was to select it and press the 'Delete' key. For at least one user that wasn't obvious so I added a double-click dialog. More fundamental though was that no-one was reading the text on the main page. I looked at it again trying to invoke fresh, impartial eyes. It was too wordy.
 
-![What's New? MUSIC First Draft](../images/wnm first.png)
+![What's New? MUSIC First Draft](/images/wnm first.png)
 
 The front page needed to be lightened a little. Many times I've used stickmen drawing in the Life Beyond Fife blog so I tried a quirky Randall Munroe-esque look.
 
-![I've drawn enough stickmen in my day for this not to be an XKCD rip-off. Apart from the elaborate alt text.](../images/wnm second.png)
+![I've drawn enough stickmen in my day for this not to be an XKCD rip-off. Apart from the elaborate alt text.](/images/wnm second.png)
 
 The text made it a lot more obvious what was going on but the page was still a bit too noisy and now it looked a little cheap and tacky too. A friend took some time to do a quick and nasty mockup that had an element to it that grabbed me. I experimented with some CSS shapes before settling on this:
 
-![The final What's New? MUSIC design](../images/wnm final.png)
+![The final What's New? MUSIC design](/images/wnm final.png)
 
 ## The Hard Launch
 
@@ -186,7 +186,7 @@ Without having any social media presence besides Twitter - and with fewer than 1
 
 It definitely helped though as it encouraged the germ of growth to propel me, if not high up the Hacker News front page, at least on it.
 
-![](../images/hackernews.png)
+![](/images/hackernews.png)
 
 This small start encouraged others to engage with me about the idea and drove a not insignificant amount of traffic to my site. The tweets to other potentially interested parties namely, Scott Hanselman: project leader of Microsoft ASP.Net, and MongoLab: my cloud DB host, yielded encouraging and appreciated replies but nothing further.
 
@@ -194,7 +194,7 @@ This small start encouraged others to engage with me about the idea and drove a 
 
 I tracked the amount of traffic to What's New? MUSIC using Google Analytics. In total, the site had 1,724 visitors who stayed for an average time of 40 seconds. Nearly one thousand of the visitors came from the US, ten percent from the UK and a little less from Canada, Germany and then India. The most notable metric though is how quickly the peak wore off. The day after the launch on Hacker News, there were only 80 visitors, then 21 and thereafter fewer than ten each day with literally no visitors a full week later.
 
-![](../images/analytics.png)
+![](/images/analytics.png)
 
 ## The Feedback
 
@@ -207,11 +207,11 @@ User [famousactress](http://news.ycombinator.com/user?id=famousactress) chipped 
 
 But perhaps the biggest piece of feedback was the indication that users weren't getting to grips with how to use the site instinctively i.e. artist names were repeatedly being entered into the initial username field.
 
-![](../images/uifail.png)
+![](/images/uifail.png)
 
 I consider this a failure of my user interface. The choice to use a tabbed system and require a username first and foremost was partly to do with my naïvety regarding web UI controls. Very much another lesson learned for next time. Despite some small problems with users who didn't work out how to use the site, there were many users who did. Indeed, the easy entry point to the site led to many trying out the service. I gained over 300 users, who specified over 500 different artists and meant I grabbed the data for over one thousand albums. A solid few days work and a real bit of recognition that I'd done some things right (even if, as mentioned above, few came back again).
 
-![](../images/newusers.png)
+![](/images/newusers.png)
 
 ## The Revenue and Costs
 
