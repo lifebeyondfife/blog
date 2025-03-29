@@ -74,7 +74,7 @@ Finding the values for \\(f1\\), \\(r1\\) and \\(q1\\) requires simultaneously s
 A bruteforce enumeration can be achieved using a six levels deep nested for loop.
 
  
-
+```
 for (int r1 = 1; r1 < = 64; ++r1)
   for (int f1 = 1; f1 <= 256; ++f1)
     for (int q1 = 1; q1 <= 256; q1 <<= 1)
@@ -92,7 +92,7 @@ for (int r1 = 1; r1 < = 64; ++r1)
 
               return 1;
             }
-
+```
  
 
 At the heart of the deepest level is a check to see if the values satisfy the above formula. By considering the bounds of this problem i.e. the range of valid values for each unknown, we can calculate the number of possible combinations. The \\(f\\) variables can be between 1 and 256, the \\(r\\) variables between 1 and 64 and the \\(q\\) powers of 2 can be from 1 to 256, so there are eight potential values. This leads to a total of \\(256^2.64^2.8^2\\), or \\(17,179,869,184\\) - a staggering number of combinations to enumerate in a device driver.
@@ -257,7 +257,7 @@ Though the arithmetic constraint is useful, a much simpler optimisation came fro
 In the end, the change required was subtle, and yet effective.
 
  
-
+```
 for (int r1 = input / 1000 + 1; r1 < = input / 10; ++r1)
   for (int f1 = (1600 \* r1) / input + 1; f1 <= (3200 \* r1) / input; ++f1)
     for (int q1 = 1; q1 <= (input \* f1) / (25 \* r1); q1 <<= 1)
@@ -275,7 +275,7 @@ for (int r1 = input / 1000 + 1; r1 < = input / 10; ++r1)
 
               return 1;
             }
-
+```
  
 
 We can consider each inner block as a further step into the search space with all the upper nodes bound to values. As such we can use the inequalities to act as propagation constraints to reduce the bounds of the next variables. Gaining as many prunes to the search space as this for such a small change was surprising but welcome.

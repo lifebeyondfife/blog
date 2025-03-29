@@ -35,13 +35,13 @@ export function renderAboutPage() {
         <h3>What You'll Find Here</h3>
         <div class="category-boxes">
           <div class="category-box">
-            <i class="fas fa-atlas"></i>
+            <i class="fas fa-book"></i>
             <h4>Engineering Culture</h4>
             <p>Essays, advice, and thoughts about modern engineering organisations</p>
           </div>
           
           <div class="category-box">
-            <i class="fas fa-map-signs"></i>
+            <i class="fas fa-sitemap"></i>
             <h4>Technology</h4>
             <p>Theory and practice of over a decade of side projects, many available in GitHub</p>
           </div>

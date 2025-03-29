@@ -60,18 +60,14 @@ function parseFrontMatter(content) {
   };
 }
 
-// Path to the posts directory
 const postsDir = path.join(__dirname, '../src/posts');
-// Path to output the metadata JSON file
 const outputPath = path.join(__dirname, '../src/data/posts-metadata.json');
 
-// Ensure the data directory exists
 const dataDir = path.join(__dirname, '../src/data');
 if (!fs.existsSync(dataDir)) {
   fs.mkdirSync(dataDir, { recursive: true });
 }
 
-// Read all markdown files in the posts directory
 console.log('Building posts metadata...');
 try {
   const postFiles = fs.readdirSync(postsDir).filter(file => file.endsWith('.md'));
@@ -88,7 +84,6 @@ try {
 
     const slug = file.replace(/\.md$/, '');
 
-    // Create post metadata
     const post = {
       id: index + 1,
       slug,
@@ -102,7 +97,6 @@ try {
       fileName: file
     };
 
-    // Track categories and tags for quick filtering
     post.categories.forEach(category => {
       if (!categories[category]) {
         categories[category] = {
@@ -129,10 +123,8 @@ try {
     console.log(`Processed post: ${post.title}`);
   });
 
-  // Sort posts by date (newest first)
   postsMetadata.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  // Create the final metadata object
   const metadata = {
     posts: postsMetadata,
     categories: Object.values(categories),
@@ -140,7 +132,6 @@ try {
     lastUpdated: new Date().toISOString()
   };
 
-  // Write the metadata to a JSON file
   fs.writeFileSync(outputPath, JSON.stringify(metadata, null, 2));
   console.log(`Metadata successfully written to ${outputPath}`);
 } catch (error) {
