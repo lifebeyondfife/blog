@@ -25,7 +25,7 @@ Look at this picture. It's a visual cue to aid remembering the core themes centr
 
  
 
-[![Sherlock Holmes by Piet Mondrian](../images/sherlock-holmes-by-piet-mondrian.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/sherlock-holmes-by-piet-mondrian.png)
+[![Sherlock Holmes by Piet Mondrian](/images/sherlock-holmes-by-piet-mondrian.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/sherlock-holmes-by-piet-mondrian.png)
 
  
 
@@ -53,7 +53,7 @@ One of the most common logic gates is the AND gate.
 
  
 
-[![AND gate](../images/and.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/and.png)
+[![AND gate](/images/and.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/and.png)
 
  
 
@@ -86,7 +86,7 @@ This is very handy for those using logic gates when the Engligh language definit
 
  
 
-[![OR gate](../images/or.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/or.png)
+[![OR gate](/images/or.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/or.png)
 
  
 
@@ -156,7 +156,7 @@ This is stated in advance of the example below in case the train of thought is n
 
  
 
-[![NOT gate](../images/not.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/not.png)
+[![NOT gate](/images/not.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/not.png)
 
  
 
@@ -198,7 +198,7 @@ By performing a couple of stages and combining the result, an XOR gate has been 
 
  
 
-[![xor0](../images/xor0.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/xor0.png)
+[![xor0](/images/xor0.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/xor0.png)
 
  
 
@@ -206,7 +206,7 @@ The 'dot' junctions split the A and B inputs so their value can be used twice. I
 
  
 
-[![xor](../images/xor.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/xor.png)
+[![xor](/images/xor.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/xor.png)
 
  
 
@@ -214,7 +214,7 @@ Now when we see this symbol we don't have to remember how it was made, just that
 
  
 
-[![halfadder](../images/halfadder.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/halfadder.png)
+[![halfadder](/images/halfadder.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/halfadder.png)
 
  
 
@@ -222,7 +222,7 @@ This circuit is known as a Half Adder. Combining two of them we can create what'
 
  
 
-[![fulladder](../images/fulladder.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/fulladder.png)
+[![fulladder](/images/fulladder.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/fulladder.png)
 
  
 
@@ -240,7 +240,7 @@ We can now chain together several Full Adders like so to create something that c
 
  
 
-[![binaryaddition](../images/binaryaddition.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/binaryaddition.png)
+[![binaryaddition](/images/binaryaddition.png)](http://lifebeyondfife.com/wp-content/uploads/2014/05/binaryaddition.png)
 
  
 
@@ -252,7 +252,7 @@ What seems like such a simple task, adding numbers together, has been accomplish
 
  
 
-[![Sherlock Holmes by Piet Mondrian](../images/sherlock-holmes-by-piet-mondrian.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/sherlock-holmes-by-piet-mondrian.png)
+[![Sherlock Holmes by Piet Mondrian](/images/sherlock-holmes-by-piet-mondrian.png)](http://lifebeyondfife.com/wp-content/uploads/2014/04/sherlock-holmes-by-piet-mondrian.png)
 
  
 

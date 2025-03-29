@@ -15,7 +15,7 @@ This is an amusing play-on-words type of blog post as I can't remember the last 
 
 A couple of weeks back I tweeted the following:
 
-![](../images/challenge.png)
+![](/images/challenge.png)
 
 The awesome [rateyourmusic.com](http://rateyourmusic.com/) do have a section within a user's profile page that provides this information but it can't be traversed backwards through time or accessed via, say, an RSS feed. I received no suggestions so if I want it, I'll have to solve the problem myself.
 
@@ -33,7 +33,7 @@ It's a complicated minefield for the uninitiated though i.e. me, so here are two
 
 [WCF REST Service Template 40(CS)](http://visualstudiogallery.msdn.microsoft.com/fbc7e5c1-a0d2-41bd-9d7b-e54c845394cd) - This is a template extension for Visual Studio created by Microsoft's own WCF team. It creates a small project that provides a RESTful service that helpfully maps elements of the client requested URI to a server side parameter. For example, the code below allows me to send a HTTP GET request (note the WebGet attribute), to a URI such as, say, http://www.mycoolrestfulproject.com/WhatsNewMusicService/Wu-Tang Clan/TopEntries/4 and the UriTemplate parses my request to extract "Wu-Tang Clan" and "4" as the artist and entries parameters respectively for the GetEntries function.
 
-![](../images/templates.png)
+![](/images/templates.png)
 
 [WFetch](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=21625) - This brilliant application, also from Microsoft, allows you to create HTTP requests easily, essential for when you need to send something other than a GET e.g. POST, PUT, DELETE etc.
 
@@ -41,7 +41,7 @@ It's a complicated minefield for the uninitiated though i.e. me, so here are two
 
 "What's New? Music" is the work-in-progress name for this early stage prototype. It is a web service that uses the [Music Brainz web API](http://musicbrainz.org/doc/XML_Web_Service/Version_2) to discover all the albums released by a given artist. The server caches a list of all albums from all queried artists and returns them ordered from most recent to oldest. The user can ask for the most recent albums from a specific artist or aggregated for all artists. Also, the top X albums can be requested instead of all of them. To start with, you'll find the process incredibly slow as each new artist request requires several Music Brainz queries which, owing to their T&Cs, must be separated by a window of one second between each (enter the [Proxy design pattern](http://en.wikipedia.org/wiki/Proxy_pattern)). The requests to the What's New? Music service are returned in the form of an XML document.
 
-![](../images/wutang.png)
+![](/images/wutang.png)
 
 ## Next steps
 

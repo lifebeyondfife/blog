@@ -109,7 +109,7 @@ tags:
 
 This is the content of my blog post. You can use **bold**, *italic*, and other Markdown formatting.
 
-![Image description](../images/my-image.jpg)
+![Image description](/images/my-image.jpg)
 
 ## Heading 2
 

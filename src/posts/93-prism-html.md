@@ -32,7 +32,7 @@ At the highest level description, we'll be creating several C# projects within a
 
 The shell executable and module libraries hold a reference to the model library so that they can share the same event aggregator and know about the classes defined within. That, however, is the only dependency in this system. Each module needs to know the name of the user interface region that it wants to implement, but there is no compile time prerequisite or explicit interface to be concerned with. In this example, the shell project will create a subdirectory in its build folder called Modules. A post-build step in each module project copies the built DLL into this folder. When the shell application is executed, it will load any DLLs found in the Modules folder and replace the blank regions with the implementations it discovers.
 
-![](../images/application.png)
+![](/images/application.png)
 
 The application is pretty simple. There's a data table where users can enter their name, age and favourite Highway Patrol officer from the film Super Troopers - a vitally important class of objects I'm sure you agree. Genghis Khan has gone with Mac as he's clearly the best but the user can add more entries. When the Submit button is clicked, the collection in the lefthand Module A table is added to the righthand Module B table via the event aggregator. With a working knowledge of WPF and MVVM along with the Observable (Publisher / Subscriber) design pattern, you have all the tools needed to create user interfaces made up of independent module components.
 

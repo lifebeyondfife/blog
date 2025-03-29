@@ -18,21 +18,21 @@ D-Lighted is a free, open-source Windows database tool that allows users to conn
 
 ## Databases: Serious Business
 
-![](../images/database.png)
+![](/images/database.png)
 
 As anyone who has worked on a large software project will attest, databases can be complicated beasts with accompanying behemoth tools for managing them. Mostly with good cause as a good setup for one application or web-service may have completely different requirements to another. However, it's quite often the case that different projects will require different database platforms entirely. And though SQL Server Management Studio, for example, is essential for configuring the throttling rate or the maximum number of simultaneous connections, 95% of the time its users just want to examine the data it holds and possibly edit a troublesome field.
 
 With this in mind I updated a stripped down version of some [in-house development](http://www.lifebeyondfife.com/76-in-house.html) from some years back with a new WPF interface using the [M-V-VM](http://msdn.microsoft.com/en-us/magazine/dd419663.aspx) design pattern.
 
-![](../images/players.png)
+![](/images/players.png)
 
 Hover the mouse cursor near the top of the window to reveal the connection buttons.
 
-![](../images/tables.png)
+![](/images/tables.png)
 
 Hover it over to the left to reveal the list of available tables.
 
-![](../images/teams.png)
+![](/images/teams.png)
 
 Everything else should be fairly self explanatory. Commit your database edits using the Commit or Left / Right buttons. Tooltips are placed on the modal dialogs for any specific connection details.
 
@@ -40,11 +40,11 @@ Everything else should be fairly self explanatory. Commit your database edits us
 
 Developers who wish to tailor D-Lighted to connect to different databases are in luck. By using the [Abstract Factory](http://en.wikipedia.org/wiki/Abstract_factory_pattern) pattern, all that needs to be implemented are three functions in two classes (and adding a button to the main XAML window).
 
-![](../images/manager.png)
+![](/images/manager.png)
 
 Specify how to find the list of the table names available and also how to select all the elements from an individual table.
 
-![](../images/creator.png)
+![](/images/creator.png)
 
 Finally, create an IDbConnection object to your database and that's it.
 

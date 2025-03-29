@@ -39,7 +39,7 @@ We'll see more on this later when we create more rows, colour the odd numbers bl
 
 Patterns can emerge from chaos as well as order. Consider a number of points making a shape. We can create a pattern by starting somewhere in the middle, picking one of the outlying points at random, moving half way toward it and drawing a dot. By continuing to pick random outliers and drawing dots we can create a structured pattern even though it was created using randomness.
 
-![](../images/random.png)
+![](/images/random.png)
 
 ## Fractals
 
@@ -47,7 +47,7 @@ Fractals appear all around us in nature. A fractal is simply a structure or shap
 
 Our transformation is to scale the line down by 50%, rotate \\(\\frac{\\pi}{3}\\) anti-clockwise, draw a line. Rotate \\(\\frac{\\pi}{3}\\) clockwise and draw another line. Finally rotate \\(\\frac{\\pi}{3}\\) clockwise again and draw one last line. We'll also add a little complexity to this fractal by alternating the direction of the rotations from one application to the next.
 
-![](../images/fractal.png)
+![](/images/fractal.png)
 
 ## Beauty
 

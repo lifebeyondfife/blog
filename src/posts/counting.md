@@ -35,7 +35,7 @@ It’s important to understand, however, that the digits we write out in a line 
 
  
 
-[![Fourteen](../images/fourteen.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/fourteen.png)
+[![Fourteen](/images/fourteen.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/fourteen.png)
 
  
 
@@ -47,7 +47,7 @@ Perhaps, like me in your early years of primary school you remember using shapes
 
  
 
-[![Cubes](../images/cubes.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/cubes.png)
+[![Cubes](/images/cubes.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/cubes.png)
 
  
 
@@ -73,7 +73,7 @@ Despite sharing a similar alphabet, the rules regarding counting in Roman numera
 
  
 
-[![mayanzero](../images/mayanzero.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayanzero.png)
+[![mayanzero](/images/mayanzero.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayanzero.png)
 
  
 
@@ -81,7 +81,7 @@ They move from a single dot representing one up to the following.
 
  
 
-[![mayannineteen](../images/mayannineteen.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayannineteen.png)
+[![mayannineteen](/images/mayannineteen.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayannineteen.png)
 
  
 
@@ -89,7 +89,7 @@ This symbol with three horizontal bars and four dots represents the number ninet
 
  
 
-[![mayantwenty](../images/mayantwenty.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayantwenty.png)
+[![mayantwenty](/images/mayantwenty.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayantwenty.png)
 
  
 
@@ -133,7 +133,7 @@ First up we need to translate our symbols from decimal digits into Mayan scriptu
 
  
 
-[![mayanninefourfour](../images/mayanninefourfour.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayanninefourfour.png)
+[![mayanninefourfour](/images/mayanninefourfour.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayanninefourfour.png)
 
  
 
@@ -143,7 +143,7 @@ The problem we haven’t thought about, however, is that the Mayan base is twent
 
  
 
-[![mayantwosevenfour](../images/mayantwosevenfour.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayantwosevenfour.png)
+[![mayantwosevenfour](/images/mayantwosevenfour.png)](http://lifebeyondfife.com/wp-content/uploads/2013/11/mayantwosevenfour.png)
 
  
 

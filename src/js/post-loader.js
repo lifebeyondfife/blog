@@ -66,19 +66,6 @@ function parseFrontMatter(content) {
 function markdownToHtml(markdown) {  
   const renderer = new marked.Renderer();
   
-  renderer.image = function(token) {
-    let href = token.href;
-    let text = token.text || '';
-    
-    if (href && href.startsWith('../images/')) {
-      const fixedPath = href.replace('../images/', '/images/');
-      console.log(`Converting image path: ${href} to ${fixedPath}`);
-      href = fixedPath;
-    }
-    
-    return `<img src="${href}" alt="${text || 'Blog image'}" class="post-image">`;
-  };
-  
   const options = {
     renderer: renderer,
     headerIds: false,

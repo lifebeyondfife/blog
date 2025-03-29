@@ -23,7 +23,7 @@ I know why bootcamps arrange their syllabus the way they do. They prioritise bre
 
   
 
-![Meme mocking programmers' reliance on Google to do their job](../images/programmer-meme.png)
+![Meme mocking programmers' reliance on Google to do their job](/images/programmer-meme.png)
 
   
 
@@ -31,7 +31,7 @@ It's an industry joke that no-one knows how to program, and we all just use Stac
 
   
 
-![Cartoon which shows an easy method of drawing a character crudely, and an easier method to draw the same character well, but requires a lot of practice.](../images/binky-1-1024x699.png)
+![Cartoon which shows an easy method of drawing a character crudely, and an easier method to draw the same character well, but requires a lot of practice.](/images/binky-1-1024x699.png)
 
   
 
@@ -47,7 +47,7 @@ Bootcamps have to teach multiple technologies so they cover the knowledge and un
 
   
 
-![GitHub contribution graph which shows a lot of activity for 3 months with nothing before or after.](../images/github-1024x324.png)
+![GitHub contribution graph which shows a lot of activity for 3 months with nothing before or after.](/images/github-1024x324.png)
 
   
 
@@ -55,7 +55,7 @@ I can see evidence of this in prospective engineer's git activity. It's full on 
 
   
 
-[![Tweet from Max Howell, "Google: 90% of our engineers use the software you wrote (Homebrew), but you can't invert a binary tree on a whiteboard so fuck off."](../images/invert.png)](https://twitter.com/mxcl/status/608682016205344768)
+[![Tweet from Max Howell, "Google: 90% of our engineers use the software you wrote (Homebrew), but you can't invert a binary tree on a whiteboard so fuck off."](/images/invert.png)](https://twitter.com/mxcl/status/608682016205344768)
 
   
 

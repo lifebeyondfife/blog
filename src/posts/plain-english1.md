@@ -35,7 +35,7 @@ Just because we use computers on a daily basis in society does not mean that all
 
  
 
-![Ibuprofen](../images/ibuprofen.png)
+![Ibuprofen](/images/ibuprofen.png)
 
  
 

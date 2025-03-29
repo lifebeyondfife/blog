@@ -5,7 +5,7 @@ categories:
   - "essays"
 ---
 
-![](../images/corporate-value-meme.jpg)
+![](/images/corporate-value-meme.jpg)
 
   
 
@@ -89,7 +89,7 @@ Great teamwork comes from trust, but trust doesn't come for free. It's built up 
 
   
 
-![](../images/super-troopers-meme.jpg)
+![](/images/super-troopers-meme.jpg)
 
   
 
@@ -99,7 +99,7 @@ Ok, you got me. I just wanted to reference my favourite joke from Super Troopers
 
   
 
-![](../images/leeroy-jenkins-meme.jpg)
+![](/images/leeroy-jenkins-meme.jpg)
 
   
 
@@ -109,7 +109,7 @@ There are many situations where it's easy to let a lie pass the lips when the tr
 
   
 
-![](../images/office-space-meme.jpg)
+![](/images/office-space-meme.jpg)
 
   
 
@@ -127,4 +127,4 @@ Startups are crazy too though. Startups can do things differently sometimes just
 
   
 
-![](../images/success-kid-meme.jpg)
+![](/images/success-kid-meme.jpg)

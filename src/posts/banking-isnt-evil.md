@@ -13,7 +13,7 @@ I truly believe that banks, or any institution that exists by making trades base
 
 In writing this article though I'm trying to defend the idea of banking and as a software developer shed light into what goes on in the glass skyscrapers. I have never been close to the top 1% of earners nor worked for a bank but I have worked in the finance industry primarily developing market risk software. I think everyone should be able to stand up and justify what they do for a living and I submit that most people who object to the banking sector do so based on anecdotes of repugnant behaviour from banks and bankers alike. Believe me, I'm not trying to deny the existance or incredulity of the many examples. The most jaw dropping example I've seen is the [Deutsche Bank employee](http://www.mirror.co.uk/news/top-stories/2011/03/20/exclusive-city-banker-sacked-after-taunting-nhs-staff-with-10-note-115875-23001700/) who waved a £10 note and shouted "Get a job!" to a procession of striking nurses.
 
-![](../images/tenner.jpg)
+![](/images/tenner.jpg)
 
 But before you can convincingly argue against a system you have to understand it. One person may object to the existance of banks without realising that their lives fundamentally depend on them. It's important therefore to know exactly what it is that banks do, how they work, the services they provide. I hope to provide a high level description of what banking does, how they do this and as usual [I have some GPL sourcecode](https://github.com/lifebeyondfife/FinancialPricer) that executes a few financial calculations required by banking software.
 
@@ -29,7 +29,7 @@ If your complaint against banks is that they act purely in their own self intere
 
 A business is simply a provider of goods and/or services. Banks are primarily a service based industry but what exactly do they provide? For most of us, they look after our montly deposits and savings securely, allowing us instant and convenient access. They also pay interest to savers and charge interest to borrowers. But that's an incomplete description of what they do based on our narrow view of what we as consumers want from the bank.
 
-![](../images/jesus.jpg)
+![](/images/jesus.jpg)
 
 The moneylenders have always had a bad press. There's the millenia old story of Jesus [throwing them out of the temple](http://bible.cc/matthew/21-12.htm). Today people still question the societal worth of banks. I find societal worth a strange concept. I dislike the fast food industry because it makes a profit while making the public unhealthy but it exists because fast food is popular. Capitalism is the ultimate democracy – you only get to vote for a government once every five years but you vote with your conscience everytime you open your wallet e.g. do you buy barn or free range eggs? Do you ensure the meat you buy from the supermarket brought the farmer a fair price and there was a good standard of animal welfare? Do you check the country of origin of the clothes and products you buy and ensure their citizens enjoy political freedom and humane labour laws? Do you buy music from RIAA or independent artists? The Co-operative Bank understands this and [discloses a list of industries](http://www.goodwithmoney.co.uk/ethical-banking/) in which it won't invest consumer deposits. Most companies offering trackers for ISAs, for example, will offer some sort of ethical fund. But societal worth is too subjective a term, businesses exist if there is a need for them regardless of whether some individuals consider them worthy or not.
 
@@ -45,7 +45,7 @@ Say that a fledgling business in the UK secures its first big order for a shipme
 
 Within a bank an FX trading team is made up of a series of desks with traders on each desk responsible for making specific types of trades that hedge or speculate against different types of risk. There is the spot desk that usually has 4 or more traders, the forward desk with 1 or more, there may be a closely related money market desk and, most pertinent to this example, there is a corporate desk that provides a more polished customer facing role. The sum total of all of the trades done between all financial institutions should, in theory, be zero – it's the trades banks do with outside companies where their risk-free profits come from. In this case the UK based business contacts the corporate desk of the bank and states that they're interested in the GBP value of €1m in three months. The corporate desk will confer with his colleagues on the spot and forward desks and come up with a bid/offer spread, namely, GBP/EUR 1.2017/22. This means that they will agree today, to deal in three months either buying £832,154.45 (11.2017 x 1m) or selling £831,808.35 (11.2022 x 1m) for €1m. The business agrees to "lift the offer" for £831,808.35 knowing that whatever happens to Euro exchanges rates, that figure will be guaranteed.
 
-![](../images/fxtraders.png)
+![](/images/fxtraders.png)
 
 In this case the bank manages the FX risk because that is what it knows how to do. They manage the orders they have for various countries by carefully managing their money stores each day. There are traders making short term trades concentrating on spot risk. There are others looking at longer term trades concerned with forward risk. It's a complicated operation for which they take their usual commision. They, like the van hire company, always have lots of money available ready to be used when there's demand. They allow the UK business the certainty to deal with others outside their own country. We as employees depend on businesses and they in turn depend on banks. We do actually need them more than we think.
 
@@ -61,7 +61,7 @@ In the UK at least, two pieces of legislation from the 80s, the [Financial Servi
 
 So why did the banks fail to spot this happening? To answer this question let's first examine the inner structure of a bank and describe some of the software solutions required. The trading arm of a bank is usually split into three parts known as the front, middle, and back offices.
 
-![](../images/overview.png)
+![](/images/overview.png)
 
 The front office is primarily concerned with trading and they trade all kinds of OTC and exchange traded financial instruments and derivatives. Though some exchanges are still [pit based](http://en.wikipedia.org/wiki/Open_outcry), most markets today are electronic with traders sitting in front of several monitors containing a multitude of real-time updated market data. Trading platform software needs to be highly customisable as different trading areas will have different needs and low latency as prices can change quickly. No more so than traders attempting to perform arbitrage. The front office is primarily where employees make the most money – for themselves and the bank – and work in the most stressful environment.
 
@@ -75,7 +75,7 @@ One of the most popular risk metrics in the middle office is a term called VaR, 
 
 Nicolas Nassim Taleb used to be an options trader in the 1980s and [positioned his trades](http://www.theforexvillage.com/Interviews-withTopTraders/nassim-taleb-profiting-from-uncertainty.html) to make a large profit from the Black Monday 1987 stock market crash. In his book The Black Swan he sets out his theory of the world being changed by a stream of large, unpredictable events. I [don't recommend buying this book](http://www.amazon.co.uk/review/R3DUFEJ497DB1I/ref=cm_cr_rdp_perm?ie=UTF8&ASIN=0713999950&nodeID=&tag=&linkCode=) but borrow it if you can just to read the chapter entitled "Locke's Madmen, or Bell Curves in the Wrong Places" which describes exactly the problem he has with mathematical models based on a normal probability distribution. A brief summary can helpfully be found [here](http://possumgolightly.com/samples/BookReportz/BlackSwan/C17_Lockes_Madmen.htm).
 
-![](../images/bellcurve.png)
+![](/images/bellcurve.png)
 
 The above image is a graph of the [Gaussian bell curve / normal probability distribution](http://en.wikipedia.org/wiki/Normal_distribution) created by my [graphing tool available here](http://www.lifebeyondfife.com/83-e-to-the-pi-or-pi-to-the-e#code). The x-axis represents a movement away from the [mean](http://en.wikipedia.org/wiki/Mean), and the y-axis represents the probability of that move occurring. The integral of the normal distribution from −∞ to +∞ is 1 i.e. the y value represents a percentage.
 

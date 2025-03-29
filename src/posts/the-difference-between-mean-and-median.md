@@ -57,12 +57,12 @@ In the main, the mean and median are similar if there's a symmetrical distributi
 
 Say we have a small distribution that looks at how much money five people have on them. The first four have £1, £2, £3 and £4 respectively. The fifth person is on their way to Sotheby's, however, and has cashier notes totalling £5m. This is an extremely skewed sample to say the least. First, we calculate the mean, \\(\\frac{1+2+3+4+5000000}{5} = 1000002\\).
 
-![Mean of the series](../images/mean.png)
+![Mean of the series](/images/mean.png)
 
 Despite no-one having anything near to £1m, the mean is £1,000,002. As the sample size is odd we can simply read off the middle value for the median, namely, 3.
 
-![Median of the sample](../images/median.png)
+![Median of the sample](/images/median.png)
 
 Notice here that the median doesn't capture any information relating to the extreme nature of the top end value. In the end we must recognise that this is too strange and complex a series to capture meaningfully in just one or two single metrics. But it's useful to understand the differing nature of how they each simplify the series.
 
-![Mean and Median of the sample](../images/full.png)
+![Mean and Median of the sample](/images/full.png)

@@ -34,27 +34,27 @@ _"The performance improvement to be gained from using some faster mode of execut
 
 I must confess, [Gene Amdahl](http://en.wikipedia.org/wiki/Gene_Amdahl) is a computer scientist and was talking about a specific problem regarding the parallelisation of computation. An example relating to helping out the environment would be much better. Look at this block of carbon, A, that you, the average person, is responsible for over the course of a year owing just to unused electronic devices kept on standby.
 
-![Electronics on standby producing 50Kg of Carbon per annum.](../images/A_50.png)
+![Electronics on standby producing 50Kg of Carbon per annum.](/images/A_50.png)
 
 A television kept on standby for a year will rack-up in excess of 10Kg of CO2 per year (Source: [Carbon Footprint](http://www.carbonfootprint.com/energyconsumption.html)) and when you add in Digital TV receivers and other home entertainment devices it's easy to see how that can add up to 50Kg.
 
 In a fit of altruism you decide that that's it, from now on, no devices in your house will be plugged in at the wall if not being used. No TVs, satellite boxes, games consoles, HiFi systems, printers, microwaves, radios, PC monitors will waste standby electricity in your house. All will be plugged in before use and unplugged when finished. Let's say that you manage to stick to this task for an entire year and you manage to drastically reduce the carbon footprint of standby electricity in your home by 90%.
 
-![Electronics on standby producing only 5Kg of Carbon per annum.](../images/A_5.png)
+![Electronics on standby producing only 5Kg of Carbon per annum.](/images/A_5.png)
 
 That is commendable work. Every single day, sitting down to watch TV or play a DVD, picking up the remote control and pushing an unresponsive button, sighing deeply, standing up and walking over to the power socket, plugging all the devices in and waiting for them to warm up. And at night the routine of sweeping all rooms to make sure everything's unplugged again. Take a well deserved sip of locally sourced real ale, you've earned it. Now let me show you Amdahl's Law in action.
 
 This is B, a return trip in an aeroplane to somewhere roughly 1,000 miles away e.g. New York to Tampa, Florida or London to Naples, Italy, after the high altitude "climatic forcing" effect is taken into account (Source: [Environmental Impact of Aviation](http://en.wikipedia.org/wiki/Environmental_impact_of_aviation))[.](http://en.wikipedia.org/wiki/Environmental_impact_of_aviation.)
 
-![Return flight of 1,000 miles producing 800Kg of Carbon per annum.](../images/B_800.png)
+![Return flight of 1,000 miles producing 800Kg of Carbon per annum.](/images/B_800.png)
 
 This distance is significant and clearly easier to make using air travel, however, with some extra effort in planning, time and probably expense, it is a distance that you could make by train. Even allowing for a longer than direct route it's possible to reduce this carbon cost by 80%, a similar though slightly smaller amount to the example with the electronics not left on standby (Source: [Carbon Neutral Calculator](http://www.carbonneutralcalculator.com/commutecalculator.aspx)).
 
-![Return train journey of 1,000 miles producing 150Kg of Carbon per annum.](../images/B_150.png)
+![Return train journey of 1,000 miles producing 150Kg of Carbon per annum.](/images/B_150.png)
 
 Assume that the train journey, though a genuine sacrifice over the convenience and value for money of flying, is a viable alternative. A sacrifice that only needs to be done once per year, no matter how often such a journey is made, rather than an everyday task like the electronics on standby. Let's now compare these environmentally beneficial endeavours as choices by creating two people with differing attitudes. One conscientiously works everyday over the little things to be more environmentally friendly. The other prefers the convenience of having things available at the push of a button but is prepared to make a big one-off effort for the environment. The first unplugs electronics all year, the second goes by train rather than plane just once.
 
-![Optimising standby electronic usage: 805Kg carbon waste. Optimising journey method: 200Kg carbon waste.](../images/AB.png)
+![Optimising standby electronic usage: 805Kg carbon waste. Optimising journey method: 200Kg carbon waste.](/images/AB.png)
 
 The first person has taken the total carbon footprint from 850Kg down to 805Kg. The 90% improvement of standby power has resulted in an overall saving of a little over 5%. However, the second person's 80% saving from avoiding flying has produced a total of only 200Kg of carbon - a system wide saving of 76%.
 

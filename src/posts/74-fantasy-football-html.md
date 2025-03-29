@@ -21,7 +21,7 @@ As a PhD student and subsequently a researcher into Artificial Intelligence I th
 
 Allow me to simplify things with an example. If you have a problem where a solution depends on many combinations of decisions you could well have a CSP. A combination lock, for example. You have four numbers from 0 to 9 and even if you get one of them right, the lock won't open. All four need to be correct at once. The final dramatic scene of the Matthew Broderick film WarGames has always driven me crazy. The code was broken one character at a time which is completely unrealistic. If there's one thing that will ruin humour and popular culture for you it's science.
 
-![](../images/wargames.jpg)
+![](/images/wargames.jpg)
 
 In essence, a computer solving such a problem tries every combination until a solution is found and you have no idea how close or far away you are from finding one. There are many tricks and valid shortcuts that can be taken along the way, the actual science part, but that's essentially it. How about another example? Picking players for a Fantasy Football League team. This is a problem where you have to choose players which satisfy certain constraints, namely, no more than three from one squad, five defenders etc., total cost of all players to be £100m or less. Of course just picking a valid team is quite simple. What about selecting a _good_ team. One whose players have a track record of scoring a lot of points. Now that's a problem worth solving!
 

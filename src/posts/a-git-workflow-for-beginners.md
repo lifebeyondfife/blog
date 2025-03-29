@@ -19,7 +19,7 @@ For the sake of simplicity we'll assume the user is contributing to a GitHub pro
 
 ## The Git Workflow
 
-[![git workflow](../images/git-workflow.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-workflow.png)
+[![git workflow](/images/git-workflow.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-workflow.png)
 
  
 
@@ -46,7 +46,7 @@ Let's begin by expanding the numbered items in the diagram
 
 **1.** Download and install GitHub's tool for windows: [https://windows.github.com/](https://windows.github.com/). The executable can be found directly here: [http://github-windows.s3.amazonaws.com/GitHubSetup.exe](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
 
-[![git install](../images/git-install.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-install.png)
+[![git install](/images/git-install.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-install.png)
 
  
 
@@ -54,7 +54,7 @@ Let's begin by expanding the numbered items in the diagram
 
 **2.** From a GitHub repo you're interested in, copy the clone string from the right of the screen - search for "HTTPS clone URL". For this initial example, I've selected jQuery-UI.
 
-[![github clone](../images/github-clone.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/github-clone.png)
+[![github clone](/images/github-clone.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/github-clone.png)
 
  
 
@@ -62,7 +62,7 @@ In order to commit the changes back to GitHub's servers, a fork of the project i
 
  
 
-[![git fork](../images/git-fork.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-fork.png)
+[![git fork](/images/git-fork.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-fork.png)
 
  
 
@@ -70,7 +70,7 @@ In order to commit the changes back to GitHub's servers, a fork of the project i
 
 **3.** Run GitHub's Git Shell tool and navigate to the directory where you'd like your code to live.
 
-[![git shell](../images/git-shell.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-shell.png)
+[![git shell](/images/git-shell.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-shell.png)
 
  
 
@@ -210,7 +210,7 @@ NB – because we don't have admin rights to the jQuery-UI project, we push the 
 
  
 
-[![git pull](../images/git-pull.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-pull.png)
+[![git pull](/images/git-pull.png)](http://lifebeyondfife.com/wp-content/uploads/2014/12/git-pull.png)
 
  
 

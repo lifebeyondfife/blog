@@ -35,7 +35,7 @@ Then there's my friend and former flatmate [@Tony](https://twitter.com/TonyTwit2
 
 And finally as someone who dabbles in music I've been the singer and guitarist in a couple of bands and I've also recorded my own album. But I'm a self taught musician and it's just a hobby to which I don't devote much time i.e. I suck. In my last band (purveyors of awesome, cheesy rock covers) I was the rhythm guitarist trying to keep up with the multi-instrument playing, multi-banded, talented [@Jonathan](https://twitter.com/beenabadbunny). Not only was he a great guitarist but he was patient with my limited abilities.
 
-![](../images/crowgarden.jpg)
+![](/images/crowgarden.jpg)
 
 For each of the above five comparisons whether financial engineering, systems, producing software, or playing the guitar, I easily come up second best. But that's because I'm picking a specific skill set I'm interested in and thinking about the best person I know in that category.
 
