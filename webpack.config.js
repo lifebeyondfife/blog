@@ -61,6 +61,11 @@ module.exports = {
           from: 'src/images', 
           to: 'images',
           noErrorOnMissing: true
+        },
+        {
+          from: 'src/data',
+          to: 'data',
+          noErrorOnMissing: true
         }
       ]
     })

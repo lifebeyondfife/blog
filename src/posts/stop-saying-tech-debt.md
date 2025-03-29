@@ -3,7 +3,6 @@ title: "Stop saying Tech Debt"
 date: "2023-07-23"
 categories: 
   - "essays"
-  - "management"
 ---
 
 If you gave two options to someone who cared about business outcomes, about what they could have, which do you think they’d choose?

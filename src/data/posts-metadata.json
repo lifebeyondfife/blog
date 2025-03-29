@@ -1,0 +1,1822 @@
+{
+  "posts": [
+    {
+      "id": 105,
+      "slug": "why-5-whys-isnt-enough",
+      "title": "Why 5 Whys isn&#8217;t enough",
+      "date": [
+        "2024",
+        "12",
+        "29"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "5 Whys is a prevalent engineering process in a modern tech company. When your company has operational incidents (and even the [biggest](https://engine...",
+      "fileName": "why-5-whys-isnt-enough.md"
+    },
+    {
+      "id": 45,
+      "slug": "convincing-or-instructing",
+      "title": "Convincing or Instructing",
+      "date": [
+        "2024",
+        "12",
+        "26"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "To convince someone, tell them why, then how, then what, in that order. To give an instruction, tell someone what, and time permitting, consider shari...",
+      "fileName": "convincing-or-instructing.md"
+    },
+    {
+      "id": 73,
+      "slug": "managing-expectations",
+      "title": "Managing Expectations",
+      "date": [
+        "2024",
+        "12",
+        "14"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "“This team isn’t delivering enough.”\n\n  \nYou’ve had a fully funded team of engineers working on a product for years. It has fundamental issues with qu...",
+      "fileName": "managing-expectations.md"
+    },
+    {
+      "id": 91,
+      "slug": "stop-saying-tech-debt",
+      "title": "Stop saying Tech Debt",
+      "date": [
+        "2023",
+        "07",
+        "23"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "If you gave two options to someone who cared about business outcomes, about what they could have, which do you think they’d choose?\n  \n* new product f...",
+      "fileName": "stop-saying-tech-debt.md"
+    },
+    {
+      "id": 104,
+      "slug": "what-are-your-engineering-culture-values",
+      "title": "What are your engineering culture values?",
+      "date": [
+        "2022",
+        "11",
+        "20"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "Perform an activity frequently enough, and you will start to see patterns. After being involved in the process of creating software for two decades, I...",
+      "fileName": "what-are-your-engineering-culture-values.md"
+    },
+    {
+      "id": 63,
+      "slug": "hiring-advice-for-bootcamp-graduates",
+      "title": "Hiring advice for bootcamp graduates",
+      "date": [
+        "2021",
+        "08",
+        "12"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "I'm currently trying to hire as many software engineers as I can, and more and more I'm seeing applications from candidates who retrained via an inten...",
+      "fileName": "hiring-advice-for-bootcamp-graduates.md"
+    },
+    {
+      "id": 71,
+      "slug": "manager-readme-2021",
+      "title": "Manager README 2021",
+      "date": [
+        "2021",
+        "07",
+        "20"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "It has been a while since I wrote my first [manager README](https://managerreadme.com/). The idea is simple: help people who are going to be reporting...",
+      "fileName": "manager-readme-2021.md"
+    },
+    {
+      "id": 46,
+      "slug": "corporate-values-as-memes",
+      "title": "Corporate values as memes",
+      "date": [
+        "2021",
+        "02",
+        "14"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "![](/images/corporate-value-meme.jpg)\n\n  \n\nThis is perhaps only my second, and hopefully final, time where I play futurist. I'm going to argue that me...",
+      "fileName": "corporate-values-as-memes.md"
+    },
+    {
+      "id": 86,
+      "slug": "ready-to-start",
+      "title": "Ready to start",
+      "date": [
+        "2020",
+        "12",
+        "27"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Thank you for joining me on this journey of learning the how and why of becoming fit, specifically concentrating on strength training. We learned that...",
+      "fileName": "ready-to-start.md"
+    },
+    {
+      "id": 80,
+      "slug": "plateau",
+      "title": "Plateau",
+      "date": [
+        "2020",
+        "12",
+        "26"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "The introduction to why getting strong is hard began with the idea that the beginning of the journey toward strength is easy. No matter what you do, y...",
+      "fileName": "plateau.md"
+    },
+    {
+      "id": 76,
+      "slug": "move-outwards-from-the-core",
+      "title": "Move outwards from the core",
+      "date": [
+        "2020",
+        "12",
+        "25"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "A tree touches the world with its leaves and ever-burrowing roots, the edges of this complex organism supported and fueled by the tree trunk. Likewise...",
+      "fileName": "move-outwards-from-the-core.md"
+    },
+    {
+      "id": 103,
+      "slug": "warming-up-and-down",
+      "title": "Warming up and down",
+      "date": [
+        "2020",
+        "12",
+        "25"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "You don't just walk up to the biggest weight you've ever seen in your life and try to pick it up. Your body must be prepared for the stress. Mostly, t...",
+      "fileName": "warming-up-and-down.md"
+    },
+    {
+      "id": 85,
+      "slug": "ratio-of-lifts",
+      "title": "Ratio of lifts",
+      "date": [
+        "2020",
+        "12",
+        "05"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "I remember watching a comedy lifting video on YouTube that had a line in it like, \"No one likes 'Leg Day'. 'Leg Day' is tough. Your last 'Leg Day' als...",
+      "fileName": "ratio-of-lifts.md"
+    },
+    {
+      "id": 33,
+      "slug": "basis-of-strength",
+      "title": "Basis of strength",
+      "date": [
+        "2020",
+        "11",
+        "29"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Moving from aerobic based exercises to anaerobic means not only changing the exercises themselves, but also how you approach and rest between exercise...",
+      "fileName": "basis-of-strength.md"
+    },
+    {
+      "id": 94,
+      "slug": "technique-is-key",
+      "title": "Technique is key",
+      "date": [
+        "2020",
+        "11",
+        "28"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "There is no new lesson in this chapter, merely a reiteration of two previously made points. In the beginning your body will still progress even if you...",
+      "fileName": "technique-is-key.md"
+    },
+    {
+      "id": 41,
+      "slug": "compound-lifts",
+      "title": "Compound lifts",
+      "date": [
+        "2020",
+        "11",
+        "22"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "The key to strength is in making compound lifts the basis of your training routine. Let's break the term down. A lift is a strength exercise where you...",
+      "fileName": "compound-lifts.md"
+    },
+    {
+      "id": 108,
+      "slug": "why-getting-strong-is-hard-part-iii",
+      "title": "Why getting strong is hard – Part III",
+      "date": [
+        "2020",
+        "11",
+        "12"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "I remember growing up when I had some small dumbbells around the house. They might have been 5kg or even 10kg dumbbells, the memory is hazy. I think t...",
+      "fileName": "why-getting-strong-is-hard-part-iii.md"
+    },
+    {
+      "id": 107,
+      "slug": "why-getting-strong-is-hard-part-ii",
+      "title": "Why getting strong is hard – Part II",
+      "date": [
+        "2020",
+        "11",
+        "01"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Before you take a single decision in how you're going to train for becoming strong, you need to understand the difference between free weights and fix...",
+      "fileName": "why-getting-strong-is-hard-part-ii.md"
+    },
+    {
+      "id": 106,
+      "slug": "why-getting-strong-is-hard-part-i",
+      "title": "Why getting strong is hard – Part I",
+      "date": [
+        "2020",
+        "10",
+        "31"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Choosing to concentrate on strength training is a solid decision. But it's a hard one because for most people it's not like anything they've done befo...",
+      "fileName": "why-getting-strong-is-hard-part-i.md"
+    },
+    {
+      "id": 57,
+      "slug": "food",
+      "title": "Food",
+      "date": [
+        "2020",
+        "10",
+        "20"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "The food that you eat, which fuels your exercise and aids your recovery, is every bit as important as the training routine you execute. As well as bei...",
+      "fileName": "food.md"
+    },
+    {
+      "id": 60,
+      "slug": "get-strong-first",
+      "title": "Get strong first",
+      "date": [
+        "2020",
+        "10",
+        "10"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Having learned about the different [fitness types](https://lifebeyondfife.com/fitness-types/), and about to make a [change for life](https://lifebeyon...",
+      "fileName": "get-strong-first.md"
+    },
+    {
+      "id": 82,
+      "slug": "preparation-for-training",
+      "title": "Preparation for training",
+      "date": [
+        "2020",
+        "09",
+        "28"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "We’ve already talked about how training is stress that the body can recover from. In order to make the gain from each session as impactful as possible...",
+      "fileName": "preparation-for-training.md"
+    },
+    {
+      "id": 68,
+      "slug": "increase-calories",
+      "title": "Increase calories",
+      "date": [
+        "2020",
+        "09",
+        "21"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Conventional wisdom says that getting fit is losing fat. Losing fat requires more exercise, and fewer calories. What you’ve just learned in the previo...",
+      "fileName": "increase-calories.md"
+    },
+    {
+      "id": 96,
+      "slug": "the-body-as-an-engine",
+      "title": "The body as an engine",
+      "date": [
+        "2020",
+        "09",
+        "15"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to los...",
+      "fileName": "the-body-as-an-engine.md"
+    },
+    {
+      "id": 56,
+      "slug": "fitness-types",
+      "title": "Fitness types",
+      "date": [
+        "2020",
+        "09",
+        "13"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Fitness means different things to different people. Fitness means different things to different sports. The physical capabilities of humans are breath...",
+      "fileName": "fitness-types.md"
+    },
+    {
+      "id": 93,
+      "slug": "systems-not-goals",
+      "title": "Systems not goals",
+      "date": [
+        "2020",
+        "09",
+        "12"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "You set yourself a fitness goal. This isn't the first time, you've set many in the past. Some of which you've made, some you're embarrassed to repeat ...",
+      "fileName": "systems-not-goals.md"
+    },
+    {
+      "id": 35,
+      "slug": "body-image",
+      "title": "Body image",
+      "date": [
+        "2020",
+        "01",
+        "29"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Up to now I've asked you to consider the reason for getting fit on the pure physical benefits: the increased ability to be active for longer, the ener...",
+      "fileName": "body-image.md"
+    },
+    {
+      "id": 75,
+      "slug": "motivation",
+      "title": "Motivation",
+      "date": [
+        "2020",
+        "01",
+        "21"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Anthony Bourdain has summed up the key problem of motivation in a single, relatable quote:\n\n> \"I understand there's a guy inside me who wants to lay i...",
+      "fileName": "motivation.md"
+    },
+    {
+      "id": 92,
+      "slug": "stress",
+      "title": "Stress",
+      "date": [
+        "2020",
+        "01",
+        "12"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Stress has a negative image. It's generally seen as a bad thing and something to be avoided, but stress is how we improve. The first time we try somet...",
+      "fileName": "stress.md"
+    },
+    {
+      "id": 102,
+      "slug": "training",
+      "title": "Training",
+      "date": [
+        "2019",
+        "11",
+        "18"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Exercise is running round the block for five minutes. Training is structured exercise that is done deliberately, in a structured manner as part of a w...",
+      "fileName": "training.md"
+    },
+    {
+      "id": 74,
+      "slug": "measure-the-right-thing",
+      "title": "Measure the right thing",
+      "date": [
+        "2019",
+        "11",
+        "14"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "It's very easy to begin something with the best of intentions and say things like, \"Every little helps.\" or \"It can't do any harm.\" without knowing if...",
+      "fileName": "measure-the-right-thing.md"
+    },
+    {
+      "id": 84,
+      "slug": "question-everything",
+      "title": "Question everything",
+      "date": [
+        "2019",
+        "07",
+        "21"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "If you're still reading I've hopefully convinced you, or at least you're open to the idea, of learning higher level concepts before making permanent l...",
+      "fileName": "question-everything.md"
+    },
+    {
+      "id": 87,
+      "slug": "sacrifice-and-results",
+      "title": "Sacrifice and Results",
+      "date": [
+        "2019",
+        "06",
+        "30"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Before going any further with the mystic change-for-life-fitness plan I'm proposing, we need to calibrate ourselves on a couple of points to avoid the...",
+      "fileName": "sacrifice-and-results.md"
+    },
+    {
+      "id": 39,
+      "slug": "change-for-life",
+      "title": "Change for life",
+      "date": [
+        "2019",
+        "06",
+        "25"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "Banks will often advertise promotions offering sizeable sums of money for opening an account. There are all sorts of conditions like, a minimum amount...",
+      "fileName": "change-for-life.md"
+    },
+    {
+      "id": 89,
+      "slug": "snake-oil",
+      "title": "Snake oil selling better than ever",
+      "date": [
+        "2019",
+        "06",
+        "23"
+      ],
+      "categories": [
+        "fitness"
+      ],
+      "tags": [],
+      "excerpt": "This is the first in a long [series of posts about fitness](https://www.lifebeyondfife.com/fitness). By the end you will be better prepared than ever ...",
+      "fileName": "snake-oil.md"
+    },
+    {
+      "id": 72,
+      "slug": "manager-readme",
+      "title": "Manager README",
+      "date": [
+        "2018",
+        "10",
+        "29"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "The concept of a manager README doc, as an introduction of what to expect from a new manager, has [become popular](https://hackernoon.com/12-manager-r...",
+      "fileName": "manager-readme.md"
+    },
+    {
+      "id": 30,
+      "slug": "are-you-joining-a-good-engineering-team",
+      "title": "Are you joining a good engineering team?",
+      "date": [
+        "2017",
+        "07",
+        "23"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "You're unlikely to read a job spec these days that doesn't contain the word, Agile (capitalised, of course), scrum, kanban, or possibly the acronym TD...",
+      "fileName": "are-you-joining-a-good-engineering-team.md"
+    },
+    {
+      "id": 65,
+      "slug": "how-much-coding-should-a-manager-do",
+      "title": "How much coding should a manager do?",
+      "date": [
+        "2017",
+        "07",
+        "02"
+      ],
+      "categories": [
+        "management"
+      ],
+      "tags": [],
+      "excerpt": "In my day job we use Slack as a key communication tool - for those who haven't used it, it's basically a corporate version of IRC with good UX. In a p...",
+      "fileName": "how-much-coding-should-a-manager-do.md"
+    },
+    {
+      "id": 29,
+      "slug": "are-you-happy",
+      "title": "Are you happy?",
+      "date": [
+        "2017",
+        "06",
+        "25"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "A thought experiment occurred to me which looks to answer the question, \"Are you happy?\"\n\n \n\nIn a science fiction film I saw recently there was a fant...",
+      "fileName": "are-you-happy.md"
+    },
+    {
+      "id": 64,
+      "slug": "how-i-became-a-data-scientist",
+      "title": "How I became a data scientist",
+      "date": [
+        "2016",
+        "08",
+        "26"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "During the #firstsevenjobs trend on Twitter, I [tweeted](https://twitter.com/LifeBeyondFife/status/762545657085325312) my rather standard career path ...",
+      "fileName": "how-i-became-a-data-scientist.md"
+    },
+    {
+      "id": 70,
+      "slug": "insurance-against-leftpad-level-events",
+      "title": "Insurance against LeftPad level events",
+      "date": [
+        "2016",
+        "06",
+        "03"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "When it comes to dependencies, there are two extremes in software development. Complete ownership of everything right down to the abstract data types ...",
+      "fileName": "insurance-against-leftpad-level-events.md"
+    },
+    {
+      "id": 37,
+      "slug": "breaking-into-web-development",
+      "title": "Breaking into the opinionated, disjointed world of web development",
+      "date": [
+        "2016",
+        "03",
+        "12"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "Again and again, I find web development one of the most fascinating of all the disciplines I've come across in my career. Fascinating in the way [Extr...",
+      "fileName": "breaking-into-web-development.md"
+    },
+    {
+      "id": 38,
+      "slug": "caveats",
+      "title": "Caveats",
+      "date": [
+        "2016",
+        "02",
+        "28"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "If this isn't the only site you've looked at for assistance learning git, you may have come across advice that perhaps contradicts some of the suggest...",
+      "fileName": "caveats.md"
+    },
+    {
+      "id": 42,
+      "slug": "conclusion",
+      "title": "Conclusion",
+      "date": [
+        "2016",
+        "02",
+        "27"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "This guide does not claim, not wants to be, an exhaustive guide to git. It attempts to give a basic mental model for what the commands are actually do...",
+      "fileName": "conclusion.md"
+    },
+    {
+      "id": 99,
+      "slug": "the-inner-cycle",
+      "title": "The inner cycle",
+      "date": [
+        "2016",
+        "02",
+        "08"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "While actively writing code and experimenting with possible solutions, it's crucial to be constantly committing code to your local git repo. By doing ...",
+      "fileName": "the-inner-cycle.md"
+    },
+    {
+      "id": 100,
+      "slug": "the-middle-cycle",
+      "title": "The middle cycle",
+      "date": [
+        "2016",
+        "01",
+        "22"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "The middle cycle helps reduce the complexity of your final commit. This daily task is to pull the latest changes from the origin repo to your git repo...",
+      "fileName": "the-middle-cycle.md"
+    },
+    {
+      "id": 101,
+      "slug": "the-outer-cycle",
+      "title": "The outer cycle",
+      "date": [
+        "2016",
+        "01",
+        "05"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "The outer most cycle represents a full development task loop beginning with getting the latest code from the origin repo; developing, say, a new produ...",
+      "fileName": "the-outer-cycle.md"
+    },
+    {
+      "id": 88,
+      "slug": "setup-the-origin-repo",
+      "title": "Setup: the origin repo",
+      "date": [
+        "2015",
+        "12",
+        "19"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "When beginning to collaborate on a coding project using git, there are a couple of steps to create a local copy of the repo. Assuming you're joining a...",
+      "fileName": "setup-the-origin-repo.md"
+    },
+    {
+      "id": 49,
+      "slug": "cycles-the-introduction",
+      "title": "Cycles: the introduction",
+      "date": [
+        "2015",
+        "12",
+        "02"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "There are three development activities that cycle repeatedly within each other. They can be done as often as you like but we introduce a best practice...",
+      "fileName": "cycles-the-introduction.md"
+    },
+    {
+      "id": 77,
+      "slug": "never-ever-push-to-master",
+      "title": "Never, EVER, push to master",
+      "date": [
+        "2015",
+        "11",
+        "15"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Every repo, after an initial commit, starts by default with one branch and that is named _master_. It's the branch that everyones' branches get merged...",
+      "fileName": "never-ever-push-to-master.md"
+    },
+    {
+      "id": 36,
+      "slug": "branch-off-commit-and-merge-back",
+      "title": "branch off, commit, and merge back",
+      "date": [
+        "2015",
+        "10",
+        "29"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Once your changes have been carefully reviewed and staged, they're ready to be committed to the active branch. Include a brief sentence detailing what...",
+      "fileName": "branch-off-commit-and-merge-back.md"
+    },
+    {
+      "id": 90,
+      "slug": "status-and-diff-and-log",
+      "title": "review with status, diff and log",
+      "date": [
+        "2015",
+        "10",
+        "12"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Once you have staged all the changes you want to make (see [add, remove and reset](http://lifebeyondfife.com/add-and-remove-checkout-and-reset/)), you...",
+      "fileName": "status-and-diff-and-log.md"
+    },
+    {
+      "id": 28,
+      "slug": "add-and-remove-checkout-and-reset",
+      "title": "add and remove (rm), checkout and reset",
+      "date": [
+        "2015",
+        "07",
+        "07"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Git is a stickler for detail, but helpfully so. It tries not to do things unless you specifically tell it to. So if you make changes to the codebase, ...",
+      "fileName": "add-and-remove-checkout-and-reset.md"
+    },
+    {
+      "id": 40,
+      "slug": "checkout-this-branch",
+      "title": "checkout this branch",
+      "date": [
+        "2015",
+        "07",
+        "06"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Welcome to one of the most easily confused git commands there is: `checkout`. Many people use the phrase, “Checkout the code” to mean “retrieve the la...",
+      "fileName": "checkout-this-branch.md"
+    },
+    {
+      "id": 83,
+      "slug": "push-and-pull",
+      "title": "push and pull",
+      "date": [
+        "2015",
+        "06",
+        "07"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "The state of a codebase on a git server, whether an origin repo in a server or on someone's laptop, is represented by one or more _branches_.\n\n \n\nA _c...",
+      "fileName": "push-and-pull.md"
+    },
+    {
+      "id": 69,
+      "slug": "init-clone-and-origin",
+      "title": "init, clone and origin",
+      "date": [
+        "2015",
+        "05",
+        "28"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Hopefully you, and the powers that be at your company, are convinced: git is the future and the way forward. We now begin the journey of understanding...",
+      "fileName": "init-clone-and-origin.md"
+    },
+    {
+      "id": 52,
+      "slug": "end-to-big-bang-commits",
+      "title": "End to Big Bang commits",
+      "date": [
+        "2015",
+        "05",
+        "26"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "No matter how agile we get, or small and isolated we try to make our changes, collaborative development will always leave us stepping on each other's ...",
+      "fileName": "end-to-big-bang-commits.md"
+    },
+    {
+      "id": 31,
+      "slug": "backup-as-often-as-you-like",
+      "title": "Backup as often as you like",
+      "date": [
+        "2015",
+        "05",
+        "24"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mi...",
+      "fileName": "backup-as-often-as-you-like.md"
+    },
+    {
+      "id": 109,
+      "slug": "work-on-multiple-changes-concurrently",
+      "title": "Work on multiple changes concurrently",
+      "date": [
+        "2015",
+        "05",
+        "23"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Some server-client Version Control Systems (VCSs), for instance Perforce, have concepts like shelving where you can isolate changes you make for a bug...",
+      "fileName": "work-on-multiple-changes-concurrently.md"
+    },
+    {
+      "id": 81,
+      "slug": "power-of-the-server-in-your-client",
+      "title": "Power of the server in your client",
+      "date": [
+        "2015",
+        "05",
+        "21"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to v...",
+      "fileName": "power-of-the-server-in-your-client.md"
+    },
+    {
+      "id": 58,
+      "slug": "for-those-not-yet-using-git",
+      "title": "For those not yet using git",
+      "date": [
+        "2015",
+        "05",
+        "20"
+      ],
+      "categories": [
+        "git"
+      ],
+      "tags": [],
+      "excerpt": "Whether you're yet to use the world's favourite new version control system in earnest or not, be under no illusions - it is the future, [git has won](...",
+      "fileName": "for-those-not-yet-using-git.md"
+    },
+    {
+      "id": 62,
+      "slug": "higher-order-functions",
+      "title": "Yo dawg, I heard you like functions",
+      "date": [
+        "2015",
+        "05",
+        "13"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "It's hopefully old news to you all but the [free lunch is over](http://www.gotw.ca/publications/concurrency-ddj.htm) (NB this article is 10 years old)...",
+      "fileName": "higher-order-functions.md"
+    },
+    {
+      "id": 27,
+      "slug": "a-git-workflow-for-beginners",
+      "title": "A git workflow for beginners",
+      "date": [
+        "2014",
+        "12",
+        "07"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "The web is awash with introductions and guides to using git. There's [this visual guide here](http://www.wei-wang.com/ExplainGitWithD3/), [that intera...",
+      "fileName": "a-git-workflow-for-beginners.md"
+    },
+    {
+      "id": 54,
+      "slug": "fantasy-football-2014-15",
+      "title": [
+        "Fantasy Football Team Selector 2014",
+        "15"
+      ],
+      "date": [
+        "2014",
+        "08",
+        "03"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "It's that time of year again to update the data in my English Premier League, Fantasy Football Team Selector spreadsheet.\n\nDownload [team selector for...",
+      "fileName": "fantasy-football-2014-15.md"
+    },
+    {
+      "id": 44,
+      "slug": "converting-xml-to-json",
+      "title": "Converting XML to JSON",
+      "date": [
+        "2014",
+        "07",
+        "12"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "XML and JSON are the two most common generic standards for passing representation state information in web APIs. So when I recently needed to convert ...",
+      "fileName": "converting-xml-to-json.md"
+    },
+    {
+      "id": 34,
+      "slug": "before-you-learn-to-program",
+      "title": "Before you learn to program",
+      "date": [
+        "2014",
+        "04",
+        "30"
+      ],
+      "categories": [
+        "compsci"
+      ],
+      "tags": [],
+      "excerpt": "How should you begin to learn programming? What language should you pick? What are the long term, safe bets you should ensure you pick up so you're re...",
+      "fileName": "before-you-learn-to-program.md"
+    },
+    {
+      "id": 50,
+      "slug": "death-by-a-million-cuts",
+      "title": "Death By A Million Cuts",
+      "date": [
+        "2014",
+        "03",
+        "23"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "Individuals within the software development community are in one of two states. One believes that there is a deep rooted problem of sexism that constr...",
+      "fileName": "death-by-a-million-cuts.md"
+    },
+    {
+      "id": 43,
+      "slug": "converting-bases",
+      "title": "Confusing Christmas with Halloween",
+      "date": [
+        "2014",
+        "02",
+        "28"
+      ],
+      "categories": [
+        "compsci"
+      ],
+      "tags": [],
+      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to t...",
+      "fileName": "converting-bases.md"
+    },
+    {
+      "id": 66,
+      "slug": "how-not-to-do-a-hackathon",
+      "title": "How Not To Do a Hackathon",
+      "date": [
+        "2014",
+        "01",
+        "15"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "I'm a strong believer in learning by doing. I don't think it's necessarily the best way to learn because you invariably learn inefficiently, repeating...",
+      "fileName": "how-not-to-do-a-hackathon.md"
+    },
+    {
+      "id": 95,
+      "slug": "the-10-types-of-people",
+      "title": "The 10 Types of People",
+      "date": [
+        "2013",
+        "12",
+        "28"
+      ],
+      "categories": [
+        "compsci"
+      ],
+      "tags": [],
+      "excerpt": "We’ve now established that knowing the base of a number system is crucial to counting, and that computers exclusively use the binary number system i.e...",
+      "fileName": "the-10-types-of-people.md"
+    },
+    {
+      "id": 47,
+      "slug": "counting",
+      "title": "Counting Like A Computer",
+      "date": [
+        "2013",
+        "11",
+        "30"
+      ],
+      "categories": [
+        "compsci"
+      ],
+      "tags": [],
+      "excerpt": "The journey of learning about Computer Science will start by revisiting a simple lesson first encountered by most as a toddler: how to count. Indeed, ...",
+      "fileName": "counting.md"
+    },
+    {
+      "id": 61,
+      "slug": "helping",
+      "title": [
+        "Helping a stranger (and why you should understand NP",
+        "complete)"
+      ],
+      "date": [
+        "2013",
+        "10",
+        "28"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Earlier this year I helped out a random Hacker News commenter. This was covered in a [recent blog post](http://lifebeyondfife.com/expert-or-generalist...",
+      "fileName": "helping.md"
+    },
+    {
+      "id": 79,
+      "slug": "plain-english1",
+      "title": "Computer Science in Plain English",
+      "date": [
+        "2013",
+        "09",
+        "18"
+      ],
+      "categories": [
+        "compsci"
+      ],
+      "tags": [],
+      "excerpt": "Computer science is a subject dear to my heart and I feel constantly aggrieved by how misunderstood and misreported the discipline is by the media, pr...",
+      "fileName": "plain-english1.md"
+    },
+    {
+      "id": 55,
+      "slug": "fantasy-football",
+      "title": [
+        "Fantasy Football Team Selector 2013",
+        "14"
+      ],
+      "date": [
+        "2013",
+        "08",
+        "03"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "It's that time of year again. Here is the updated Excel Spreadsheet for helping you choose a great Fantasy Football team that obeys all the team, posi...",
+      "fileName": "fantasy-football.md"
+    },
+    {
+      "id": 98,
+      "slug": "the-future-of-education",
+      "title": "The Future of Education",
+      "date": [
+        "2013",
+        "07",
+        "27"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "Education is changing in a big way. Whether you're still in the education system or someday going to have children who will, it's of prime importance ...",
+      "fileName": "the-future-of-education.md"
+    },
+    {
+      "id": 53,
+      "slug": "expert-or-generalist",
+      "title": "Expert or Generalist?",
+      "date": [
+        "2013",
+        "06",
+        "24"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "# \"My Name is Karl, Ich Bin Expert\"\n\n \n\nI don't quote Karl Hungus lightly. When I began this blog back in the summer of 2011 it was because I thought ...",
+      "fileName": "expert-or-generalist.md"
+    },
+    {
+      "id": 48,
+      "slug": "curiosity-killed-the-productivity",
+      "title": "Curiosity Killed The Productivity",
+      "date": [
+        "2013",
+        "05",
+        "08"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "## \"Where is that drip coming from?\"\n\n \n\nRecently while in the staff kitchen, waiting a few minutes for my mug of tea to properly infuse - yes, I am t...",
+      "fileName": "curiosity-killed-the-productivity.md"
+    },
+    {
+      "id": 51,
+      "slug": "designing-your-wedding-ring-with-13-year-old-code",
+      "title": "Designing your wedding ring with 13 year old code",
+      "date": [
+        "2013",
+        "04",
+        "13"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "So often when faced with a programming task, you never truly solve the required problem from scratch. To be completely pedantic you're not writing pro...",
+      "fileName": "designing-your-wedding-ring-with-13-year-old-code.md"
+    },
+    {
+      "id": 110,
+      "slug": "xml-serialisation",
+      "title": "XML Serialisation",
+      "date": [
+        "2013",
+        "03",
+        "11"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "Recently at work I was confronted by a problem requiring data persistance outside of a database - in this case, a saved parameter project file. Though...",
+      "fileName": "xml-serialisation.md"
+    },
+    {
+      "id": 67,
+      "slug": "idea-a-day",
+      "title": "Idea A Day",
+      "date": [
+        "2013",
+        "02",
+        "27"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Perhaps the one constant in becoming an expert in any particular craft is to do it regularly - preferably daily. For some disciplines e.g. skydiving a...",
+      "fileName": "idea-a-day.md"
+    },
+    {
+      "id": 97,
+      "slug": "the-difference-between-mean-and-median",
+      "title": "The Difference Between Mean and Median",
+      "date": [
+        "2013",
+        "01",
+        "20"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "As a non-statistician who every now and then has to understand statistical concepts as if they were second nature, illustrative examples are like gold...",
+      "fileName": "the-difference-between-mean-and-median.md"
+    },
+    {
+      "id": 59,
+      "slug": "from-idea-to-launch-a-website-dissection",
+      "title": "From Idea to Launch: A Website Dissection",
+      "date": [
+        "2013",
+        "01",
+        "06"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "[What's New? MUSIC](http://whatsnewmusic.com/) was recently launched, so for those of you who've already read about the idea, architecture and technol...",
+      "fileName": "from-idea-to-launch-a-website-dissection.md"
+    },
+    {
+      "id": 26,
+      "slug": "98-whats-new-music-html",
+      "title": "What's New? Music",
+      "date": [
+        "2012",
+        "12",
+        "08"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "At the beginning of the year I posed a [conundrum on Twitter](https://twitter.com/LifeBeyondFife/status/167536293658624000). I wanted some way to make...",
+      "fileName": "98-whats-new-music-html.md"
+    },
+    {
+      "id": 25,
+      "slug": "97-web-developer-html",
+      "title": "Becoming a Web Developer",
+      "date": [
+        "2012",
+        "11",
+        "20"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "_\"\\[Stanford's\\] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly \\[think\\]: wha...",
+      "fileName": "97-web-developer-html.md"
+    },
+    {
+      "id": 24,
+      "slug": "96-failure-html",
+      "title": "Failure and Unfair Comparisons",
+      "date": [
+        "2012",
+        "10",
+        "16"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "I have failed. Earlier this spring when I rejoined the world of the working I pledged to continue the blog I started over a year ago but with, natural...",
+      "fileName": "96-failure-html.md"
+    },
+    {
+      "id": 23,
+      "slug": "95-fantasy2-html",
+      "title": [
+        "Fantasy Football League Team Selector 2012",
+        "13"
+      ],
+      "date": [
+        "2012",
+        "08",
+        "07"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "UPDATED VERSION: [Fantasy Football Team Selector 2013-14](http://lifebeyondfife.com/fantasy-football/)\n\nIt's that exciting time of year again. I know,...",
+      "fileName": "95-fantasy2-html.md"
+    },
+    {
+      "id": 78,
+      "slug": "one-year-in",
+      "title": "One year in...",
+      "date": [
+        "2012",
+        "08",
+        "07"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Happy Anniversary! In updating my Fantasy Football League Team Selector Spreadsheet for the new Premier League season, I realised it's been over one y...",
+      "fileName": "one-year-in.md"
+    },
+    {
+      "id": 22,
+      "slug": "93-prism-html",
+      "title": "Modular WPF Interfaces",
+      "date": [
+        "2012",
+        "07",
+        "12"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "Imagine a completely modularised approach to designing user interfaces. For instance, say you design a user interface with one or more bits left blank...",
+      "fileName": "93-prism-html.md"
+    },
+    {
+      "id": 21,
+      "slug": "92-barrier-html",
+      "title": "Barrier To Entry",
+      "date": [
+        "2012",
+        "06",
+        "17"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "The greatest advert for being a software developer today is the low – practically non-existent – barrier to entry. Repeated falling hardware costs, th...",
+      "fileName": "92-barrier-html.md"
+    },
+    {
+      "id": 20,
+      "slug": "91-mojo-html",
+      "title": "How I lost, and regained, my coding mojo",
+      "date": [
+        "2012",
+        "05",
+        "05"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "For as long as I can remember I've been programming and I never seriously thought about doing anything else for a living. But becoming and _remaining_...",
+      "fileName": "91-mojo-html.md"
+    },
+    {
+      "id": 19,
+      "slug": "90-new-music-part-one-html",
+      "title": [
+        "New Music",
+        "Part I"
+      ],
+      "date": [
+        "2012",
+        "04",
+        "18"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Welcome back guys! Wow, it's really hard to get code out of the door when you've got to work full-time. Still, no matter, here is how I got on with my...",
+      "fileName": "90-new-music-part-one-html.md"
+    },
+    {
+      "id": 18,
+      "slug": "89-man-at-work-html",
+      "title": "/Sabbatical",
+      "date": [
+        "2012",
+        "04",
+        "06"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Just so you know, I am still alive...\n\n \n\n \n\n...but the sabbatical finally had to come to an end. I'm very excited to enter the world of work once mor...",
+      "fileName": "89-man-at-work-html.md"
+    },
+    {
+      "id": 17,
+      "slug": "88-restful-html",
+      "title": "A Restful Weekend",
+      "date": [
+        "2012",
+        "02",
+        "20"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat ...",
+      "fileName": "88-restful-html.md"
+    },
+    {
+      "id": 16,
+      "slug": "87-beauty-html",
+      "title": "Beauty in Mathematics",
+      "date": [
+        "2012",
+        "02",
+        "06"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Many people look at the beauty in nature and wonder how it all could have possibly been created. You could also look in awe at the Sistine Chapel and ...",
+      "fileName": "87-beauty-html.md"
+    },
+    {
+      "id": 32,
+      "slug": "banking-isnt-evil",
+      "title": "Banking Isn't Evil",
+      "date": [
+        "2012",
+        "01",
+        "24"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "I truly believe that banks, or any institution that exists by making trades based on [financial instruments](http://en.wikipedia.org/wiki/Financial_in...",
+      "fileName": "banking-isnt-evil.md"
+    },
+    {
+      "id": 15,
+      "slug": "85-university-challenge-html",
+      "title": "What University Challenge considers Computer Science",
+      "date": [
+        "2012",
+        "01",
+        "12"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Happy New Year - 2012 is the [year of code](http://codeyear.com/)! The [ICT curriculum](http://www.bbc.co.uk/news/education-16493929) in the UK is to ...",
+      "fileName": "85-university-challenge-html.md"
+    },
+    {
+      "id": 14,
+      "slug": "84-remote-dev-teams-html",
+      "title": "Developing in Remote Teams",
+      "date": [
+        "2011",
+        "12",
+        "16"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "I don't need to tell you just how revolutionary the internet and other hi-tech telecoms advances have been in changing the way we live and work. Indee...",
+      "fileName": "84-remote-dev-teams-html.md"
+    },
+    {
+      "id": 13,
+      "slug": "83-e-to-the-pi-or-pi-to-the-e-html",
+      "title": "max(e^pi, pi^e)?",
+      "date": [
+        "2011",
+        "12",
+        "06"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Greetings new blog readers and functional programming aficionados. The theme of the content here is rather varied so you're unlikely to see any more f...",
+      "fileName": "83-e-to-the-pi-or-pi-to-the-e-html.md"
+    },
+    {
+      "id": 12,
+      "slug": "82-f-sharp-html",
+      "title": "Functional Programming For Object Oriented Programmers",
+      "date": [
+        "2011",
+        "11",
+        "24"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "After recently remarking about how I finally \"got\" functional programming I was asked by one of my millions of [twitter followers](https://twitter.com...",
+      "fileName": "82-f-sharp-html.md"
+    },
+    {
+      "id": 11,
+      "slug": "81-real-games-html",
+      "title": "Real Life and Video Games",
+      "date": [
+        "2011",
+        "11",
+        "16"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "At university, the \"What do you study?\" ice-breaker didn't really work so well when your answer was \"Computer Science\". However, a historian friend of...",
+      "fileName": "81-real-games-html.md"
+    },
+    {
+      "id": 10,
+      "slug": "80-async-await-html",
+      "title": "Caveats on actually using async and await",
+      "date": [
+        "2011",
+        "10",
+        "19"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "With the next release of .Net making a big push for parallelism-for-everyone-made-easy, I thought I'd take this opportunity to see if it really is as ...",
+      "fileName": "80-async-await-html.md"
+    },
+    {
+      "id": 9,
+      "slug": "79-ironpython-wpf-html",
+      "title": "Simple WPF IronPython Application",
+      "date": [
+        "2011",
+        "10",
+        "17"
+      ],
+      "categories": [
+        "coding"
+      ],
+      "tags": [],
+      "excerpt": "A project I recently started working on required me to install Python on my development environment - something I've not relished doing in the past. B...",
+      "fileName": "79-ironpython-wpf-html.md"
+    },
+    {
+      "id": 8,
+      "slug": "78-amdahls-law-html",
+      "title": "Environmentalism and Amdahl's Law for the Masses",
+      "date": [
+        "2011",
+        "10",
+        "12"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "Though Life Beyond Fife is primarily a technology blog this article is for everyone. Absolutely all. I want every single person in the world who is th...",
+      "fileName": "78-amdahls-law-html.md"
+    },
+    {
+      "id": 7,
+      "slug": "77-d-lighted-html",
+      "title": [
+        "D",
+        "Lighted: The lightweight, multi",
+        "platform database tool"
+      ],
+      "date": [
+        "2011",
+        "10",
+        "06"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "D-Lighted is a free, open-source Windows database tool that allows users to connect to multiple different database platforms all from within the same ...",
+      "fileName": "77-d-lighted-html.md"
+    },
+    {
+      "id": 6,
+      "slug": "76-in-house-html",
+      "title": "Carpenters make tables and chairs, not hammers and saws",
+      "date": [
+        "2011",
+        "09",
+        "16"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "Ok, yes, I know it's actually furniture makers who make tables and chairs but the title is long enough as it is. Just consider the point for a second ...",
+      "fileName": "76-in-house-html.md"
+    },
+    {
+      "id": 5,
+      "slug": "75-agile-html",
+      "title": "Addenda for Adopting Agile Development",
+      "date": [
+        "2011",
+        "08",
+        "12"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "Software Development is a strange profession. Coders are often promoted out of development in their thirties at the same time as new recruits are comi...",
+      "fileName": "75-agile-html.md"
+    },
+    {
+      "id": 4,
+      "slug": "74-fantasy-football-html",
+      "title": "Fantasy Football Team Selector",
+      "date": [
+        "2011",
+        "07",
+        "27"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "The start of the new football season in England is upon us and for some this means careful deliberation over their [Fantasy Football League](http://fa...",
+      "fileName": "74-fantasy-football-html.md"
+    },
+    {
+      "id": 3,
+      "slug": "73-exhell-html",
+      "title": "OLE Automation Date Converter",
+      "date": [
+        "2011",
+        "07",
+        "25"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "Have you ever had problems with numbers somewhere around 40,000 claiming to be dates? It could well be that you need a tool to help you quickly conver...",
+      "fileName": "73-exhell-html.md"
+    },
+    {
+      "id": 2,
+      "slug": "72-brown-field-html",
+      "title": "Developing in the Brown Field",
+      "date": [
+        "2011",
+        "07",
+        "22"
+      ],
+      "categories": [
+        "essays"
+      ],
+      "tags": [],
+      "excerpt": "A friend and former colleague of mine told me after leaving the company we had both worked at,\n\n\"I never want to work for a big company again.\"\n\nI cou...",
+      "fileName": "72-brown-field-html.md"
+    },
+    {
+      "id": 1,
+      "slug": "70-sabbatical-html",
+      "title": "Sabbatical",
+      "date": [
+        "2011",
+        "07",
+        "18"
+      ],
+      "categories": [
+        "follies"
+      ],
+      "tags": [],
+      "excerpt": "![](/images/sabbatical.jpg)\n\n\n\n \n\n**\"Hey, I am not unemployed I'm on sabbatical!\"**...",
+      "fileName": "70-sabbatical-html.md"
+    }
+  ],
+  "categories": [
+    {
+      "name": "follies",
+      "count": 23,
+      "slug": "follies"
+    },
+    {
+      "name": "essays",
+      "count": 18,
+      "slug": "essays"
+    },
+    {
+      "name": "coding",
+      "count": 10,
+      "slug": "coding"
+    },
+    {
+      "name": "git",
+      "count": 19,
+      "slug": "git"
+    },
+    {
+      "name": "management",
+      "count": 8,
+      "slug": "management"
+    },
+    {
+      "name": "fitness",
+      "count": 27,
+      "slug": "fitness"
+    },
+    {
+      "name": "compsci",
+      "count": 5,
+      "slug": "compsci"
+    }
+  ],
+  "tags": [],
+  "lastUpdated": "2025-03-29T19:37:17.555Z"
+}

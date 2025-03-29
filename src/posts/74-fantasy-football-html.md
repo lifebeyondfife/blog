@@ -29,17 +29,51 @@ Predicting the future is out and it's open to interpretation how an up-and-comin
 
 But here is where the science has to come back and reign in expectations. Remember how I said CSPs are problems so complicated that even the most powerful computers in the world can't solve them? Even choosing 15 players, the right 15, is something that is beyond the capabilities of computing.
 
-Before attempting to solve any CSP it's handy to know roughly what size it is. Thankfully there's a simple mathematical formula. For a problem with **n** unknown variables (the 15 positions in our team) with a domain of **d** possible choices (the list of all English Premier League players) we can work out how many possible combinations there are by calculating **dn** i.e. "d to the power of n". That list of players is a few hundred long so lets simplify it and say we know who we think the best 50 or so are. That leaves 5015, which if for the sake of argument we assume we can consider 1,000 combinations a second, will still take 967 billion years to go through them all.
+Before attempting to solve any CSP it's handy to know roughly what size it is. Thankfully there's a simple mathematical formula. For a problem with **n** unknown variables (the 15 positions in our team) with a domain of **d** possible choices (the list of all English Premier League players) we can work out how many possible combinations there are by calculating **d^n** i.e. "d to the power of n". That list of players is a few hundred long so lets simplify it and say we know who we think the best 50 or so are. That leaves 5015, which if for the sake of argument we assume we can consider 1,000 combinations a second, will still take 967 billion years to go through them all.
 
 Using Excel with a simple problem representation means that we'll never be able to try all the combinations. Can we at least find a _good_ team? Thankfully the answer is yes. Even without using the proper constraint programming tools we can do a couple of neat tricks in Excel to get some good mileage.
 
 One thing we can do is prioritise the players so we consider the ones we're most likely to want to pick first e.g. order the players by how many points they got last season, or by what their points per price is. In the artificial intelligence trade this is called using an ordering heuristic. Players who scored the most points are generally the most expensive so solutions found using this heuristic tend to be skewed with big-ticket superstars alongside over-achieving squad players, for example:
 
-`**Nani        Man Utd      198      10       MF** **Adam        Liverpool    192      9        MF** **Malouda     Chelsea      186      10.5     MF** **Tevez       Man City     185      12       FW** **Baines      Everton      178      8        DF** **Kuyt        Liverpool    177      10       MF** **Al-Habsi    Wigan        125      4.5      GK** **Alcaraz     Wigan        87       4.5      DF** **Mignolet    Sunderland   83       4.5      GK** **Foley       Wolves       81       4.5      DF** **Salgado     Blackburn    80       4.5      DF** **Simpson     Newcastle    70       4        DF** **Henry       Wolves       59       4.5      MF** **Best        Newcastle    51       5        FW** **Ranger      Newcastle    27       4.5      FW** **Total:                   1779     100**`
+```
+Nani        Man Utd      198      10       MF
+Adam        Liverpool    192      9        MF
+Malouda     Chelsea      186      10.5     MF
+Tevez       Man City     185      12       FW
+Baines      Everton      178      8        DF
+Kuyt        Liverpool    177      10       MF
+Al-Habsi    Wigan        125      4.5      GK
+Alcaraz     Wigan        87       4.5      DF
+Mignolet    Sunderland   83       4.5      GK
+Foley       Wolves       81       4.5      DF
+Salgado     Blackburn    80       4.5      DF
+Simpson     Newcastle    70       4        DF
+Henry       Wolves       59       4.5      MF
+Best        Newcastle    51       5        FW
+Ranger      Newcastle    27       4.5      FW
+Total:                   1779     100
+```
 
 If we use the best value heuristic we're more likely to see teams with less variation in price, only a couple of expensive players and more likely a bigger overall points haul, for example:
 
-`**Al-Habsi    Wigan        125      4.5      GK** **Hughes      Fulham       129      5        DF** **Robinson    Blackburn    127      5        GK** **Bardsley    Sunderland   123      5        DF** **Johnson     Wolves       120      5        DF** **Hangeland   Fulham       154      6.5      DF** **Huth        Stoke        138      6        DF** **Odemwingie  West Brom    171      7.5      FW** **N'Zogbia    Wigan        167      7.5      MF** **Jarvis      Wolves       133      6        MF** **Barton      Newcastle    131      6        MF** **Adam        Liverpool    192      9        MF** **Davies K    Bolton       132      6.5      FW** **Nani        Man Utd      198      10       MF** **Berbatov    Man Utd      176      9.5      FW** **Total:                   2216     99**`
+```
+Al-Habsi    Wigan        125      4.5      GK
+Hughes      Fulham       129      5        DF
+Robinson    Blackburn    127      5        GK
+Bardsley    Sunderland   123      5        DF
+Johnson     Wolves       120      5        DF
+Hangeland   Fulham       154      6.5      DF
+Huth        Stoke        138      6        DF
+Odemwingie  West Brom    171      7.5      FW
+N'Zogbia    Wigan        167      7.5      MF
+Jarvis      Wolves       133      6        MF
+Barton      Newcastle    131      6        MF
+Adam        Liverpool    192      9        MF
+Davies K    Bolton       132      6.5      FW
+Nani        Man Utd      198      10       MF
+Berbatov    Man Utd      176      9.5      FW
+Total:                   2216     99
+```
 
 On the Excel spreadsheet you'll find two sheets with the players pre-sorted for the above two heurisitics. Depending on how long you're prepared to wait you can change how many players Excel should consider by changing the number next to the "Size of search" cell. The more you choose, the longer it takes to move through the list and find different teams. But choosing too few players could generate a problem too complicated to ever find even one valid team. Regardless, a bit of experimentation should provide promising results.
 
