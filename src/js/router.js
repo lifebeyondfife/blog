@@ -109,7 +109,7 @@ function renderCategoryContent(category, contentArea) {
       }
       
       let postsHTML = '';
-      posts.sort((a, b) => new Date(b.date) - new Date(a.date)).forEach(post => {
+      posts.sort((a, b) => new Date(a.date) - new Date(b.date)).forEach(post => {
         const postDate = new Date(post.date);
         const formattedDate = formatDate(postDate);
         
