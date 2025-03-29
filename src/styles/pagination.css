@@ -1,0 +1,136 @@
+/* Pagination styles */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-md);
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.pagination-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: var(--secondary-color);
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.pagination-button.prev-page i {
+  margin-right: var(--spacing-xs);
+}
+
+.pagination-button.next-page i {
+  margin-left: var(--spacing-xs);
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+  margin: 0 var(--spacing-md);
+}
+
+.page-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-number:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.page-number.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.ellipsis {
+  margin: 0 4px;
+  color: var(--light-text);
+}
+
+.page-indicator {
+  margin: 0 var(--spacing-md);
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+/* Loading state styles */
+.loading-posts {
+  text-align: center;
+  padding: var(--spacing-xl);
+  color: var(--light-text);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .page-numbers {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .pagination-button {
+    order: 2;
+  }
+  
+  .page-indicator {
+    display: none;
+  }
+  
+  .page-number {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-number {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+    margin: 0 2px;
+  }
+  
+  .pagination-button {
+    font-size: 0.9rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}
