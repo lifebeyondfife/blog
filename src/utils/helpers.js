@@ -14,7 +14,7 @@ export function formatDate(date) {
  * @param {number} wait - Milliseconds to wait
  * @returns {Function} Debounced function
  */
-export function debounce(func, wait) {
+function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
     const later = () => {
