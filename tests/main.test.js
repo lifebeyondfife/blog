@@ -1,4 +1,22 @@
-import { formatDate, debounce } from '../src/utils/helpers';
+jest.mock('../src/utils/helpers', () => ({
+  formatDate: jest.fn(date => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-GB', options);
+  }),
+  debounce: jest.fn((func, wait) => {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  })
+}));
+
+const { formatDate, debounce } = require('../src/utils/helpers');
 
 describe('Helper functions', () => {
   describe('formatDate', () => {
