@@ -1,0 +1,60 @@
+name: Build and Deploy Blog
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build metadata
+        run: npm run build:metadata
+
+      - name: Build project
+        run: npm run build
+
+      - name: Run tests
+        run: npm test
+
+      - name: Configure AWS credentials
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Deploy to S3
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          # Empty the bucket first (but keep the bucket itself)
+          aws s3 rm s3://blog.chezmcdonald.info --recursive
+
+          # Copy the built files to S3
+          aws s3 cp dist/ s3://blog.chezmcdonald.info --recursive
+
+      - name: Invalidate CloudFront cache
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        run: |
+          # Get the CloudFront distribution ID
+          DISTRIBUTION_ID=$(aws cloudfront list-distributions --query "DistributionList.Items[?Aliases.Items[?contains(@, 'blog.chezmcdonald.info')]].Id" --output text)
+
+          # Invalidate the cache
+          aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths "/*"

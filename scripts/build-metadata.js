@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { marked } = require('marked');
 
 /**
  * Parse front matter metadata from Markdown content
