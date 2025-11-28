@@ -12,7 +12,7 @@ The site must achieve near-perfect scores (close to 100) across all Google PageS
 
 ## Technology Stack
 
-- **Framework:** NextJS 14+ with App Router
+- **Framework:** NextJS 16.0.5 with App Router
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Markdown Processing:** remark and rehype ecosystem
@@ -122,10 +122,10 @@ The `@tailwindcss/typography` plugin provides sensible default styling for rende
 
 ```typescript
 export const SITE_CONFIG = {
-  title: 'Blog Title',
-  description: 'Blog description for SEO purposes',
-  author: 'Author Name',
-  siteUrl: 'https://example.com',
+  title: 'Life Beyond Fife',
+  description: 'Engineering from the glorious Kingdom',
+  author: 'Iain McDonald',
+  siteUrl: 'https://blog.chezmcdonald.info',
   postsPerPage: 5,
 } as const;
 ```
@@ -140,9 +140,8 @@ Each Markdown file in `content/posts/` must include YAML frontmatter with the fo
 ---
 title: "Post Title"
 date: "2024-01-15"
-category:
-  - "technology"
-tags:
+category: "technology"
+tags: # Optional
   - typescript
   - nextjs
   - web-development
@@ -424,7 +423,7 @@ import { getPostBySlug, generateStaticParams } from '@/lib/posts';
 import { notFound } from 'next/navigation';
 
 interface PageProps {
-  params: { category: string; slug: string };
+  params: Promise<{ category: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -432,10 +431,12 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: PageProps) {
+  const { category, slug } = await params; // Must await params
   // Return title, description, openGraph metadata
 }
 
 export default async function PostPage({ params }: PageProps) {
+  const { category, slug } = await params; // Must await params
   const post = await getPostBySlug(params.category, params.slug);
   if (!post) notFound();
   // Render post content
