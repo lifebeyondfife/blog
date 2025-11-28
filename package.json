@@ -1,0 +1,44 @@
+{
+  "name": "nextjs-static-blog",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "npm run generate",
+    "generate": "npm run generate:metadata && npm run generate:images && npm run generate:redirects",
+    "generate:metadata": "ts-node scripts/generate-metadata.ts",
+    "generate:images": "ts-node scripts/optimise-images.ts",
+    "generate:redirects": "ts-node scripts/generate-redirects.ts",
+    "build": "next build",
+    "postbuild": "npm run generate:sitemap",
+    "generate:sitemap": "ts-node scripts/generate-sitemap.ts",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "^16.0.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rehype-highlight": "^7.0.2",
+    "rehype-stringify": "^10.0.1",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.5",
+    "postcss": "^8.5.6",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.1.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
