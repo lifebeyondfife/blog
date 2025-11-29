@@ -84,6 +84,7 @@ export const CODE_THEME = {
 
 export const POSTS_DIRECTORY = 'content/posts';
 export const IMAGES_DIRECTORY = 'public/images';
+export const EXCERPT_WORD_COUNT = 100;
 
 export const ERROR_MESSAGES = {
   postNotFound: 'Post not found',

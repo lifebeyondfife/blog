@@ -1,0 +1,1164 @@
+{
+  "posts": [
+    {
+      "slug": "why-5-whys-isnt-enough",
+      "category": "management",
+      "title": "Why 5 Whys isn&#8217;t enough",
+      "date": "2024-12-29",
+      "excerpt": "5 Whys is a prevalent engineering process in a modern tech company. When your company has operational incidents (and even the biggest and best ones do), 5 Whys is there to find the root cause, which in turn yields the next steps to make sure those incidents don’t happen again. I could tell the engineering culture of the company needed work when an internal team had an outage related to an expired SSL cert. It wasn’t the outage that made me concerned; it was the attitude of the team who had the outage. “What steps have you taken to make...",
+      "tags": [],
+      "readingTime": 6
+    },
+    {
+      "slug": "convincing-or-instructing",
+      "category": "management",
+      "title": "Convincing or Instructing",
+      "date": "2024-12-26",
+      "excerpt": "To convince someone, tell them why, then how, then what, in that order. To give an instruction, tell someone what, and time permitting, consider sharing the how, and why, in a reverse of the previous sequence. Simon Sinek’s insightful Start With Why TED Talk took about 15 minutes to change how I would give all presentations forever after. Intrisically it’s known that you have to share the motivation of why anyone should care about what you have to say. But based on the evidence of so many terrible talks you’ve both attended, and presented yourself, you know how easy it...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "managing-expectations",
+      "category": "management",
+      "title": "Managing Expectations",
+      "date": "2024-12-14",
+      "excerpt": "“This team isn’t delivering enough.” You’ve had a fully funded team of engineers working on a product for years. It has fundamental issues with quality and completeness, and still isn’t integrated with the core platform seamlessly. As time has gone on, you’re getting further behind, not closer. There is either a problem with execution against the strategy, or with the strategy itself. You reflect. You’re sure that the quality of the engineers is not the issue. The drive and work ethic is there, and they collaborate effectively. Everyone understands the plan, and everytime you question the decision making of the...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "stop-saying-tech-debt",
+      "category": "essays",
+      "title": "Stop saying Tech Debt",
+      "date": "2023-07-23",
+      "excerpt": "If you gave two options to someone who cared about business outcomes, about what they could have, which do you think they’d choose? new product feature or reduce technical debt fix a bug or reduce technical debt improved sales channel or reduce technical debt more accessible UI or reduce technical debt increased performance or reduce technical debt Technical debt, or more simply tech debt, is the losing horse in every race because only one group cares about the problems caused by it: the engineers on the team supporting the product. A clean, well architected system is easier to reason with,...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "what-are-your-engineering-culture-values",
+      "category": "management",
+      "title": "What are your engineering culture values?",
+      "date": "2022-11-20",
+      "excerpt": "Perform an activity frequently enough, and you will start to see patterns. After being involved in the process of creating software for two decades, I’ve decided to curate a living document of the high level patterns which are most applicable for how to build and maintain software well. Before beginning, it’s crucial to make a statement which is obvious in retrospect: not all of these patterns are equally applicable to companies of differing maturity e.g. a one person startup is a vastly different animal to a 50,000 person megacorp. These observations most apply to mid-level startups, or large companies that...",
+      "tags": [],
+      "readingTime": 7
+    },
+    {
+      "slug": "hiring-advice-for-bootcamp-graduates",
+      "category": "essays",
+      "title": "Hiring advice for bootcamp graduates",
+      "date": "2021-08-12",
+      "excerpt": "I'm currently trying to hire as many software engineers as I can, and more and more I'm seeing applications from candidates who retrained via an intense, engineering bootcamp. I want to hire every single one of them. In general whenever I'm interviewing someone I want them to succeed regardless, but there's a lack of diversity of thought in tech and when I see someone with a background in marketing, customer support, or even a short order cook, I get excited about what they could teach me. Anecdotally, I see the tech enthusiastic clique who started coding when they were a...",
+      "tags": [],
+      "readingTime": 9
+    },
+    {
+      "slug": "manager-readme-2021",
+      "category": "management",
+      "title": "Manager README 2021",
+      "date": "2021-07-20",
+      "excerpt": "It has been a while since I wrote my first manager README. The idea is simple: help people who are going to be reporting to you understand the way you think, what you believe, and what you expect. For this one, I'm going to write it without looking at my previous attempt to see how my worldview has changed in the intervening three years. Team The primary responsibility of an engineering manager is to be accountable for the engineering delivery of the team. That output must be high quality, timely, and delivered in a way that is sustainable. This is...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "corporate-values-as-memes",
+      "category": "essays",
+      "title": "Corporate values as memes",
+      "date": "2021-02-14",
+      "excerpt": "![](/images/corporate-value-meme.jpg) This is perhaps only my second, and hopefully final, time where I play futurist. I'm going to argue that memes are the future of corporate values. You know, those pithy, untruthful, and ignored statements that the senior leadership of your company claim defines their identity and culture. I want to replace them with the inane nonsense that you see across imgur, 9-gag, and icanhascheezburger. I'll show that this brave new world of corporate values as memes has clear benefits and should be embraced by providing real examples of how this amazing future could look. But first lets take a...",
+      "tags": [],
+      "readingTime": 8
+    },
+    {
+      "slug": "ready-to-start",
+      "category": "fitness",
+      "title": "Ready to start",
+      "date": "2020-12-27",
+      "excerpt": "Thank you for joining me on this journey of learning the how and why of becoming fit, specifically concentrating on strength training. We learned that strength training is the basis for life-long fitness that will amplify your other fitness pursuits beyond strength. Fitness brings improved health, resilience, and confidence in yourself. It will reward you as you grow older by making your life easier and more enjoyable. You learned that it's a demanding prospect that will require you to re-evaluate your priorities and make time for training that you may not immediately have. It will be worth it. You learned...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "plateau",
+      "category": "fitness",
+      "title": "Plateau",
+      "date": "2020-12-26",
+      "excerpt": "The introduction to why getting strong is hard began with the idea that the beginning of the journey toward strength is easy. No matter what you do, you will almost certainly get good results, which leads to internalising incorrect conclusions. You only get to be a novice once. By the time you become an intermediate lifter you will experience many occasions where the rule determining your progression is unmet. For example, say you need to lift a certain weight successfully 10 times in a set to raise the amount you lift next time by 5%. Your progressive training will come...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "move-outwards-from-the-core",
+      "category": "fitness",
+      "title": "Move outwards from the core",
+      "date": "2020-12-25",
+      "excerpt": "A tree touches the world with its leaves and ever-burrowing roots, the edges of this complex organism supported and fueled by the tree trunk. Likewise the blood and central nervous system reaching the tips of your fingers and toes are connected all the way through to the heart and brain. Strength begins in the core of the body. There's a strange body ideal for men to have big arms and ripped abs, but those are not achieved by just curling dumbbells and doing situps. Abs come not so much from exercises for the stomach but from core strength and, mainly,...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "warming-up-and-down",
+      "category": "fitness",
+      "title": "Warming up and down",
+      "date": "2020-12-25",
+      "excerpt": "You don't just walk up to the biggest weight you've ever seen in your life and try to pick it up. Your body must be prepared for the stress. Mostly, this will come down to the body being warm, and muscles forewarned a little. Preparation on the day is also intrinsically tied to your body's flexibility; are you actually even supple enough to perform the lift you want to? Muscles can stretch and contract according to how they're used. If your exercises do not provide a full range of motion i.e. extending and contracting to the full, then you run...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "ratio-of-lifts",
+      "category": "fitness",
+      "title": "Ratio of lifts",
+      "date": "2020-12-05",
+      "excerpt": "I remember watching a comedy lifting video on YouTube that had a line in it like, \"No one likes 'Leg Day'. 'Leg Day' is tough. Your last 'Leg Day' also happened to be your first 'Leg Day'.\" For those not yet well versed enough in the lifting sub-culture to get the joke, a lot of people who lift don't like squats, so don't do squats. They'll do some exercises every now and again to make sure their small pins are just about powerful enough to carry their enlarged torso and arms. If you've been sold on the idea of making...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "basis-of-strength",
+      "category": "fitness",
+      "title": "Basis of strength",
+      "date": "2020-11-29",
+      "excerpt": "Moving from aerobic based exercises to anaerobic means not only changing the exercises themselves, but also how you approach and rest between exercises. The clue is in the etymology of the word: aerobic means 'with air'. Anaerobic exercises i.e. strength building weight lifting, conversely means 'without air'. You are asking the body to move things after you've expended all the oxygen your blood or lungs can store or provide. When training to run, cycle, swim etc. novices quickly hit a wall where their lungs are frantically trying to keep the body supplied with enough oxygen. If you're performing a power...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "technique-is-key",
+      "category": "fitness",
+      "title": "Technique is key",
+      "date": "2020-11-28",
+      "excerpt": "There is no new lesson in this chapter, merely a reiteration of two previously made points. In the beginning your body will still progress even if you lift incorrectly. Some lifters in your gym will likely be using poor technique. This lesson cannot be stressed enough: good technique is of the most paramount importance. As we've just covered, lifts should be done with good form which means finding out what good form is. I have seen stronger lifters than myself in the gym resting the bar on the wrong part of their traps when squatting, and doing the most lazy...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "compound-lifts",
+      "category": "fitness",
+      "title": "Compound lifts",
+      "date": "2020-11-22",
+      "excerpt": "The key to strength is in making compound lifts the basis of your training routine. Let's break the term down. A lift is a strength exercise where you move a heavy weight from a stationary position to an elevated position, and back again. A compound lift is one which incorporates multiple different movements. For example, a classic example of a simple lift is a bicep curl: a dumbbell is held in the hand with the weight resting stationary at the side of the body with arm perfectly straight; the lift comes from bending the elbow so the forearm moves toward...",
+      "tags": [],
+      "readingTime": 7
+    },
+    {
+      "slug": "why-getting-strong-is-hard-part-iii",
+      "category": "fitness",
+      "title": "Why getting strong is hard – Part III",
+      "date": "2020-11-12",
+      "excerpt": "I remember growing up when I had some small dumbbells around the house. They might have been 5kg or even 10kg dumbbells, the memory is hazy. I think they were originally my mum's. I went to boxing training for a few weeks at university, and as part of a college football squad I had a routine of some body weight exercises: press ups, sit ups, planks etc. From all that I thought I knew some good exercises to increase my strength. There's such a difference between exercising at home or in a park, compared to going to a gym with...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "why-getting-strong-is-hard-part-ii",
+      "category": "fitness",
+      "title": "Why getting strong is hard – Part II",
+      "date": "2020-11-01",
+      "excerpt": "Before you take a single decision in how you're going to train for becoming strong, you need to understand the difference between free weights and fixed resistance machines. And you need to run a mile away from the latter. You've likely never heard of Arthur Jones) but you will be aware of the effect he's had on the fitness industry. Walk into any gym in any town or city and you will expect to see an array of bulky, expensive mechanical contraptions that a human can insert themself into to perform a specific, restricted body movement. Arthur Jones invented the...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "why-getting-strong-is-hard-part-i",
+      "category": "fitness",
+      "title": "Why getting strong is hard – Part I",
+      "date": "2020-10-31",
+      "excerpt": "Choosing to concentrate on strength training is a solid decision. But it's a hard one because for most people it's not like anything they've done before. Even for those familiar with press-ups (body weight exercises) or dumbbell curls, you have to open your mind to many new lessons, and unlearn or defend against incorrect ways of exercising. These next few posts will highlight traps it's easy to fall into when learning and training to become stronger. At present I'm an intermediate weightlifter. This is where I'll always be – I don't have the time nor inclination to become seriously strong....",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "food",
+      "category": "fitness",
+      "title": "Food",
+      "date": "2020-10-20",
+      "excerpt": "The food that you eat, which fuels your exercise and aids your recovery, is every bit as important as the training routine you execute. As well as being just as important, the subject is just as big. The advice I give on food, however, will be limited just to this single post. Eat 1-2 grams of protein per kilogram of weight per day when strength training. Some say 1g per kg, some say 1g per lb (pound). Regardless of how much you eat, most people who aren't used to building muscle do not typically eat enough protein. There are many...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "get-strong-first",
+      "category": "fitness",
+      "title": "Get strong first",
+      "date": "2020-10-10",
+      "excerpt": "Having learned about the different fitness types, and about to make a change for life, you may have ideas about the type of body or changes you want to make. Perhaps a large part of your exercise routine will include long walks, or gentle jogs. Maybe it could include a ten minute punishing routine on a bike or rowing machine in the gym. I'm going to ask you to reconsider that choice before starting, and focus on one specific fitness type first. Strength. When we looked at the archetype strong man, I chose Mariusz. I could have chosen any strong...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "preparation-for-training",
+      "category": "fitness",
+      "title": "Preparation for training",
+      "date": "2020-09-28",
+      "excerpt": "We’ve already talked about how training is stress that the body can recover from. In order to make the gain from each session as impactful as possible, you need to prepare well. Preparation helps fuel your workout, and equally important, preparation for the next workout in the form of recovery also needs to be understood and practiced well. Food As far as workouts are concerned, food is fuel. Carbohydrates, especially complex carbohydrates, provide the energy needed for a workout. Sweet potato, wholewheat pasta, or wholewheat rice are good sources. Protein is good fuel too. White fish, shellfish, and chicken are...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "increase-calories",
+      "category": "fitness",
+      "title": "Increase calories",
+      "date": "2020-09-21",
+      "excerpt": "Conventional wisdom says that getting fit is losing fat. Losing fat requires more exercise, and fewer calories. What you’ve just learned in the previous posts though, is that fitness is more complex than just your weight on the scales. There are many other measures of fitness and achieving progress in some avenues may require not eating less, but instead eating more. To explain a situation where eating more calories could be beneficial, let’s look at a business analogy. When you purchase stock in a company, you’re taking a bigger risk than putting money in a bank and getting whatever interest...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "the-body-as-an-engine",
+      "category": "fitness",
+      "title": "The body as an engine",
+      "date": "2020-09-15",
+      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: \\\\\\[\\\\partial fat = calories - exercise\\\\\\]...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "fitness-types",
+      "category": "fitness",
+      "title": "Fitness types",
+      "date": "2020-09-13",
+      "excerpt": "Fitness means different things to different people. Fitness means different things to different sports. The physical capabilities of humans are breathtaking in terms of the kind of achievements that are possible. For running, humans have completed 100m in under 10 seconds, one mile in under 4 minutes, a marathon in under 2 hours. Polar explorers, mountaineers, free divers etc. survive inspite of deadly conditions to reach famous global boundaries. Various other disciplines see fellow humans throw, jump, kick, and lift more and further than we've ever seen. The world's best in one category could be a rank amateur in another...",
+      "tags": [],
+      "readingTime": 6
+    },
+    {
+      "slug": "systems-not-goals",
+      "category": "fitness",
+      "title": "Systems not goals",
+      "date": "2020-09-12",
+      "excerpt": "You set yourself a fitness goal. This isn't the first time, you've set many in the past. Some of which you've made, some you're embarrassed to repeat because of how you never really got started. But you're going to go again, and in your head, you have an idea about what you could be capable of achieving; what you think will make you happy to say, \"I reached that goal!\" Regardless of what the goal is, run a marathon, complete an iron man, or tough mudder, bench press 80kg etc. it's going to take a while before you get there....",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "body-image",
+      "category": "fitness",
+      "title": "Body image",
+      "date": "2020-01-29",
+      "excerpt": "Up to now I've asked you to consider the reason for getting fit on the pure physical benefits: the increased ability to be active for longer, the energy and endorphins you will have in store to attack your daily tasks and projects. The way you might look and how others will judge you is not something I've detailed here, but all of us can be chest beating gorillas or displaying peacocks at times. Our appearance is important and the clothes, shoes, hair, and ink we use to adorn start with the physical frame of our bodies. Begin by understanding the...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "motivation",
+      "category": "fitness",
+      "title": "Motivation",
+      "date": "2020-01-21",
+      "excerpt": "Anthony Bourdain has summed up the key problem of motivation in a single, relatable quote: > \"I understand there's a guy inside me who wants to lay in bed, smoke weed all day, and watch cartoons and old movies. My whole life is a series of stratagems to avoid, and outwit, that guy.\" Motivation is a hard problem and everyone brings a different tool to the party. Some tell their friends about their plans and hope that social shame or celebration will spur them on. Some go down the Instagram influencer route and follow and surround themselves with examples of...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "stress",
+      "category": "fitness",
+      "title": "Stress",
+      "date": "2020-01-12",
+      "excerpt": "Stress has a negative image. It's generally seen as a bad thing and something to be avoided, but stress is how we improve. The first time we try something completely new, we cannot expect to be good or even competent, yet that act of starting is the first step toward becoming an expert. The two key decisions to consider are what level you start at and the pace of your progression. Starting something new should begin at the bottom, the entry level, the easiest. If all signs point toward this being manageable, then increase the difficulty. Taking smalls steps and...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "training",
+      "category": "fitness",
+      "title": "Training",
+      "date": "2019-11-18",
+      "excerpt": "Exercise is running round the block for five minutes. Training is structured exercise that is done deliberately, in a structured manner as part of a wider schedule to achieve a specific goal. Don't trust the result of exercise - it's unpredictable and unreliable. By contrast, training is something you can count on. What training is not, is a hired PT shouting at you, \"C'mon just 5 more, 4... 3... c'mon you got this, 2... one more, don't quit!\" Your body is failing you. You cannot remember such pain and exhaustion. The cheering on from this expensive expert encourages you not...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "measure-the-right-thing",
+      "category": "fitness",
+      "title": "Measure the right thing",
+      "date": "2019-11-14",
+      "excerpt": "It's very easy to begin something with the best of intentions and say things like, \"Every little helps.\" or \"It can't do any harm.\" without knowing if your efforts are having any effect whatsoever. Everyone is different and wants different things from fitness (we'll cover the types of fitness in detail later) but one thing is constant throughout your new journey. If you don't measure the right thing, you cannot know if you're making progress or not. Just as important as measuring the right thing, is measuring consistently. Just as important as measuring consistently is recording and interpreting the results...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "question-everything",
+      "category": "fitness",
+      "title": "Question everything",
+      "date": "2019-07-21",
+      "excerpt": "If you're still reading I've hopefully convinced you, or at least you're open to the idea, of learning higher level concepts before making permanent lifestyle changes to become fitter. And you're happy to listen to my ideas of what those concepts and lessons should be. Thanks. I'm flattered. More likely though is that you remain curious and yet to be convinced. That's perfect, and that's exactly the skeptical mindset you need to retain. Never lose your questioning, suspicious, doubting way of looking at new information that is given to you. There are a few good reasons for this: 1. I'm...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "sacrifice-and-results",
+      "category": "fitness",
+      "title": "Sacrifice and Results",
+      "date": "2019-06-30",
+      "excerpt": "Before going any further with the mystic change-for-life-fitness plan I'm proposing, we need to calibrate ourselves on a couple of points to avoid the disappointment of mismatched expectations. When I say that personal trainers, badly equipped gyms, shaming magazines, and processed diet foods have different goals to you; that they're out to keep you dependent on them rather than enabling you to get fit without them, that's my view based on the way I see the world. It doesn't mean that millions of people haven't achieved their goals using the above tools, and done so quicker than trying to plot...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "change-for-life",
+      "category": "fitness",
+      "title": "Change for life",
+      "date": "2019-06-25",
+      "excerpt": "Banks will often advertise promotions offering sizeable sums of money for opening an account. There are all sorts of conditions like, a minimum amount of money to be deposited each month, and keeping the account open for a certain number of months. How is this profitable though? It's profitable because changing banks is something that most of us never do. This isn't the only activity seldom considered e.g. when was the last time you changed your brand of toothpaste? There are certain things we're quite happy to try for a while and there are choices we made long ago and...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "snake-oil",
+      "category": "fitness",
+      "title": "Snake oil selling better than ever",
+      "date": "2019-06-23",
+      "excerpt": "This is the first in a long series of posts about fitness. By the end you will be better prepared than ever before to attack your personal path to fitness. But before we begin, let's tackle the elephant in the room: why the hell are you taking fitness tips, from a middle-aged, technology office worker!? In 2019 the fitness industry is worth approximately $87.2 billion. More people are interested in fitness than at any time in the history of mankind. And to be fair, there are a lot of fit people around; there is a lot of sport being played...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "manager-readme",
+      "category": "management",
+      "title": "Manager README",
+      "date": "2018-10-29",
+      "excerpt": "The concept of a manager README doc, as an introduction of what to expect from a new manager, has become popular in technical circles because it's what we use to introduce our software projects. For the first time in nearly five years, I'm changing company and this feels like the perfect way to let my new colleagues understand my core beliefs. n00b If I'm new to the team or company, I'm the newbie, and I'm here to learn. For the foreseeable future I'll be asking questions, and specifically. I'll ask \"Why?\" a lot. Not to be annoying - even though...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "are-you-joining-a-good-engineering-team",
+      "category": "management",
+      "title": "Are you joining a good engineering team?",
+      "date": "2017-07-23",
+      "excerpt": "You're unlikely to read a job spec these days that doesn't contain the word, Agile (capitalised, of course), scrum, kanban, or possibly the acronym TDD. It's comforting for developers to know that they won't be expected to work under the Waterfall software development process; that they're not writing legacy code from scratch without a build pipeline of hierarchical automated tests; or worse still, they won't be on the wrong end of undocumented, random, last minute feature changes. The job spec might have little basis in reality though. Whether or not a company follows an Agile process, either honestly or by...",
+      "tags": [
+        "agile"
+      ],
+      "readingTime": 5
+    },
+    {
+      "slug": "how-much-coding-should-a-manager-do",
+      "category": "management",
+      "title": "How much coding should a manager do?",
+      "date": "2017-07-02",
+      "excerpt": "In my day job we use Slack as a key communication tool - for those who haven't used it, it's basically a corporate version of IRC with good UX. In a private channel for those in leadership positions, there was a question about how to transition from Software Engineer to Engineering Manager; what to consider when moving from a predominantly individual contributor (IC) specialisation to a team management focused role. My reply got an upvote from about 10% of the channel, so thought it a good start for my first blog post on the subject of management\\: Q: How much...",
+      "tags": [],
+      "readingTime": 5
+    },
+    {
+      "slug": "are-you-happy",
+      "category": "essays",
+      "title": "Are you happy?",
+      "date": "2017-06-25",
+      "excerpt": "A thought experiment occurred to me which looks to answer the question, \"Are you happy?\" In a science fiction film I saw recently there was a fantastical machine that copies (clones) whatever thing or person is placed inside it. Without ever explicitly going through the detail of the pros and cons of the situation, the people who use the machine to clone themselves do so at great risk to their very being. Because the ability to make another person, exactly the same as an existing one, has such devastating consequences its users preemptively setup a murder. And these consequences though...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "how-i-became-a-data-scientist",
+      "category": "follies",
+      "title": "How I became a data scientist",
+      "date": "2016-08-26",
+      "excerpt": "During the #firstsevenjobs trend on Twitter, I tweeted my rather standard career path into software. It piqued the curiosity of a friend and former colleague who was interested in my minor blip as a data scientist - it was a surprising and short six month period in my career and fairly recent. Here's my story about why, and how I became a data scientist, and more importantly, some lessons on why it didn't work out. history of me Before launching straight into recent history, I'll briefly cover my early career where I was a computer scientist researcher. Growing up I...",
+      "tags": [
+        "data-science",
+        "machine-learning"
+      ],
+      "readingTime": 11
+    },
+    {
+      "slug": "insurance-against-leftpad-level-events",
+      "category": "coding",
+      "title": "Insurance against LeftPad level events",
+      "date": "2016-06-03",
+      "excerpt": "When it comes to dependencies, there are two extremes in software development. Complete ownership of everything right down to the abstract data types e.g. \"Yes I write my own open addressing hash table and hash map\"; or on the other hand grabbing strangers' code left, right and centre e.g. \"I'd rather have a dependency on some random, 12 line implementation of LeftPad because that's one less thing to bugfix, debug and maintain\". As with all computer science trade offs, the majority feel comfortable somewhere in the middle. Done properly, I see the elegance of relying on small, composable dependencies but...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "breaking-into-web-development",
+      "category": "coding",
+      "title": "Breaking into the opinionated, disjointed world of web development",
+      "date": "2016-03-12",
+      "excerpt": "Again and again, I find web development one of the most fascinating of all the disciplines I've come across in my career. Fascinating in the way Extreme Ironing is fascinating: you spend as much of the time wondering why as you do how. Getting started The main issue as I see it for a developer with existing skills in programming looking to become a web developer, is how to get started. Take jstherightway.org as an example of one of many introductory guides to modern web development: as comprehensive and helpful as it is, where do you begin? How do you...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "caveats",
+      "category": "git",
+      "title": "Caveats",
+      "date": "2016-02-28",
+      "excerpt": "If this isn't the only site you've looked at for assistance learning git, you may have come across advice that perhaps contradicts some of the suggestions I've made. For example, the template workflow I describe instructs users to get the latest changes from the origin repo using git pull. Other sources will recommend, with good reason, a slightly longer approach that splits this over two git commands, fetch and merge. Opiniated versus Non-opinionated As a programmer you may have heard languages being referred to as opinionated or non-opinionated. Opinionated languages do not just specify their, often terse, syntax, but rather...",
+      "tags": [],
+      "readingTime": 4
+    },
+    {
+      "slug": "conclusion",
+      "category": "git",
+      "title": "Conclusion",
+      "date": "2016-02-27",
+      "excerpt": "This guide does not claim, not wants to be, an exhaustive guide to git. It attempts to give a basic mental model for what the commands are actually doing in plain English and with some simple diagrams. Complex topics such as git, of which we've only begun to scratch the surface, are mastered by learning from multiple sources and after use and experimentation in practice. Much of the power of git comes from when things don't work exactly as planned or when there's subtly different use cases for you or your collaborators situation. The inner cycle recommends making frequent commits...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "the-inner-cycle",
+      "category": "git",
+      "title": "The inner cycle",
+      "date": "2016-02-08",
+      "excerpt": "While actively writing code and experimenting with possible solutions, it's crucial to be constantly committing code to your local git repo. By doing so you ensure you can safely undo botched attempts you might develop along the way. Indeed, this gives you the freedom to try outlandish things knowing you can easily revert to the original without needing to rely on <Ctrl>+Z in your text editor. The git commands Anytime you're happy with a small increment of coding, you can commit your changes to the local git repo. This coding increment can be of any quality you wish; it can...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "the-middle-cycle",
+      "category": "git",
+      "title": "The middle cycle",
+      "date": "2016-01-22",
+      "excerpt": "The middle cycle helps reduce the complexity of your final commit. This daily task is to pull the latest changes from the origin repo to your git repo and merge them locally with your work in progress. Therefore, when you're ready to persist your changes to the master branch on the origin repo, many of the potential merge conflicts will likely be resolved for you by git because the task has been broken up into smaller chunks. The git commands The developer begins by completing one or more repetitions of the inner most cycle. Once some time has elapsed and...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "the-outer-cycle",
+      "category": "git",
+      "title": "The outer cycle",
+      "date": "2016-01-05",
+      "excerpt": "The outer most cycle represents a full development task loop beginning with getting the latest code from the origin repo; developing, say, a new product feature or bug fix; and ending with creating a pull request for your changes so that they're available to your development collaborators. Your feature may take only a few hours in which case the cycle completes quickly, however, out of consideration to your colleagues if nothing else, you should break your changes into small, standalone merges that do not take more than a week to develop. The git commands First checkout the master branch. $...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "setup-the-origin-repo",
+      "category": "git",
+      "title": "Setup: the origin repo",
+      "date": "2015-12-19",
+      "excerpt": "When beginning to collaborate on a coding project using git, there are a couple of steps to create a local copy of the repo. Assuming you're joining a project that's already underway, use the git clone command to create your own local copy. In the same way that master is the default name for the main development branch, origin is the default name for your shared repo server. $ git clone https://your-repo-hosting.com/repo-name.git You now have the master branch on your local machine, with a link to http://your-repo-hosting.com/repo-name.git as your origin repo. To verify the origin repo is what you expect,...",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "cycles-the-introduction",
+      "category": "git",
+      "title": "Cycles: the introduction",
+      "date": "2015-12-02",
+      "excerpt": "There are three development activities that cycle repeatedly within each other. They can be done as often as you like but we introduce a best practice upper bound of one hour, one day, and one week for each. These durations are of course advisory and can be ignored, but discipline in this regard will reward you with increased productivity and more streamlined cooperation. Alongside each cycle there are associated git commands that allow you to complete the required steps. The Three Cycles The outer most cycle represents a full development task loop beginning with getting the latest code from the...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "never-ever-push-to-master",
+      "category": "git",
+      "title": "Never, EVER, push to master",
+      "date": "2015-11-15",
+      "excerpt": "Every repo, after an initial commit, starts by default with one branch and that is named master. It's the branch that everyones' branches get merged into and is largely the one from which developers pull changes. This makes it the most important – it's the one that contains the latest changes, it's the one that's used by the build servers to power continuous integration. Therefore it needs special protection to ensure nothing bad happens to it. Tools and process Firstly, there should be safety measures in whatever git server hosting you use (GitHub, GitLab, BitBucket) to protect a master branch...",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "branch-off-commit-and-merge-back",
+      "category": "git",
+      "title": "branch off, commit, and merge back",
+      "date": "2015-10-29",
+      "excerpt": "Once your changes have been carefully reviewed and staged, they're ready to be committed to the active branch. Include a brief sentence detailing what the change is. $ git commit -m \"Revolutionise e-commerce by making the book button slightly bluer.\" Going back to your roots Your branch is ready to share with colleagues and collaborators by pushing it back to the origin repo (see Part 14 - Setup: the origin repo). But with all this branching off everywhere, how on earth are we all going to work on one consistent codebase? Simple, we merge the changes of the branch back...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "status-and-diff-and-log",
+      "category": "git",
+      "title": "review with status, diff and log",
+      "date": "2015-10-12",
+      "excerpt": "Once you have staged all the changes you want to make (see add, remove and reset), you're ready to commit those changes to the active branch. This is how you collect all your development activity into a single atomic unit that delivers one feature, or fixes one bug etc. and passes all unit and integration tests, naturally. But before rushing in, review the changes you want to make using the helpful git commands log, status and diff. Right branch The log command gives a history of the branch you're working on an shows the previous commits that have been made...",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "add-and-remove-checkout-and-reset",
+      "category": "git",
+      "title": "add and remove (rm), checkout and reset",
+      "date": "2015-07-07",
+      "excerpt": "Git is a stickler for detail, but helpfully so. It tries not to do things unless you specifically tell it to. So if you make changes to the codebase, git won't include your changes unless you explicitly tell git that it's intended. For example, say you add a new file called myProg.c to your codebase, or edit an existing file called myProg.c, the intended change must be signalled to git using the add command. $ git add myProg.c Thankfully, git lets you add whole subdirectories easily enough with the add command so you can do multiple files in a one...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "checkout-this-branch",
+      "category": "git",
+      "title": "checkout this branch",
+      "date": "2015-07-06",
+      "excerpt": "Welcome to one of the most easily confused git commands there is: checkout. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see push and pull). ![checkout](http://lifebeyondfife.com/wp-content/uploads/2015/07/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "push-and-pull",
+      "category": "git",
+      "title": "push and pull",
+      "date": "2015-06-07",
+      "excerpt": "The state of a codebase on a git server, whether an origin repo in a server or on someone's laptop, is represented by one or more branches. A commit is a self contained set of code changes (modifications, new, moved and deleted files) made by one developer. A branch is a chronological series of commits that stretches back in time from the most recent change to the beginning of the codebase i.e. the very first commit. The main branch that contains all developers' commits is named master by default. The word branch is appropriate as it fits with the tree...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "init-clone-and-origin",
+      "category": "git",
+      "title": "init, clone and origin",
+      "date": "2015-05-28",
+      "excerpt": "Hopefully you, and the powers that be at your company, are convinced: git is the future and the way forward. We now begin the journey of understanding the ways in which git is different to server-client VCSs. We assume the user has already installed git and is familiar with navigating directories using the command line. init A git server can hold multiple code repositories known as repos. The simplest way to get started with git is to create a new directory with an empty repo. $ git init MyFirstRepo Congratulations. You created a git repo to hold the version changes...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "end-to-big-bang-commits",
+      "category": "git",
+      "title": "End to Big Bang commits",
+      "date": "2015-05-26",
+      "excerpt": "No matter how agile we get, or small and isolated we try to make our changes, collaborative development will always leave us stepping on each other's toes. When there are big changes to the codebase to be made by multiple developers the key to victory is to selfishly make sure to get yours committed first, otherwise be left open to a three-way merge from hell. Git allows programmers to break-up the merge process into smaller manageable chunks. Having the power of the server on your client means that you don't have to wait until your commit is ready before merging...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "backup-as-often-as-you-like",
+      "category": "git",
+      "title": "Backup as often as you like",
+      "date": "2015-05-24",
+      "excerpt": "Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mixture of <Ctrl>+Z bashing and consulting the last known state in the VCS server? Or do you get round that by making occasional copies of files or subdirectories, possibly with \"\\v1\" suffixes? Well with git, there's a better way. You wouldn't commit code to the origin repo that was broken, incomplete or didn't pass all unit, integration and acceptance tests. And the same applies to the origin repo with DVCS as well. However, remember...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "work-on-multiple-changes-concurrently",
+      "category": "git",
+      "title": "Work on multiple changes concurrently",
+      "date": "2015-05-23",
+      "excerpt": "Some server-client Version Control Systems (VCSs), for instance Perforce, have concepts like shelving where you can isolate changes you make for a bug fix from concurrent changes for a new product feature. In a perfect world we'd only ever work on one task at a time but we know how unrealistic an expectation that is from life. Context switching when programming is a huge productivity killer and any extra tasks that takes up time when moving from one thing to another e.g. juggling changes for different features in one file into separate commits, should be avoided. For users of server-client...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "power-of-the-server-in-your-client",
+      "category": "git",
+      "title": "Power of the server in your client",
+      "date": "2015-05-21",
+      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to version control resides on the server. The client i.e. your local development machine, has access to just a single snapshot of the codebase; nothing can be done with respect to versioning without access to the VCS server. ![traditional VCS](http://lifebeyondfife.com/wp-content/uploads/2015/05/traditional-VCS.png) Git, however, is a Distributed Version Control System (DVCS) - there is no server-client relationship because every machine that has git installed is itself a server. What was previously your dumb client becomes a fully fledged server. Any ability your company...",
+      "tags": [],
+      "readingTime": 2
+    },
+    {
+      "slug": "for-those-not-yet-using-git",
+      "category": "git",
+      "title": "For those not yet using git",
+      "date": "2015-05-20",
+      "excerpt": "Whether you're yet to use the world's favourite new version control system in earnest or not, be under no illusions - it is the future, git has won. But then you already knew that. This series of blog posts are for those who haven't learned git possibly for one of the following reasons: - You find the quick introductions don't adequately explain the complex concepts of git - You find the \"grok the man pages\" approach to learning convoluted and impenetrable - You find brick walls when arguing why your team should adopt git If any of those sound familiar,...",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "higher-order-functions",
+      "category": "follies",
+      "title": "Yo dawg, I heard you like functions",
+      "date": "2015-05-13",
+      "excerpt": "It's hopefully old news to you all but the free lunch is over (NB this article is 10 years old). TL;DR – as we come up against the physical limits of how small transistors can be future computation gains will come from more processors, not faster processors. We can already see this looking at the number of cores we have available in development standard laptops. Writing code that can distribute its workload across multiple cores will only become more important as time goes on. As we move more and more services to AWS ensuring we get the most value for...",
+      "tags": [],
+      "readingTime": 8
+    },
+    {
+      "slug": "a-git-workflow-for-beginners",
+      "category": "follies",
+      "title": "A git workflow for beginners",
+      "date": "2014-12-07",
+      "excerpt": "The web is awash with introductions and guides to using git. There's this visual guide here, that interactive tutorial there, reams of documentation, and of course all kinds of troubleshooting help. But if you're coming from a traditional Version Control System (SVN, Perforce, Clearcase etc.) the main barrier to using git is not answering the question, \"How to I checkout and commit code changes?\", but rather, \"How do I use all these complex features to develop software?\" This guide is a complementary resource to the others, providing a working template of how you should use git in order to deliver...",
+      "tags": [],
+      "readingTime": 11
+    },
+    {
+      "slug": "fantasy-football-2014-15",
+      "category": "coding",
+      "title": "Fantasy Football Team Selector 2014-15",
+      "date": "2014-08-03",
+      "excerpt": "It's that time of year again to update the data in my English Premier League, Fantasy Football Team Selector spreadsheet. Download team selector for 2014-15 season Read initial blog post explaining the science behind the spreadsheet",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "converting-xml-to-json",
+      "category": "coding",
+      "title": "Converting XML to JSON",
+      "date": "2014-07-12",
+      "excerpt": "XML and JSON are the two most common generic standards for passing representation state information in web APIs. So when I recently needed to convert XML to JSON, I didn't even think about the structure of XML, I simply looked for a library to do it. \"Why isn't there a library to do this?\" I thought. Quite simply, because you cannot express XML as JSON and vice versa. There are too many grey areas where a choice needs to be made about how the conversion should be done. A lack of bijective one-to-one mapping means that no-one will create a...",
+      "tags": [
+        "development-in-practice",
+        "json",
+        "python",
+        "xml"
+      ],
+      "readingTime": 4
+    },
+    {
+      "slug": "before-you-learn-to-program",
+      "category": "compsci",
+      "title": "Before you learn to program",
+      "date": "2014-04-30",
+      "excerpt": "How should you begin to learn programming? What language should you pick? What are the long term, safe bets you should ensure you pick up so you're ready to succeed over the next ten years? These are the wrong questions to answer. Programming is the valuable, practical skill but the discipline that enables and supports it is Computer Science. Begin from that position and the lessons you learn will hold not only during the lifetime of the programming languages you choose, but throughout your own life as well. But Computer Science though, that's hardly the right place for a beginner....",
+      "tags": [
+        "compsci-in-plain-english"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "death-by-a-million-cuts",
+      "category": "essays",
+      "title": "Death By A Million Cuts",
+      "date": "2014-03-23",
+      "excerpt": "Individuals within the software development community are in one of two states. One believes that there is a deep rooted problem of sexism that constructs multiple barriers against females joining, and thus deprives this community of the majority of a talent pool that makes up half the population. The other, simply hasn't realised it yet. I used to think there was no problem. Most people in a position of power use deliberate, analytical thinking to evaluate people honestly and fairly regardless of any stereotypes that may exist. Job vacancies and course placements go to the most able worker or student,...",
+      "tags": [],
+      "readingTime": 12
+    },
+    {
+      "slug": "converting-bases",
+      "category": "compsci",
+      "title": "Confusing Christmas with Halloween",
+      "date": "2014-02-28",
+      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to things that we more naturally understand. Unfortunately, there’s no escaping the mathematics of it – converting binary numbers to decimal and vice versa is an algebraic operation. Though it can be done with a scientific calculator, the process is straightforward and can be done simply enough with a pen and some paper. To convert from binary to decimal is the easiest base transformation there is. We’ll walk through an example by converting \\\\(1001 \\\\space...",
+      "tags": [
+        "compsci-in-plain-english"
+      ],
+      "readingTime": 8
+    },
+    {
+      "slug": "how-not-to-do-a-hackathon",
+      "category": "follies",
+      "title": "How Not To Do a Hackathon",
+      "date": "2014-01-15",
+      "excerpt": "I'm a strong believer in learning by doing. I don't think it's necessarily the best way to learn because you invariably learn inefficiently, repeating well known mistakes and suboptimal practices. If you have a mentor throughout the learning process they can lead you away from bad habits and, crucially, explain why they're bad in the first place. But there are plus points to learning by doing. Firstly, you can't argue with the results. It's not a theoretical endeavour and if you manage to build a bookcase in two weeks, you can be fairly certain you've learnt a thing or two...",
+      "tags": [
+        "c",
+        "code",
+        "development-in-practice"
+      ],
+      "readingTime": 7
+    },
+    {
+      "slug": "the-10-types-of-people",
+      "category": "compsci",
+      "title": "The 10 Types of People",
+      "date": "2013-12-28",
+      "excerpt": "We’ve now established that knowing the base of a number system is crucial to counting, and that computers exclusively use the binary number system i.e. base-two. You may well have seen a calculator application on your phone or desktop computer that works perfectly normally using decimal. How can that be if everything a computer does is in binary? New to this blog? This is the third in an ongoing series of blog posts about teaching Computer Science in plain English from scratch i.e. for non-programmers and other non-technical people. Use this link to follow the series. As with foreign languages,...",
+      "tags": [
+        "compsci-in-plain-english"
+      ],
+      "readingTime": 12
+    },
+    {
+      "slug": "counting",
+      "category": "compsci",
+      "title": "Counting Like A Computer",
+      "date": "2013-11-30",
+      "excerpt": "The journey of learning about Computer Science will start by revisiting a simple lesson first encountered by most as a toddler: how to count. Indeed, it’s such an easy skill it’s hard to remember a time when you didn’t know how to do it. But one of the commonly known facts about computers is that everything is done in ones and zeros ie. binary. Just what does that mean though and how is any of this relevant to humans? Well, to understand how a computer works, you have to be able to work things out like they do. The first...",
+      "tags": [
+        "compsci-in-plain-english"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "helping",
+      "category": "follies",
+      "title": "Helping a stranger (and why you should understand NP-complete)",
+      "date": "2013-10-28",
+      "excerpt": "Earlier this year I helped out a random Hacker News commenter. This was covered in a recent blog post where I discussed the trade off between being an expert or a generalist. Realising my GitHub repository was littered with short, generalist introductions and experiments, I concluded that I should add the complex NP-complete constraint solver I had been working on for the past few years - an area in which I had some expertise. At least, I thought that was the conclusion. Help comes at a great cost, you must first ask for it Hacker News isn't just about start...",
+      "tags": [
+        "c",
+        "code",
+        "computer-science",
+        "constraint-programming",
+        "development-in-practice"
+      ],
+      "readingTime": 21
+    },
+    {
+      "slug": "plain-english1",
+      "category": "compsci",
+      "title": "Computer Science in Plain English",
+      "date": "2013-09-18",
+      "excerpt": "Computer science is a subject dear to my heart and I feel constantly aggrieved by how misunderstood and misreported the discipline is by the media, programmers and everyone inbetween (see my complaint with University Challenge). I decided therefore to write a short series of blog posts that explains computer science from the very basics, the most fundamental principles. I want everyone to know that computer science has nothing to do with technology and everything to do with, well, I'm about to explain exactly what... The difference between Computer Science and Technology I love the British sitcom The IT Crowd which...",
+      "tags": [
+        "compsci-in-plain-english"
+      ],
+      "readingTime": 8
+    },
+    {
+      "slug": "fantasy-football-2013-14",
+      "category": "coding",
+      "title": "Fantasy Football Team Selector 2013-14",
+      "date": "2013-08-03",
+      "excerpt": "It's that time of year again. Here is the updated Excel Spreadsheet for helping you choose a great Fantasy Football team that obeys all the team, position and budgetary constraints: Fantasy Football Team Selector 2013-14",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "the-future-of-education",
+      "category": "essays",
+      "title": "The Future of Education",
+      "date": "2013-07-27",
+      "excerpt": "Education is changing in a big way. Whether you're still in the education system or someday going to have children who will, it's of prime importance you learn just how it's going to change. Pass rates are going up in the most important school exams, namely, the ones that determine whether a student qualifies for university or not. It's at this point where education stops being in a sense \"free\" and has to be evaluated as a value proposition - does the benefit of going to university outweigh the financial cost? Despite this being a Scottish blog, I'm going to...",
+      "tags": [],
+      "readingTime": 15
+    },
+    {
+      "slug": "expert-or-generalist",
+      "category": "essays",
+      "title": "Expert or Generalist?",
+      "date": "2013-06-24",
+      "excerpt": "\"My Name is Karl, Ich Bin Expert\" I don't quote Karl Hungus lightly. When I began this blog back in the summer of 2011 it was because I thought I'd let my programming skills go rusty. I wasn't starting projects and I hadn't learned any significantly different technology or tools for a few years. Life Beyond Fife existed as a dumping ground for random ideas, quick trials and elaborate \"Hello world!\" examples. But I'm not a twenty-three year old entrepreneur living in The Bay trying to get a startup off the ground. However cool it is to launch a micro...",
+      "tags": [
+        "c",
+        "code",
+        "constraint-programming"
+      ],
+      "readingTime": 5
+    },
+    {
+      "slug": "curiosity-killed-the-productivity",
+      "category": "essays",
+      "title": "Curiosity Killed The Productivity",
+      "date": "2013-05-08",
+      "excerpt": "\"Where is that drip coming from?\" Recently while in the staff kitchen, waiting a few minutes for my mug of tea to properly infuse - yes, I am that British - my absent minded thoughts were distracted by a repeating sound. \\drip\\ ...pause... \\drip\\ ...pause... I looked over at the sink. \\drip\\ Nothing fell from the tap faucet (Ok, I'm British but most of my readers are American). So where is it coming from, I thought? I turned around and moved within the space of the kitchen trying to get a more localised area of where the source sound originated....",
+      "tags": [],
+      "readingTime": 3
+    },
+    {
+      "slug": "designing-your-wedding-ring-with-13-year-old-code",
+      "category": "follies",
+      "title": "Designing your wedding ring with 13 year old code",
+      "date": "2013-04-13",
+      "excerpt": "So often when faced with a programming task, you never truly solve the required problem from scratch. To be completely pedantic you're not writing processor instructions or even assembler but rather high level programming commands that are compiled or interpreted depending on your language choice. But with more and more tools available today to make the job easier, a lot of the necessary knowledge and skills aren't so much about how to programmatically break down and solve problems - it's just as much about knowing how to use all the tools out there. I love it when I've developed with...",
+      "tags": [
+        "java"
+      ],
+      "readingTime": 13
+    },
+    {
+      "slug": "xml-serialisation",
+      "category": "coding",
+      "title": "XML Serialisation",
+      "date": "2013-03-11",
+      "excerpt": "Recently at work I was confronted by a problem requiring data persistance outside of a database - in this case, a saved parameter project file. Though I'm a convert to the purity and ease of use of JSON, in the land of Enterprise coding, XML is still very much king. Visual Studio provides many tools for not just dealing with XML files but also XSD files: a schema for describing a valid XML source file. Both while at work in creating configuration files, and at home in parsing Amazon's RESTful API results returned in XML data, I've written code to...",
+      "tags": [
+        "c",
+        "code",
+        "xml",
+        "xsd"
+      ],
+      "readingTime": 6
+    },
+    {
+      "slug": "idea-a-day",
+      "category": "follies",
+      "title": "Idea A Day",
+      "date": "2013-02-27",
+      "excerpt": "Perhaps the one constant in becoming an expert in any particular craft is to do it regularly - preferably daily. For some disciplines e.g. skydiving and marathon running, this is prohibitive by being expensive or physically extreme. There are countless other more attainable skills, however, that demand only our time. The purpose of this blog - for me at least - is to provide a place for thoughts on software development in practice and the implementation of ideas. So often it becomes the natural place to trial a new technology but at the heart of every technology is the idea...",
+      "tags": [],
+      "readingTime": 23
+    },
+    {
+      "slug": "the-difference-between-mean-and-median",
+      "category": "follies",
+      "title": "The Difference Between Mean and Median",
+      "date": "2013-01-20",
+      "excerpt": "As a non-statistician who every now and then has to understand statistical concepts as if they were second nature, illustrative examples are like gold dust to me. I thought I'd share a small yet extreme sample set that I devised to aid me in understanding the difference between the first statistical moment, the mean, and the similar yet potentially wildly contrasting median. My problem with mathematical definitions Before I present my example, I'm going to get on my soapbox for a minute about the way some, often simple, mathematical concepts are taught. Skip to the next section if this is...",
+      "tags": [
+        "maths"
+      ],
+      "readingTime": 6
+    },
+    {
+      "slug": "from-idea-to-launch-a-website-dissection",
+      "category": "follies",
+      "title": "From Idea to Launch: A Website Dissection",
+      "date": "2013-01-06",
+      "excerpt": "What's New? MUSIC was recently launched, so for those of you who've already read about the idea, architecture and technology stack, you can go straight to the post-launch results and conclusions. For everyone else though... At the beginning of the year I posed a conundrum on Twitter. I wanted some way to make sure I never missed out on a new release by one of the many bands I like. In the end, I had to build it myself. This would be my first website ever after a professional lifetime of enterprise code and it started something that would take...",
+      "tags": [
+        "asp-net-mvc",
+        "c",
+        "cloud",
+        "development-in-practice",
+        "javascript",
+        "jquery",
+        "mongodb",
+        "nosql",
+        "wcf",
+        "web-development"
+      ],
+      "readingTime": 25
+    },
+    {
+      "slug": "whats-new-music",
+      "category": "follies",
+      "title": "What's New? Music",
+      "date": "2012-12-08",
+      "excerpt": "At the beginning of the year I posed a conundrum on Twitter. I wanted some way to make sure I never missed out on a new release by one of the many bands I like. In the end, I had to build it myself. This would be my first website ever after a professional lifetime of enterprise code and it started something that would take up a large part of my free time for the next 9 months. I have created the website What's New? MUSIC. Here is my journey. !The tweeted challenge no-one answered The tweet - which no-one...",
+      "tags": [
+        "asp-net-mvc",
+        "c",
+        "cloud",
+        "development-in-practice",
+        "javascript",
+        "jquery",
+        "mongodb",
+        "nosql",
+        "wcf",
+        "web-development"
+      ],
+      "readingTime": 19
+    },
+    {
+      "slug": "web-developer",
+      "category": "essays",
+      "title": "Becoming a Web Developer",
+      "date": "2012-11-20",
+      "excerpt": "\"\\[Stanford's\\] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly \\[think\\]: what is it with all these other languages?\" Dynamic Languages Strike Back – Steve Yegge A blaze of nepotism from my sister saw me land my first paid contracting gig back in 1998. The company was technologically naïve and it was pure HTML/CSS. The start to a potentially exciting story perhaps, but alas, the summer ended and I went back to finish the last two years of my undergraduate degree in computer science and –...",
+      "tags": [
+        "development-in-practice",
+        "web-development"
+      ],
+      "readingTime": 5
+    },
+    {
+      "slug": "failure",
+      "category": "essays",
+      "title": "Failure and Unfair Comparisons",
+      "date": "2012-10-16",
+      "excerpt": "I have failed. Earlier this spring when I rejoined the world of the working I pledged to continue the blog I started over a year ago but with, naturally, a less demanding post frequency. But even my plan to produce one per month seems to have slipped by for the month of September. I have excuses around a few packed social weeks, but I suppose ultimately it comes down to a matter of priorities. I've been working on my projects but not at the required pace. There are a couple of ways to look at this. I could view it...",
+      "tags": [
+        "development-in-practice"
+      ],
+      "readingTime": 4
+    },
+    {
+      "slug": "fantasy-football-2012-13",
+      "category": "coding",
+      "title": "Fantasy Football League Team Selector 2012-13",
+      "date": "2012-08-07",
+      "excerpt": "UPDATED VERSION: Fantasy Football Team Selector 2013-14 It's that exciting time of year again. I know, I know, London 2012 and all that but who really wants to watch amateur archers and beginner judo students when the English Premier League is about to restart? For those who weren't here last year, I announced in an overly technical way an area of artificial intelligence called constraint programming. Never mind all that though: here is an Excel spreadsheet that will help you improve your Fantasy Football League team for the Official Premier League version. EDIT: I've also added a Yahoo! version but...",
+      "tags": [
+        "constraint-programming",
+        "excel",
+        "fantasy-football"
+      ],
+      "readingTime": 4
+    },
+    {
+      "slug": "one-year-in",
+      "category": "follies",
+      "title": "One year in...",
+      "date": "2012-08-07",
+      "excerpt": "Happy Anniversary! In updating my Fantasy Football League Team Selector Spreadsheet for the new Premier League season, I realised it's been over one year since the inception of this humble tech blog. I've gotten on my soap box a few times about how software development should be done, provided some programming tutorials and uploaded some executables with GPL sourcecode. I didn't know exactly what I wanted to achieve other than freshen up my tech skills but I feel it's given me so much more than I hoped it would. The plan for the next year is to get a bit...",
+      "tags": [],
+      "readingTime": 1
+    },
+    {
+      "slug": "prism",
+      "category": "coding",
+      "title": "Modular WPF Interfaces",
+      "date": "2012-07-12",
+      "excerpt": "Imagine a completely modularised approach to designing user interfaces. For instance, say you design a user interface with one or more bits left blank. You give said blank regions a name and rely on someone else to provide a DLL that populates that part of the window with something shiny and functional. The keener among you will be aware that this functionality has already been in existance for quite some time now. Indeed, I've just described every Firefox plug-in ever written. But the modular approach to user interface design is one every application should have, not just customisable systems with...",
+      "tags": [
+        "c",
+        "code",
+        "prism",
+        "wpf"
+      ],
+      "readingTime": 12
+    },
+    {
+      "slug": "barrier",
+      "category": "essays",
+      "title": "Barrier To Entry",
+      "date": "2012-06-17",
+      "excerpt": "The greatest advert for being a software developer today is the low – practically non-existent – barrier to entry. Repeated falling hardware costs, the success of the open source software movement, and the proliferation of online help resources mean that practically any person, from any culture or background who has access to a computer and the internet can master the art and science of software development, or at the very least give it a go. And yet conversely that is its greatest weakness; why as a discipline it will never be taken seriously; and that we'll never receive the true...",
+      "tags": [
+        "development-in-practice"
+      ],
+      "readingTime": 6
+    },
+    {
+      "slug": "mojo",
+      "category": "essays",
+      "title": "How I lost, and regained, my coding mojo",
+      "date": "2012-05-05",
+      "excerpt": "For as long as I can remember I've been programming and I never seriously thought about doing anything else for a living. But becoming and remaining a software developer is a journey, not a destination. See if you can identify with this situation: I worked for the same company for six years and though I kept up with the latest .Net changes as my job required (\"LINQ eh, what's that?\") I didn't really learn much new. By the end of my time there I realised things were far from right. It wasn't that I didn't know relevant technologies that propspective...",
+      "tags": [
+        "development-in-practice"
+      ],
+      "readingTime": 6
+    },
+    {
+      "slug": "new-music-part-one",
+      "category": "follies",
+      "title": "New Music - Part I",
+      "date": "2012-04-18",
+      "excerpt": "Welcome back guys! Wow, it's really hard to get code out of the door when you've got to work full-time. Still, no matter, here is how I got on with my latest project: extending the previous one until it's bashed out into something a bit more useful. To give a bit more background on just what the previous blog post was about, it was an ASP application knocked up quickly over the course of a weekend to give me something to show for an interview I had with Scotland's premier web technology company, Skyscanner (setup via the awesome Quantum Recruitment...",
+      "tags": [
+        "c",
+        "mongodb",
+        "nosql",
+        "restful",
+        "soa",
+        "wcf"
+      ],
+      "readingTime": 6
+    },
+    {
+      "slug": "man-at-work",
+      "category": "follies",
+      "title": "/Sabbatical",
+      "date": "2012-04-06",
+      "excerpt": "Just so you know, I am still alive... ...but the sabbatical finally had to come to an end. I'm very excited to enter the world of work once more. No really. ¬\\¬ I'm sure my brand of proactive problem solving will have me going places soon enough... ...especially seeing as I'm no longer long-haired, bearded, nor a wearer of rock t-shirts, combats or skater shoes i.e. a typical software developer. I now own four suits. Four. Rest assured, now the upheaval of relocating and job hunting has ceased, blog posts shall once again resume. Possibly not at the rate of...",
+      "tags": [
+        "sabbatical",
+        "youtube"
+      ],
+      "readingTime": 1
+    },
+    {
+      "slug": "restful",
+      "category": "follies",
+      "title": "A Restful Weekend",
+      "date": "2012-02-20",
+      "excerpt": "This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat hunting in Edinburgh from my base back in Fife (thanks Mum & Dad ;) with most of my stuff, half of my CDs and most importantly my guitar back in Cambridge \\sigh\\ No matter, I press on with a mini project for a RESTful web service using ASP.Net and WCF. A couple of weeks back I tweeted the following: ![](/images/challenge.png) The awesome rateyourmusic.com do have a section within a user's profile page that...",
+      "tags": [
+        "c",
+        "code",
+        "restful",
+        "soa",
+        "wcf"
+      ],
+      "readingTime": 5
+    },
+    {
+      "slug": "beauty",
+      "category": "follies",
+      "title": "Beauty in Mathematics",
+      "date": "2012-02-06",
+      "excerpt": "Many people look at the beauty in nature and wonder how it all could have possibly been created. You could also look in awe at the Sistine Chapel and feel likewise impressed but we know this was simply the patient brushstrokes of a talented artist with plenty of time. Quite often the most stunning sights in the universe are a result of simple patterns repeating and evolving over time. Though we can't create a planet in a laboratory and fast-forward a few millenia whilst looking in, we can create simple patterns using mathematics. I'm going to show you three such...",
+      "tags": [
+        "code",
+        "fractals",
+        "javascript",
+        "maths",
+        "sierpinski"
+      ],
+      "readingTime": 7
+    },
+    {
+      "slug": "banking-isnt-evil",
+      "category": "essays",
+      "title": "Banking Isn't Evil",
+      "date": "2012-01-24",
+      "excerpt": "I truly believe that banks, or any institution that exists by making trades based on financial instruments, is not inherently evil. I stand by that statement even though it flies in the face of overwhelming public opinion. They – the institutions and their employees – can make obscene profits both individually and as corporate entities; they may gamble recklessly with the hard earned money of others; they may charge those near the breadline with unreasonable rates further compounding their problems; they can offer little support to struggling businesses when they need it in a harsh economic climate which, ultimately, was...",
+      "tags": [
+        "banking",
+        "c",
+        "code"
+      ],
+      "readingTime": 24
+    },
+    {
+      "slug": "university-challenge",
+      "category": "follies",
+      "title": "What University Challenge considers Computer Science",
+      "date": "2012-01-12",
+      "excerpt": "Happy New Year - 2012 is the year of code! The ICT curriculum in the UK is to be overhauled to make it less about word processors and spreadsheets and more about programming. The smartphone application market has kick-started a new generation of programmers who don't need to be in a team of hundreds to make some interesting, cool and worthwhile. But are we i.e. technology enthusiasts, too gung-ho about coding? Shouldn't we try just as hard to promote computer science? Case in point, over the festive break I managed to catch a special edition of University Challenge and was...",
+      "tags": [
+        "computer-science"
+      ],
+      "readingTime": 5
+    },
+    {
+      "slug": "remote-dev-teams",
+      "category": "essays",
+      "title": "Developing in Remote Teams",
+      "date": "2011-12-16",
+      "excerpt": "I don't need to tell you just how revolutionary the internet and other hi-tech telecoms advances have been in changing the way we live and work. Indeed, producing software in distributed teams is a technical challenge that has long since been solved and I'd be surprised to hear from any developer who has never worked with a colleague at a different physical location from them. But making something possible and making something work well are two entirely different things. In this blog post I'll quickly recap some of the different kinds of remote development, share my insights from working both...",
+      "tags": [
+        "development-in-practice",
+        "remote-development"
+      ],
+      "readingTime": 14
+    },
+    {
+      "slug": "e-to-the-pi-or-pi-to-the-e",
+      "category": "follies",
+      "title": "max(e^pi, pi^e)?",
+      "date": "2011-12-06",
+      "excerpt": "Greetings new blog readers and functional programming aficionados. The theme of the content here is rather varied so you're unlikely to see any more functional programming articles for a while. Choosing the next topic for a new audience is crucial though and despite having a couple of ideas I decided to go with the mathematical / coding one. My experiences and advice on effective software development with team members thousands of miles away (told from my personal experience on both sides of the fence ;) will have to wait until next week. Instead I'll talk about a simple mathematical interview...",
+      "tags": [
+        "c",
+        "code",
+        "maths",
+        "wpf"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "f-sharp",
+      "category": "follies",
+      "title": "Functional Programming For Object Oriented Programmers",
+      "date": "2011-11-24",
+      "excerpt": "After recently remarking about how I finally \"got\" functional programming I was asked by one of my millions of twitter followers... ¬\\¬ to write up an explanation of a small Fprogram spoken in terms that fellow O-O programmers would understand. Before I become too entrenched into the functional programming way of thinking, that is, and can't explain it anymore. As a former tutor this is one of the major problems with being able to teach something once you understand it. You've forgotten how not to make sense of the concept and what finally helped you get over the mental parapet....",
+      "tags": [
+        "f",
+        "functional-programming"
+      ],
+      "readingTime": 12
+    },
+    {
+      "slug": "real-games",
+      "category": "follies",
+      "title": "Real Life and Video Games",
+      "date": "2011-11-16",
+      "excerpt": "At university, the \"What do you study?\" ice-breaker didn't really work so well when your answer was \"Computer Science\". However, a historian friend of mine was by contrast frustrated at how open ended her subject area was. \"So maybe no-one's particularly interested by what you do but when I say what I study it's always, 'Medieval History? Oh, I've heard of a King...'.\" In a similar vein another friend of mine is a 3D artist making Playstation 3 games and he suffers from strangers \"educating\" him on what would make a good game. I know most of us have artistic...",
+      "tags": [
+        "games"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "async-await",
+      "category": "coding",
+      "title": "Caveats on actually using async and await",
+      "date": "2011-10-19",
+      "excerpt": "With the next release of .Net making a big push for parallelism-for-everyone-made-easy, I thought I'd take this opportunity to see if it really is as simple as they say. The most recent issue of the MSDN magazine has three articles regarding the changes to the Clanguage and what goes on under the hood when the programmer uses the new async and await keywords. This article looks at the challenges I faced in modifying an existing codebase to take advantage of the new functionality. .Net 4.5 Asynchronicity 101 I'll cut through some of the Microsoft boiler plate that builds up as...",
+      "tags": [
+        "async-await",
+        "c",
+        "development-in-practice"
+      ],
+      "readingTime": 8
+    },
+    {
+      "slug": "ironpython-wpf",
+      "category": "coding",
+      "title": "Simple WPF IronPython Application",
+      "date": "2011-10-17",
+      "excerpt": "A project I recently started working on required me to install Python on my development environment - something I've not relished doing in the past. But with previous restrictions relaxed I was able to pick whichever version of Python I liked so I chose the .Net implementation: IronPython. Here's how I got on... Many developers love Python and one of the reasons given by most who do is that the formatting is nice. I disagree. I miss the closing curly brackets that clearly separate one class, one function from another. My most common keystroke in Visual Studio is probably <Ctrl>+K,...",
+      "tags": [
+        "code",
+        "iron-python",
+        "python",
+        "wpf"
+      ],
+      "readingTime": 7
+    },
+    {
+      "slug": "amdahls-law",
+      "category": "essays",
+      "title": "Environmentalism and Amdahl's Law for the Masses",
+      "date": "2011-10-12",
+      "excerpt": "Though Life Beyond Fife is primarily a technology blog this article is for everyone. Absolutely all. I want every single person in the world who is the least bit concerned with environmental matters to know about and understand a concept from the world of computer science known as Amdahl's Law. With this one bit of knowledge it will make you much more effective at looking after the planet for tomorrow's new generation. Right you're still reading, excellent. I can now confess to you that I don't care about the environment myself. That's not to say I doubt how drastically the...",
+      "tags": [
+        "amdahls-law",
+        "environment"
+      ],
+      "readingTime": 11
+    },
+    {
+      "slug": "d-lighted",
+      "category": "follies",
+      "title": "D-Lighted: The lightweight, multi-platform database tool",
+      "date": "2011-10-06",
+      "excerpt": "D-Lighted is a free, open-source Windows database tool that allows users to connect to multiple different database platforms all from within the same small executable. The simple, uncluttered user interface is perfect for DBAs or developers who need to get into a database quickly, open up a table and check the data, add or delete a row, or edit some values. D-Lighted currently supports connections to Microsoft SQL, MySQL (thanks to MySQL's .Net Connector), SQLite (thanks to System.Data.SQLite), Oracle and PostgreSQL (thanks to pgFoundary's .Net Data Adapter for PostgreSQL) but visitors to this blog are free to request more in...",
+      "tags": [
+        "c",
+        "code",
+        "database",
+        "ms-sql",
+        "mysql",
+        "oracle",
+        "postgres",
+        "sqlite"
+      ],
+      "readingTime": 3
+    },
+    {
+      "slug": "in-house",
+      "category": "essays",
+      "title": "Carpenters make tables and chairs, not hammers and saws",
+      "date": "2011-09-16",
+      "excerpt": "Ok, yes, I know it's actually furniture makers who make tables and chairs but the title is long enough as it is. Just consider the point for a second though. Imagine the carpenter who has a problem with a broken saw or possibly a hammer that could have a better design for the type of nails they're using. Do you think they crack open the welding torch or start on a new hammer mould? Of course not, they are carpenters - skilled at creating objects with wood. That is their business, what they have trained long and hard to be...",
+      "tags": [
+        "development-in-practice",
+        "in-house"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "agile",
+      "category": "essays",
+      "title": "Addenda for Adopting Agile Development",
+      "date": "2011-08-12",
+      "excerpt": "Software Development is a strange profession. Coders are often promoted out of development in their thirties at the same time as new recruits are coming in who know different languages, tools and practices from those who graduated five years earlier. As a consequence, every aspect of the development environment is constantly up for reappraisal. Moving from one refactoring plug-in to another, say, is a pretty harmless change. Migrating source code versioning systems might be a little troublesome but will eventually quieten down. Changing the processes and methods of how software projects are planned, managed and developed though - that's scary....",
+      "tags": [
+        "agile",
+        "development-in-practice"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "fantasy-football-2011-12",
+      "category": "follies",
+      "title": "Fantasy Football Team Selector",
+      "date": "2011-07-27",
+      "excerpt": "The start of the new football season in England is upon us and for some this means careful deliberation over their Fantasy Football League team for the opening week. It's a complicated task. There have been big money moves over the summer, recovery from injury for some, other players saw a strong end to the previous season carried into summer friendlies and, as always, there are the new boys up from the Championship. Help is here though with the Fantasy Football Team Selector available from the download section. Simply open up the Excel spreadsheet, enable macros and click on the...",
+      "tags": [
+        "code",
+        "constraint-programming",
+        "excel",
+        "fantasy-football",
+        "vba"
+      ],
+      "readingTime": 8
+    },
+    {
+      "slug": "exhell",
+      "category": "follies",
+      "title": "OLE Automation Date Converter",
+      "date": "2011-07-25",
+      "excerpt": "Have you ever had problems with numbers somewhere around 40,000 claiming to be dates? It could well be that you need a tool to help you quickly convert dates from the OLE Automation Date - aka OADate - format into something a bit more human readable. If so you're in luck, simply go to the Life Beyond Fife GitHub repository to get hold of the sourcecode, or download the executable. Or read on if you want a bit more background. OLE Automation Dates, or more simply OA dates is a Microsoft standard for specifiying a date and time in a...",
+      "tags": [
+        "c",
+        "code",
+        "excel",
+        "oadate",
+        "ole"
+      ],
+      "readingTime": 3
+    },
+    {
+      "slug": "brown-field",
+      "category": "essays",
+      "title": "Developing in the Brown Field",
+      "date": "2011-07-22",
+      "excerpt": "A friend and former colleague of mine told me after leaving the company we had both worked at, \"I never want to work for a big company again.\" I couldn't understand the need for a blanket ban on all big companies from future employment opportunities. The reason apparently came down to the distinction between Greenfield and Brownfield development. In simple terms Greenfield development means writing software from scratch whereas Brownfield generally entails bugfixing or enhancements to existing code projects. Brownfield development is not specifically a bad thing or something to be avoided; there will be many impressive software projects that...",
+      "tags": [
+        "brownfield",
+        "development-in-practice"
+      ],
+      "readingTime": 10
+    },
+    {
+      "slug": "sabbatical",
+      "category": "follies",
+      "title": "Sabbatical",
+      "date": "2011-07-18",
+      "excerpt": "![](/images/sabbatical.jpg) \"Hey, I am not unemployed I'm on sabbatical!\"",
+      "tags": [
+        "sabbatical",
+        "youtube"
+      ],
+      "readingTime": 1
+    }
+  ],
+  "totalPosts": 110
+}

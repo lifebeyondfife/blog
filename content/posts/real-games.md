@@ -2,7 +2,8 @@
 title: "Real Life and Video Games"
 date: "2011-11-16"
 category: "follies"
-tags: "games"
+tags:
+  - "games"
 legacySlug: "81-real-games-html"
 ---
 
