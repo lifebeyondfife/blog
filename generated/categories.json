@@ -1,0 +1,163 @@
+{
+  "categories": [
+    {
+      "slug": "fitness",
+      "name": "Fitness",
+      "postCount": 27,
+      "posts": [
+        "ready-to-start",
+        "plateau",
+        "move-outwards-from-the-core",
+        "warming-up-and-down",
+        "ratio-of-lifts",
+        "basis-of-strength",
+        "technique-is-key",
+        "compound-lifts",
+        "why-getting-strong-is-hard-part-iii",
+        "why-getting-strong-is-hard-part-ii",
+        "why-getting-strong-is-hard-part-i",
+        "food",
+        "get-strong-first",
+        "preparation-for-training",
+        "increase-calories",
+        "the-body-as-an-engine",
+        "fitness-types",
+        "systems-not-goals",
+        "body-image",
+        "motivation",
+        "stress",
+        "training",
+        "measure-the-right-thing",
+        "question-everything",
+        "sacrifice-and-results",
+        "change-for-life",
+        "snake-oil"
+      ]
+    },
+    {
+      "slug": "follies",
+      "name": "Follies",
+      "postCount": 23,
+      "posts": [
+        "how-i-became-a-data-scientist",
+        "higher-order-functions",
+        "a-git-workflow-for-beginners",
+        "how-not-to-do-a-hackathon",
+        "helping",
+        "designing-your-wedding-ring-with-13-year-old-code",
+        "idea-a-day",
+        "the-difference-between-mean-and-median",
+        "from-idea-to-launch-a-website-dissection",
+        "whats-new-music",
+        "one-year-in",
+        "new-music-part-one",
+        "man-at-work",
+        "restful",
+        "beauty",
+        "university-challenge",
+        "e-to-the-pi-or-pi-to-the-e",
+        "f-sharp",
+        "real-games",
+        "d-lighted",
+        "fantasy-football-2011-12",
+        "exhell",
+        "sabbatical"
+      ]
+    },
+    {
+      "slug": "git",
+      "name": "Git",
+      "postCount": 19,
+      "posts": [
+        "caveats",
+        "conclusion",
+        "the-inner-cycle",
+        "the-middle-cycle",
+        "the-outer-cycle",
+        "setup-the-origin-repo",
+        "cycles-the-introduction",
+        "never-ever-push-to-master",
+        "branch-off-commit-and-merge-back",
+        "status-and-diff-and-log",
+        "add-and-remove-checkout-and-reset",
+        "checkout-this-branch",
+        "push-and-pull",
+        "init-clone-and-origin",
+        "end-to-big-bang-commits",
+        "backup-as-often-as-you-like",
+        "work-on-multiple-changes-concurrently",
+        "power-of-the-server-in-your-client",
+        "for-those-not-yet-using-git"
+      ]
+    },
+    {
+      "slug": "essays",
+      "name": "Essays",
+      "postCount": 18,
+      "posts": [
+        "stop-saying-tech-debt",
+        "hiring-advice-for-bootcamp-graduates",
+        "corporate-values-as-memes",
+        "are-you-happy",
+        "death-by-a-million-cuts",
+        "the-future-of-education",
+        "expert-or-generalist",
+        "curiosity-killed-the-productivity",
+        "web-developer",
+        "failure",
+        "barrier",
+        "mojo",
+        "banking-isnt-evil",
+        "remote-dev-teams",
+        "amdahls-law",
+        "in-house",
+        "agile",
+        "brown-field"
+      ]
+    },
+    {
+      "slug": "coding",
+      "name": "Coding",
+      "postCount": 10,
+      "posts": [
+        "insurance-against-leftpad-level-events",
+        "breaking-into-web-development",
+        "fantasy-football-2014-15",
+        "converting-xml-to-json",
+        "fantasy-football-2013-14",
+        "xml-serialisation",
+        "fantasy-football-2012-13",
+        "prism",
+        "async-await",
+        "ironpython-wpf"
+      ]
+    },
+    {
+      "slug": "management",
+      "name": "Management",
+      "postCount": 8,
+      "posts": [
+        "why-5-whys-isnt-enough",
+        "convincing-or-instructing",
+        "managing-expectations",
+        "what-are-your-engineering-culture-values",
+        "manager-readme-2021",
+        "manager-readme",
+        "are-you-joining-a-good-engineering-team",
+        "how-much-coding-should-a-manager-do"
+      ]
+    },
+    {
+      "slug": "compsci",
+      "name": "Compsci",
+      "postCount": 5,
+      "posts": [
+        "before-you-learn-to-program",
+        "converting-bases",
+        "the-10-types-of-people",
+        "counting",
+        "plain-english1"
+      ]
+    }
+  ]
+}

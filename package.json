@@ -2,16 +2,13 @@
   "name": "nextjs-static-blog",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run generate",
-    "generate": "npm run generate:metadata && npm run generate:images && npm run generate:redirects",
-    "generate:metadata": "ts-node scripts/generate-metadata.ts",
-    "generate:images": "ts-node scripts/optimise-images.ts",
-    "generate:redirects": "ts-node scripts/generate-redirects.ts",
+    "generate": "npm run generate:metadata",
+    "generate:metadata": "tsx scripts/generate-metadata.ts",
     "build": "next build",
-    "postbuild": "npm run generate:sitemap",
-    "generate:sitemap": "ts-node scripts/generate-sitemap.ts",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "start": "next start"
@@ -39,6 +36,7 @@
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.17",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
 }
