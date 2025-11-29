@@ -1,0 +1,92 @@
+export const SITE_CONFIG = {
+  title: 'Life Beyond Fife',
+  description: 'Engineering from the glorious Kingdom',
+  author: 'Iain McDonald',
+  siteUrl: 'https://blog.chezmcdonald.info',
+  postsPerPage: 5,
+  avatar: '/images/originals/me.jpg',
+  bio: 'Engineering leader, writer, and creator.',
+  social: {
+    github: 'https://github.com/lifebeyondfife',
+    linkedin: 'https://www.linkedin.com/in/iain-m-mcdonald/',
+  },
+} as const;
+
+export const READING_TIME_CONFIG = {
+  wordsPerMinute: 200,
+  includeImages: true,
+  imageReadingTime: 12,
+} as const;
+
+export const DATE_FORMAT = {
+  full: 'dd MMMM yyyy',
+  short: 'dd MMM yyyy',
+  iso: 'yyyy-MM-dd',
+} as const;
+
+export const NAVIGATION_LINKS = [
+  { href: '/', label: 'Home' },
+  { href: '/posts', label: 'Posts' },
+  { href: '/categories', label: 'Categories' },
+  { href: '/about', label: 'About' },
+] as const;
+
+export const SOCIAL_LINKS = [
+  {
+    name: 'GitHub',
+    href: 'https://github.com/lifebeyondfife',
+    icon: 'GitHub',
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/iain-m-mcdonald/',
+    icon: 'LinkedIn',
+  },
+  {
+    name: 'RSS',
+    href: '/rss.xml',
+    icon: 'Rss',
+  },
+] as const;
+
+export const SEO_CONFIG = {
+  defaultTitle: SITE_CONFIG.title,
+  titleTemplate: `%s | ${SITE_CONFIG.title}`,
+  defaultDescription: SITE_CONFIG.description,
+  defaultKeywords: ['blog', 'nextjs', 'typescript', 'react', 'web development', 'software engineering'],
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    url: SITE_CONFIG.siteUrl,
+    siteName: SITE_CONFIG.title,
+    images: [
+      {
+        url: `${SITE_CONFIG.siteUrl}/images/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: SITE_CONFIG.title,
+      },
+    ],
+  },
+} as const;
+
+export const MARKDOWN_CONFIG = {
+  gfm: true,
+  breaks: false,
+  headerIds: true,
+  sanitize: false,
+} as const;
+
+export const CODE_THEME = {
+  light: 'github-light',
+  dark: 'github-dark',
+} as const;
+
+export const POSTS_DIRECTORY = 'content/posts';
+export const IMAGES_DIRECTORY = 'public/images';
+
+export const ERROR_MESSAGES = {
+  postNotFound: 'Post not found',
+  loadError: 'Failed to load content',
+  invalidFormat: 'Invalid post format',
+} as const;
