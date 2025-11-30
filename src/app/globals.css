@@ -1,15 +1,11 @@
-@import "tailwindcss/theme" layer(theme);
-@import "tailwindcss/preflight" layer(base);
-@import "tailwindcss/utilities" layer(utilities);
+@import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-ocean-blue: #4A7BA7;
-    --color-ocean-dark: #3d6585;
-    --color-sky-blue: #6FA8DC;
-    --color-cloud-grey: #B4C7D8;
-    --color-horizon: #D4E3EE;
-  }
+@theme {
+  --color-ocean-blue: #4A7BA7;
+  --color-ocean-dark: #3d6585;
+  --color-sky-blue: #6FA8DC;
+  --color-cloud-grey: #B4C7D8;
+  --color-horizon: #D4E3EE;
 }
 
 @layer utilities {
