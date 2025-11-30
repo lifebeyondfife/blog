@@ -29,6 +29,22 @@ export interface PostsIndex {
   totalPages: number;
 }
 
+export interface CategoryData {
+  slug: string;
+  name: string;
+  postCount: number;
+  posts: string[];
+}
+
+export interface CategoriesIndex {
+  categories: CategoryData[];
+}
+
+export interface RedirectEntry {
+  legacySlug: string;
+  canonicalUrl: string;
+}
+
 export interface TableOfContentsItem {
   id: string;
   text: string;
