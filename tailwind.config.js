@@ -1,29 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: '72ch',
-            color: '#374151',
-            a: {
-              color: '#2563eb',
-              '&:hover': {
-                color: '#1d4ed8',
-              },
-            },
-            'code::before': {
-              content: '""',
-            },
-            'code::after': {
-              content: '""',
-            },
-          },
-        },
+      colors: {
+        'ocean-blue': '#4A7BA7',
+        'ocean-dark': '#3d6585',
+        'sky-blue': '#6FA8DC',
+        'cloud-grey': '#B4C7D8',
+        'horizon': '#D4E3EE',
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
-};
+}
