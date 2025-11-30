@@ -12,6 +12,11 @@ export const SITE_CONFIG = {
   },
 } as const;
 
+export const POSTS_DIRECTORY = 'content/posts';
+export const IMAGES_DIRECTORY = 'public/images';
+export const GENERATED_DIRECTORY = 'generated';
+export const EXCERPT_WORD_COUNT = 100;
+
 export const READING_TIME_CONFIG = {
   wordsPerMinute: 200,
   includeImages: true,
@@ -61,7 +66,7 @@ export const SEO_CONFIG = {
     siteName: SITE_CONFIG.title,
     images: [
       {
-        url: `${SITE_CONFIG.siteUrl}/images/og-image.jpg`,
+        url: `${SITE_CONFIG.siteUrl}/${IMAGES_DIRECTORY}/og-image.jpg`,
         width: 1200,
         height: 630,
         alt: SITE_CONFIG.title,
@@ -81,11 +86,6 @@ export const CODE_THEME = {
   light: 'github-light',
   dark: 'github-dark',
 } as const;
-
-export const POSTS_DIRECTORY = 'content/posts';
-export const IMAGES_DIRECTORY = 'public/images';
-export const GENERATED_DIRECTORY = 'generated';
-export const EXCERPT_WORD_COUNT = 100;
 
 export const ERROR_MESSAGES = {
   postNotFound: 'Post not found',
