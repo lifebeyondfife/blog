@@ -8,6 +8,12 @@
   --color-horizon: #D4E3EE;
 }
 
+@layer base {
+  html {
+    font-family: var(--font-raleway), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
