@@ -1,6 +1,7 @@
 export const SITE_CONFIG = {
   title: 'Life Beyond Fife',
   description: 'Engineering from the glorious Kingdom',
+  byline: 'I love hacking together code to make awesome things; mainly I love to share what\'s worked for me.',
   author: 'Iain McDonald',
   siteUrl: 'https://blog.chezmcdonald.info',
   postsPerPage: 5,

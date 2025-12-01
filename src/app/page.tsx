@@ -40,12 +40,9 @@ export default function HomePage() {
         
         <div className="relative h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
-              Welcome to {SITE_CONFIG.title}
-            </h1>
-            <p className="text-xl md:text-2xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md">
-              {SITE_CONFIG.description}
-            </p>
+            <h2 className="text-xl md:text-3xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md">
+              {SITE_CONFIG.byline}
+            </h2>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link
                 href="/posts"
