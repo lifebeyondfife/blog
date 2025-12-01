@@ -312,43 +312,87 @@ If the redirect map exceeds the 10KB limit, the script should emit a warning and
 
 ### src/lib/posts.ts
 
+This module provides all post data access functions, optimized for PageSpeed performance by reading from pre-generated JSON metadata files rather than performing filesystem I/O for individual posts at runtime.
+
 ```typescript
-import postsIndex from '../../generated/posts-index.json';
-import { PostMeta, Post, PostsIndex } from '@/types/post';
-import { SITE_CONFIG } from './constants';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { Post, PostMeta, PostsIndex, CategoriesIndex } from '@/types/post';
+import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from './constants';
 
-export function getAllPostsMeta(): PostMeta[] {
-  return postsIndex.posts;
-}
-
-export function getPostsMeta(page: number): PostsIndex {
-  const { postsPerPage } = SITE_CONFIG;
-  const startIndex = (page - 1) * postsPerPage;
-  const paginatedPosts = postsIndex.posts.slice(startIndex, startIndex + postsPerPage);
-  
-  return {
-    posts: paginatedPosts,
-    totalPosts: postsIndex.posts.length,
-    totalPages: Math.ceil(postsIndex.posts.length / postsPerPage),
-  };
-}
-
-export function getPostBySlug(category: string, slug: string): Post | null {
-  // Implementation reads from content/posts/ and parses full markdown
-}
-
-export function getPostsByCategory(category: string, page: number): PostsIndex {
-  // Implementation filters postsIndex by category and paginates
-}
-
-export function getAllCategories(): string[] {
-  // Returns unique categories from postsIndex
-}
-
-export function generateStaticParams(): Array<{ category: string; slug: string }> {
-  // Returns all category/slug combinations for static generation
-}
+export function getAllPostsMeta(): PostMeta[];
+export function getPostsMeta(page: number): PostsIndex;
+export function getAllCategories(): string[];
+export function getPostsByCategory(category: string, page: number): PostsIndex;
+export function generateStaticParams(): Array;
+export function getPostBySlug(category: string, slug: string): Post | null;
+export function getCategoriesIndex(): CategoriesIndex;
+export function postExists(slug: string): boolean;
 ```
+
+#### Performance-Optimized Metadata Functions
+
+These functions read from `generated/posts-index.json`, a pre-generated file containing all post metadata. This approach ensures minimal filesystem I/O and optimal PageSpeed scores.
+
+**`getAllPostsMeta()`**
+- Returns all post metadata from the pre-generated index
+- Single JSON file read, cached by Node.js
+- Used for generating static params and category pages
+
+**`getPostsMeta(page: number)`**
+- Returns paginated post metadata for a specific page
+- Slices in-memory array from `getAllPostsMeta()`
+- Returns `PostsIndex` with posts, totalPosts, and totalPages
+- Used by homepage and paginated post listings
+
+**`getPostsByCategory(category: string, page: number)`**
+- Filters posts by category and returns paginated results
+- Operates on in-memory metadata from `getAllPostsMeta()`
+- Returns `PostsIndex` with filtered posts, totalPosts, and totalPages
+
+**`getAllCategories()`**
+- Extracts unique categories from all post metadata
+- Returns sorted array of category slugs
+- Used for category navigation and static param generation
+
+**`generateStaticParams()`**
+- Returns all category/slug combinations for Next.js static generation
+- Used in `[category]/[slug]/page.tsx` for build-time page generation
+
+#### Full Content Functions
+
+These functions read individual markdown files and are only used for rendering individual post pages at build time.
+
+**`getPostBySlug(category: string, slug: string)`**
+- Reads and parses a single markdown file from `content/posts/`
+- Validates that the category matches the frontmatter
+- Returns full `Post` object including parsed content
+- Returns `null` if post not found or category mismatch
+
+**`getCategoriesIndex()`**
+- Reads the pre-generated `categories.json` file
+- Returns `CategoriesIndex` with category metadata and post counts
+
+**`postExists(slug: string)`**
+- Checks if a markdown file exists for the given slug
+- Used for validation and 404 handling
+
+### Performance Architecture
+
+The two-tier architecture separates metadata operations from content operations:
+
+1. **Metadata Tier** (Homepage, listings, navigation)
+   - Single JSON file read: `generated/posts-index.json`
+   - No per-post filesystem operations
+   - Optimal for PageSpeed metrics
+
+2. **Content Tier** (Individual post pages)
+   - Reads individual markdown files: `content/posts/{slug}.md`
+   - Only occurs at build time during static generation
+   - Acceptable performance impact as it's not runtime
+
+This ensures the homepage and listing pages achieve near-perfect PageSpeed scores while maintaining the ability to serve full post content.
 
 ### src/lib/markdown.ts
 
@@ -357,12 +401,12 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import matter from 'gray-matter';
 
-export async function parseMarkdown(content: string): Promise<string> {
+export async function parseMarkdown(content: string): Promise {
   const result = await remark().use(html).process(content);
   return result.toString();
 }
 
-export function parseFrontmatter<T>(fileContent: string): { data: T; content: string } {
+export function parseFrontmatter(fileContent: string): { data: T; content: string } {
   const { data, content } = matter(fileContent);
   return { data: data as T, content };
 }
@@ -413,6 +457,55 @@ The component should:
 5. Include appropriate ARIA labels for accessibility
 
 ## Page Implementation
+
+### src/app/page.tsx
+
+The homepage displays a welcome section with the 3 most recent blog posts:
+
+```typescript
+import { Metadata } from "next";
+import Link from "next/link";
+import { getPostsMeta } from "@/lib/posts";
+import { PostCard } from "@/components/PostCard";
+import { SITE_CONFIG } from "@/lib/constants";
+
+export default function HomePage() {
+  const { posts } = getPostsMeta(1);
+  const recentPosts = posts.slice(0, 3);
+
+  return (
+    
+      
+        
+          Welcome to {SITE_CONFIG.title}
+        
+        
+          {SITE_CONFIG.description}
+        
+        
+          View All Posts
+          Browse Categories
+        
+      
+
+      
+        Recent Posts
+        
+          {recentPosts.map((post) => (
+            
+          ))}
+        
+      
+    
+  );
+}
+```
+
+Performance characteristics:
+- Single call to `getPostsMeta(1)` reads one JSON file
+- No filesystem I/O for individual posts
+- Slicing to 3 posts happens in-memory
+- Optimal PageSpeed scores
 
 ### src/app/[category]/[slug]/page.tsx
 
