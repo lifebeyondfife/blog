@@ -1,5 +1,5 @@
 ---
-title: "Why 5 Whys isn&#8217;t enough"
+title: "Why 5 Whys isn't enough"
 date: "2024-12-29"
 category: "management"
 ---

@@ -3,7 +3,7 @@
     {
       "slug": "why-5-whys-isnt-enough",
       "category": "management",
-      "title": "Why 5 Whys isn&#8217;t enough",
+      "title": "Why 5 Whys isn't enough",
       "date": "2024-12-29",
       "excerpt": "5 Whys is a prevalent engineering process in a modern tech company. When your company has operational incidents (and even the biggest and best ones do), 5 Whys is there to find the root cause, which in turn yields the next steps to make sure those incidents don’t happen again. I could tell the engineering culture of the company needed work when an internal team had an outage related to an expired SSL cert. It wasn’t the outage that made me concerned; it was the attitude of the team who had the outage. “What steps have you taken to make...",
       "tags": [],
