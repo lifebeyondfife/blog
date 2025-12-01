@@ -1,74 +1,75 @@
-import { Metadata } from 'next';
+import { getPostBySlug, generateStaticParams as getStaticParams } from '@/lib/posts';
 import { notFound } from 'next/navigation';
-import { getAllCategories, getPostsByCategory } from '@/lib/posts';
+import { Metadata } from 'next';
 import { SITE_CONFIG } from '@/lib/constants';
-import { PostCard } from '@/components/PostCard';
-import { Pagination } from '@/components/Pagination';
 
-interface CategoryPageProps {
-  params: Promise<{
-    category: string;
-  }>;
+interface PageProps {
+  params: Promise<{ category: string; slug: string }>;
 }
 
 export function generateStaticParams() {
-  const categories = getAllCategories();
-  
-  console.log(`Generating static params for ${categories.length} categories`);
-  
-  return categories.map((category) => ({
-    category,
-  }));
+  return getStaticParams();
 }
 
-export async function generateMetadata({
-  params,
-}: CategoryPageProps): Promise<Metadata> {
-  const { category } = await params;
-  const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { category, slug } = await params;
+  const post = await getPostBySlug(category, slug);
+
+  if (!post) {
+    return {
+      title: 'Post Not Found',
+    };
+  }
 
   return {
-    title: `${categoryName} - ${SITE_CONFIG.title}`,
-    description: `Browse all posts in the ${categoryName} category`,
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      url: `${SITE_CONFIG.siteUrl}/${category}/${slug}/`,
+      publishedTime: post.date,
+    },
+    alternates: {
+      canonical: `/${category}/${slug}/`,
+    },
   };
 }
 
-export default async function CategoryPage({ params }: CategoryPageProps) {
-  const { category } = await params;
-  const page = 1;
+export default async function PostPage({ params }: PageProps) {
+  const { category, slug } = await params;
+  const post = await getPostBySlug(category, slug);
   
-  const { posts, totalPosts, totalPages } = getPostsByCategory(category, page);
-
-  if (posts.length === 0) {
+  if (!post) {
     notFound();
   }
 
-  const categoryName = category.charAt(0).toUpperCase() + category.slice(1);
-
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
-      <header className="mb-8">
-        <h1 className="text-4xl font-bold mb-2">{categoryName}</h1>
-        <p className="text-gray-600 dark:text-gray-400">
-          {totalPosts} {totalPosts === 1 ? 'post' : 'posts'}
-        </p>
-      </header>
-
-      <div className="space-y-8">
-        {posts.map((post) => (
-          <PostCard key={post.slug} post={post} />
-        ))}
+    <article className="container mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto">
+        <header className="mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            {post.title}
+          </h1>
+          <div className="flex items-center gap-4 text-gray-600">
+            <time dateTime={post.date}>
+              {new Date(post.date).toLocaleDateString('en-GB', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              })}
+            </time>
+            <span>•</span>
+            <span>{post.readingTime} min read</span>
+            <span>•</span>
+            <span className="capitalize">{post.category}</span>
+          </div>
+        </header>
+        <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
       </div>
-
-      {totalPages > 1 && (
-        <div className="mt-12">
-          <Pagination
-            currentPage={page}
-            totalPages={totalPages}
-            basePath={`/${category}/page`}
-          />
-        </div>
-      )}
-    </div>
+    </article>
   );
 }
