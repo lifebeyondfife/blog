@@ -1,17 +1,16 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { markdownToHtml } from './markdown';
 import { Post, PostMeta, PostsIndex, CategoriesIndex } from '@/types/post';
 import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from './constants';
+import postsIndexData from '../../generated/posts-index.json';
 
 const CONTENT_DIR = path.join(process.cwd(), POSTS_DIRECTORY);
 const GENERATED_DIR = path.join(process.cwd(), GENERATED_DIRECTORY);
 
 export function getAllPostsMeta(): PostMeta[] {
-  const indexPath = path.join(GENERATED_DIR, 'posts-index.json');
-  const indexContent = fs.readFileSync(indexPath, 'utf8');
-  const index = JSON.parse(indexContent) as { posts: PostMeta[] };
-  return index.posts;
+  return postsIndexData.posts;
 }
 
 export function getPostsMeta(page: number): PostsIndex {
@@ -55,8 +54,16 @@ export function generateStaticParams(): Array<{ category: string; slug: string }
   }));
 }
 
-export function getPostBySlug(category: string, slug: string): Post | null {
+export async function getPostBySlug(category: string, slug: string): Promise<Post | null> {
   try {
+    const postMeta = postsIndexData.posts.find(
+      (p) => p.slug === slug && p.category === category
+    );
+
+    if (!postMeta) {
+      return null;
+    }
+
     const filePath = path.join(CONTENT_DIR, `${slug}.md`);
     const fileContents = fs.readFileSync(filePath, 'utf8');
     const { data, content } = matter(fileContents);
@@ -65,18 +72,14 @@ export function getPostBySlug(category: string, slug: string): Post | null {
       return null;
     }
 
+    const htmlContent = await markdownToHtml(content);
+
     return {
-      slug,
-      category: data.category,
-      title: data.title,
-      date: data.date,
-      excerpt: data.excerpt || '',
-      tags: data.tags || [],
-      readingTime: data.readingTime || 0,
-      ...(data.featuredImage && { featuredImage: data.featuredImage }),
-      content,
+      ...postMeta,
+      content: htmlContent,
     };
   } catch (error) {
+    console.error(`Error loading post ${category}/${slug}:`, error);
     return null;
   }
 }
