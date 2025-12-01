@@ -504,7 +504,7 @@ export default function HomePage() {
 Performance characteristics:
 - Single call to `getPostsMeta(1)` reads one JSON file
 - No filesystem I/O for individual posts
-- Slicing to 3 posts happens in-memory
+- Slicing to number of posts defined in constants, happens in-memory
 - Optimal PageSpeed scores
 
 ### src/app/[category]/[slug]/page.tsx
