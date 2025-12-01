@@ -75,13 +75,6 @@ export const SEO_CONFIG = {
   },
 } as const;
 
-export const MARKDOWN_CONFIG = {
-  gfm: true,
-  breaks: false,
-  headerIds: true,
-  sanitize: false,
-} as const;
-
 export const CODE_THEME = {
   light: 'github-light',
   dark: 'github-dark',
