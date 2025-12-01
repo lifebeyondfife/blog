@@ -36,7 +36,6 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeSlug)
-    .use(rehypeAutolinkHeadings, { behavior: 'wrap' })
     .use(rehypeStringify);
 
   const file = await processor.process(markdown);
