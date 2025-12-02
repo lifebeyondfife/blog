@@ -19,7 +19,12 @@ export const Pagination: React.FC<PaginationProps> = ({
   maxVisiblePages = 7
 }) => {
   const getPageUrl = (page: number) => {
-    return page === 1 ? basePath : `${basePath}/${page}`;
+    if (page === 1) {
+      // Remove "/page" from the end of basePath to get the base listing URL
+      // e.g., "/posts/page" becomes "/posts/"
+      return basePath.replace(/\/page$/, '/');
+    }
+    return `${basePath}/${page}`;
   };
 
   const handlePageChange = (page: number) => {
