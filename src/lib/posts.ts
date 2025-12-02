@@ -35,14 +35,16 @@ export function getAllCategories(): string[] {
 export function getPostsByCategory(category: string, page: number): PostsIndex {
   const allPosts = getAllPostsMeta();
   const categoryPosts = allPosts.filter(post => post.category === category);
+  const chronologicalPosts = [...categoryPosts].reverse();
+  
   const { postsPerPage } = SITE_CONFIG;
   const startIndex = (page - 1) * postsPerPage;
-  const paginatedPosts = categoryPosts.slice(startIndex, startIndex + postsPerPage);
+  const paginatedPosts = chronologicalPosts.slice(startIndex, startIndex + postsPerPage);
   
   return {
     posts: paginatedPosts,
-    totalPosts: categoryPosts.length,
-    totalPages: Math.ceil(categoryPosts.length / postsPerPage),
+    totalPosts: chronologicalPosts.length,
+    totalPages: Math.ceil(chronologicalPosts.length / postsPerPage),
   };
 }
 
