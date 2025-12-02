@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   byline: 'I love hacking together code to make awesome things; mainly I love to share what\'s worked for me.',
   author: 'Iain McDonald',
   siteUrl: 'https://blog.chezmcdonald.info',
-  postsPerPage: 5,
+  postsPerPage: 6,
   avatar: '/images/originals/me.jpg',
   bio: 'Engineering leader, writer, and creator.',
   social: {
