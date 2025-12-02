@@ -13,7 +13,7 @@ export function PostCard({ post }: PostCardProps) {
       <Link href={postUrl} className="block">
         <div className="p-6">
           <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-            <span className="font-medium text-ocean-blue">{post.category}</span>
+            <span className="font-medium text-ocean-dark">{post.category}</span>
             <span>•</span>
             <time dateTime={post.date}>{new Date(post.date).toLocaleDateString('en-GB', { 
               year: 'numeric', 
@@ -22,9 +22,9 @@ export function PostCard({ post }: PostCardProps) {
             })}</time>
           </div>
           
-          <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-ocean-blue transition-colors">
+          <h2 className="text-xl font-bold text-gray-900 mb-2 hover:text-ocean-blue transition-colors">
             {post.title}
-          </h3>
+          </h2>
           
           <p className="text-gray-600 mb-4 line-clamp-3">
             {post.excerpt}
@@ -32,7 +32,7 @@ export function PostCard({ post }: PostCardProps) {
           
           <div className="flex items-center justify-between text-sm">
             <span className="text-gray-500">{post.readingTime} min read</span>
-            <span className="text-ocean-blue font-medium">Read more →</span>
+            <span className="text-ocean-dark font-medium">Read more →</span>
           </div>
         </div>
       </Link>
