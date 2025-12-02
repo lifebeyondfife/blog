@@ -69,7 +69,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900">Recent Posts</h2>
             <Link
               href="/posts"
-              className="text-ocean-dark hover:text-ocean-blue hover:underline font-medium transition-colors"
+              className="text-ocean-blue hover:text-ocean-dark hover:underline font-medium transition-colors"
             >
               View all →
             </Link>
