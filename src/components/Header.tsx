@@ -3,7 +3,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export function Header() {
   return (
-    <header className="bg-ocean-blue text-white shadow-lg">
+    <header className="bg-ocean-dark text-white shadow-lg">
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
@@ -18,13 +18,6 @@ export function Header() {
           </div>
           <nav aria-label="Main navigation">
             <ul className="flex gap-6">
-              <li>
-                <Link href="/" 
-                  className="text-white hover:opacity-80 transition-opacity font-medium border-b-2 border-transparent hover:border-white/50"
-                >
-                  Home
-                </Link>
-              </li>
               <li>
                 <Link href="/posts" 
                   className="text-white hover:opacity-80 transition-opacity font-medium border-b-2 border-transparent hover:border-white/50"

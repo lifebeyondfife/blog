@@ -35,7 +35,7 @@ export default function HomePage() {
             priority
             quality={90}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-ocean-blue/60 via-ocean-blue/40 to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/60 via-ocean-blue/40 to-white" />
         </div>
         
         <div className="relative h-full flex items-center justify-center">
@@ -46,7 +46,7 @@ export default function HomePage() {
             <div className="flex gap-4 justify-center flex-wrap">
               <Link
                 href="/posts"
-                className="inline-block bg-white text-ocean-blue px-8 py-3 rounded-lg font-medium hover:bg-cloud-grey hover:text-ocean-dark transition-colors shadow-lg"
+                className="inline-block bg-white text-ocean-dark px-8 py-3 rounded-lg font-medium hover:bg-cloud-grey hover:text-ocean-dark transition-colors shadow-lg"
               >
                 View All Posts
               </Link>
@@ -69,7 +69,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-bold text-gray-900">Recent Posts</h2>
             <Link
               href="/posts"
-              className="text-ocean-blue hover:text-ocean-dark hover:underline font-medium transition-colors"
+              className="text-ocean-dark hover:text-ocean-blue hover:underline font-medium transition-colors"
             >
               View all →
             </Link>
