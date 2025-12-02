@@ -6,7 +6,7 @@ import { PostCard } from "@/components/PostCard";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: SITE_CONFIG.title,
   description: SITE_CONFIG.description,
   openGraph: {
     title: SITE_CONFIG.title,

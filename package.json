@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run generate",
-    "generate": "npm run generate:metadata",
+    "generate": "npm run generate:metadata && npm run generate:images",
     "generate:metadata": "tsx scripts/generate-metadata.ts",
+    "generate:images": "tsx scripts/optimise-images.ts",
     "build": "next build",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -38,6 +39,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.22",
+    "baseline-browser-mapping": "^2.8.32",
     "eslint": "^9.39.1",
     "eslint-config-next": "^16.0.5",
     "postcss": "^8.5.6",
