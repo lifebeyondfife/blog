@@ -104,6 +104,14 @@
       455
     ]
   },
+  "FantasyFootball2012-13": {
+    "originalWidth": 960,
+    "originalHeight": 529,
+    "availableSizes": [
+      640,
+      960
+    ]
+  },
   "MVP": {
     "originalWidth": 525,
     "originalHeight": 350,
@@ -128,6 +136,14 @@
   "Newer-DVCS-1024x518": {
     "originalWidth": 1024,
     "originalHeight": 518,
+    "availableSizes": [
+      640,
+      960
+    ]
+  },
+  "Newer-DVCS": {
+    "originalWidth": 1155,
+    "originalHeight": 584,
     "availableSizes": [
       640,
       960
@@ -168,6 +184,13 @@
       230
     ]
   },
+  "agrades": {
+    "originalWidth": 304,
+    "originalHeight": 395,
+    "availableSizes": [
+      304
+    ]
+  },
   "analytics": {
     "originalWidth": 761,
     "originalHeight": 544,
@@ -187,6 +210,21 @@
     "originalHeight": 450,
     "availableSizes": [
       640
+    ]
+  },
+  "architecture": {
+    "originalWidth": 631,
+    "originalHeight": 254,
+    "availableSizes": [
+      631
+    ]
+  },
+  "audi": {
+    "originalWidth": 1024,
+    "originalHeight": 576,
+    "availableSizes": [
+      640,
+      960
     ]
   },
   "autocomplete firebug": {
@@ -245,9 +283,35 @@
       640
     ]
   },
+  "binky-1": {
+    "originalWidth": 1302,
+    "originalHeight": 889,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ]
+  },
+  "binky": {
+    "originalWidth": 1488,
+    "originalHeight": 1600,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ]
+  },
   "bmw-1024x615": {
     "originalWidth": 1024,
     "originalHeight": 615,
+    "availableSizes": [
+      640,
+      960
+    ]
+  },
+  "bmw": {
+    "originalWidth": 1200,
+    "originalHeight": 721,
     "availableSizes": [
       640,
       960
@@ -267,6 +331,13 @@
       500
     ]
   },
+  "bruce": {
+    "originalWidth": 349,
+    "originalHeight": 466,
+    "availableSizes": [
+      349
+    ]
+  },
   "celsius_converter": {
     "originalWidth": 235,
     "originalHeight": 135,
@@ -276,7 +347,7 @@
   },
   "challenge": {
     "originalWidth": 520,
-    "originalHeight": 145,
+    "originalHeight": 146,
     "availableSizes": [
       520
     ]
@@ -351,6 +422,13 @@
       640
     ]
   },
+  "dialog": {
+    "originalWidth": 652,
+    "originalHeight": 653,
+    "availableSizes": [
+      640
+    ]
+  },
   "directed-acyclic-graph-root-cause-analysis-1": {
     "originalWidth": 1870,
     "originalHeight": 615,
@@ -360,6 +438,13 @@
       1280
     ]
   },
+  "elephant": {
+    "originalWidth": 640,
+    "originalHeight": 480,
+    "availableSizes": [
+      640
+    ]
+  },
   "fife": {
     "originalWidth": 1440,
     "originalHeight": 404,
@@ -367,6 +452,23 @@
       640,
       960,
       1280
+    ]
+  },
+  "fife_c": {
+    "originalWidth": 1440,
+    "originalHeight": 404,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ]
+  },
+  "fife_f": {
+    "originalWidth": 1200,
+    "originalHeight": 640,
+    "availableSizes": [
+      640,
+      960
     ]
   },
   "first": {
@@ -395,6 +497,14 @@
     "originalHeight": 275,
     "availableSizes": [
       450
+    ]
+  },
+  "full-architecture": {
+    "originalWidth": 1025,
+    "originalHeight": 768,
+    "availableSizes": [
+      640,
+      960
     ]
   },
   "full": {
@@ -508,6 +618,14 @@
   "hyundai-1024x614": {
     "originalWidth": 1024,
     "originalHeight": 614,
+    "availableSizes": [
+      640,
+      960
+    ]
+  },
+  "hyundai": {
+    "originalWidth": 1200,
+    "originalHeight": 720,
     "availableSizes": [
       640,
       960
@@ -646,6 +764,13 @@
       640
     ]
   },
+  "mongo csharp": {
+    "originalWidth": 560,
+    "originalHeight": 293,
+    "availableSizes": [
+      560
+    ]
+  },
   "mongo tables": {
     "originalWidth": 640,
     "originalHeight": 451,
@@ -693,6 +818,13 @@
     "originalHeight": 240,
     "availableSizes": [
       336
+    ]
+  },
+  "oadatelist": {
+    "originalWidth": 516,
+    "originalHeight": 258,
+    "availableSizes": [
+      516
     ]
   },
   "office-space-meme": {
@@ -751,6 +883,13 @@
       640
     ]
   },
+  "polar bear 3d": {
+    "originalWidth": 832,
+    "originalHeight": 768,
+    "availableSizes": [
+      640
+    ]
+  },
   "polar bear numbered": {
     "originalWidth": 832,
     "originalHeight": 768,
@@ -770,6 +909,14 @@
     "originalHeight": 768,
     "availableSizes": [
       640
+    ]
+  },
+  "preciousss": {
+    "originalWidth": 1054,
+    "originalHeight": 324,
+    "availableSizes": [
+      640,
+      960
     ]
   },
   "profile": {
@@ -836,6 +983,14 @@
       960
     ]
   },
+  "robmc": {
+    "originalWidth": 1080,
+    "originalHeight": 1080,
+    "availableSizes": [
+      640,
+      960
+    ]
+  },
   "sabbatical": {
     "originalWidth": 472,
     "originalHeight": 750,
@@ -860,6 +1015,13 @@
   "sherlock-holmes-by-piet-mondrian": {
     "originalWidth": 640,
     "originalHeight": 480,
+    "availableSizes": [
+      640
+    ]
+  },
+  "softwarecycle": {
+    "originalWidth": 640,
+    "originalHeight": 400,
     "availableSizes": [
       640
     ]
@@ -934,6 +1096,13 @@
       300
     ]
   },
+  "traditional-VCS": {
+    "originalWidth": 670,
+    "originalHeight": 580,
+    "availableSizes": [
+      640
+    ]
+  },
   "tree": {
     "originalWidth": 680,
     "originalHeight": 400,
@@ -960,6 +1129,13 @@
     "originalHeight": 54,
     "availableSizes": [
       601
+    ]
+  },
+  "whatsnewmusic": {
+    "originalWidth": 869,
+    "originalHeight": 196,
+    "availableSizes": [
+      640
     ]
   },
   "wnm final": {
@@ -1005,6 +1181,13 @@
     "originalHeight": 271,
     "availableSizes": [
       525
+    ]
+  },
+  "xml": {
+    "originalWidth": 64,
+    "originalHeight": 64,
+    "availableSizes": [
+      64
     ]
   },
   "xmlkirk": {

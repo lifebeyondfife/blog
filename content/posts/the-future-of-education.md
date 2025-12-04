@@ -36,7 +36,7 @@ Consider the chart below taken from the following [BBC article](http://www.bbc.c
 
  
 
-[![A Grade Passes](/images/agrades-230x300.png)](http://lifebeyondfife.com/wp-content/uploads/2013/07/agrades.png)
+[![A Grade Passes](/images/agrades.png)](/images/originals/agrades.png)
 
  
 

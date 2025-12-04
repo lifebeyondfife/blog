@@ -12,7 +12,7 @@ When I say that personal trainers, badly equipped gyms, shaming magazines, and p
 
   
 
-![](/images/robmc-1024x1024.jpg)
+![](/images/robmc.jpg)
 
 > "Look, it’s not that hard. All you need to do is lift weights six days a week, stop drinking alcohol, don’t eat anything after 7pm, don’t eat any carbs or sugar at all, in fact just don’t eat anything you like, get the personal trainer from Magic Mike, sleep nine hours a night, run three miles a day, and have a studio pay for the whole thing over a six to seven month span. I don’t know why everyone’s not doing this. It’s a super realistic lifestyle and an appropriate body image to compare oneself to."
 > 

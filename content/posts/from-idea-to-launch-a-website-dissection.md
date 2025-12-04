@@ -61,7 +61,7 @@ Coming from a desktop background, some recalibration is required with regard to 
 
 From here an architecture evolved that allowed me to solve the initial problem and provide a sane abstraction for each task. Click for an enlarged version.
 
-![](/images/architecture.png)
+![](/images/full-architecture.png)
 
 The central WCF REST service server would allow five types of http request.
 

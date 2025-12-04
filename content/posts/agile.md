@@ -41,7 +41,7 @@ Anyone who's had the misfortune of dealing with an unhappy, possibly outright an
 
 ## Chinese whispers via specifications
 
-![](/images/misunderstandings-300x200.jpg)
+![](/images/misunderstandings.jpg)
 
 With this high degree of separation between development and clients how on earth does working software that genuinely solves problems ever get produced? Ideally the developers will have a clear understanding of their clients' business so before any project even starts they know roughly what is required. There may be a few members of the development team who "wear two hats" and can act as an analyst too - a handy reference for the rest of the team. But if there is no specialist knowledge available all a developer can do is fall back on the specification.
 

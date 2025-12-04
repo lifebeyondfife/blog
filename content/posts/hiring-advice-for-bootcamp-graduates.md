@@ -12,7 +12,7 @@ Anecdotally, I see the tech enthusiastic clique who started coding when they wer
 
   
 
-![](https://lifebeyondfife.com/wp-content/uploads/2021/08/bruce.webp)
+![](images/bruce.webp)
 
 _"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."_ — Bruce Lee
 
@@ -30,7 +30,7 @@ It's an industry joke that no-one knows how to program, and we all just use Stac
 
   
 
-![Cartoon which shows an easy method of drawing a character crudely, and an easier method to draw the same character well, but requires a lot of practice.](/images/binky-1-1024x699.png)
+![Cartoon which shows an easy method of drawing a character crudely, and an easier method to draw the same character well, but requires a lot of practice.](/images/binky.png)
 
   
 
@@ -46,7 +46,7 @@ Bootcamps have to teach multiple technologies so they cover the knowledge and un
 
   
 
-![GitHub contribution graph which shows a lot of activity for 3 months with nothing before or after.](/images/github-1024x324.png)
+![GitHub contribution graph which shows a lot of activity for 3 months with nothing before or after.](/images/github.png)
 
   
 

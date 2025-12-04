@@ -177,7 +177,7 @@ Instead of considering a full combination of choices for each unknown and testin
 
  
 
-[![Search Tree for three variables each with a domain of three elements.](/images/tree.png)](http://lifebeyondfife.com/wp-content/uploads/2013/10/tree.png)
+[![Search Tree for three variables each with a domain of three elements.](/images/tree.png)](/images/originals/tree.png)
 
  
 
@@ -297,7 +297,7 @@ When we're introduced to concept of Big-O notation, it usually accompanies a gra
 
  
 
-[![big-o](/images/big-o.png)](http://lifebeyondfife.com/wp-content/uploads/2013/10/big-o.png)
+[![big-o](/images/big-o.png)](/images/originals/big-o.png)
 
  
 
@@ -305,7 +305,7 @@ I remarked earlier that polynomial problems are like peas in a pod compared to N
 
  
 
-[![NP-complete wall](/images/NP-complete-wall.png)](http://lifebeyondfife.com/wp-content/uploads/2013/10/NP-complete-wall.png)
+[![NP-complete wall](/images/NP-complete-wall.png)](/images/originals/NP-complete-wall.png)
 
  
 
