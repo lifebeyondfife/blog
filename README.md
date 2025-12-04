@@ -319,7 +319,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { Post, PostMeta, PostsIndex, CategoriesIndex } from '@/types/post';
-import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from './constants';
+import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from '@/lib/constants';
 
 export function getAllPostsMeta(): PostMeta[];
 export function getPostsMeta(page: number): PostsIndex;

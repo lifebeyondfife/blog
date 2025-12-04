@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { markdownToHtml } from './markdown';
+import { markdownToHtml } from '@/lib/markdown';
 import { Post, PostMeta, PostsIndex, CategoriesIndex } from '@/types/post';
-import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from './constants';
+import { POSTS_DIRECTORY, GENERATED_DIRECTORY, SITE_CONFIG } from '@/lib/constants';
 import postsIndexData from '../../generated/posts-index.json';
 
 const CONTENT_DIR = path.join(process.cwd(), POSTS_DIRECTORY);
