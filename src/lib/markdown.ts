@@ -5,6 +5,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeOptimisedImages from '@/lib/rehype-optimised-images';
 import matter from 'gray-matter';
 
 export interface Frontmatter {
@@ -37,6 +38,7 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkRehype)
     .use(rehypeSlug)
     .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
+    .use(rehypeOptimisedImages)
     .use(rehypeStringify);
 
   const file = await processor.process(markdown);

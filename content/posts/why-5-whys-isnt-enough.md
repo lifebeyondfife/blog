@@ -61,7 +61,7 @@ Completely different root cause, but no less valuable. The author should reconsi
 
 Once you realise there could be multiple paths, your root cause analysis isn’t one path, or even two, but rather it’s a directed acyclic graph. Revisiting the original SSL cert expiry for a service which requires mTLS connections, consider the following root cause analysis as an alternative to 5 Whys. This yields a goldmine of root causes, which makes preventing future incidents much more likely.
 
-[![](/images/directed-acyclic-graph-root-cause-analysis-1.png)](/images/directed-acyclic-graph-root-cause-analysis-1.png)
+[![](/images/directed-acyclic-graph-root-cause-analysis-1.png)](/images/originals/directed-acyclic-graph-root-cause-analysis-1.png)
 
 ```
 graph TD

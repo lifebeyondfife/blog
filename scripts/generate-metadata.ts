@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { PostMeta, PostFrontmatter } from '../src/types/post';
-import { SITE_CONFIG, POSTS_DIRECTORY, READING_TIME_CONFIG, EXCERPT_WORD_COUNT } from '../src/lib/constants';
+import { PostMeta, PostFrontmatter } from '@/types/post';
+import { SITE_CONFIG, POSTS_DIRECTORY, READING_TIME_CONFIG, EXCERPT_WORD_COUNT } from '@/lib/constants';
 
 interface CategoryData {
   slug: string;

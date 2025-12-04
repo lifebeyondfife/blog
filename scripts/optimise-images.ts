@@ -1,18 +1,29 @@
 import fs from 'fs/promises';
 import path from 'path';
 import sharp from 'sharp';
-import { IMAGES_DIRECTORY } from '../src/lib/constants';
+import { IMAGES_DIRECTORY, GENERATED_DIRECTORY } from '../src/lib/constants';
 
-const ORIGINALS_DIR = path.join(process.cwd(), IMAGES_DIRECTORY, 'originals');
-const OPTIMISED_DIR = path.join(process.cwd(), IMAGES_DIRECTORY, 'optimised');
+const PROJECT_ROOT = process.cwd();
+const ORIGINALS_DIR = path.join(PROJECT_ROOT, IMAGES_DIRECTORY, 'originals');
+const OPTIMISED_DIR = path.join(PROJECT_ROOT, IMAGES_DIRECTORY, 'optimised');
+const MANIFEST_PATH = path.join(PROJECT_ROOT, GENERATED_DIRECTORY, 'image-manifest.json');
 
-const WIDTHS = [640, 960, 1280, 1920];
-const FORMATS = ['webp', 'jpeg'] as const;
-
-const QUALITY = {
-  webp: 80,
-  jpeg: 85,
+const WIDTHS = [640, 960, 1280, 1920] as const;
+const FORMATS = ['webp', 'jpg'] as const;
+const QUALITY = { webp: 80, jpg: 85 } as const;
+const SHARP_FORMAT_MAP: Record<string, 'webp' | 'jpeg'> = {
+  webp: 'webp',
+  jpg: 'jpeg',
 };
+const SUPPORTED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
+
+interface ImageManifest {
+  [filename: string]: {
+    originalWidth: number;
+    originalHeight: number;
+    availableSizes: number[];
+  };
+}
 
 interface ProcessingStats {
   totalImages: number;
@@ -33,71 +44,87 @@ async function getImageFiles(dir: string): Promise<string[]> {
   try {
     const entries = await fs.readdir(dir, { withFileTypes: true });
     return entries
-      .filter((entry) => {
-        if (!entry.isFile()) return false;
-        const ext = path.extname(entry.name).toLowerCase();
-        return ['.jpg', '.jpeg', '.png', '.webp'].includes(ext);
-      })
+      .filter((entry) =>
+        entry.isFile() &&
+        SUPPORTED_EXTENSIONS.includes(path.extname(entry.name).toLowerCase())
+      )
       .map((entry) => entry.name);
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
-      throw new Error(
-        `Originals directory not found: ${dir}\nPlease create it and add images to process.`
-      );
+      return [];
     }
     throw error;
   }
 }
 
 async function shouldProcessImage(
-  imagePath: string,
+  inputPath: string,
   outputDir: string
 ): Promise<boolean> {
   try {
-    // Check if output directory exists
-    await fs.access(outputDir);
+    const inputStat = await fs.stat(inputPath);
 
-    // Check if all expected variants exist
-    for (const width of WIDTHS) {
-      for (const format of FORMATS) {
-        const variantPath = path.join(outputDir, `${width}.${format}`);
-        await fs.access(variantPath);
+    try {
+      const outputFiles = await fs.readdir(outputDir);
+      if (outputFiles.length === 0) return true;
+
+      for (const file of outputFiles) {
+        const outputStat = await fs.stat(path.join(outputDir, file));
+        if (outputStat.mtime < inputStat.mtime) {
+          return true;
+        }
       }
+      return false;
+    } catch {
+      return true;
     }
-
-    // If all variants exist, check if source is newer
-    const sourceStats = await fs.stat(imagePath);
-    const firstVariant = path.join(outputDir, `${WIDTHS[0]}.${FORMATS[0]}`);
-    const variantStats = await fs.stat(firstVariant);
-
-    return sourceStats.mtime > variantStats.mtime;
   } catch {
-    // If any check fails, process the image
     return true;
   }
 }
 
 async function processImage(
   filename: string,
-  stats: ProcessingStats
+  stats: ProcessingStats,
+  manifest: ImageManifest
 ): Promise<void> {
-  const inputPath = path.join(ORIGINALS_DIR, filename);
   const baseName = path.parse(filename).name;
+  const inputPath = path.join(ORIGINALS_DIR, filename);
   const outputDir = path.join(OPTIMISED_DIR, baseName);
 
-  // Check if processing is needed
   if (!(await shouldProcessImage(inputPath, outputDir))) {
     console.log(`  ⏭️  Skipping ${filename} (up to date)`);
     stats.skipped++;
+
+    const image = sharp(inputPath);
+    const metadata = await image.metadata();
+    const availableSizes: number[] = [];
+
+    const validWidths = WIDTHS.filter(width => width <= (metadata.width || 0));
+    const sizesToCheck = validWidths.length > 0 ? validWidths : [metadata.width || 0];
+
+    for (const width of sizesToCheck) {
+      const testPath = path.join(outputDir, `${width}.webp`);
+      try {
+        await fs.access(testPath);
+        availableSizes.push(width);
+      } catch {
+      }
+    }
+
+    manifest[baseName] = {
+      originalWidth: metadata.width || 0,
+      originalHeight: metadata.height || 0,
+      availableSizes
+    };
+
     return;
   }
 
   console.log(`  🖼️  Processing ${filename}...`);
 
-  // Ensure output directory exists
   await ensureDirectory(outputDir);
 
-  // Load the original image
   const image = sharp(inputPath);
   const metadata = await image.metadata();
 
@@ -105,34 +132,61 @@ async function processImage(
     throw new Error(`Could not read dimensions for ${filename}`);
   }
 
-  // Process each width and format combination
-  for (const width of WIDTHS) {
-    // Skip if requested width is larger than original
-    if (width > metadata.width) {
-      console.log(`    ⚠️  Skipping ${width}px (larger than original ${metadata.width}px)`);
-      continue;
-    }
+  const availableSizes: number[] = [];
+  const validWidths = WIDTHS.filter(width => width <= metadata.width);
+
+  if (validWidths.length === 0) {
+    console.log(`    ℹ️  Image is smaller than all target widths (${metadata.width}px), using original size`);
+    availableSizes.push(metadata.width);
 
     for (const format of FORMATS) {
-      const outputPath = path.join(outputDir, `${width}.${format}`);
+      const outputPath = path.join(outputDir, `${metadata.width}.${format}`);
+      const sharpFormat = SHARP_FORMAT_MAP[format];
 
       try {
         await sharp(inputPath)
-          .resize(width, undefined, {
-            withoutEnlargement: true,
-            fit: 'inside',
-          })
-          [format]({ quality: QUALITY[format] })
+          [sharpFormat]({ quality: QUALITY[format] })
           .toFile(outputPath);
 
         stats.totalVariants++;
-        console.log(`    ✓ Created ${width}.${format}`);
+        console.log(`    ✓ Created ${metadata.width}.${format}`);
       } catch (error) {
-        console.error(`    ✗ Failed to create ${width}.${format}:`, error);
+        console.error(`    ✗ Failed to create ${metadata.width}.${format}:`, error);
         stats.errors++;
       }
     }
+  } else {
+    for (const width of validWidths) {
+      availableSizes.push(width);
+
+      for (const format of FORMATS) {
+        const outputPath = path.join(outputDir, `${width}.${format}`);
+        const sharpFormat = SHARP_FORMAT_MAP[format];
+
+        try {
+          await sharp(inputPath)
+            .resize(width, undefined, {
+              withoutEnlargement: true,
+              fit: 'inside',
+            })
+            [sharpFormat]({ quality: QUALITY[format] })
+            .toFile(outputPath);
+
+          stats.totalVariants++;
+          console.log(`    ✓ Created ${width}.${format}`);
+        } catch (error) {
+          console.error(`    ✗ Failed to create ${width}.${format}:`, error);
+          stats.errors++;
+        }
+      }
+    }
   }
+
+  manifest[baseName] = {
+    originalWidth: metadata.width,
+    originalHeight: metadata.height,
+    availableSizes
+  };
 }
 
 async function main(): Promise<void> {
@@ -145,33 +199,38 @@ async function main(): Promise<void> {
     errors: 0,
   };
 
-  try {
-    // Ensure optimised directory exists
-    await ensureDirectory(OPTIMISED_DIR);
+  const manifest: ImageManifest = {};
 
-    // Get all image files
+  try {
+    await ensureDirectory(OPTIMISED_DIR);
+    await ensureDirectory(path.dirname(MANIFEST_PATH));
+
     const imageFiles = await getImageFiles(ORIGINALS_DIR);
 
     if (imageFiles.length === 0) {
       console.log(`⚠️  No images found in ${ORIGINALS_DIR}`);
       console.log('   Add images to process and run again.\n');
+
+      await fs.writeFile(MANIFEST_PATH, JSON.stringify({}, null, 2));
       return;
     }
 
     console.log(`📁 Found ${imageFiles.length} image(s) to process\n`);
     stats.totalImages = imageFiles.length;
 
-    // Process each image
     for (const file of imageFiles) {
       try {
-        await processImage(file, stats);
+        await processImage(file, stats, manifest);
       } catch (error) {
         console.error(`  ✗ Error processing ${file}:`, error);
         stats.errors++;
       }
     }
 
-    // Print summary
+    // Write manifest file
+    await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
+    console.log(`\n📝 Wrote image manifest to ${MANIFEST_PATH}`);
+
     console.log('\n✨ Image optimization complete!\n');
     console.log('Summary:');
     console.log(`  Total images: ${stats.totalImages}`);
