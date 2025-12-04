@@ -1,6 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import sharp from 'sharp';
+import { ImageManifest } from '@/types/images';
 import { IMAGES_DIRECTORY, GENERATED_DIRECTORY } from '../src/lib/constants';
 
 const PROJECT_ROOT = process.cwd();
@@ -16,14 +17,6 @@ const SHARP_FORMAT_MAP: Record<string, 'webp' | 'jpeg'> = {
   jpg: 'jpeg',
 };
 const SUPPORTED_EXTENSIONS = ['.gif', '.jpg', '.jpeg', '.png', '.webp'];
-
-interface ImageManifest {
-  [filename: string]: {
-    originalWidth: number;
-    originalHeight: number;
-    availableSizes: number[];
-  };
-}
 
 interface ProcessingStats {
   totalImages: number;
@@ -83,6 +76,50 @@ async function shouldProcessImage(
   }
 }
 
+async function isAnimatedGif(inputPath: string): Promise<boolean> {
+  try {
+    const image = sharp(inputPath, { animated: true });
+    const metadata = await image.metadata();
+    return metadata.format === 'gif' && (metadata.pages ?? 1) > 1;
+  } catch {
+    return false;
+  }
+}
+
+async function processAnimatedGif(
+  inputPath: string,
+  outputDir: string,
+  stats: ProcessingStats
+): Promise<void> {
+  console.log('    ℹ️  Processing as animated GIF');
+  
+  const image = sharp(inputPath, { animated: true });
+  const metadata = await image.metadata();
+  
+  const webpPath = path.join(outputDir, `${metadata.width}.webp`);
+  try {
+    await image
+      .webp({ quality: QUALITY.webp })
+      .toFile(webpPath);
+    
+    stats.totalVariants++;
+    console.log(`    ✓ Created ${metadata.width}.webp (animated)`);
+  } catch (error) {
+    console.error(`    ✗ Failed to create animated WebP:`, error);
+    stats.errors++;
+  }
+
+  const gifPath = path.join(outputDir, `${metadata.width}.gif`);
+  try {
+    await fs.copyFile(inputPath, gifPath);
+    stats.totalVariants++;
+    console.log(`    ✓ Copied ${metadata.width}.gif (fallback)`);
+  } catch (error) {
+    console.error(`    ✗ Failed to copy original GIF:`, error);
+    stats.errors++;
+  }
+}
+
 async function processImage(
   filename: string,
   stats: ProcessingStats,
@@ -104,9 +141,9 @@ async function processImage(
     const sizesToCheck = validWidths.length > 0 ? validWidths : [metadata.width || 0];
 
     for (const width of sizesToCheck) {
-      const testPath = path.join(outputDir, `${width}.webp`);
+      const webpPath = path.join(outputDir, `${width}.webp`);
       try {
-        await fs.access(testPath);
+        await fs.access(webpPath);
         availableSizes.push(width);
       } catch {
       }
@@ -115,77 +152,80 @@ async function processImage(
     manifest[baseName] = {
       originalWidth: metadata.width || 0,
       originalHeight: metadata.height || 0,
-      availableSizes
+      availableSizes,
+      isAnimated: await isAnimatedGif(inputPath)
     };
-
     return;
   }
 
-  console.log(`  🖼️  Processing ${filename}...`);
+  console.log(`  📷 Processing: ${filename}`);
 
   await ensureDirectory(outputDir);
 
   const image = sharp(inputPath);
   const metadata = await image.metadata();
-
-  if (!metadata.width || !metadata.height) {
-    throw new Error(`Could not read dimensions for ${filename}`);
-  }
-
   const availableSizes: number[] = [];
-  const validWidths = WIDTHS.filter(width => width <= metadata.width);
 
-  if (validWidths.length === 0) {
-    console.log(`    ℹ️  Image is smaller than all target widths (${metadata.width}px), using original size`);
-    availableSizes.push(metadata.width);
+  const isAnimated = await isAnimatedGif(inputPath);
 
-    for (const format of FORMATS) {
-      const outputPath = path.join(outputDir, `${metadata.width}.${format}`);
-      const sharpFormat = SHARP_FORMAT_MAP[format];
-
-      try {
-        await sharp(inputPath)
-          [sharpFormat]({ quality: QUALITY[format] })
-          .toFile(outputPath);
-
-        stats.totalVariants++;
-        console.log(`    ✓ Created ${metadata.width}.${format}`);
-      } catch (error) {
-        console.error(`    ✗ Failed to create ${metadata.width}.${format}:`, error);
-        stats.errors++;
-      }
-    }
+  if (isAnimated) {
+    await processAnimatedGif(inputPath, outputDir, stats);
+    availableSizes.push(metadata.width || 640);
   } else {
-    for (const width of validWidths) {
-      availableSizes.push(width);
+    const validWidths = WIDTHS.filter(width => width <= (metadata.width || 0));
+
+    if (validWidths.length === 0) {
+      availableSizes.push(metadata.width || 0);
 
       for (const format of FORMATS) {
-        const outputPath = path.join(outputDir, `${width}.${format}`);
+        const outputPath = path.join(outputDir, `${metadata.width}.${format}`);
         const sharpFormat = SHARP_FORMAT_MAP[format];
 
         try {
           await sharp(inputPath)
-            .resize(width, undefined, {
-              withoutEnlargement: true,
-              fit: 'inside',
-            })
             [sharpFormat]({ quality: QUALITY[format] })
             .toFile(outputPath);
 
           stats.totalVariants++;
-          console.log(`    ✓ Created ${width}.${format}`);
+          console.log(`    ✓ Created ${metadata.width}.${format}`);
         } catch (error) {
-          console.error(`    ✗ Failed to create ${width}.${format}:`, error);
+          console.error(`    ✗ Failed to create ${metadata.width}.${format}:`, error);
           stats.errors++;
+        }
+      }
+    } else {
+      for (const width of validWidths) {
+        availableSizes.push(width);
+
+        for (const format of FORMATS) {
+          const outputPath = path.join(outputDir, `${width}.${format}`);
+          const sharpFormat = SHARP_FORMAT_MAP[format];
+
+          try {
+            await sharp(inputPath)
+              .resize(width, undefined, {
+                withoutEnlargement: true,
+                fit: 'inside',
+              })
+              [sharpFormat]({ quality: QUALITY[format] })
+              .toFile(outputPath);
+
+            stats.totalVariants++;
+            console.log(`    ✓ Created ${width}.${format}`);
+          } catch (error) {
+            console.error(`    ✗ Failed to create ${width}.${format}:`, error);
+            stats.errors++;
+          }
         }
       }
     }
   }
 
   manifest[baseName] = {
-    originalWidth: metadata.width,
-    originalHeight: metadata.height,
-    availableSizes
+    originalWidth: metadata.width || 0,
+    originalHeight: metadata.height || 0,
+    availableSizes,
+    isAnimated
   };
 }
 
@@ -227,7 +267,6 @@ async function main(): Promise<void> {
       }
     }
 
-    // Write manifest file
     await fs.writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
     console.log(`\n📝 Wrote image manifest to ${MANIFEST_PATH}`);
 

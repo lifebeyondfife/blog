@@ -2,15 +2,8 @@ import { visit } from 'unist-util-visit';
 import type { Root, Element } from 'hast';
 import path from 'path';
 import fs from 'fs';
+import { ImageManifest } from '@/types/images';
 import { GENERATED_DIRECTORY } from '@/lib/constants';
-
-interface ImageManifest {
-  [filename: string]: {
-    originalWidth: number;
-    originalHeight: number;
-    availableSizes: number[];
-  };
-}
 
 let manifestCache: ImageManifest | null = null;
 
@@ -34,7 +27,7 @@ function loadManifest(): ImageManifest {
 }
 
 function extractFilename(src: string): string | null {
-  const match = src.match(/(?:^|\/)images\/([^/]+)\.(jpg|jpeg|png|webp)$/i);
+  const match = src.match(/(?:^|\/)images\/([^/]+)\.(gif|jpg|jpeg|png|webp)$/i);
   if (!match) return null;
   return match[1];
 }
@@ -55,6 +48,42 @@ function createPictureElement(
 
   const sizes = imageInfo.availableSizes.sort((a, b) => a - b);
   const largestSize = sizes[sizes.length - 1];
+  const isAnimated = imageInfo.isAnimated || false;
+
+  if (isAnimated) {
+    const pictureElement: Element = {
+      type: 'element',
+      tagName: 'picture',
+      properties: {},
+      children: [
+        {
+          type: 'element',
+          tagName: 'source',
+          properties: {
+            type: 'image/webp',
+            srcSet: `/images/optimised/${filename}/${largestSize}.webp`
+          },
+          children: []
+        },
+        {
+          type: 'element',
+          tagName: 'img',
+          properties: {
+            src: `/images/optimised/${filename}/${largestSize}.gif`,
+            alt: alt,
+            loading: 'lazy',
+            decoding: 'async',
+            width: imageInfo.originalWidth,
+            height: imageInfo.originalHeight,
+            style: `aspect-ratio: ${imageInfo.originalWidth}/${imageInfo.originalHeight}`,
+            ...(className && { className })
+          },
+          children: []
+        }
+      ]
+    };
+    return pictureElement;
+  }
 
   const webpSrcset = sizes
     .map(width => `/images/optimised/${filename}/${width}.webp ${width}w`)

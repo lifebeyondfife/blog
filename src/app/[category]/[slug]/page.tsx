@@ -2,6 +2,7 @@ import { getPostBySlug, generateStaticParams as getStaticParams } from '@/lib/po
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { SITE_CONFIG } from '@/lib/constants';
+import PostContent from '@/components/PostContent';
 
 interface PageProps {
   params: Promise<{ category: string; slug: string }>;
@@ -66,9 +67,7 @@ export default async function PostPage({ params }: PageProps) {
             <span className="capitalize">{post.category}</span>
           </div>
         </header>
-        <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline"
-          dangerouslySetInnerHTML={{ __html: post.content }}
-        />
+        <PostContent html={post.content} />
       </div>
     </article>
   );
