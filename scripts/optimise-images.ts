@@ -15,7 +15,7 @@ const SHARP_FORMAT_MAP: Record<string, 'webp' | 'jpeg'> = {
   webp: 'webp',
   jpg: 'jpeg',
 };
-const SUPPORTED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp'];
+const SUPPORTED_EXTENSIONS = ['.gif', '.jpg', '.jpeg', '.png', '.webp'];
 
 interface ImageManifest {
   [filename: string]: {

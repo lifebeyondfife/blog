@@ -32,7 +32,7 @@ You may be keeping up with the changes of your favourite languages and tech stac
 
 ## Introducing Higher Order functions
 
-[![Xzibit: "Yo dawg I heard you like functions, so I put a function in your function so you can function while you function."](/images/functions.jpg)](http://lifebeyondfife.com/wp-content/uploads/2015/05/functions.jpg)
+[![Xzibit: "Yo dawg I heard you like functions, so I put a function in your function so you can function while you function."](/images/functions.jpg)](/images/originals/functions.jpg)
 
 A Higher Order function is one that takes not just data as a parameter, but also a function. The Higher Order function splits up the data parameter into smaller pieces and invokes the function parameter on these smaller pieces one at a time. The result of all these internal function calls is collated differently depending on which Higher Order function was used.
 
@@ -148,7 +148,7 @@ def get\_answer\_functional(\_data):
 
 The intractably large data set can likewise be partitioned into manageable pieces
 
-[![Diagram of a big block of data getting sliced into smaller pieces.](/images/data.png)](http://lifebeyondfife.com/wp-content/uploads/2015/05/data.png)
+[![Diagram of a big block of data getting sliced into smaller pieces.](/images/data.png)](/images/originals/data.png)
 
 By changing the way we invoke the functional style cascading functions, we can call each in turn with the manageable pieces and merge the results (much like the merge operation in [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)). The deepest function (get\_answer\_functional\_4) is called first on each partition and results of each invocation are collated – the exact collation method depends on the Higher Order function in question. The process of partitioning begins again and the next function down is called with a slight modification:
 

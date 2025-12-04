@@ -92,11 +92,11 @@ To consider what a real MVP looks like, compare the Team screen of the MVP with 
 
  
 
-[![Minimum Viable Product](/images/MVP.png)](http://lifebeyondfife.com/wp-content/uploads/2014/01/MVP.png)Minimum
+[![Minimum Viable Product](/images/MVP.png)](/images/originals/MVP.png)Minimum
 
  
 
-[![Not a minimum feature set](/images/WorkInProgress.png)](http://lifebeyondfife.com/wp-content/uploads/2014/01/WorkInProgress.png)Not Minimum
+[![Not a minimum feature set](/images/WorkInProgress.png)](/images/originals/WorkInProgress.png)Not Minimum
 
  
 

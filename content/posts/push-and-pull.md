@@ -22,7 +22,7 @@ By applying some of the various git commands available e.g. **commit**, **branch
 
 The main two operations for transferring information between two git repositories are **push** and **pull**.
 
-[![](/images/04-gimp.png)](http://lifebeyondfife.com/wp-content/uploads/2015/06/04-gimp.png)
+[![](/images/04-gimp.png)](/images/originals/04-gimp.png)
 
 From your git repo you can **push** a branch to the origin, and **pull** a branch from the remote origin repo. Pushing a branch is how you share your code changes with your development collaborators. Pulling a branch is how you obtain the code changes of others.
 

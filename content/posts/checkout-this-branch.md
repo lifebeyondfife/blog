@@ -6,7 +6,7 @@ category: "git"
 
 Welcome to one of the most easily confused git commands there is: `checkout`. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see [push and pull](http://lifebeyondfife.com/push-and-pull/)).
 
-[![checkout](/images/05-gimp.png)](http://lifebeyondfife.com/wp-content/uploads/2015/07/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at a time, and any changes you make the local codebase are associated to the active branch - denoted by a preceeding asterisk.
+[![checkout](/images/05-gimp.png)](/images/originals/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at a time, and any changes you make the local codebase are associated to the active branch - denoted by a preceeding asterisk.
 
  
 

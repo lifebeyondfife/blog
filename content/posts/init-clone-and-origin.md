@@ -42,7 +42,7 @@ This does two things. It clones (copies) the current state of the codebase into 
 
 ## origin
 
-[![origin repo](/images/origin-repo.png)](http://lifebeyondfife.com/wp-content/uploads/2015/05/origin-repo.png)For any repo that isn't a dedicated source repo (the traditional server role in a VCS system) there needs to be a link to what's known as the origin repo. By creating a git repo on your local system using clone, the origin variable is set implicitly. This link is crucial as it allows programmers to collaborate by agreeing on a common origin repo between all of them.
+[![origin repo](/images/origin-repo.png)](/images/originals/origin-repo.png)For any repo that isn't a dedicated source repo (the traditional server role in a VCS system) there needs to be a link to what's known as the origin repo. By creating a git repo on your local system using clone, the origin variable is set implicitly. This link is crucial as it allows programmers to collaborate by agreeing on a common origin repo between all of them.
 
  
 

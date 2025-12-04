@@ -487,7 +487,7 @@
       "category": "git",
       "title": "checkout this branch",
       "date": "2015-07-06",
-      "excerpt": "Welcome to one of the most easily confused git commands there is: checkout. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see push and pull). ![checkout](http://lifebeyondfife.com/wp-content/uploads/2015/07/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at...",
+      "excerpt": "Welcome to one of the most easily confused git commands there is: checkout. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see push and pull). ![checkout](/images/originals/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at...",
       "tags": [],
       "readingTime": 2
     },
@@ -541,7 +541,7 @@
       "category": "git",
       "title": "Power of the server in your client",
       "date": "2015-05-21",
-      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to version control resides on the server. The client i.e. your local development machine, has access to just a single snapshot of the codebase; nothing can be done with respect to versioning without access to the VCS server. ![traditional VCS](http://lifebeyondfife.com/wp-content/uploads/2015/05/traditional-VCS.png) Git, however, is a Distributed Version Control System (DVCS) - there is no server-client relationship because every machine that has git installed is itself a server. What was previously your dumb client becomes a fully fledged server. Any ability your company...",
+      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to version control resides on the server. The client i.e. your local development machine, has access to just a single snapshot of the codebase; nothing can be done with respect to versioning without access to the VCS server. ![traditional VCS](/images/originals/traditional-VCS.png) Git, however, is a Distributed Version Control System (DVCS) - there is no server-client relationship because every machine that has git installed is itself a server. What was previously your dumb client becomes a fully fledged server. Any ability your company...",
       "tags": [],
       "readingTime": 2
     },
