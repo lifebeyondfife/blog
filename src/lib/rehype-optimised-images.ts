@@ -36,7 +36,6 @@ function loadManifest(): ImageManifest {
 function extractFilename(src: string): string | null {
   const match = src.match(/(?:^|\/)images\/([^/]+)\.(jpg|jpeg|png|webp)$/i);
   if (!match) return null;
-  
   return match[1];
 }
 
@@ -48,7 +47,7 @@ function createPictureElement(
   const imageInfo = manifest[filename];
   const alt = imgElement.properties?.alt as string || '';
   const className = imgElement.properties?.className as string || '';
-  
+
   if (!imageInfo || imageInfo.availableSizes.length === 0) {
     console.warn(`Warning: No optimized versions found for image: ${filename}`);
     return imgElement;
