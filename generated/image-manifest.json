@@ -152,15 +152,6 @@
     ],
     "isAnimated": false
   },
-  "Newer-DVCS-1024x518": {
-    "originalWidth": 1024,
-    "originalHeight": 518,
-    "availableSizes": [
-      640,
-      960
-    ],
-    "isAnimated": false
-  },
   "Newer-DVCS": {
     "originalWidth": 1155,
     "originalHeight": 584,
@@ -199,14 +190,6 @@
     "originalHeight": 275,
     "availableSizes": [
       320
-    ],
-    "isAnimated": false
-  },
-  "agrades-230x300": {
-    "originalWidth": 230,
-    "originalHeight": 300,
-    "availableSizes": [
-      230
     ],
     "isAnimated": false
   },
@@ -361,15 +344,6 @@
     ],
     "isAnimated": false
   },
-  "bmw-1024x615": {
-    "originalWidth": 1024,
-    "originalHeight": 615,
-    "availableSizes": [
-      640,
-      960
-    ],
-    "isAnimated": false
-  },
   "bmw": {
     "originalWidth": 1200,
     "originalHeight": 721,
@@ -494,9 +468,7 @@
   "database": {
     "originalWidth": 256,
     "originalHeight": 256,
-    "availableSizes": [
-      256
-    ],
+    "availableSizes": [],
     "isAnimated": false
   },
   "debug js": {
@@ -675,15 +647,6 @@
     ],
     "isAnimated": false
   },
-  "github-1024x324": {
-    "originalWidth": 1024,
-    "originalHeight": 324,
-    "availableSizes": [
-      640,
-      960
-    ],
-    "isAnimated": false
-  },
   "github-clone": {
     "originalWidth": 1024,
     "originalHeight": 600,
@@ -723,15 +686,6 @@
     "originalHeight": 300,
     "availableSizes": [
       440
-    ],
-    "isAnimated": false
-  },
-  "hyundai-1024x614": {
-    "originalWidth": 1024,
-    "originalHeight": 614,
-    "availableSizes": [
-      640,
-      960
     ],
     "isAnimated": false
   },
@@ -877,14 +831,6 @@
     "originalHeight": 335,
     "availableSizes": [
       544
-    ],
-    "isAnimated": false
-  },
-  "misunderstandings-300x200": {
-    "originalWidth": 300,
-    "originalHeight": 200,
-    "availableSizes": [
-      300
     ],
     "isAnimated": false
   },
@@ -1121,15 +1067,6 @@
     ],
     "isAnimated": false
   },
-  "robmc-1024x1024": {
-    "originalWidth": 1024,
-    "originalHeight": 1024,
-    "availableSizes": [
-      640,
-      960
-    ],
-    "isAnimated": false
-  },
   "robmc": {
     "originalWidth": 1080,
     "originalHeight": 1080,
@@ -1258,14 +1195,6 @@
       640,
       960,
       1280
-    ],
-    "isAnimated": false
-  },
-  "traditional-VCS-300x260": {
-    "originalWidth": 300,
-    "originalHeight": 260,
-    "availableSizes": [
-      300
     ],
     "isAnimated": false
   },
