@@ -26,7 +26,3 @@ The first hurdle to overcome in achieving fitness is accepting two truths:
 2. fitness will be a journey you're on for life
 
 While the first may dishearten, the second should inspire. Though life may be short, living it is still the longest activity any of us undertake - we have the rest of our lives to get fit, so there's no rush.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

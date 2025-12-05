@@ -17,9 +17,3 @@ This rewards you in two ways. Firstly, you won't have to re-develop, say, five d
  
 
 Git again helps by encouraging positive collaboration rather than a race to commit, and reduces the complexity of merging multiple developers' changes.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/init-clone-and-origin/)

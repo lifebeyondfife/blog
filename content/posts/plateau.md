@@ -37,7 +37,3 @@ Be skeptical and question yourself harshly. If the source of the plateau cannot 
   
 
 Before coming too despondant though, consider that experiencing a plateau is generally a nice problem to have because it means that you're no longer a novice. Reflect on how far you have come in either your lifting or understanding of lifting; both are achievements to be celebrated. It is here where I must leave you, there is nothing more I know that I can teach.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

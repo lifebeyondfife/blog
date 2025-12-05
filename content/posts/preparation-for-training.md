@@ -33,7 +33,3 @@ A good workout will leave your body sore, and make you feel weaker than before y
   
 
 You may have heard the phrase, "The only bad workout is the one you don't do." Certain elite athletes will train no matter how injured or ill they are e.g. Mo Farah. This may work for those of us who are superhuman but my advice is to listen to your body. There's a difference between DOMS (delayed onset muscle soreness) and pulled muscles, or damaged ligaments. Some injuries require rest, some require intervention like stretching or ice/heat packs. If in doubt, a session with a good sports physiotherapist for injuries, or sports massage for aches and twinges, is a brilliant investment in yourself.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

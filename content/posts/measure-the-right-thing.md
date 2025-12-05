@@ -34,7 +34,3 @@ The second strategy is preferable but takes more discipline. Differences in weig
   
 
 Measurements are key to reaching your milestones. If you're not measuring, you'll never know if you're ever going to reach them. Measuring the right thing gives you the confidence to say, "I'm going in the right direction, everything is ok." or the evidence to say, "Something is not working. A change needs to take place." It may not be obvious what that something is at first, but having the data allow you to ask questions, and change direction while the momentum to continue and succeed is still with you.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

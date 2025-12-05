@@ -29,7 +29,3 @@ Part of starting to lift lighter weights in the beginning is about cementing goo
   
 
 In closing, I want to highlight the difference between perfect form and good form. The last rep of a set will always be less certain or controlled than the first, and that's ok. Make lifting at a given weight perfect form by making it your warm up. You do that by progressing training so you lift heavier and heavier weights. If you know that you're not making your lifts with at least _good_ form, then don't proceed to heavier, but drop to where you're doing the lifts correctly.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

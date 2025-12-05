@@ -42,7 +42,3 @@ Becoming fit is no different. With training, you will find your limit and you wi
   
 
 In the second post of this series, Change for life, I asked you to make a life long commitment to fitness. With that accepted, there is no rush to discover your limit. That will be discovered soon enough. The tool we will use comes from the previous post: Measure the right thing. You will know you're making progress by focusing on good form in your exercise, and keeping precise records of what you lift, how, and how many. That's an important lesson that many who pay to exercise don't seem to learn.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

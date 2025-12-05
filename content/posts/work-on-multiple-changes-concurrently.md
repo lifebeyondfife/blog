@@ -9,9 +9,3 @@ Some server-client Version Control Systems (VCSs), for instance Perforce, have c
  
 
 For users of server-client VCSs, the idea of creating a new branch everytime you work on a code change isn't sustainable because everyone shares the same repo server. When using a DVCS like git, branching becomes free. You literally can, and indeed should, create a brand new branch for every isolated change you make. Working on a bug fix, a refactor of some legacy code, a personal side project, and a new product feature can all be done concurrently, each in their own branch. One simple command switches instantly from one branch to the next - context switching becomes a breeze and productivity soars.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/backup-as-often-as-you-like/)

@@ -20,7 +20,3 @@ Having read all of the entries, you're long overdue trying out the commands your
 - [GitHub git tutorial](https://try.github.io/)
 - [Interactive git branching tutorial](http://pcottle.github.io/learnGitBranching/)
 - [Visualise git concepts](https://onlywei.github.io/explain-git-with-d3/)
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/caveats/)

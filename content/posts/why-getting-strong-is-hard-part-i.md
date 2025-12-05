@@ -29,7 +29,3 @@ As you begin your strength training sessions and in your early days you see amaz
   
 
 Now the warning has been given, most importantly, enjoy being a novice lifter. Never again will you make such fast and impressive progress.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -44,8 +44,4 @@ The intention of this series of blog posts on git is to say to the competent eng
 
 The intention of this caveats entry is to admit that there's a lot more to learn, and that, often, there isn't a single correct way to use git. Whatever makes sense, and works for you and your team is the correct way. So keep reading and learning about git from many sources far and wide, but don't just think in terms of right and wrong, think in terms of safety or efficiency, simplicity or complexity. Good luck!
 
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
 The End.

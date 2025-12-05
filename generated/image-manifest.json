@@ -218,6 +218,14 @@
     ],
     "isAnimated": false
   },
+  "ai-comments": {
+    "originalWidth": 724,
+    "originalHeight": 259,
+    "availableSizes": [
+      640
+    ],
+    "isAnimated": false
+  },
   "analytics": {
     "originalWidth": 761,
     "originalHeight": 544,
@@ -280,6 +288,16 @@
     "originalHeight": 287,
     "availableSizes": [
       494
+    ],
+    "isAnimated": false
+  },
+  "automation": {
+    "originalWidth": 1536,
+    "originalHeight": 1536,
+    "availableSizes": [
+      640,
+      960,
+      1280
     ],
     "isAnimated": false
   },
@@ -406,6 +424,14 @@
     "originalHeight": 267,
     "availableSizes": [
       482
+    ],
+    "isAnimated": false
+  },
+  "comments": {
+    "originalWidth": 768,
+    "originalHeight": 1024,
+    "availableSizes": [
+      640
     ],
     "isAnimated": false
   },
@@ -870,22 +896,6 @@
     ],
     "isAnimated": false
   },
-  "mongo csharp": {
-    "originalWidth": 560,
-    "originalHeight": 293,
-    "availableSizes": [
-      560
-    ],
-    "isAnimated": false
-  },
-  "mongo tables": {
-    "originalWidth": 640,
-    "originalHeight": 451,
-    "availableSizes": [
-      640
-    ],
-    "isAnimated": false
-  },
   "mongo_csharp": {
     "originalWidth": 560,
     "originalHeight": 293,
@@ -902,7 +912,7 @@
     ],
     "isAnimated": false
   },
-  "mvc restful": {
+  "mvc-restful": {
     "originalWidth": 522,
     "originalHeight": 114,
     "availableSizes": [
@@ -998,7 +1008,7 @@
     ],
     "isAnimated": false
   },
-  "polar bear 3d with key": {
+  "polar-bear-3d-with-key": {
     "originalWidth": 832,
     "originalHeight": 768,
     "availableSizes": [
@@ -1006,7 +1016,7 @@
     ],
     "isAnimated": false
   },
-  "polar bear 3d": {
+  "polar-bear-3d": {
     "originalWidth": 832,
     "originalHeight": 768,
     "availableSizes": [
@@ -1014,7 +1024,7 @@
     ],
     "isAnimated": false
   },
-  "polar bear numbered": {
+  "polar-bear-numbered": {
     "originalWidth": 832,
     "originalHeight": 768,
     "availableSizes": [
@@ -1022,7 +1032,7 @@
     ],
     "isAnimated": false
   },
-  "polar bear ring": {
+  "polar-bear-ring": {
     "originalWidth": 544,
     "originalHeight": 381,
     "availableSizes": [
@@ -1030,7 +1040,7 @@
     ],
     "isAnimated": false
   },
-  "polar bear": {
+  "polar-bear": {
     "originalWidth": 832,
     "originalHeight": 768,
     "availableSizes": [
@@ -1145,7 +1155,7 @@
     ],
     "isAnimated": false
   },
-  "shaded cow": {
+  "shaded-cow": {
     "originalWidth": 500,
     "originalHeight": 525,
     "availableSizes": [
@@ -1241,6 +1251,16 @@
     ],
     "isAnimated": false
   },
+  "torment": {
+    "originalWidth": 1536,
+    "originalHeight": 1536,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
   "traditional-VCS-300x260": {
     "originalWidth": 300,
     "originalHeight": 260,
@@ -1281,7 +1301,7 @@
     ],
     "isAnimated": false
   },
-  "wcf restful": {
+  "wcf-restful": {
     "originalWidth": 601,
     "originalHeight": 54,
     "availableSizes": [

@@ -58,7 +58,3 @@ Favour experts who know about human physiology when it comes to recommending exe
   
 
 Paranoia about claiming to have The One True Path to fitness and happiness aside, I'm a cynical person and I generally think that the world in general is suffering a dearth of questioning about what we see and hear. That said, everything that I am about to disclose to you in future posts I believe to be true. It will be the distillation of years of reading and exercising, of success and failure. With the motivation, strategy, and disclaimers taken care of in the past few posts, we're finally ready. The next post will have the first pieces of tangible advice of things that the wider populace are doing wrong and how you should progress to reach your fitness potential.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -35,9 +35,3 @@ Even in academia I was vaguely aware of this tool called CVS that let developers
  
 
 Git is not an easier tool - it's a better tool. Because it exposes so much more functionality the learning curve is harder than when you first learned to use, say, Subversion. Do not worry though, this series of blog posts will help you. It will help you think about source control versioning in a different way; it will highlight the big ticket wins that git provides if you need to convince managers why the tech change is needed; it will introduce the basic template for collaborative development; and finally it will send you on your way with pointers for where to go next.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/power-of-the-server-in-the-client/)

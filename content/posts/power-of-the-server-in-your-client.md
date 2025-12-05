@@ -21,9 +21,3 @@ When using git you don't just get a copy of the latest version of the codebase a
  
 
 This elevated status assumed by your humble development box opens the door to several benefits impossible under the previous server-client model. The first of which described in the next post is the ability to work on multiple changes concurrently.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/work-on-multiple-changes-concurrently/)

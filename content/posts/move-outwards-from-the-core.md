@@ -21,7 +21,3 @@ The exercise you begin each training session with should concentrate on the core
   
 
 Your core supports the rest of the body so it needs to be the strongest. The goal of big arms will be achieved best by progressing bench, squat, and deadlift, and working the biceps and triceps at the end of your routines.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

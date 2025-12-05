@@ -13,6 +13,7 @@ tags:
   - "nosql"
   - "wcf"
   - "web-development"
+featuredImage: "/images/full-architecture.png"
 legacySlug: "98-whats-new-music-html"
 ---
 
@@ -76,19 +77,19 @@ I was pleased by how minimal the interface was in the end. This central server w
 
 _An example MongoDB record and the C# class it binds to_
 
-![MongoLab Table Dashboard](/images/mongo tables.png)
+![MongoLab Table Dashboard](/images/mongo_tables.png)
 
 _A freshly created MongoDB in the cloud served by [MongoLab](http://mongolab.com/)_
 
 The ASP.Net web frontend communicates with the user directly and uses client-side scripting to render the UI and make AJAX requests via jQuery that are translated to calls to the central WCF REST Service which in turn provides lists of artist and album data structures in JSON.
 
-![](/images/wcf restful.png)
+![](/images/wcf-restful.png)
 
 _Example of WCF binding to a RESTful http API_
 
 I'll not go into too much detail about how MVC works in general but I will briefly describe how this site uses it. Requests from a client browser map to specific code entry points in the Controller with http GET variables passed through as parameters. The specific Controller code communicates with the Model to get the artist or album specific data and uses dynamic functionality now available in .Net to create a property bag. This dynamically typed object is passed to the View where a skeleton HTML file and some final code structures are combined using [Razor](http://www.microsoft.com/web/category/razor) to produce the HTML, CSS and JavaScript that's sent back to the client's browser.
 
-![](/images/mvc restful.png)
+![](/images/mvc-restful.png)
 
 _Now MVC's RESTful binding. This is one of the Controllers._
 

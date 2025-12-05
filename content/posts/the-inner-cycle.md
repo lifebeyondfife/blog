@@ -59,7 +59,3 @@ If everything looks in order and all the changes you wish to make are marked as 
  
 
 $ git commit -m "Add a new function to read in the config file."
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/conclusion/)

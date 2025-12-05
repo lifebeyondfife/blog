@@ -21,7 +21,3 @@ The food that you eat, which fuels your exercise and aids your recovery, is ever
   
 
 There is so much misinformation about diet more than anything else so I leave you with two pieces of advice. Dietitian is a protected title that requires an individual using it to have a medical qualification; any yahoo can call themselves a nutritionist after reading the diet sections of glossy magazines or quack food bloggers. Listen to people who are prepared to backup their advice with scientific references. For my above claims I am going to pass the buck and move to my second piece of advice. Read [Lean Gains by Martin Berkhan](https://www.amazon.com/Leangains-Method-Researched-Practiced-Perfected-ebook/dp/B07G3GFLTX). It is framed as a workout / fitness regime book, but it covers much more ground than that. In addition to a mini-autobiography of Martin, it gives deep insight into the properties of different foods, how to prepare a meal plan, and the benefits of 16/8 fasting i.e. fasting for 16 hours, eating over 8 hours. For the information about food and diet alone it's worth the read. And unlike me, Martin backs up his claims with numerous quality references to scientific research.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -65,6 +65,34 @@
       ]
     },
     {
+      "slug": "essays",
+      "name": "Essays",
+      "postCount": 21,
+      "posts": [
+        "defend-your-codebase-against-ai-comments",
+        "the-slow-path-to-everything",
+        "the-deployment-constraint-speed-safety-and-automation",
+        "stop-saying-tech-debt",
+        "hiring-advice-for-bootcamp-graduates",
+        "corporate-values-as-memes",
+        "are-you-happy",
+        "death-by-a-million-cuts",
+        "the-future-of-education",
+        "expert-or-generalist",
+        "curiosity-killed-the-productivity",
+        "web-developer",
+        "failure",
+        "barrier",
+        "mojo",
+        "banking-isnt-evil",
+        "remote-dev-teams",
+        "amdahls-law",
+        "in-house",
+        "agile",
+        "brown-field"
+      ]
+    },
+    {
       "slug": "git",
       "name": "Git",
       "postCount": 19,
@@ -88,31 +116,6 @@
         "work-on-multiple-changes-concurrently",
         "power-of-the-server-in-your-client",
         "for-those-not-yet-using-git"
-      ]
-    },
-    {
-      "slug": "essays",
-      "name": "Essays",
-      "postCount": 18,
-      "posts": [
-        "stop-saying-tech-debt",
-        "hiring-advice-for-bootcamp-graduates",
-        "corporate-values-as-memes",
-        "are-you-happy",
-        "death-by-a-million-cuts",
-        "the-future-of-education",
-        "expert-or-generalist",
-        "curiosity-killed-the-productivity",
-        "web-developer",
-        "failure",
-        "barrier",
-        "mojo",
-        "banking-isnt-evil",
-        "remote-dev-teams",
-        "amdahls-law",
-        "in-house",
-        "agile",
-        "brown-field"
       ]
     },
     {

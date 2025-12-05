@@ -33,9 +33,3 @@ And you can even undo changes made to a file with a modified checkout command. T
  
 
 $ git checkout -- backToHowYouWere.ml
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/status-and-diff-and-log/)

@@ -32,9 +32,3 @@ Or create a brand new branch to which new commits can be added. The state of thi
  
 
 $ git branch MyBrandNewBranch
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/add-and-remove-checkout-and-reset/)

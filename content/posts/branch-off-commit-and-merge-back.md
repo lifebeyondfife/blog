@@ -42,7 +42,3 @@ Then, all are free to start a new feature branch and continue the cycle again.
  
 
 $ git branch NewFeatureToBuildOnTheLast
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/never-ever-push-to-master/)

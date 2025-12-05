@@ -39,7 +39,3 @@ The above figures are a rough guide, and with your skeptical hat on, you will fi
   
 
 So don't fear 'Leg Day'. Yes, the DOMS can be brutal, but it's all part of being a fitter, healthier human.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

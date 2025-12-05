@@ -51,7 +51,3 @@ $ git log --oneline -n 3
  
 
 If there were any error messages after executing the above merge, consult the web regarding the git mergetool command and how to complete the merge commit manually.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/the-inner-cycle/)

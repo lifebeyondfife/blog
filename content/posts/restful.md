@@ -8,6 +8,7 @@ tags:
   - "restful"
   - "soa"
   - "wcf"
+featuredImage: "/images/templates.png"
 legacySlug: "88-restful-html"
 ---
 

@@ -2,6 +2,7 @@
 title: "Hiring advice for bootcamp graduates"
 date: "2021-08-12"
 category: "essays"
+featuredImage: "/images/github.png"
 ---
 
 I'm currently trying to hire as many software engineers as I can, and more and more I'm seeing applications from candidates who retrained via an intense, engineering bootcamp. I want to hire every single one of them. In general whenever I'm interviewing someone I want them to succeed regardless, but there's a lack of diversity of thought in tech and when I see someone with a background in marketing, customer support, or even a short order cook, I get excited about what they could teach me.
@@ -12,7 +13,7 @@ Anecdotally, I see the tech enthusiastic clique who started coding when they wer
 
   
 
-![](images/bruce.webp)
+![Bruce Lee](/images/bruce.webp)
 
 _"I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times."_ — Bruce Lee
 

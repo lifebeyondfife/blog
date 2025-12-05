@@ -33,7 +33,3 @@ The final supporting reason for favouring systems over goals is that it simplifi
   
 
 A good system will be simple to follow and the results will take care of themselves. Once you stop setting, sharing, and celebrating goals, people won't forget about you and how you're doing. You, and your milestones, become a visible advertisement for all to see of how your adherence to a system is smashing it.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

@@ -85,7 +85,3 @@ The first thing to give out in a test of endurance is the body's fuel store: you
 ## Fitness types and training
 
 Training will make you fit. Training is structured exercise. How you exercise will optimise you toward a certain type of fitness. Or, without conscious thought, you could train for different types of fitness and achieve none of them i.e. you cannot maximise your ability to deadlift at the same time as preparing to run a marathon. Becoming fit will need you to consider how you exercise, and create a training programme that works toward achieving a valid fitness outcome somewhere on the strength-power-endurance spectrum. Now you understand the different types of fitness, we'll next look at how the body has an engine primed for each of these fitness types, and we can change what that engine is capable of.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

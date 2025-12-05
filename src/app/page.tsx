@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
 import { getPostsMeta } from "@/lib/posts";
 import { PostCard } from "@/components/PostCard";
+import { OptimisedImage } from "@/components/OptimisedImage";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -27,17 +27,15 @@ export default function HomePage() {
     <div className="relative">
       <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
         <div className="absolute inset-0">
-          <Image
+          <OptimisedImage
             src="/images/og-image.jpg"
             alt="Life Beyond Fife"
-            fill
-            className="object-cover object-center"
-            priority
-            quality={90}
+            sizes="100vw"
+            className="w-full h-full object-cover object-center"
+            priority={true}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/60 via-ocean-blue/40 to-white" />
         </div>
-        
         <div className="relative h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-xl md:text-3xl text-white/95 max-w-3xl mx-auto mb-8 drop-shadow-md">
@@ -61,31 +59,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative bg-white py-16">
-        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-horizon/30 to-transparent pointer-events-none" />
-        
-        <div className="container mx-auto px-4 relative">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold text-gray-900">Recent Posts</h2>
-            <Link
-              href="/posts"
-              className="text-ocean-dark hover:text-ocean-blue hover:underline font-medium transition-colors"
-            >
-              View all →
-            </Link>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {recentPosts.map((post) => (
-              <PostCard key={`${post.category}-${post.slug}`} post={post} />
-            ))}
-          </div>
-
-          {posts.length === 0 && (
-            <p className="text-center text-gray-600 py-12">
-              No posts available yet. Check back soon!
-            </p>
-          )}
+      <section className="container mx-auto px-4 py-16">
+        <h3 className="text-3xl font-bold text-gray-900 mb-8">Recent Posts</h3>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {recentPosts.map((post) => (
+            <PostCard key={`${post.category}-${post.slug}`} post={post} />
+          ))}
         </div>
       </section>
     </div>

@@ -37,7 +37,3 @@ The basis of strength training is the barbell, with assistance from dumbbells fo
 ### Exceptions
 
 I did say avoid _almost_ exclusively. A fixed resistance machine at lower intensity can be good for rehabilitation where more complex movements could aggravate an existing injury. A quick web search will show elite athletes like Christiano Ronaldo using fixed resistance machines, but he's definitely what I'd call an outlier. I'm also not counting machines that allow quasi-free exercises such as chin-ups, pull-ups, or dips, which are all good. Like I said, there are exceptions. The main point is that even if you've used these machines previously and you like them for whatever reason, forget about them. The basis of strength training is primarily the barbell. You're going to have to learn how to use one.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)
