@@ -21,7 +21,3 @@ You can plank for 10 minutes without actually getting stronger. Pressups will on
   
 
 Just as using fixed resistance machines in a gym will leave you strong in some places, weak in others, an imbalanced body is likewise prone to injury. If you do bicep curls, are you also balancing the opposite muscle, the tricep? If you do as many sit-ups as you can first thing in the morning to work your abs, how are you balancing the opposite muscles in the lower back? What you need is a small set of exercises that workout the whole body in perfect balance. Next time we'll learn about just that with compound barbell lifts.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

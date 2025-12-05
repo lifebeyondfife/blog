@@ -1,0 +1,44 @@
+---
+title: " The Deployment Constraint: Speed, Safety, and Automation"
+date: "2025-06-11"
+category: "essays"
+featuredImage: "/images/automation.jpg"
+---
+
+In software deployment, there exists a fundamental tension between three critical factors: speed, safety, and automation. This forms a triangle where engineering teams can optimise for any two points, but something must give on the third. You can deploy fast and safely, but only with significant automation investment. You can deploy fast with minimal automation, but safety suffers. Or you can achieve safety with simple processes, but speed becomes the casualty.
+
+This tension plays out in predictable patterns across the industry. Teams prioritising speed and simplicity push code quickly with minimal testing, accepting the safety risks that come with “move fast and break things” mentality. The fact that this value ever existed at one of the world’s biggest companies hints that, sometimes, it can be the correct trade-off. Conversely, organisations that prioritise safety implement comprehensive testing suites and inverted test pyramids, where every change must pass through extensive validation — but deployments become painfully slow. This trade-off goes hand-in-hand with fragile tests, which leads to noisy intermittently broken tests. Engineers growing tired of re-running pipelines to make a flaky test pass, will eventually give up and either mute the test, or accept deploying against a broken one. The third option involves achieving both speed and safety simultaneously, but only through massive investment in sophisticated automation infrastructure that can take years to build and perfect.
+
+## Speed
+
+In the startup phase, speed is the only priority that matters. A single engineer will throw code over the wall with no process, no safety nets, just raw velocity. This works initially when the blast radius is small, the user base is forgiving, and recovery from failures is simple. The engineer writes code, pushes it live, and moves on to the next feature. At this scale, automation would be overkill and safety processes would slow down the critical early iteration needed to find product-market fit.
+
+Blink and you’ll miss how quickly it takes to go from deploying in seconds, to deploying in hours. I joined a company as the engineering leader for a newly acquired startup, and the differences were stark. The acquiring company released once every two weeks, and it was a multi-day procedure. Deployments were celebrated: each deployment was named and there was an internal competition to produce artwork for the release. It often failed at some point during the highly manual steps, and had to be rolled back. By contrast, the CTO of the startup happily boasted that deployments, rolled out using HashiCorp’s Nomad from the command line, took just 15 seconds. The startup codebase was deployed as often as possible, to no fanfare.
+
+Cherish the time when deploying is simple and easy. Hold on to making the deployment of code as normal as closing a browser tab when done editing a document.
+
+## Safety
+
+As companies transition from startup to scale-up, safety becomes the dominant concern — more engineers join the team, requiring coordination and process. This typically translates to slower deployments as safety becomes a priority. Teams begin investing in deployment automation — starting with basic CI/CD pipelines, code quality checks, and testing frameworks. Ironically, these early automation efforts often result in initially slower deployments. The overhead of running tests, security scans, and deployment processes adds significant time to each release, but the safety improvements justify the trade-off as the cost of failures increases with a larger user base.
+
+This is a counterintuitive point to many: how can adding automated safety checks slow the process down? The slowdown comes from partial automation — teams automate individual steps (testing, security scanning, deployment) but don’t integrate them into a seamless pipeline, instead creating manual handoffs between automated stages.
+
+Another key reason for test automation to result in slower releases is the nature of the tests that are introduced. If test automation isn’t considered from day one, the fastest way to introduce safety is by creating multiple high-level acceptance tests. This results in an inverted test pyramid i.e. lots of acceptance tests, few unit tests. Acceptance tests take longer to run as the number and complexity of services grows. Deployment pipelines for services with inverted test pyramids are expensive to maintain, and slow to run.
+
+Having fought so hard to gain all those customers, it would be foolish to lose them all because something breaks every time there’s a new deployment. Be clear on the primary reason for introducing formal deployment processes, namely, safety.
+
+## Automation
+
+Mature enterprises with substantial resources can finally invest in automation. Google represents the full realisation of such an investment, operating one of the world’s largest monorepos with over 24,000 automated changes made daily. Their internal build system, Blaze, enables any engineer to build any Google product from source on any machine with a single command. Rather than using traditional testing approaches, Google performs automated testing at the moment code is committed to the repository, eliminating the need for slower Canary deployment processes and saving enormous amounts of time and computing resources. This isn’t accidental — it’s the result of massive, sustained investment in automation infrastructure that most companies never attempt.
+
+Such an industry-leading level of automation maturity creates a completely different engineering culture. I’ve witnessed this firsthand — watching an engineer deploy code at 5 PM on a Friday after getting a code review from a colleague. They merge to mainline, which triggers continuous deployment to production, but here’s the remarkable part: they don’t wait around to see if it completes successfully. They trust that if there’s an issue, the blue-green deployment system will automatically rollback the change. This represents the ultimate goal where speed and safety coexist through automation — engineers can move fast without sacrificing reliability because the system itself has become intelligent enough to handle failures.
+
+Reaching Google’s level of automation maturity requires extraordinary commitment. Most companies struggle to maintain this level of investment, especially during periods of rapid growth, cost-cutting, or leadership changes. The engineering effort required to build systems that can handle tens of thousands of daily changes while maintaining safety is staggering. Many organisations attempt this journey but regress back to slower, more manual processes when the investment becomes difficult to justify or maintain.
+
+Why do some companies persevere? An engineer able to deploy without stress on a Friday afternoon is a nice outcome of investment in automation, but this isn’t the reason why it’s done. Companies with thousands of engineers who have invested in automation can stay competitive and turn the ship around quickly when needed e.g. consider the speed to market of Google’s Gemini after losing ground from OpenAI’s ChatGPT.
+
+## Trade-off
+
+Engineering culture is never about doing things the right way, it’s about understanding the consequences of doing it the way that’s been chosen. Software productivity frameworks e.g. DORA, SPACE, or DX, will provide metrics for how frequently your teams deploy, and how frequently production changes result in broken experiences for customers. These two metrics alone contain many implicit insights as to where your current trade-off exists. For example, a team that deploys once a week or less, may have problems with speed and needs more work on automation. A team that regularly introduces breaking changes, requires more work on safety.
+
+While it’s tempting to believe you can optimise all three simultaneously, the reality is that sustained excellence requires choosing your trade-offs deliberately. Companies serious about maintaining both fast deployments and high safety must commit to continuous, substantial investment in their automation infrastructure. This isn’t a one-time effort but an ongoing commitment to tooling, standards, and engineering practices that enables teams to move quickly without sacrificing reliability. The alternative is being forever stuck choosing between speed and safety — a choice that becomes increasingly costly as organisations scale.

@@ -21,7 +21,3 @@ Consider someone starting to get fit. How many calories are burned off running 2
   
 
 This is not to say that you cannot lose fat and build muscle at the same time — you absolutely can. The choice is yours though. The key takeaway is that a fit person is less susceptible to easily piling on the pounds; a fit person has more control over their body fat, and can produce workouts that burn through fat effectively. And finally, the best route to becoming fit for some people might mean they need to increase their calories, rather than reduce them.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -46,7 +46,3 @@ What should you expect to sacrifice then? Simply put, exercising for an hour at 
   
 
 Where the time and money come from, I cannot help you. To quote the misconstructed proverb attributed to Antoine de Saint-Exupéry's Citadel, "If you want to build a ship, don’t drum up the men and women to gather wood, divide the work, and give orders. Instead, teach them to yearn for the vast and endless sea." All I can tell you is that getting fit to any moderate level, even to that which I enjoy, is worth it. It is the greatest gift you can give yourself, paying you back over tenfold in increased energy and happiness, and improving your life in inenumarable little unexpected ways.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

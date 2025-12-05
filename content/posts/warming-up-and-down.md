@@ -35,7 +35,3 @@ Your local yoga centre will have guided yoga sessions for beginners, and yin yog
   
 
 There are a lot of tidbits above so to quickly summarise... If you're happy with your flexibility, you don't need to do anything too much before or after lifting: make sure your body is warm and let the body know what you're about to do with some gentle dynamic stretches and warmup sets. Nothing that raises the heartrate too much. Once you've got one core exercise completed e.g. sets of deadlifts, you don't need to perform warmup sets for your subsequent exercises, the body is ready. If you're concerned about your flexibility or you want to be more supple, introduce static stretching as part of your warm down once you've completed all your sets. And give yin yoga a try if you haven't before.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -29,7 +29,3 @@ And it's not just rest between sets. It's about preparation for your day's lifti
   
 
 Without paying dues to prepartion and rest you will complete a smaller number of reps per set than intended, and this will slow down your progression. The ultimate goal of strength training is to be strong enough to lift heavier and heavier weights. Not making the required number of reps in a set, means your training routine does not progress to the next weight up, which slows down progression. Good preparation and rest means faster progression.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

@@ -47,9 +47,3 @@ This does two things. It clones (copies) the current state of the codebase into 
  
 
 The origin repo is one of many git configuration variables and can be altered or set at any time. Your development environment will have any number of repos, and each of which will have their own origin repo.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/push-and-pull/)

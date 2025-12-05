@@ -39,9 +39,3 @@ The diff command give a clear indication of the line-by-line additions and remov
  
 
 $ git diff
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/branch-off-commit-and-merge-back/)

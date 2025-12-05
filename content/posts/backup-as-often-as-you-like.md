@@ -13,9 +13,3 @@ You wouldn't commit code to the origin repo that was broken, incomplete or didn'
  
 
 In producing production worthy code that you can share with your colleagues, the route taken doesn't matter. Git allows you to get there with extra security knowing your changes and experiments are backed up every step of the way without hindering the collaborative development process.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/end-to-big-bang-commits/)

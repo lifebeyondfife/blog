@@ -50,9 +50,10 @@ I usually like to leave the source code in the project files which you're free t
 
 First up we'll look at the Shell user interface DLL.
 
+```
 namespace ModuleB
 {
-    \[Export\]
+    [Export]
     public class ReceiveGridViewModel : DependencyObject,
         IPartImportsSatisfiedNotification, INotifyPropertyChanged
     {
@@ -62,9 +63,9 @@ namespace ModuleB
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ObservableCollection< MyDataType >
+        private ObservableCollection<MyDataType>
             ReceiveDataTableProperty { get; set; }
-        public ObservableCollection< MyDataType > ReceiveDataTable
+        public ObservableCollection<MyDataType> ReceiveDataTable
         {
             get
             {
@@ -83,14 +84,14 @@ namespace ModuleB
             new PropertyChangedEventArgs(propertyName));
         }
 
-        \[ImportingConstructor\]
+        [ImportingConstructor]
         public ReceiveGridViewModel(IReceiveGridModel model,
         IEventAggregator eventAggregator)
         {
             this.Model = model;
             this.EventAggregator = eventAggregator;
             this.ReceiveDataTableProperty =
-                new ObservableCollection< MyDataType >();
+                new ObservableCollection<MyDataType>();
         }
 
         public void OnImportsSatisfied()
@@ -99,7 +100,7 @@ namespace ModuleB
                 return;
 
             var myDataTypeEvent =
-                this.EventAggregator.GetEvent< MyDataTypeEvent >();
+                this.EventAggregator.GetEvent<MyDataTypeEvent>();
 
             if (this.SubscriptionToken != null)
                 myDataTypeEvent.
@@ -110,13 +111,14 @@ namespace ModuleB
         }
 
         private void OnMyDataTypeEvent
-            (IEnumerable< MyDataType > myDataTypeEnumerable)
+            (IEnumerable<MyDataType> myDataTypeEnumerable)
         {
             foreach (var myDataType in myDataTypeEnumerable)
                 this.ReceiveDataTable.Add(myDataType);
         }
     }
 }
+```
 
 The App class creates an EventAggregator object which is stored in the MEF container for the other modules to pick up later. They'll use this to pass messages to each other by subscribing to the message types they want to hear about, and publishing messages of which they want other modules to be aware i.e. the observable or publish / subscribe design pattern.
 
@@ -124,23 +126,26 @@ The bootstrapper class designates the UI shell. In this case I'm simply returnin
 
 Before we look at the individual modules, here is how simple it is to define the events that can be published or subscribed to.
 
+```
 namespace PrismModels
 {
 	public sealed class MyDataTypeEvent :
-		CompositePresentationEvent< IEnumerable< MyDataType > >
+		CompositePresentationEvent<IEnumerable<MyDataType>>
 	{
 	}
 }
+```
 
 The type MyDataTypeEvent requires an enumerable collection of MyDataType objects to publish, or provides one to a subscriber. MyDataType is a simple class I've created within the PrismModels project containing a few member properties. Moving on, let's look at our first Prism module...
 
+```
 namespace ModuleA
 {
-    \[PartCreationPolicy(CreationPolicy.NonShared)\]
-    \[ModuleExport(typeof(ModuleA))\]
+    [PartCreationPolicy(CreationPolicy.NonShared)]
+    [ModuleExport(typeof(ModuleA))]
     public class ModuleA : IModule
     {
-        \[Import\]
+        [Import]
         public IRegionManager RegionManager { get; set; }
 
         public void Initialize()
@@ -150,10 +155,10 @@ namespace ModuleA
         }
     }
 
-    \[Export\]
+    [Export]
     public partial class SendGrid : UserControl
     {
-        \[ImportingConstructor\]
+        [ImportingConstructor]
         public SendGrid(SendGridViewModel sendGridViewModel)
         {
             InitializeComponent();
@@ -162,7 +167,7 @@ namespace ModuleA
         }
     }
 
-    \[Export\]
+    [Export]
     public class SendGridViewModel :
         DependencyObject, INotifyPropertyChanged
     {
@@ -172,9 +177,9 @@ namespace ModuleA
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ObservableCollection< MyDataType >
+        private ObservableCollection<MyDataType>
         SendDataTableProperty { get; set; }
-        public ObservableCollection< MyDataType > SendDataTable
+        public ObservableCollection<MyDataType> SendDataTable
         {
             get
             {
@@ -193,7 +198,7 @@ namespace ModuleA
                     new PropertyChangedEventArgs(propertyName));
         }
 
-        \[ImportingConstructor\]
+        [ImportingConstructor]
         public SendGridViewModel(ISendGridModel model,
             IEventAggregator eventAggregator)
         {
@@ -201,7 +206,7 @@ namespace ModuleA
             this.EventAggregator = eventAggregator;
             this.SubmitCommand = new Submit(this);
             this.SendDataTableProperty =
-                new ObservableCollection< MyDataType >();
+                new ObservableCollection<MyDataType>();
 
             this.SendDataTable.Add(new MyDataType
             {
@@ -212,7 +217,7 @@ namespace ModuleA
         }
     }
 
-    \[Export(typeof(ISendGridModel))\]
+    [Export(typeof(ISendGridModel))]
     public class SendGridModel : ISendGridModel
     {
     }
@@ -243,20 +248,22 @@ namespace ModuleA
                 Select(mdt => (MyDataType) mdt.Clone());
 
             this.ViewModel.EventAggregator.
-                GetEvent< MyDataTypeEvent >().Publish(copiedRows);
+                GetEvent<MyDataTypeEvent>().Publish(copiedRows);
         }
     }
 }
+```
 
 The above ModuleA namespace contains a Module class, an essential part of the Prism framework that registers the containing DLL as a WPF control that can be imported into a shell UI. There are also View, View-Model and Model classes in keeping with the MVVM design pattern - of particular interest to this tutorial is how the MEF attributes perform the Inversion of Control to inject the instances where necessary. Finally there is an ICommand implementation for the button in the SendGrid XAML (download the solution if you want to see it). This is executed when clicked on which in turn publishes an event containing all the MyDataType objects in the DataGrid control.
 
-Each Prism module must implement the IModule interface with a unique class name. We obtain the RegionManager object via MEF with an \[Import\] attribute and use it to state that we are staking a claim to the area in the shell UI named "RegionA" and that it should be filled with an instance of the SendGrid View class. Similarly, the View-Model and Model instances are created via MEF and pick up other objects from the MEF container e.g. the event aggregator passed to the View-Model constructor and used by the button command. The Model implementation doesn't actually do anything but I've left some code to show how MEF is used to associate an implementation with a given interface.
+Each Prism module must implement the IModule interface with a unique class name. We obtain the RegionManager object via MEF with an \[Import] attribute and use it to state that we are staking a claim to the area in the shell UI named "RegionA" and that it should be filled with an instance of the SendGrid View class. Similarly, the View-Model and Model instances are created via MEF and pick up other objects from the MEF container e.g. the event aggregator passed to the View-Model constructor and used by the button command. The Model implementation doesn't actually do anything but I've left some code to show how MEF is used to associate an implementation with a given interface.
 
 Nearly done, let's look at the final namespace.
 
+```
 namespace ModuleB
 {
-    \[Export\]
+    [Export]
     public class ReceiveGridViewModel : DependencyObject,
         IPartImportsSatisfiedNotification, INotifyPropertyChanged
     {
@@ -266,9 +273,9 @@ namespace ModuleB
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private ObservableCollection< MyDataType >
+        private ObservableCollection<MyDataType>
             ReceiveDataTableProperty { get; set; }
-        public ObservableCollection< MyDataType > ReceiveDataTable
+        public ObservableCollection<MyDataType> ReceiveDataTable
         {
             get
             {
@@ -287,14 +294,14 @@ namespace ModuleB
             new PropertyChangedEventArgs(propertyName));
         }
 
-        \[ImportingConstructor\]
+        [ImportingConstructor]
         public ReceiveGridViewModel(IReceiveGridModel model,
         IEventAggregator eventAggregator)
         {
             this.Model = model;
             this.EventAggregator = eventAggregator;
             this.ReceiveDataTableProperty =
-                new ObservableCollection< MyDataType >();
+                new ObservableCollection<MyDataType>();
         }
 
         public void OnImportsSatisfied()
@@ -303,7 +310,7 @@ namespace ModuleB
                 return;
 
             var myDataTypeEvent =
-                this.EventAggregator.GetEvent< MyDataTypeEvent >();
+                this.EventAggregator.GetEvent<MyDataTypeEvent>();
 
             if (this.SubscriptionToken != null)
                 myDataTypeEvent.
@@ -314,13 +321,14 @@ namespace ModuleB
         }
 
         private void OnMyDataTypeEvent
-            (IEnumerable< MyDataType > myDataTypeEnumerable)
+            (IEnumerable<MyDataType> myDataTypeEnumerable)
         {
             foreach (var myDataType in myDataTypeEnumerable)
                 this.ReceiveDataTable.Add(myDataType);
         }
     }
 }
+```
 
 I've omitted most of the MVVM classes and the Prism registration for "RegionB" as it's practically identical to that of "RegionA". What is most interesting is the View-Model implementation that receives the events from the other module. For each type of event we're subscribed to we have a SubscriptionToken object and supply a member function to call when new messages appear - in this module it's the OnMyDataTypeEvent method. Note how the message appears as the enumerable collection of MyDataType objects from earlier.
 

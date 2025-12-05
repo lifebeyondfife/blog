@@ -1,13 +1,44 @@
 {
   "posts": [
     {
+      "slug": "defend-your-codebase-against-ai-comments",
+      "category": "essays",
+      "title": "Defend your codebase against AI comments",
+      "date": "2025-07-27",
+      "excerpt": "Generative AI tools such as Claude Code, Cursor, Devin, Roo Code, Windsurf have fundamentally changed the process of how software is written. As teams increasingly rely on AI-generated code, they need to rethink how they merge this code into their codebase, especially regarding comments. I’ve long taken a policy against most comments when writing code. It has been perfectly summed up by this tweet. Maybe at one point the plastic container did hold basmati rice, but today, it’s clearly storing biscuits. This is it, the fundamental point: the compiler ignores your comments, so their relationship to the truth holds no...",
+      "tags": [],
+      "readingTime": 5,
+      "featuredImage": "/images/ai-comments.jpg"
+    },
+    {
+      "slug": "the-slow-path-to-everything",
+      "category": "essays",
+      "title": "The Slow Path to Everything",
+      "date": "2025-07-08",
+      "excerpt": "Over twenty years in software development, I’ve witnessed an evolution in how code integrates with other code. Each step has enabled more complex and distributed systems capable of progressively more impressive achievements. This comes with the price of understanding each new layer’s abstraction, moving us further from fast, direct execution and closer to slow, human communication. This journey reveals where we could be heading next. It’s all code, in one place My first job as a software developer in the early 2000s was a lesson in how not to do things. The best example I can give is how version...",
+      "tags": [],
+      "readingTime": 7,
+      "featuredImage": "/images/torment.jpg"
+    },
+    {
+      "slug": "the-deployment-constraint-speed-safety-and-automation",
+      "category": "essays",
+      "title": " The Deployment Constraint: Speed, Safety, and Automation",
+      "date": "2025-06-11",
+      "excerpt": "In software deployment, there exists a fundamental tension between three critical factors: speed, safety, and automation. This forms a triangle where engineering teams can optimise for any two points, but something must give on the third. You can deploy fast and safely, but only with significant automation investment. You can deploy fast with minimal automation, but safety suffers. Or you can achieve safety with simple processes, but speed becomes the casualty. This tension plays out in predictable patterns across the industry. Teams prioritising speed and simplicity push code quickly with minimal testing, accepting the safety risks that come with “move...",
+      "tags": [],
+      "readingTime": 7,
+      "featuredImage": "/images/automation.jpg"
+    },
+    {
       "slug": "why-5-whys-isnt-enough",
       "category": "management",
       "title": "Why 5 Whys isn't enough",
       "date": "2024-12-29",
       "excerpt": "5 Whys is a prevalent engineering process in a modern tech company. When your company has operational incidents (and even the biggest and best ones do), 5 Whys is there to find the root cause, which in turn yields the next steps to make sure those incidents don’t happen again. I could tell the engineering culture of the company needed work when an internal team had an outage related to an expired SSL cert. It wasn’t the outage that made me concerned; it was the attitude of the team who had the outage. “What steps have you taken to make...",
       "tags": [],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/directed-acyclic-graph-root-cause-analysis-1.png"
     },
     {
       "slug": "convincing-or-instructing",
@@ -52,7 +83,8 @@
       "date": "2021-08-12",
       "excerpt": "I'm currently trying to hire as many software engineers as I can, and more and more I'm seeing applications from candidates who retrained via an intense, engineering bootcamp. I want to hire every single one of them. In general whenever I'm interviewing someone I want them to succeed regardless, but there's a lack of diversity of thought in tech and when I see someone with a background in marketing, customer support, or even a short order cook, I get excited about what they could teach me. Anecdotally, I see the tech enthusiastic clique who started coding when they were a...",
       "tags": [],
-      "readingTime": 9
+      "readingTime": 9,
+      "featuredImage": "/images/github.png"
     },
     {
       "slug": "manager-readme-2021",
@@ -68,9 +100,10 @@
       "category": "essays",
       "title": "Corporate values as memes",
       "date": "2021-02-14",
-      "excerpt": "![](/images/corporate-value-meme.jpg) This is perhaps only my second, and hopefully final, time where I play futurist. I'm going to argue that memes are the future of corporate values. You know, those pithy, untruthful, and ignored statements that the senior leadership of your company claim defines their identity and culture. I want to replace them with the inane nonsense that you see across imgur, 9-gag, and icanhascheezburger. I'll show that this brave new world of corporate values as memes has clear benefits and should be embraced by providing real examples of how this amazing future could look. But first lets take a...",
+      "excerpt": "This is perhaps only my second, and hopefully final, time where I play futurist. I'm going to argue that memes are the future of corporate values. You know, those pithy, untruthful, and ignored statements that the senior leadership of your company claim defines their identity and culture. I want to replace them with the inane nonsense that you see across imgur, 9-gag, and icanhascheezburger. I'll show that this brave new world of corporate values as memes has clear benefits and should be embraced by providing real examples of how this amazing future could look. But first lets take a brief...",
       "tags": [],
-      "readingTime": 8
+      "readingTime": 8,
+      "featuredImage": "/images/corporate-value-meme.jpg"
     },
     {
       "slug": "ready-to-start",
@@ -160,7 +193,7 @@
       "date": "2020-11-01",
       "excerpt": "Before you take a single decision in how you're going to train for becoming strong, you need to understand the difference between free weights and fixed resistance machines. And you need to run a mile away from the latter. You've likely never heard of Arthur Jones) but you will be aware of the effect he's had on the fitness industry. Walk into any gym in any town or city and you will expect to see an array of bulky, expensive mechanical contraptions that a human can insert themself into to perform a specific, restricted body movement. Arthur Jones invented the...",
       "tags": [],
-      "readingTime": 4
+      "readingTime": 3
     },
     {
       "slug": "why-getting-strong-is-hard-part-i",
@@ -187,7 +220,8 @@
       "date": "2020-10-10",
       "excerpt": "Having learned about the different fitness types, and about to make a change for life, you may have ideas about the type of body or changes you want to make. Perhaps a large part of your exercise routine will include long walks, or gentle jogs. Maybe it could include a ten minute punishing routine on a bike or rowing machine in the gym. I'm going to ask you to reconsider that choice before starting, and focus on one specific fitness type first. Strength. When we looked at the archetype strong man, I chose Mariusz. I could have chosen any strong...",
       "tags": [],
-      "readingTime": 3
+      "readingTime": 3,
+      "featuredImage": "/images/marilyn-bench.jpg"
     },
     {
       "slug": "preparation-for-training",
@@ -214,7 +248,8 @@
       "date": "2020-09-15",
       "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: \\\\\\[\\\\partial fat = calories - exercise\\\\\\]...",
       "tags": [],
-      "readingTime": 5
+      "readingTime": 5,
+      "featuredImage": "/images/bmw.jpg"
     },
     {
       "slug": "fitness-types",
@@ -223,7 +258,8 @@
       "date": "2020-09-13",
       "excerpt": "Fitness means different things to different people. Fitness means different things to different sports. The physical capabilities of humans are breathtaking in terms of the kind of achievements that are possible. For running, humans have completed 100m in under 10 seconds, one mile in under 4 minutes, a marathon in under 2 hours. Polar explorers, mountaineers, free divers etc. survive inspite of deadly conditions to reach famous global boundaries. Various other disciplines see fellow humans throw, jump, kick, and lift more and further than we've ever seen. The world's best in one category could be a rank amateur in another...",
       "tags": [],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/Mariusz_Pudzianowski.jpg"
     },
     {
       "slug": "systems-not-goals",
@@ -259,7 +295,8 @@
       "date": "2020-01-12",
       "excerpt": "Stress has a negative image. It's generally seen as a bad thing and something to be avoided, but stress is how we improve. The first time we try something completely new, we cannot expect to be good or even competent, yet that act of starting is the first step toward becoming an expert. The two key decisions to consider are what level you start at and the pace of your progression. Starting something new should begin at the bottom, the entry level, the easiest. If all signs point toward this being manageable, then increase the difficulty. Taking smalls steps and...",
       "tags": [],
-      "readingTime": 5
+      "readingTime": 5,
+      "featuredImage": "/images/workout-1.png"
     },
     {
       "slug": "training",
@@ -295,7 +332,8 @@
       "date": "2019-06-30",
       "excerpt": "Before going any further with the mystic change-for-life-fitness plan I'm proposing, we need to calibrate ourselves on a couple of points to avoid the disappointment of mismatched expectations. When I say that personal trainers, badly equipped gyms, shaming magazines, and processed diet foods have different goals to you; that they're out to keep you dependent on them rather than enabling you to get fit without them, that's my view based on the way I see the world. It doesn't mean that millions of people haven't achieved their goals using the above tools, and done so quicker than trying to plot...",
       "tags": [],
-      "readingTime": 5
+      "readingTime": 5,
+      "featuredImage": "/images/robmc.jpg"
     },
     {
       "slug": "change-for-life",
@@ -487,9 +525,10 @@
       "category": "git",
       "title": "checkout this branch",
       "date": "2015-07-06",
-      "excerpt": "Welcome to one of the most easily confused git commands there is: checkout. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see push and pull). ![checkout](/images/originals/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at...",
+      "excerpt": "Welcome to one of the most easily confused git commands there is: checkout. Many people use the phrase, “Checkout the code” to mean “retrieve the latest copy of the code from the origin repo.” This is not the case (you retrieve the latest copy of the code with the pull command – see push and pull). [](/images/originals/05-gimp.png)As mentioned previously, any new independent work is added to its own branch and these are pushed and pulled to/from the origin repo. The checkout command is how you move from one branch to another. Only one branch can be active in git at...",
       "tags": [],
-      "readingTime": 2
+      "readingTime": 2,
+      "featuredImage": "/images/05-gimp.png"
     },
     {
       "slug": "push-and-pull",
@@ -498,7 +537,8 @@
       "date": "2015-06-07",
       "excerpt": "The state of a codebase on a git server, whether an origin repo in a server or on someone's laptop, is represented by one or more branches. A commit is a self contained set of code changes (modifications, new, moved and deleted files) made by one developer. A branch is a chronological series of commits that stretches back in time from the most recent change to the beginning of the codebase i.e. the very first commit. The main branch that contains all developers' commits is named master by default. The word branch is appropriate as it fits with the tree...",
       "tags": [],
-      "readingTime": 2
+      "readingTime": 2,
+      "featuredImage": "/images/04-gimp.png"
     },
     {
       "slug": "init-clone-and-origin",
@@ -507,7 +547,8 @@
       "date": "2015-05-28",
       "excerpt": "Hopefully you, and the powers that be at your company, are convinced: git is the future and the way forward. We now begin the journey of understanding the ways in which git is different to server-client VCSs. We assume the user has already installed git and is familiar with navigating directories using the command line. init A git server can hold multiple code repositories known as repos. The simplest way to get started with git is to create a new directory with an empty repo. $ git init MyFirstRepo Congratulations. You created a git repo to hold the version changes...",
       "tags": [],
-      "readingTime": 3
+      "readingTime": 3,
+      "featuredImage": "/images/origin-repo.png"
     },
     {
       "slug": "end-to-big-bang-commits",
@@ -534,16 +575,17 @@
       "date": "2015-05-23",
       "excerpt": "Some server-client Version Control Systems (VCSs), for instance Perforce, have concepts like shelving where you can isolate changes you make for a bug fix from concurrent changes for a new product feature. In a perfect world we'd only ever work on one task at a time but we know how unrealistic an expectation that is from life. Context switching when programming is a huge productivity killer and any extra tasks that takes up time when moving from one thing to another e.g. juggling changes for different features in one file into separate commits, should be avoided. For users of server-client...",
       "tags": [],
-      "readingTime": 2
+      "readingTime": 1
     },
     {
       "slug": "power-of-the-server-in-your-client",
       "category": "git",
       "title": "Power of the server in your client",
       "date": "2015-05-21",
-      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to version control resides on the server. The client i.e. your local development machine, has access to just a single snapshot of the codebase; nothing can be done with respect to versioning without access to the VCS server. ![traditional VCS](/images/originals/traditional-VCS.png) Git, however, is a Distributed Version Control System (DVCS) - there is no server-client relationship because every machine that has git installed is itself a server. What was previously your dumb client becomes a fully fledged server. Any ability your company...",
+      "excerpt": "The previous generation of Version Control Systems (VCS), like Subversion, have a traditional client-server model. All the functionality relating to version control resides on the server. The client i.e. your local development machine, has access to just a single snapshot of the codebase; nothing can be done with respect to versioning without access to the VCS server. [](/images/originals/traditional-VCS.png) Git, however, is a Distributed Version Control System (DVCS) - there is no server-client relationship because every machine that has git installed is itself a server. What was previously your dumb client becomes a fully fledged server. Any ability your company repo...",
       "tags": [],
-      "readingTime": 2
+      "readingTime": 2,
+      "featuredImage": "/images/traditional-VCS.png"
     },
     {
       "slug": "for-those-not-yet-using-git",
@@ -561,7 +603,8 @@
       "date": "2015-05-13",
       "excerpt": "It's hopefully old news to you all but the free lunch is over (NB this article is 10 years old). TL;DR – as we come up against the physical limits of how small transistors can be future computation gains will come from more processors, not faster processors. We can already see this looking at the number of cores we have available in development standard laptops. Writing code that can distribute its workload across multiple cores will only become more important as time goes on. As we move more and more services to AWS ensuring we get the most value for...",
       "tags": [],
-      "readingTime": 8
+      "readingTime": 8,
+      "featuredImage": "/images/functions.jpg"
     },
     {
       "slug": "a-git-workflow-for-beginners",
@@ -570,7 +613,8 @@
       "date": "2014-12-07",
       "excerpt": "The web is awash with introductions and guides to using git. There's this visual guide here, that interactive tutorial there, reams of documentation, and of course all kinds of troubleshooting help. But if you're coming from a traditional Version Control System (SVN, Perforce, Clearcase etc.) the main barrier to using git is not answering the question, \"How to I checkout and commit code changes?\", but rather, \"How do I use all these complex features to develop software?\" This guide is a complementary resource to the others, providing a working template of how you should use git in order to deliver...",
       "tags": [],
-      "readingTime": 11
+      "readingTime": 11,
+      "featuredImage": "/images/git-workflow.png"
     },
     {
       "slug": "fantasy-football-2014-15",
@@ -604,7 +648,8 @@
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/sherlock-holmes-by-piet-mondrian.png"
     },
     {
       "slug": "death-by-a-million-cuts",
@@ -637,7 +682,8 @@
         "code",
         "development-in-practice"
       ],
-      "readingTime": 7
+      "readingTime": 7,
+      "featuredImage": "/images/MVP.png"
     },
     {
       "slug": "the-10-types-of-people",
@@ -659,7 +705,8 @@
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/fourteen.png"
     },
     {
       "slug": "helping",
@@ -674,7 +721,8 @@
         "constraint-programming",
         "development-in-practice"
       ],
-      "readingTime": 21
+      "readingTime": 21,
+      "featuredImage": "/images/tree.png"
     },
     {
       "slug": "plain-english1",
@@ -685,7 +733,8 @@
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 8
+      "readingTime": 8,
+      "featuredImage": "/images/ibuprofen.png"
     },
     {
       "slug": "fantasy-football-2013-14",
@@ -703,7 +752,8 @@
       "date": "2013-07-27",
       "excerpt": "Education is changing in a big way. Whether you're still in the education system or someday going to have children who will, it's of prime importance you learn just how it's going to change. Pass rates are going up in the most important school exams, namely, the ones that determine whether a student qualifies for university or not. It's at this point where education stops being in a sense \"free\" and has to be evaluated as a value proposition - does the benefit of going to university outweigh the financial cost? Despite this being a Scottish blog, I'm going to...",
       "tags": [],
-      "readingTime": 15
+      "readingTime": 15,
+      "featuredImage": "/images/agrades.png"
     },
     {
       "slug": "expert-or-generalist",
@@ -736,7 +786,8 @@
       "tags": [
         "java"
       ],
-      "readingTime": 13
+      "readingTime": 12,
+      "featuredImage": "/images/polar-bear.png"
     },
     {
       "slug": "xml-serialisation",
@@ -750,7 +801,8 @@
         "xml",
         "xsd"
       ],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/Deserialised.png"
     },
     {
       "slug": "idea-a-day",
@@ -770,7 +822,8 @@
       "tags": [
         "maths"
       ],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/mean.png"
     },
     {
       "slug": "from-idea-to-launch-a-website-dissection",
@@ -790,14 +843,15 @@
         "wcf",
         "web-development"
       ],
-      "readingTime": 25
+      "readingTime": 25,
+      "featuredImage": "/images/dialog.png"
     },
     {
       "slug": "whats-new-music",
       "category": "follies",
       "title": "What's New? Music",
       "date": "2012-12-08",
-      "excerpt": "At the beginning of the year I posed a conundrum on Twitter. I wanted some way to make sure I never missed out on a new release by one of the many bands I like. In the end, I had to build it myself. This would be my first website ever after a professional lifetime of enterprise code and it started something that would take up a large part of my free time for the next 9 months. I have created the website What's New? MUSIC. Here is my journey. !The tweeted challenge no-one answered The tweet - which no-one...",
+      "excerpt": "At the beginning of the year I posed a conundrum on Twitter. I wanted some way to make sure I never missed out on a new release by one of the many bands I like. In the end, I had to build it myself. This would be my first website ever after a professional lifetime of enterprise code and it started something that would take up a large part of my free time for the next 9 months. I have created the website What's New? MUSIC. Here is my journey. The tweet - which no-one replied to - that started...",
       "tags": [
         "asp-net-mvc",
         "c",
@@ -810,7 +864,8 @@
         "wcf",
         "web-development"
       ],
-      "readingTime": 19
+      "readingTime": 19,
+      "featuredImage": "/images/full-architecture.png"
     },
     {
       "slug": "web-developer",
@@ -833,7 +888,8 @@
       "tags": [
         "development-in-practice"
       ],
-      "readingTime": 4
+      "readingTime": 4,
+      "featuredImage": "/images/crowgarden.jpg"
     },
     {
       "slug": "fantasy-football-2012-13",
@@ -846,7 +902,8 @@
         "excel",
         "fantasy-football"
       ],
-      "readingTime": 4
+      "readingTime": 4,
+      "featuredImage": "/images/FantasyFootball2012-13.png"
     },
     {
       "slug": "one-year-in",
@@ -869,7 +926,8 @@
         "prism",
         "wpf"
       ],
-      "readingTime": 12
+      "readingTime": 12,
+      "featuredImage": "/images/application.png"
     },
     {
       "slug": "barrier",
@@ -891,7 +949,8 @@
       "tags": [
         "development-in-practice"
       ],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/Atari800xlProgram.png"
     },
     {
       "slug": "new-music-part-one",
@@ -907,7 +966,8 @@
         "soa",
         "wcf"
       ],
-      "readingTime": 6
+      "readingTime": 6,
+      "featuredImage": "/images/address.png"
     },
     {
       "slug": "man-at-work",
@@ -926,7 +986,7 @@
       "category": "follies",
       "title": "A Restful Weekend",
       "date": "2012-02-20",
-      "excerpt": "This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat hunting in Edinburgh from my base back in Fife (thanks Mum & Dad ;) with most of my stuff, half of my CDs and most importantly my guitar back in Cambridge \\sigh\\ No matter, I press on with a mini project for a RESTful web service using ASP.Net and WCF. A couple of weeks back I tweeted the following: ![](/images/challenge.png) The awesome rateyourmusic.com do have a section within a user's profile page that...",
+      "excerpt": "This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat hunting in Edinburgh from my base back in Fife (thanks Mum & Dad ;) with most of my stuff, half of my CDs and most importantly my guitar back in Cambridge \\sigh\\ No matter, I press on with a mini project for a RESTful web service using ASP.Net and WCF. A couple of weeks back I tweeted the following: The awesome rateyourmusic.com do have a section within a user's profile page that provides...",
       "tags": [
         "c",
         "code",
@@ -934,7 +994,8 @@
         "soa",
         "wcf"
       ],
-      "readingTime": 5
+      "readingTime": 5,
+      "featuredImage": "/images/templates.png"
     },
     {
       "slug": "beauty",
@@ -949,7 +1010,8 @@
         "maths",
         "sierpinski"
       ],
-      "readingTime": 7
+      "readingTime": 7,
+      "featuredImage": "/images/random.png"
     },
     {
       "slug": "banking-isnt-evil",
@@ -962,7 +1024,8 @@
         "c",
         "code"
       ],
-      "readingTime": 24
+      "readingTime": 24,
+      "featuredImage": "/images/tenner.jpg"
     },
     {
       "slug": "university-challenge",
@@ -999,7 +1062,8 @@
         "maths",
         "wpf"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/CrudeSketch1.png"
     },
     {
       "slug": "f-sharp",
@@ -1022,7 +1086,8 @@
       "tags": [
         "games"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/libertycity.jpg"
     },
     {
       "slug": "async-await",
@@ -1049,7 +1114,8 @@
         "python",
         "wpf"
       ],
-      "readingTime": 7
+      "readingTime": 7,
+      "featuredImage": "/images/python_cmd.png"
     },
     {
       "slug": "amdahls-law",
@@ -1061,7 +1127,8 @@
         "amdahls-law",
         "environment"
       ],
-      "readingTime": 11
+      "readingTime": 11,
+      "featuredImage": "/images/A_50.png"
     },
     {
       "slug": "d-lighted",
@@ -1079,7 +1146,8 @@
         "postgres",
         "sqlite"
       ],
-      "readingTime": 3
+      "readingTime": 3,
+      "featuredImage": "/images/players.png"
     },
     {
       "slug": "in-house",
@@ -1091,7 +1159,8 @@
         "development-in-practice",
         "in-house"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/ice-cream.png"
     },
     {
       "slug": "agile",
@@ -1103,7 +1172,8 @@
         "agile",
         "development-in-practice"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/oldworkflow.png"
     },
     {
       "slug": "fantasy-football-2011-12",
@@ -1118,7 +1188,8 @@
         "fantasy-football",
         "vba"
       ],
-      "readingTime": 8
+      "readingTime": 8,
+      "featuredImage": "/images/wargames.jpg"
     },
     {
       "slug": "exhell",
@@ -1133,7 +1204,8 @@
         "oadate",
         "ole"
       ],
-      "readingTime": 3
+      "readingTime": 3,
+      "featuredImage": "/images/compactoadatelist.png"
     },
     {
       "slug": "brown-field",
@@ -1145,20 +1217,22 @@
         "brownfield",
         "development-in-practice"
       ],
-      "readingTime": 10
+      "readingTime": 10,
+      "featuredImage": "/images/first.png"
     },
     {
       "slug": "sabbatical",
       "category": "follies",
       "title": "Sabbatical",
       "date": "2011-07-18",
-      "excerpt": "![](/images/sabbatical.jpg) \"Hey, I am not unemployed I'm on sabbatical!\"",
+      "excerpt": "\"Hey, I am not unemployed I'm on sabbatical!\"",
       "tags": [
         "sabbatical",
         "youtube"
       ],
-      "readingTime": 1
+      "readingTime": 1,
+      "featuredImage": "/images/sabbatical.jpg"
     }
   ],
-  "totalPosts": 110
+  "totalPosts": 113
 }

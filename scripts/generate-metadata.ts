@@ -65,6 +65,21 @@ function capitalizeCategory(slug: string): string {
     .join(' ');
 }
 
+function extractFirstInternalImage(content: string): string | null {
+  const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/g;
+  let match;
+  
+  while ((match = imageRegex.exec(content)) !== null) {
+    const imageSrc = match[2].trim();
+    
+    if (imageSrc.startsWith('/images/')) {
+      return imageSrc;
+    }
+  }
+  
+  return null;
+}
+
 function generateExcerpt(content: string, frontmatterExcerpt?: string): string {
   if (frontmatterExcerpt) {
     return frontmatterExcerpt;
@@ -72,6 +87,7 @@ function generateExcerpt(content: string, frontmatterExcerpt?: string): string {
 
   const plainText = content
     .replace(/^---[\s\S]*?---/, '')
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '')
     .replace(/#+\s/g, '')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/[*_`]/g, '')
@@ -104,6 +120,8 @@ function processMarkdownFiles(): PostMeta[] {
     const slug = filename.replace(/\.md$/, '');
     const frontmatter = data as PostFrontmatter;
     
+    const featuredImage = frontmatter.featuredImage || extractFirstInternalImage(content);
+    
     const postMeta: PostMeta = {
       slug,
       category: frontmatter.category,
@@ -112,7 +130,7 @@ function processMarkdownFiles(): PostMeta[] {
       excerpt: generateExcerpt(content, frontmatter.excerpt),
       tags: frontmatter.tags || [],
       readingTime: calculateReadingTime(content),
-      ...(frontmatter.featuredImage && { featuredImage: frontmatter.featuredImage }),
+      ...(featuredImage && { featuredImage }),
     };
 
     posts.push(postMeta);
@@ -152,9 +170,6 @@ function generateRedirects(posts: PostMeta[]): RedirectEntry[] {
   const redirects: RedirectEntry[] = [];
 
   for (const post of posts) {
-    const frontmatter = posts.find(p => p.slug === post.slug);
-    if (!frontmatter) continue;
-
     const canonicalUrl = `${SITE_CONFIG.siteUrl}/${post.category}/${post.slug}/`;
     
     const postFile = fs.readFileSync(

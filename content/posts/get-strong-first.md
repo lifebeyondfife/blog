@@ -35,7 +35,3 @@ Everything reverts to the mean. If you do any fitness training for a while but t
   
 
 Strength is a multiplier to other fitness types once achieved. Strength will help you keep a good body shape and toned muscles. Strength will make you less prone to weight fluctuations. By all means, train however you choose and focus on whatever fitness type you prefer. But consider starting to get fit by incorporating strength training at least to begin with. That's my strong recommendation.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

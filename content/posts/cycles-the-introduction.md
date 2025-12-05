@@ -29,7 +29,3 @@ Remember, these are _upper bounds_, you can do them as frequently as you like bu
 ## The cycle is complete
 
 Following these three, simple cycles gives the novice git user a template not only for which git commands to follow next, but also to allow them a plan to work against to join in collaborating with git veterans. The following entries will provide specific technical instruction in which git commands are required for each cycle, and the setup to get started with a new repo.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/setup-the-origin-repo/)

@@ -57,7 +57,3 @@ You now need to go and learn how to perform these lifts yourself. Good technique
   
 
 I recommend watching videos, and reading books on how to perform specific exercises. Mark Rippetoe has good detailed breakdowns of the various stages of each lift, and where the different parts of your body should be. You don't have to listen to him though, you could learn from anyone. But if you do, know that bench pressing without the bar touching your chest is a half-done repetition, and a bad habit you should avoid from the start; resting the bar on or above your shoulder blades could damage your spine or otherwise limit the weight of your squat; using the alternating grip in the deadlift risks injury at the limit, and using straps to lift a weight as light as 100kg is cheating yourself. As always, stay skeptical, listen to lots of sources, and look for evidence.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

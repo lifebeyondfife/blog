@@ -29,9 +29,3 @@ From your git repo you can **push** a branch to the origin, and **pull** a branc
  
 
 It is worth mentioning that some expert git users consider using **push** and **pull** bad practice (see Caveats appendix for more information). Don't worry about that now though - following the guidelines provided in these git posts will not result in any problems.
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/)
-
-[git\_next\_post\_](http://lifebeyondfife.com/checkout-this-branch/)

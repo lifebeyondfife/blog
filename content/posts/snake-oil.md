@@ -33,7 +33,3 @@ Even though many people who have the right knowledge, or youthful energy, or wil
   
 
 It may seem so, but I come with an alternative plan. I can do so because I have a different goal to the fitness industry. I _want_ you to be fit. I want _you_ to be the person in control who knows exactly how to get, and crucially, keep yourself fit. The philosopher Socrates said, "...what a disgrace it is for a man to grow old without ever seeing the beauty and strength of which his body is capable." I don't want anyone to miss out on seeing that beauty.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

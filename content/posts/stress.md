@@ -59,7 +59,3 @@ To summarise today's lesson:
 3. Fitness comes from training: progressive exercise which recognises the body's ability to recover from greater stress. Chaining these events together is the cornerstone of becoming fit
 
 The final point is the key one. There will always be reasons for missing a training session whether it's a birthday, holiday, reunion, illness or some other unexpected break from routine - that's no big deal. Ultimately, fitness doesn't care about the complexities of your life or whether you want a break from training. If you stop training for weeks or months at a time, you will revert to the mean, back to being unfit. Like I said earlier, this commitment is a lifelong one.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

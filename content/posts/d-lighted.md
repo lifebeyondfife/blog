@@ -11,6 +11,7 @@ tags:
   - "oracle"
   - "postgres"
   - "sqlite"
+featuredImage: "/images/players.png"
 legacySlug: "77-d-lighted-html"
 ---
 

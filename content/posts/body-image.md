@@ -29,7 +29,3 @@ If you are embarrassed about the way you look, some of what I'll ask you to do m
   
 
 No matter how far from fit you begin your journey, we all start somewhere. Shop around to find a gym with a good culture, and forgive your past self for the actions that led to what your body is today. You are going to do something about it so ignore what you or others think about your body. Focus on the system and the results will follow.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

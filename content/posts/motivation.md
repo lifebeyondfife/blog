@@ -41,7 +41,3 @@ There are two selves: the experiencing self, and the remembering self. The exper
   
 
 I've found this concept be true again and again in so many different areas of life - and getting fit, is definitely one of those.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

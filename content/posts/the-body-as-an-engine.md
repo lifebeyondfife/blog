@@ -59,7 +59,3 @@ Cars are cars though. They are designed from the ground up and built to an exact
   
 
 Most people should evaluate the engine they have before starting to get fit and think about how the training schedule they construct will be not just, say, lose some fat, but also change their shape. There are lots of different ways to improve your fitness that will change how much you weigh (remember, muscle is heavier than fat, you could choose to get heavier); how strong, powerful, or enduring you become; or how much food you can burn off by doing absolutely nothing — it’s a handy capability to have. Don’t limit your imagination when thinking about how you could rebuild yourself.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness)

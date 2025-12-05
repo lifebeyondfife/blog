@@ -47,7 +47,3 @@ I work over 40 hours a week sitting at a desk, at a reasonably stressful job. I 
 > Socrates
 
 I know that if I live to become an old man, I will have few regrets about what my body could have achieved. I hope you'll be able to join me in saying the same.
-
-  
-
-[/fitness](https://lifebeyondfife.com/fitness/)

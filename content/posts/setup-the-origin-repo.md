@@ -17,7 +17,3 @@ You now have the master branch on your local machine, with a link to http://your
  
 
 $ git config --get remote.origin.url
-
- 
-
-[git\_index\_](http://lifebeyondfife.com/git/) [git\_next\_post\_](http://lifebeyondfife.com/the-outer-cycle/)
