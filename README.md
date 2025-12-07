@@ -35,7 +35,8 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 │   │   ├── categories.ts             # Category utilities
 │   │   └── constants.ts              # Site configuration
 │   └── types/                        # TypeScript interfaces
-│       └── post.ts
+│       ├── images.ts                 # Image metadata
+│       └── post.ts                   # Post data access
 ├── content/
 │   └── posts/                        # Markdown blog posts
 │       └── *.md
