@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostsByCategory, getAllCategories } from "@/lib/posts";
-import { PostCard } from "@/components/PostCard";
-import { Pagination } from "@/components/Pagination";
+import { PostsGrid } from "@/components/PostsGrid"
 import { SITE_CONFIG } from "@/lib/constants";
 
 interface PageProps {
@@ -69,29 +68,13 @@ export default async function CategoryPage({ params }: PageProps) {
           </p>
         </header>
 
-        {posts.length > 0 ? (
-          <>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
-              {posts.map((post) => (
-                <PostCard key={`${post.category}-${post.slug}`} post={post} />
-              ))}
-            </div>
-
-            {totalPages > 1 && (
-              <Pagination
-                currentPage={1}
-                totalPages={totalPages}
-                basePath={`/${category}/page`}
-              />
-            )}
-          </>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-600 text-lg">
-              No posts available in this category yet. Check back soon!
-            </p>
-          </div>
-        )}
+        <PostsGrid
+          posts={posts}
+          currentPage={1}
+          totalPages={totalPages}
+          basePath={`/${category}/page`}
+          emptyMessage="No posts available in this category yet. Check back soon!"
+        />
       </div>
     </div>
   );

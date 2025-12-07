@@ -1,8 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getPostsMeta } from "@/lib/posts";
-import { PostCard } from "@/components/PostCard";
-import { Pagination } from "@/components/Pagination";
+import { PostsGrid } from "@/components/PostsGrid";
 import { SITE_CONFIG } from "@/lib/constants";
 
 interface PageProps {
@@ -69,27 +68,13 @@ export default async function PaginatedPostsPage({ params }: PageProps) {
           </p>
         </header>
 
-        {posts.length > 0 ? (
-          <>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
-              {posts.map((post) => (
-                <PostCard key={`${post.category}-${post.slug}`} post={post} />
-              ))}
-            </div>
-
-            <Pagination
-              currentPage={pageNumber}
-              totalPages={totalPages}
-              basePath="/posts/page"
-            />
-          </>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-600 text-lg">
-              No posts found for this page.
-            </p>
-          </div>
-        )}
+        <PostsGrid
+          posts={posts}
+          currentPage={pageNumber}
+          totalPages={totalPages}
+          basePath="/posts/page"
+          emptyMessage="No posts found for this page."
+        />
       </div>
     </div>
   );
