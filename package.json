@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run generate",
-    "generate": "npm run generate:metadata && npm run generate:images",
+    "generate": "npm run generate:metadata && npm run generate:images && npm run generate:redirects",
     "generate:metadata": "tsx scripts/generate-metadata.ts",
-    "generate:sitemap": "tsx scripts/generate-sitemap.ts",
     "generate:images": "tsx scripts/optimise-images.ts",
+    "generate:redirects": "tsx scripts/generate-redirects.ts",
+    "generate:sitemap": "tsx scripts/generate-sitemap.ts",
     "postbuild": "npm run generate:sitemap",
     "build": "next build",
     "lint": "next lint",
