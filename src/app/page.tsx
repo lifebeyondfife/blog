@@ -29,7 +29,7 @@ export default function HomePage() {
         <div className="absolute inset-0">
           <OptimisedImage
             src="/images/og-image.jpg"
-            alt="Life Beyond Fife"
+            alt={SITE_CONFIG.title}
             sizes="100vw"
             className="w-full h-full object-cover object-center"
             priority={true}

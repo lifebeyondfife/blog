@@ -906,6 +906,15 @@
     ],
     "isAnimated": false
   },
+  "og-image": {
+    "originalWidth": 1200,
+    "originalHeight": 630,
+    "availableSizes": [
+      640,
+      960
+    ],
+    "isAnimated": false
+  },
   "oldworkflow": {
     "originalWidth": 640,
     "originalHeight": 400,
