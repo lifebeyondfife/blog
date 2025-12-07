@@ -59,7 +59,7 @@ export const SEO_CONFIG = {
   defaultTitle: SITE_CONFIG.title,
   titleTemplate: `%s | ${SITE_CONFIG.title}`,
   defaultDescription: SITE_CONFIG.description,
-  defaultKeywords: ['blog', 'nextjs', 'typescript', 'react', 'web development', 'software engineering'],
+  defaultKeywords: ['blog', 'tech', 'leadership', 'software engineering', 'engineering culture'],
   openGraph: {
     type: 'website',
     locale: 'en_GB',
