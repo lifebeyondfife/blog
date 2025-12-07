@@ -1,17 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { SITE_CONFIG } from '../src/lib/constants';
-
-interface PostMeta {
-  slug: string;
-  category: string;
-  date: string;
-  url: string;
-}
-
-interface PostsIndex {
-  posts: PostMeta[];
-}
+import { PostMeta, PostsIndex } from '../src/types/post';
 
 const OUTPUT_DIR = path.join(process.cwd(), 'out');
 const GENERATED_DIR = path.join(process.cwd(), 'generated');
