@@ -4,7 +4,7 @@ date: "2020-10-10"
 category: "fitness"
 ---
 
-Having learned about the different [fitness types](https://lifebeyondfife.com/fitness-types/), and about to make a [change for life](https://lifebeyondfife.com/change-for-life/), you may have ideas about the type of body or changes you want to make. Perhaps a large part of your exercise routine will include long walks, or gentle jogs. Maybe it could include a ten minute punishing routine on a bike or rowing machine in the gym. I'm going to ask you to reconsider that choice before starting, and focus on one specific fitness type first.
+Having learned about the different [fitness types](/fitness/fitness-types), and about to make a [change for life](/fitness/change-for-life), you may have ideas about the type of body or changes you want to make. Perhaps a large part of your exercise routine will include long walks, or gentle jogs. Maybe it could include a ten minute punishing routine on a bike or rowing machine in the gym. I'm going to ask you to reconsider that choice before starting, and focus on one specific fitness type first.
 
   
 

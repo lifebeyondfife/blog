@@ -4,7 +4,7 @@ date: "2021-07-20"
 category: "management"
 ---
 
-It has been a while since I wrote my first [manager README](https://managerreadme.com/). The idea is simple: help people who are going to be reporting to you understand the way you think, what you believe, and what you expect. For this one, I'm going to write it without looking at my [previous attempt](https://lifebeyondfife.com/manager-readme/) to see how my worldview has changed in the intervening three years.
+It has been a while since I wrote my first [manager README](https://managerreadme.com/). The idea is simple: help people who are going to be reporting to you understand the way you think, what you believe, and what you expect. For this one, I'm going to write it without looking at my [previous attempt](/management/manager-readme) to see how my worldview has changed in the intervening three years.
 
   
 

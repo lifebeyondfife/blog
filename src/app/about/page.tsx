@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import  Link  from 'next/link';
 import { BookOpen, Code, Briefcase, Podcast, Plane, Dumbbell } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 
@@ -47,18 +48,18 @@ export default function AboutPage() {
             </p>
             <div className="space-y-3">
               <h3 className="font-semibold text-slate-900 text-lg mb-3">Key Resources:</h3>
-              <a href="/management/what-are-your-engineering-culture-values/" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              <Link href="/management/what-are-your-engineering-culture-values" className="block text-blue-600 hover:text-blue-700 hover:underline">
                 → What are your engineering culture values?
-              </a>
-              <a href="/management/manager-readme-2021/" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              </Link>
+              <Link href="/management/manager-readme-2021" className="block text-blue-600 hover:text-blue-700 hover:underline">
                 → Manager README 2021
-              </a>
-              <a href="/management/manager-readme/" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              </Link>
+              <Link href="/management/manager-readme" className="block text-blue-600 hover:text-blue-700 hover:underline">
                 → Manager README (2018)
-              </a>
-              {/* <a href="/management/management-books-recommendations/" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              </Link>
+              {/* <Link href="/management/management-books-recommendations" className="block text-blue-600 hover:text-blue-700 hover:underline">
                 → Management Books I Recommend (coming soon)
-              </a> */}
+              </Link> */}
             </div>
           </div>
         </section>
@@ -224,9 +225,9 @@ export default function AboutPage() {
                   <Dumbbell className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                      <a href="/fitness/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                      <Link href="/fitness/" className="text-blue-600 hover:text-blue-700 hover:underline">
                         Route to Fitness
-                      </a>
+                      </Link>
                     </h3>
                     <p className="text-slate-700 mb-3">
                       A comprehensive 27-part series on strength training and sustainable fitness. Learn the fundamentals 
@@ -246,9 +247,9 @@ export default function AboutPage() {
 
               <div className="border-l-4 border-blue-500 pl-6">
                 <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                  <a href="/compsci/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                  <Link href="/compsci/" className="text-blue-600 hover:text-blue-700 hover:underline">
                     Computer Science in Plain English
-                  </a>
+                  </Link>
                 </h3>
                 <p className="text-slate-700">
                   A 5-part series demystifying core computer science concepts. Perfect for those learning to program 
@@ -258,9 +259,9 @@ export default function AboutPage() {
 
               <div className="border-l-4 border-slate-700 pl-6">
                 <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                  <a href="/git/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                  <Link href="/git/" className="text-blue-600 hover:text-blue-700 hover:underline">
                     Introduction to Git
-                  </a>
+                  </Link>
                 </h3>
                 <p className="text-slate-700">
                   A 19-part series on gently introducing simple patterns in Git. Using basic commands to grasp the mental models 
