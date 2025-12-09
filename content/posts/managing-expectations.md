@@ -46,7 +46,7 @@ Measurement
 The second step is to take measurements. Where does the engineering time go? Consider two teams which are slow to deliver features. One spends 10% of their time working on feature delivery, and the other 90% in manual operational work, bug fixing, and customer support. The reason is clear as to why their feature delivery is slow. Another team though could spend 70% of their time in feature delivery, but their codebase is complex to reason with, and has inconsistent design patterns. The product is hard to test, with an inverted test pyramid, and many manual deployment and verification steps.
 
   
-Here, 100% of time could be placed on feature delivery, but it wouldn’t be enough. Collect the data, and use it to tell a story of a day in the life of your team. If the perception of the team is slow, it’s likely that the team are haemorrhaging time, and precious mental energy, in areas of which the software leader had no idea. This hypothetical team needs more time for “go slow, to go fast” (see [\#5 Automate](https://lifebeyondfife.com/what-are-your-engineering-culture-values/)).
+Here, 100% of time could be placed on feature delivery, but it wouldn’t be enough. Collect the data, and use it to tell a story of a day in the life of your team. If the perception of the team is slow, it’s likely that the team are haemorrhaging time, and precious mental energy, in areas of which the software leader had no idea. This hypothetical team needs more time for “go slow, to go fast” (see [\#5 Automate](/management/what-are-your-engineering-culture-values)).
 
   
 Abstraction
