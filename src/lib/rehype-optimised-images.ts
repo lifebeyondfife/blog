@@ -1,57 +1,76 @@
 import { visit } from 'unist-util-visit';
-import type { Root, Element } from 'hast';
-import path from 'path';
+import { Root, Element } from 'hast';
 import fs from 'fs';
+import path from 'path';
 import { ImageManifest } from '@/types/images';
-import { GENERATED_DIRECTORY } from '@/lib/constants';
+import { GENERATED_DIRECTORY, IMAGES_DIRECTORY } from '@/lib/constants';
 
-let manifestCache: ImageManifest | null = null;
+const IMAGE_MEDIA_TYPES = {
+  WEBP: 'image/webp',
+  JPEG: 'image/jpeg',
+  GIF: 'image/gif',
+} as const;
+
+const IMAGE_LOADING = {
+  EAGER: 'eager',
+  LAZY: 'lazy',
+} as const;
+
+const IMAGE_FETCH_PRIORITY = {
+  HIGH: 'high',
+} as const;
+
+const IMAGE_DECODING = {
+  ASYNC: 'async',
+} as const;
+
+const RESPONSIVE_SIZES = '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 72ch';
+
+const IMAGE_PATH_PATTERN = /(?:^|\/)images\/([^/]+)\.(gif|jpg|jpeg|png|webp)$/i;
 
 function loadManifest(): ImageManifest {
-  if (manifestCache !== null) {
-    return manifestCache;
-  }
-
-  try {
-    const manifestPath = path.join(process.cwd(), GENERATED_DIRECTORY, 'image-manifest.json');
-    const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
-    const loadedManifest: ImageManifest = JSON.parse(manifestContent);
-    manifestCache = loadedManifest;
-    return loadedManifest;
-  } catch (error) {
-    console.warn('Warning: Could not load image manifest, images will use original paths');
-    const emptyManifest: ImageManifest = {};
-    manifestCache = emptyManifest;
-    return emptyManifest;
-  }
+  const manifestPath = path.join(process.cwd(), GENERATED_DIRECTORY, 'image-manifest.json');
+  const manifestContent = fs.readFileSync(manifestPath, 'utf-8');
+  return JSON.parse(manifestContent) as ImageManifest;
 }
 
 function extractFilename(src: string): string | null {
-  const match = src.match(/(?:^|\/)images\/([^/]+)\.(gif|jpg|jpeg|png|webp)$/i);
+  const match = src.match(IMAGE_PATH_PATTERN);
   if (!match) return null;
   return match[1];
 }
 
+function buildImagePath(filename: string, size: number, format: string): string {
+  const publicPath = IMAGES_DIRECTORY.replace(/^public\//, '');
+  return `/${publicPath}/optimised/${filename}/${size}.${format}`;
+}
+
+function buildAspectRatioStyle(width: number, height: number): string {
+  return `aspect-ratio: ${width}/${height}`;
+}
+
 function createPictureElement(
-  imgElement: Element,
+  node: Element,
   filename: string,
-  manifest: ImageManifest
+  manifest: ImageManifest,
+  isPriority: boolean = false
 ): Element {
   const imageInfo = manifest[filename];
-  const alt = imgElement.properties?.alt as string || '';
-  const className = imgElement.properties?.className as string || '';
-
-  if (!imageInfo || imageInfo.availableSizes.length === 0) {
-    console.warn(`Warning: No optimized versions found for image: ${filename}`);
-    return imgElement;
+  if (!imageInfo) {
+    return node;
   }
 
   const sizes = imageInfo.availableSizes.sort((a, b) => a - b);
   const largestSize = sizes[sizes.length - 1];
+  const alt = (node.properties?.alt as string) || '';
+  const className = node.properties?.className;
   const isAnimated = imageInfo.isAnimated || false;
 
+  const loadingValue = isPriority ? IMAGE_LOADING.EAGER : IMAGE_LOADING.LAZY;
+  const fetchPriorityValue = isPriority ? IMAGE_FETCH_PRIORITY.HIGH : undefined;
+
   if (isAnimated) {
-    const pictureElement: Element = {
+    return {
       type: 'element',
       tagName: 'picture',
       properties: {},
@@ -60,8 +79,8 @@ function createPictureElement(
           type: 'element',
           tagName: 'source',
           properties: {
-            type: 'image/webp',
-            srcSet: `/images/optimised/${filename}/${largestSize}.webp`
+            type: IMAGE_MEDIA_TYPES.WEBP,
+            srcSet: buildImagePath(filename, largestSize, 'webp')
           },
           children: []
         },
@@ -69,28 +88,28 @@ function createPictureElement(
           type: 'element',
           tagName: 'img',
           properties: {
-            src: `/images/optimised/${filename}/${largestSize}.gif`,
+            src: buildImagePath(filename, largestSize, 'gif'),
             alt: alt,
-            loading: 'lazy',
-            decoding: 'async',
+            loading: loadingValue,
+            fetchpriority: fetchPriorityValue,
+            decoding: IMAGE_DECODING.ASYNC,
             width: imageInfo.originalWidth,
             height: imageInfo.originalHeight,
-            style: `aspect-ratio: ${imageInfo.originalWidth}/${imageInfo.originalHeight}`,
+            style: buildAspectRatioStyle(imageInfo.originalWidth, imageInfo.originalHeight),
             ...(className && { className })
           },
           children: []
         }
       ]
     };
-    return pictureElement;
   }
 
   const webpSrcset = sizes
-    .map(width => `/images/optimised/${filename}/${width}.webp ${width}w`)
+    .map(width => `${buildImagePath(filename, width, 'webp')} ${width}w`)
     .join(', ');
 
   const jpgSrcset = sizes
-    .map(width => `/images/optimised/${filename}/${width}.jpg ${width}w`)
+    .map(width => `${buildImagePath(filename, width, 'jpg')} ${width}w`)
     .join(', ');
 
   const pictureElement: Element = {
@@ -102,9 +121,9 @@ function createPictureElement(
         type: 'element',
         tagName: 'source',
         properties: {
-          type: 'image/webp',
+          type: IMAGE_MEDIA_TYPES.WEBP,
           srcSet: webpSrcset,
-          sizes: '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 72ch'
+          sizes: RESPONSIVE_SIZES
         },
         children: []
       },
@@ -112,9 +131,9 @@ function createPictureElement(
         type: 'element',
         tagName: 'source',
         properties: {
-          type: 'image/jpeg',
+          type: IMAGE_MEDIA_TYPES.JPEG,
           srcSet: jpgSrcset,
-          sizes: '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 72ch'
+          sizes: RESPONSIVE_SIZES
         },
         children: []
       },
@@ -122,13 +141,14 @@ function createPictureElement(
         type: 'element',
         tagName: 'img',
         properties: {
-          src: `/images/optimised/${filename}/${largestSize}.jpg`,
+          src: buildImagePath(filename, largestSize, 'jpg'),
           alt: alt,
-          loading: 'lazy',
-          decoding: 'async',
+          loading: loadingValue,
+          fetchpriority: fetchPriorityValue,
+          decoding: IMAGE_DECODING.ASYNC,
           width: imageInfo.originalWidth,
           height: imageInfo.originalHeight,
-          style: `aspect-ratio: ${imageInfo.originalWidth}/${imageInfo.originalHeight}`,
+          style: buildAspectRatioStyle(imageInfo.originalWidth, imageInfo.originalHeight),
           ...(className && { className })
         },
         children: []
@@ -142,6 +162,7 @@ function createPictureElement(
 export default function rehypeOptimisedImages() {
   return (tree: Root) => {
     const manifest = loadManifest();
+    let firstImageProcessed = false;
 
     visit(tree, 'element', (node: Element, index, parent) => {
       if (node.tagName !== 'img' || !parent || index === undefined) {
@@ -156,8 +177,13 @@ export default function rehypeOptimisedImages() {
         return;
       }
 
-      const pictureElement = createPictureElement(node, filename, manifest);
+      const isPriority = !firstImageProcessed;
+      const pictureElement = createPictureElement(node, filename, manifest, isPriority);
       parent.children[index] = pictureElement;
+      
+      if (isPriority) {
+        firstImageProcessed = true;
+      }
     });
   };
 }
