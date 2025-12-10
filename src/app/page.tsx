@@ -25,6 +25,9 @@ export default function HomePage() {
 
   return (
     <div className="relative">
+      <link rel="preload" as="image" href="/images/optimised/og-image/960.webp" type="image/webp" />
+      <link rel="preload" as="image" href="/images/optimised/og-image/960.jpg" type="image/jpeg" />
+
       <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <OptimisedImage
