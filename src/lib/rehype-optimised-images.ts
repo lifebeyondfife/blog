@@ -41,7 +41,8 @@ function extractFilename(src: string): string | null {
 }
 
 function buildImagePath(filename: string, size: number, format: string): string {
-  return `/${IMAGES_DIRECTORY}/optimised/${filename}/${size}.${format}`;
+  const publicPath = IMAGES_DIRECTORY.replace(/^public\//, '');
+  return `/${publicPath}/optimised/${filename}/${size}.${format}`;
 }
 
 function buildAspectRatioStyle(width: number, height: number): string {
