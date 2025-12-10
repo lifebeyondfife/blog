@@ -34,6 +34,7 @@ export function OptimisedImage({
         alt={alt}
         className={className}
         loading={priority ? 'eager' : 'lazy'}
+        {...(priority && { fetchPriority: 'high' })}
         decoding="async"
       />
     );
@@ -59,6 +60,7 @@ export function OptimisedImage({
           alt={alt}
           className={className}
           loading={priority ? 'eager' : 'lazy'}
+          {...(priority && { fetchPriority: 'high' })}
           decoding="async"
           width={imageInfo.originalWidth}
           height={imageInfo.originalHeight}
@@ -95,6 +97,7 @@ export function OptimisedImage({
         alt={alt}
         className={className}
         loading={priority ? 'eager' : 'lazy'}
+        {...(priority && { fetchPriority: 'high' })}
         decoding="async"
         width={imageInfo.originalWidth}
         height={imageInfo.originalHeight}
