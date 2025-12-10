@@ -38,3 +38,4 @@ next-env.d.ts
 # AWS configuration
 deployment-policy.json
 trust-policy.json
+deploy-redirects.sh
