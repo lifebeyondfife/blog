@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getPostBySlug, generateStaticParams as getStaticParams } from "@/lib/posts";
-import { OptimisedImage } from "@/components/OptimisedImage";
 import PostContent from "@/components/PostContent";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -60,77 +59,61 @@ export default async function PostPage({ params }: PageProps) {
 
   return (
     <article className="container mx-auto px-4 py-12">
-      <div className="max-w-4xl mx-auto">
-        <nav aria-label="Breadcrumb" className="mb-8 text-sm">
-          <ol className="flex items-center gap-2 text-gray-600">
-            <li>
-              <Link href="/" className="hover:text-ocean-blue transition-colors">
-                Home
-              </Link>
-            </li>
-            <li aria-hidden="true">›</li>
-            <li>
-              <Link 
-                href={`/${post.category}`} 
-                className="hover:text-ocean-blue transition-colors capitalize"
-              >
-                {post.category}
-              </Link>
-            </li>
-            <li aria-hidden="true">›</li>
-            <li className="text-gray-900 font-medium" aria-current="page">
-              {post.title}
-            </li>
-          </ol>
-        </nav>
-
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {post.title}
-          </h1>
-          
-          <div className="flex items-center gap-4 text-gray-600">
-            <time dateTime={post.date}>
-              {new Date(post.date).toLocaleDateString('en-GB', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </time>
-            <span>•</span>
-            <span>{post.readingTime} min read</span>
-            <span>•</span>
-            <span className="capitalize">{post.category}</span>
-          </div>
-        </header>
-
-        <PostContent html={post.content} />
-
-        {post.tags && post.tags.length > 0 && (
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <h2 className="text-sm font-semibold text-gray-700 mb-4">Tags</h2>
-            <div className="flex flex-wrap gap-2">
-              {post.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-ocean-blue hover:text-white transition-colors"
+        <div className="max-w-4xl mx-auto">
+          <nav aria-label="Breadcrumb" className="mb-8 text-sm">
+            <ol className="flex items-center gap-2 text-gray-600">
+              <li>
+                <Link href="/" className="hover:text-ocean-blue transition-colors">
+                  Home
+                </Link>
+              </li>
+              <li aria-hidden="true">›</li>
+              <li>
+                <Link
+                  href={`/${post.category}`}
+                  className="hover:text-ocean-blue transition-colors capitalize"
                 >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
+                  {post.category}
+                </Link>
+              </li>
+              <li aria-hidden="true">›</li>
+              <li className="text-gray-900 font-medium" aria-current="page">
+                {post.title}
+              </li>
+            </ol>
+          </nav>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <Link
-            href={`/${post.category}`}
-            className="inline-flex items-center text-ocean-dark hover:text-ocean-blue font-medium transition-colors"
-          >
-            ← Back to {post.category} posts
-          </Link>
+          <header className="mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              {post.title}
+            </h1>
+
+            <div className="flex items-center gap-4 text-gray-600">
+              <time dateTime={post.date}>
+                {new Date(post.date).toLocaleDateString('en-GB', {
+                  day: '2-digit',
+                  month: 'long',
+                  year: 'numeric',
+                })}
+              </time>
+              <span>•</span>
+              <span>{post.readingTime} min read</span>
+              <span>•</span>
+              <span className="capitalize">{post.category}</span>
+            </div>
+          </header>
+
+          <PostContent html={post.content} />
+
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <Link
+              href={`/${post.category}`}
+              className="inline-flex items-center text-ocean-dark hover:text-ocean-blue font-medium transition-colors"
+            >
+              ← Back to {post.category} posts
+            </Link>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
   );
 }
