@@ -31,7 +31,9 @@ Growing up my family moved every 2-3 years with my father's career. I've lived a
 
 I remember being blown away by the first Grand Theft Auto game. Not GTA3, but the original top down quasi-3D game where the player was presented with a huge square city and allowed to go anywhere they liked. I loved how expansive and free-roaming the game was which was a breath of fresh air from the 90s' formulaic platform and FPS levels to be navigated in a set manner. GTA was finally picking up the baton left by the hugely enjoyable and, sadly, largely unheard of [N.Y.C.: The Big Apple](http://idiology.com/8b/bacardi/Synapse/Synapse_games_3.html) from 1984.
 
-![](/images/nyc.png) To get anywhere in GTA, players had to know the layout of the city before attempting the missions. Even more so by the time Grand Theft Auto 3 came out for the Playstation 2 in glorious 3D. Not since the original Tomb Raider or The Legend of Zelda: A Link to the Past had I become so lost in the landscape of a game. I'd drive around the city taking everything in, the locations, the scenery, the different radio stations. It was a virtual city but the locations were real in my head.
+![](/images/nyc.png)
+
+To get anywhere in GTA, players had to know the layout of the city before attempting the missions. Even more so by the time Grand Theft Auto 3 came out for the Playstation 2 in glorious 3D. Not since the original Tomb Raider or The Legend of Zelda: A Link to the Past had I become so lost in the landscape of a game. I'd drive around the city taking everything in, the locations, the scenery, the different radio stations. It was a virtual city but the locations were real in my head.
 
 And it got me thinking. If I can find my way around Liberty City, a place that doesn't exist, why can't I take advantage of the real places I already know within the environment of a computer game?
 

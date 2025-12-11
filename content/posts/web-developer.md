@@ -8,7 +8,7 @@ tags:
 legacySlug: "97-web-developer-html"
 ---
 
-_"\[Stanford's\] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly \[think\]: what is it with all these other languages?"_
+_"[Stanford's] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly [think]: what is it with all these other languages?"_
 
 [Dynamic Languages Strike Back](http://steve-yegge.blogspot.co.uk/2008/05/dynamic-languages-strike-back.html) – Steve Yegge
 

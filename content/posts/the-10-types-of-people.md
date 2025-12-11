@@ -62,7 +62,7 @@ There are a some advantages when dealing with binary compared to the Mayan’s b
 
  
 
-Before we go any further and make things confusing, we need to have a convention for saying what base a number is. For example, \\(110\\) in decimal is one hundred and ten, but \\(110\\) in binary is six. From now on, non-decimal numbers expressed as digits will have a subscript suffix to denote which base it is e.g. \\(110\_{base2}\\) signifies that \\(110\\) is in base-two (binary) which is the same as \\(6\\) in base-ten (decimal).
+Before we go any further and make things confusing, we need to have a convention for saying what base a number is. For example, \(110\) in decimal is one hundred and ten, but \(110\) in binary is six. From now on, non-decimal numbers expressed as digits will have a subscript suffix to denote which base it is e.g. \(110\_{base2}\) signifies that \(110\) is in base-two (binary) which is the same as \(6\) in base-ten (decimal).
 
  
 
@@ -83,51 +83,74 @@ The rules for performing arithmetic work exactly the same way too.
 
  
 
-Below we add \\(110\_{base2}\\) (\\(6\\)) and \\(101\_{base2}\\) (\\(5\\)) to get the expected \\(1011\_{base2}\\) (\\(11\\)). The addition in the first two right-hand columns, \\(0 + 1\\) and \\(1 + 0\\), results in a \\(1\\). However, \\(1 + 1\\) equals two, of which there is no single digit representation in binary. The most basic addition of one and one in binary results in cycling the current column back to zero and adding one to the next column up. In others words, in binary, \\(1 + 1 = 10\\). In the case of this sum, one plus one is zero with a one carried over to the next column.
+Below we add \(110\_{base2}\) (\(6\)) and \(101\_{base2}\) (\(5\)) to get the expected \(1011\_{base2}\) (\(11\)). The addition in the first two right-hand columns, \(0 + 1\) and \(1 + 0\), results in a \(1\). However, \(1 + 1\) equals two, of which there is no single digit representation in binary. The most basic addition of one and one in binary results in cycling the current column back to zero and adding one to the next column up. In others words, in binary, \(1 + 1 = 10\). In the case of this sum, one plus one is zero with a one carried over to the next column.
 
  
-
-<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="20"></td><td valign="top" width="20">1</td><td valign="top" width="20">1</td><td valign="top" width="15">0</td></tr><tr><td valign="top">+</td><td valign="top">1</td><td valign="top">0</td><td valign="top">1</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="4"></td></tr><tr><td valign="top">1</td><td valign="top">0</td><td valign="top">1</td><td valign="top">1</td></tr></tbody></table>
-
+```
+   1 1 0
+ + 1 0 1
+ ———————
+ 1 0 1 1
+```
  
 
-Now consider \\(11\_{base2}\\) plus \\(11\_{base2}\\) (\\(3\\)) which is \\(110\_{base2}\\) (\\(6\\)). The first addition on the right-hand column results in \\(1 + 1 = 10\\), or “zero with one carried over”. This means the next columns addition is \\(1 + 1 + 1\\) (carried over from the previous column). Evaluating further this is \\(10 + 1\\) which is \\(11\\), or “one with one carried over”.
+Now consider \(11\_{base2}\) plus \(11\_{base2}\) (\(3\)) which is \(110\_{base2}\) (\(6\)). The first addition on the right-hand column results in \(1 + 1 = 10\), or “zero with one carried over”. This means the next columns addition is \(1 + 1 + 1\) (carried over from the previous column). Evaluating further this is \(10 + 1\) which is \(11\), or “one with one carried over”.
 
  
-
-<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="20"></td><td valign="top" width="20">1</td><td valign="top" width="15">1</td></tr><tr><td valign="top">+</td><td valign="top">1</td><td valign="top">1</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="3"></td></tr><tr><td valign="top">1</td><td valign="top">1</td><td valign="top">0</td></tr></tbody></table>
-
+```
+   1 1
+ + 1 1
+ —————
+ 1 1 0
+```
  
 
 Every other binary addition exercise employs these techniques repeatedly. Come back to these examples as required because it’s not expected that you’ll master arithmetic in a different base instantly. Hopefully the principles you apply when performing decimal addition can be seen in binary addition. Similarly, the technique is the same for binary subtraction.
 
  
 
-Consider \\(111\_{base2}\\) (\\(7\\)) minus \\(11\_{base2}\\) (\\(3\\)) which is \\(100\_{base2}\\) (\\(4\\)). This is a straightforward subtraction where we only have single digit operations that can be fully evaluated one column at a time i.e. we only have \\(1 - 1\\) and \\(1 - 0\\) subtractions to deal with (which are \\(0\\) and \\(1\\) respectively).
+Consider \(111\_{base2}\) (\(7\)) minus \(11\_{base2}\) (\(3\)) which is \(100\_{base2}\) (\(4\)). This is a straightforward subtraction where we only have single digit operations that can be fully evaluated one column at a time i.e. we only have \(1 - 1\) and \(1 - 0\) subtractions to deal with (which are \(0\) and \(1\) respectively).
+
+
+```
+ 1 1 1
+ - 1 1
+ —————
+ 1 0 0
+```
 
  
 
-<table border="0" cellspacing="0" cellpadding="0"><tbody><tr><td valign="top" width="20">1</td><td valign="top" width="20">1</td><td valign="top" width="15">1</td></tr><tr><td valign="top">-</td><td valign="top">1</td><td valign="top">1</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="3"></td></tr><tr><td valign="top">1</td><td valign="top">0</td><td valign="top">0</td></tr></tbody></table>
+In the next example we subtract \(1001\_{base2}\) (\(9\)) by \(110\_{base2}\) (\(6\)) which is \(11\_{base2}\) (\(3\)). The first and most right-hand subtraction, \(1 - 0 = 1\). The next subtraction, \(0 - 1\), requires us to “borrow” one from the next superior column, just as we would performing decimal subtraction. However, in this case the next column up is also a zero. As with decimal subtraction, continue up the columns until a \(1\) digit is found. Recall that two \(1\) digits in the current column \((1 + 1)\) can be represented as a \(0\) with a \(1\) carried over to the next higher column i.e. \(1 + 1 = 10\). Similarly, a \(1\) digit in the current column is worth _two_ \(1\) digits in the previous, right-hand column. Thus, the leftmost \(1\) digit in this subtraction is turned into two \(1\) digits in the previous column. One of these \(1\) digits is split into two \(1\) digits for the previous right-hand column. This replaces the \(0 - 1\) subtraction with \((1 + 1) - 1\) which is \(1\).
 
- 
 
-In the next example we subtract \\(1001\_{base2}\\) (\\(9\\)) by \\(110\_{base2}\\) (\\(6\\)) which is \\(11\_{base2}\\) (\\(3\\)). The first and most right-hand subtraction, \\(1 - 0 = 1\\). The next subtraction, \\(0 - 1\\), requires us to “borrow” one from the next superior column, just as we would performing decimal subtraction. However, in this case the next column up is also a zero. As with decimal subtraction, continue up the columns until a \\(1\\) digit is found. Recall that two \\(1\\) digits in the current column \\((1 + 1)\\) can be represented as a \\(0\\) with a \\(1\\) carried over to the next higher column i.e. \\(1 + 1 = 10\\). Similarly, a \\(1\\) digit in the current column is worth _two_ \\(1\\) digits in the previous, right-hand column. Thus, the leftmost \\(1\\) digit in this subtraction is turned into two \\(1\\) digits in the previous column. One of these \\(1\\) digits is split into two \\(1\\) digits for the previous right-hand column. This replaces the \\(0 - 1\\) subtraction with \\((1 + 1) - 1\\) which is \\(1\\).
+```
+ 1 0 0 1
+ - 1 1 0
+ ———————
+ ? ? ? 1
+```
 
- 
+```
+ 0 1+1 0 1
+ -   1 1 0
+ —————————
+ ?   ? ? 1
+```
 
-<table style="border: 1px solid black;" cellspacing="5" cellpadding="0"><tbody><tr><td valign="top" width="40">1</td><td valign="top" width="40">0</td><td valign="top" width="40">0</td><td valign="top" width="20">1</td></tr><tr><td valign="top">-</td><td valign="top">1</td><td valign="top">1</td><td valign="top">0</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="4"></td></tr><tr><td valign="top">?</td><td valign="top">?</td><td valign="top">?</td><td valign="top">1</td></tr></tbody></table>
+```
+ 0 1 1+1 1
+ - 1   1 0
+ —————————
+ ?   ? ? 1
+```
 
- 
-
-<table style="border: 1px solid black;" cellspacing="5" cellpadding="0"><tbody><tr><td valign="top" width="40"><b>0</b></td><td valign="top" width="40"><b>1+1</b></td><td valign="top" width="40">0</td><td valign="top" width="20">1</td></tr><tr><td valign="top">-</td><td valign="top">1</td><td valign="top">1</td><td valign="top">0</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="4"></td></tr><tr><td valign="top">?</td><td valign="top">?</td><td valign="top">?</td><td valign="top">1</td></tr></tbody></table>
-
- 
-
-<table style="border: 1px solid black;" cellspacing="5" cellpadding="0"><tbody><tr><td valign="top" width="40">0</td><td valign="top" width="40"><b>1</b></td><td valign="top" width="40"><b>1+1</b></td><td valign="top" width="20">1</td></tr><tr><td valign="top">-</td><td valign="top">1</td><td valign="top">1</td><td valign="top">0</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="4"></td></tr><tr><td valign="top">?</td><td valign="top">?</td><td valign="top">?</td><td valign="top">1</td></tr></tbody></table>
-
- 
-
-<table style="border: 1px solid black;" cellspacing="5" cellpadding="0"><tbody><tr><td valign="top" width="40">0</td><td valign="top" width="40">1</td><td valign="top" width="40">1+1</td><td valign="top" width="20">1</td></tr><tr><td valign="top">-</td><td valign="top">1</td><td valign="top">1</td><td valign="top">0</td></tr><tr><td style="border-bottom: 1px solid black;" colspan="4"></td></tr><tr><td valign="top"><b>0</b></td><td valign="top"><b>0</b></td><td valign="top"><b>1</b></td><td valign="top">1</td></tr></tbody></table>
+```
+ 0 1 1+1 1
+ - 1   1 0
+ —————————
+ 0 0   1 1
+```
 
  
 
@@ -139,7 +162,7 @@ The act of adding and subtracting numbers in binary may seem clunky and pointles
 
  
 
-Addition and subtraction (as well as multiplication and division) are _binary operations_. An operation, also known as an operator, is an an action or function; a “doing thing”. The elements they operate upon are the data. A binary operation works specifically on two pieces of datum, known as operands. So for \\(3 + 5\\), the operation (+) is addition and three and five are the two operands. Note that in this case the binary in binary operation refers to the fact that there are two inputs, not that the data is binary e.g. the addition operator is always binary regardless of whether it's adding binary numbers or decimal numbers.
+Addition and subtraction (as well as multiplication and division) are _binary operations_. An operation, also known as an operator, is an an action or function; a “doing thing”. The elements they operate upon are the data. A binary operation works specifically on two pieces of datum, known as operands. So for \(3 + 5\), the operation (+) is addition and three and five are the two operands. Note that in this case the binary in binary operation refers to the fact that there are two inputs, not that the data is binary e.g. the addition operator is always binary regardless of whether it's adding binary numbers or decimal numbers.
 
  
 

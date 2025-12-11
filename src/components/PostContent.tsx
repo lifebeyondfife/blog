@@ -1,10 +1,25 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
+
 interface PostContentProps {
   html: string;
 }
 
 export default function PostContent({ html }: PostContentProps) {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.MathJax?.typesetPromise && contentRef.current) {
+      window.MathJax.typesetPromise([contentRef.current]).catch((err) =>
+        console.error('MathJax typeset failed:', err)
+      );
+    }
+  }, [html]);
+
   return (
     <div
+      ref={contentRef}
       className="prose prose-lg max-w-none
         prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900
         prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4
@@ -29,7 +44,8 @@ export default function PostContent({ html }: PostContentProps) {
         prose-th:border prose-th:border-gray-300 prose-th:bg-gray-50
         prose-th:px-4 prose-th:py-2
         prose-td:border prose-td:border-gray-300 prose-td:px-4 prose-td:py-2
-        prose-hr:my-8 prose-hr:border-gray-300"
+        prose-hr:my-8 prose-hr:border-gray-300
+        [&_.math-inline]:inline [&_.math-block]:my-4 [&_.math-block]:text-center"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );

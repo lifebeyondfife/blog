@@ -465,10 +465,20 @@
     ],
     "isAnimated": false
   },
-  "database": {
+  "database-icon": {
     "originalWidth": 256,
     "originalHeight": 256,
-    "availableSizes": [],
+    "availableSizes": [
+      256
+    ],
+    "isAnimated": false
+  },
+  "database": {
+    "originalWidth": 640,
+    "originalHeight": 133,
+    "availableSizes": [
+      640
+    ],
     "isAnimated": false
   },
   "debug js": {

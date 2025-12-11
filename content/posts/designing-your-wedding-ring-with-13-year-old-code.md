@@ -75,11 +75,13 @@ As I recalled, it was a reasonably simple format. The first line records the num
 
 I could see two distinct problems: specifying the points in 3d space and then creating polygons made out of those points. I had a piece of pixel art (13 times 12 ) in size with four depths which I created with a triple nested for loop.
 
+```
 var coordinates = new List< string >();
 for (var k = 0d; k < = 2d; k += 0.05d)
     for (var j = -0.6d; j <= 0.6d; j += 0.1d)
         for (var i = -6.5d; i <= 6.5d; i += 0.1d)
             coordinates.Add(string.Format("{0} {1} {2}", i, j, k));
+```
 
 The next step was a bit harder. Before deciding what the depth of each tile should be, I needed a way to go from one point to drawing the top and four sides. This was done by denoting a depth to the top left point of each tile and creating 5 polygons e.g. for point (x) and (y = x - 182):
 
@@ -91,23 +93,25 @@ This was made possible by observing the numbering of the co-ordinates and decidi
 
 ![Points to Polygons](/images/polar-bear-numbered.png)
 
+```
 var points = new Dictionary< int, int >();
 
-var depthOne = new \[\] { 2, 3, 11, 12, 15, 18, /\* ... \*/ };
+var depthOne = new [] { 2, 3, 11, 12, 15, 18, /\* ... \*/ };
 foreach (var i in depthOne )
-    points\[i\] = 1;
+    points[i] = 1;
 
-var depthTwo = new \[\] { 32, 33, 34, 35, 36, 37 /\* ... \*/ };
+var depthTwo = new [] { 32, 33, 34, 35, 36, 37 /\* ... \*/ };
 foreach (var i in depthTwo)
-    points\[i\] = 2;
+    points[i] = 2;
 
-var depthThree = new \[\] { 75, 79, 104, 105, 106, /\* ... \*/ };
+var depthThree = new [] { 75, 79, 104, 105, 106, /\* ... \*/ };
 foreach (var i in depthThree)
-    points\[i\] = 3;
+    points[i] = 3;
 
-var depthFour = new \[\] { 89, 93, 119, 120, 133 };
+var depthFour = new [] { 89, 93, 119, 120, 133 };
 foreach (var i in depthFour)
-    points\[i\] = 4;
+    points[i] = 4;
+```
 
 Before long I had a file representing a reworking of the 3d model that shaped the nose to be sticking out and the face and ears raised only slightly at the sides.
 

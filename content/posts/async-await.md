@@ -30,7 +30,7 @@ I'll cut through some of the Microsoft boiler plate that builds up as they exper
         catch (WebException) { }
         return null;
     }
-``` 
+```
 
 The client.DownloadData(url) invocation takes a long time and blocks the thread it's running on while doing so. This is especially bad if this is the UI thread. The new feature of .Net 5 allows you to label an invocation as something that will take a long time and not to block while executing it by making mere cosmetic changes to your code. The first of which is to add the async identifier to your function declaration like so:
 

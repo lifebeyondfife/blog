@@ -42,21 +42,30 @@ A Higher Order function is one that takes not just data as a parameter, but also
 
 For C# programmers familiar with LINQ, you will know the filter Higher Order function as Where. Its purpose is to look at a collection (a sequence of elements) and discard all elements in that collection that don't have a certain property. Say we have a Python list of data:
 
-`data = [1, 4, 0, 6, 1, 9, 5, 8, 7, 2]`
+```
+data = [1, 4, 0, 6, 1, 9, 5, 8, 7, 2]
+```
 
 We wish to know which members of data are greater than 5. To do so we construct a lambda function i.e. a stateless function that can be defined inline or stored in a variable.
 
-`greater_than_five = lambda x: x > 5`
+```
+greater_than_five = lambda x: x > 5
+```
 
 We can now treat the variable greater\_than\_five like a function:
 
-`greater_than_five(3)    # returns False greater_than_five(123)  # returns True`
+```
+greater_than_five(3)    # returns False
+greater_than_five(123)  # returns True
+```
 
 The Python Higher Order function filter is called like so:
 
-`filter(greater_than_five, data)`
+```
+filter(greater_than_five, data)
+```
 
-The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: \[6, 9, 8, 7\]. That is, all the elements of data that are greater than five. The filter function invokes greater\_than\_five with each element from the list, data. Only elements that get a response of True are kept.
+The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: \(6, 9, 8, 7\). That is, all the elements of data that are greater than five. The filter function invokes greater\_than\_five with each element from the list, data. Only elements that get a response of True are kept.
 
  
 
@@ -64,49 +73,64 @@ The result is a [generator](https://wiki.python.org/moin/Generators) that, once 
 
 Imagine we have a data set describing programmers and their skill with a particular technology colourfully named red, green and blue:
 
-<table width="70%" cellspacing="0"><tbody><tr><td><strong>Name</strong></td><td><strong>Age</strong></td><td><strong>Technology</strong></td><td><strong>Rating</strong></td></tr><tr><td>alice</td><td>24</td><td>blue</td><td>86</td></tr><tr><td>alice</td><td>24</td><td>green</td><td>80</td></tr><tr><td>bob</td><td>20</td><td>red</td><td>76</td></tr><tr><td>bob</td><td>20</td><td>green</td><td>68</td></tr><tr><td>charlie</td><td>45</td><td>blue</td><td>96</td></tr><tr><td>dylan</td><td>32</td><td>blue</td><td>75</td></tr><tr><td>dylan</td><td>32</td><td>green</td><td>81</td></tr><tr><td>dylan</td><td>32</td><td>red</td><td>54</td></tr><tr><td>evelyn</td><td>29</td><td>green</td><td>83</td></tr><tr><td>evelyn</td><td>29</td><td>red</td><td>78</td></tr><tr><td>francis</td><td>19</td><td>red</td><td>64</td></tr></tbody></table>
+
+| _Name_ | _Age_ | _Technology_ | _Rating_ |
+| --- | --- | --- | --- |
+| alice | 24 | blue | 86 |
+| alice | 24 | green | 80 |
+| bob | 20 | red | 76 |
+| bob | 20 | green | 68 |
+| charlie | 45 | blue | 96 |
+| dylan | 32 | blue | 75 |
+| dylan | 32 | green | 81 |
+| dylan | 32 | red | 54 |
+| evelyn | 29 | green | 83 |
+| evelyn | 29 | red | 78 |
+| francis | 19 | red | 64 |
 
  
 
 Suppose we need to create a function that returns the most skillful programmer for each technology under the age of 40. This could be done in an imperative style like so:
 
+```
 name, age, tech, skill = range(0, 4)
 
-def get\_answer\_imperative(\_data):
+def get_answer_imperative(_data):
     answer = {}
     
-    for row in \_data:
-        if row\[age\] >= 40:
+    for row in _data:
+        if row[age] >= 40:
             continue
         
-        if row\[tech\] in answer:
-            answer\[row\[tech\]\] = max(answer\[row\[tech\]\], (row\[skill\], row\[name\]))
+        if row[tech] in answer:
+            answer[row[tech]] = max(answer[row[tech]], (row[skill], row[name]))
         else:
-            answer\[row\[tech\]\] = (row\[skill\], row\[name\])
+            answer[row[tech]] = (row[skill], row[name])
     
-    return {\_tech: skill\_name\[1\] for (\_tech, skill\_name) in answer.items()}
-
+    return {_tech: skill_name[1] for (_tech, skill_name) in answer.items()}
+```
  
 
 We could also implement this code in a functional style using Higher Order functions:
 
-def get\_answer\_functional(\_data):
+```
+def get_answer_functional(_data):
     return dict(
         map(
-            lambda (\_tech, rows): (\_tech, max(rows, key=itemgetter(skill))\[name\]),
+            lambda (_tech, rows): (_tech, max(rows, key=itemgetter(skill))[name]),
             groupby(
                 sorted(
                     filter(
-                        lambda row: row\[age\] < 40,
-                        \_data
+                        lambda row: row[age] < 40,
+                        _data
                     ),
                     key=itemgetter(tech)
                 ),
-                lambda groups: groups\[tech\]
+                lambda groups: groups[tech]
             )
         )
     )
-
+```
  
 
 ## What's the benefit of solving problems with Higher Order functions
@@ -115,36 +139,37 @@ The performance of the two implementations above are fairly comparable and essen
 
 There will always be some limit to the size of the data that can be called using either of these functions. The key difference is that by using Higher Order functions, we separate the logic from the state and chain the necessary operations one after the other. The imperative implementation is a black box that cannot be broken up without refactoring; the functional implementation however can be split into multiple, cascading functions.
 
-def get\_answer\_functional\_4(\_data):
+```
+def get_answer_functional_4(_data):
 	return filter(
-		lambda row: row\[age\] < 40,
-		\_data
+		lambda row: row[age] < 40,
+		_data
 	)
 
-def get\_answer\_functional\_3(\_data):
+def get_answer_functional_3(_data):
 	return sorted(
-		get\_answer\_functional\_4(\_data),
+		get_answer_functional_4(_data),
 		key=itemgetter(tech)
 	)
 
-def get\_answer\_functional\_2(\_data):
+def get_answer_functional_2(_data):
 	return groupby(
-		get\_answer\_functional\_3(\_data),
-		lambda groups: groups\[tech\]
+		get_answer_functional_3(_data),
+		lambda groups: groups[tech]
 	)
 
-def get\_answer\_functional\_1(\_data):
+def get_answer_functional_1(_data):
 	return map(
-		lambda (\_tech, rows): (\_tech, max(rows, key=itemgetter(skill))\[name\]),
-		get\_answer\_functional\_2(\_data)
+		lambda (_tech, rows): (_tech, max(rows, key=itemgetter(skill))[name]),
+		get_answer_functional_2(_data)
 	)
 
-def get\_answer\_functional(\_data):
+def get_answer_functional(_data):
 	return dict(
-		get\_answer\_functional\_1(\_data)
+		get_answer_functional_1(_data)
 	)
+```
 
- 
 
 The intractably large data set can likewise be partitioned into manageable pieces
 
@@ -152,16 +177,16 @@ The intractably large data set can likewise be partitioned into manageable piece
 
 By changing the way we invoke the functional style cascading functions, we can call each in turn with the manageable pieces and merge the results (much like the merge operation in [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)). The deepest function (get\_answer\_functional\_4) is called first on each partition and results of each invocation are collated – the exact collation method depends on the Higher Order function in question. The process of partitioning begins again and the next function down is called with a slight modification:
 
-def get\_answer\_functional\_3(\_data):
+```
+def get_answer_functional_3(_data):
 	return sorted(
-		\_data,  # formerly, get\_answer\_functional\_4(\_data)
+		_data,  # formerly, get_answer_functional_4(_data)
 		key=itemgetter(tech)
 	)
+```
 
- 
 
 owing to the fact that data has already gone through the get\_answer\_functional\_4 stage.
-
  
 
 ## No really, is this a joke?

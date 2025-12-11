@@ -14,17 +14,22 @@ Let’s start simple by revisiting how we count. Here are the ten single digit n
 
  
 
-\\\[0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\\]
+\[0, 1, 2, 3, 4, 5, 6, 7, 8, 9\]
 
  
 
 The rules are so straightforward that given any number, you’d know how to start counting from there upwards. Consider this example in the tens of millions. The number is split up into Units, Tens, Hundreds, Thousands, Tens of Thousands, Hundreds of Thousands, Millions and Tens of Millions, as appropriate.
 
- 
+\[21,684,997\]
 
-<table class="datatable"><tbody><tr><td>\[21,684,997\]<table class="datatable" cellpadding="10"><tbody><tr><td valign="top"><div align="center"><i>T-M</i></div></td><td valign="top"><div align="center"><i>M</i></div></td><td valign="top"><div align="center"><i>H-Th</i></div></td><td valign="top"><div align="center"><i>T-Th</i></div></td><td valign="top"><div align="center"><i>Th</i></div></td><td valign="top"><div align="center"><i>H</i></div></td><td valign="top"><div align="center"><i>T</i></div></td><td valign="top"><div align="center"><i>U</i></div></td><td valign="top"></td></tr><tr><td valign="top"><div align="center">2</div></td><td valign="top"><div align="center">1</div></td><td valign="top"><div align="center">6</div></td><td valign="top"><div align="center">8</div></td><td valign="top"><div align="center">4</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center">7</div></td><td valign="top"></td></tr><tr><td valign="top"><div align="center">2</div></td><td valign="top"><div align="center">1</div></td><td valign="top"><div align="center">6</div></td><td valign="top"><div align="center">8</div></td><td valign="top"><div align="center">4</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center"><b>8</b></div></td><td valign="top"><div align="center"><b>+1</b></div></td></tr><tr><td valign="top"><div align="center">2</div></td><td valign="top"><div align="center">1</div></td><td valign="top"><div align="center">6</div></td><td valign="top"><div align="center">8</div></td><td valign="top"><div align="center">4</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center">9</div></td><td valign="top"><div align="center"><b>9</b></div></td><td valign="top"><div align="center"><b>+1</b></div></td></tr><tr><td valign="top"><div align="center">2</div></td><td valign="top"><div align="center">1</div></td><td valign="top"><div align="center">6</div></td><td valign="top"><div align="center">8</div></td><td valign="top"><div align="center"><b>5</b></div></td><td valign="top"><div align="center"><b>0</b></div></td><td valign="top"><div align="center"><b>0</b></div></td><td valign="top"><div align="center"><b>0</b></div></td><td valign="top"><div align="center"><b>+1</b></div></td></tr></tbody></table>&nbsp;</td></tr></tbody></table>
 
- 
+| T-M | M | H-Th | T-Th | Th | H | T | U | 
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 2 | 1 | 6 | 8 | 4 | 9 | 9 | 7 |
+| 2 | 1 | 6 | 8 | 4 | 9 | 9 | 8 (+1) |
+| 2 | 1 | 6 | 8 | 4 | 9 | 9 | 9 (+1) |
+| 2 | 1 | 6 | 8 | 5 | 0 | 0 | 0 (+1) |
+
 
 Start at the Units column and move your way up the numbers in order from 0 to 9. When you add one to 9, loop back to 0 and add one to the next column along i.e. the Tens column. Keep on applying that rule and move up through the columns e.g. adding one to ninety-nine sees us loop back to 0 in the Units column, loop back to 0 in the Tens column, and repeat the same pattern in the Hundreds column. Elementary!
 
@@ -53,10 +58,12 @@ Perhaps, like me in your early years of primary school you remember using shapes
 These were used to simplify the process of how you described numbers beyond those represented with just a single digit. Elementary arithmetic was made possible by considering a number as the sum of a number of hundreds, tens and units.
 
  
+| H | T | U | 
+| --- | --- | --- |
+| 2 | 7 | 4 |
 
-<table class="datatable" cellspacing="10"><tbody><tr><td valign="top"><div align="center"><i>H</i></div></td><td valign="top"><div align="center"><i>T</i></div></td><td valign="top"><div align="center"><i>U</i></div></td></tr><tr><td valign="top"><div align="center">2</div></td><td valign="top"><div align="center">7</div></td><td valign="top"><div align="center">4</div></td></tr></tbody></table>
 
-\\\[2 7 4 = 2 \\times 100 + 7 \\times 10 + 4 \\times 1\\\]
+\[2 7 4 = 2 \times 100 + 7 \times 10 + 4 \times 1\]
 
  
 
@@ -108,7 +115,7 @@ The Mayans used bars and dots to abbreviate how their symbols were transcribed b
 
  
 
-Consider the example of two-hundred and seventy-four we saw earlier in this chapter. We broke this down into the sum of three simple terms, \\(2 \\times 100\\), \\(7 \\times 10\\) and \\(4 \\times 1\\). But really, the hundreds, tens and units are something that your primary school teachers made you memorise instead of explaining how to derive them yourself. The factor of each of column i.e. what the value is multiplied by, is the base raised to the power of that column.
+Consider the example of two-hundred and seventy-four we saw earlier in this chapter. We broke this down into the sum of three simple terms, \(2 \times 100\), \(7 \times 10\) and \(4 \times 1\). But really, the hundreds, tens and units are something that your primary school teachers made you memorise instead of explaining how to derive them yourself. The factor of each of column i.e. what the value is multiplied by, is the base raised to the power of that column.
 
  
 
@@ -116,11 +123,11 @@ If you haven’t heard the term power, or raising a number to a power, it’s qu
 
  
 
-Ten to the power of two, written as \\(10^{2}\\), means \\(10 \\times 10\\), which is \\(100\\). Ten to the power of three, or \\(10^{3}\\), is \\(10 \\times 10 \\times 10\\) which is \\(1,000\\). Indeed, in the decimal numbering system, raising ten to a particular power is quite easy to calculate, it’s simply the number of zeros after a one. So \\(10^{5}\\) is \\(100,000\\) and \\(10^{0}\\) is 1.
+Ten to the power of two, written as \(10^{2}\), means \(10 \times 10\), which is \(100\). Ten to the power of three, or \(10^{3}\), is \(10 \times 10 \times 10\) which is \(1,000\). Indeed, in the decimal numbering system, raising ten to a particular power is quite easy to calculate, it’s simply the number of zeros after a one. So \(10^{5}\) is \(100,000\) and \(10^{0}\) is 1.
 
  
 
-By numbering the columns from zero upwards, we can calculate the value of each columns factor as the base of the number system raised to the number of that column. Two-hundred and seventy-four becomes \\(2 \\times 10^{2} + 7 \\times 10^{1} + 4 \\times 10^{0}\\).
+By numbering the columns from zero upwards, we can calculate the value of each columns factor as the base of the number system raised to the number of that column. Two-hundred and seventy-four becomes \(2 \times 10^{2} + 7 \times 10^{1} + 4 \times 10^{0}\).
 
  
 
@@ -136,7 +143,7 @@ First up we need to translate our symbols from decimal digits into Mayan scriptu
 
  
 
-The problem we haven’t thought about, however, is that the Mayan base is twenty. The symbol we’ve just written down is \\(2 × 20^{2} +\\) \\(7 \\times 20^{1} +\\) \\(4 \\times 20^{0}\\). Whereas the column factors in our decimal number system are 1, 10 and 100, in the Mayan number system they are 1\*, 20 and 400 (twenty times twenty is four hundred). Even though we see two dots in the highest row, the value of that is eight-hundred i.e. two multiplied by four-hundred. The two dots and one bar in the next row have the value of seven multiplied by twenty, which is one-hundred and forty. And finally the last row containing four dots, similarly to decimal, is simply four. Adding the three terms together we can see that what we wrote down isn’t 274, but rather 944! Here is what 274 in Mayan actually looks like.
+The problem we haven’t thought about, however, is that the Mayan base is twenty. The symbol we’ve just written down is \(2 × 20^{2} +\) \(7 \times 20^{1} +\) \(4 \times 20^{0}\). Whereas the column factors in our decimal number system are 1, 10 and 100, in the Mayan number system they are 1\*, 20 and 400 (twenty times twenty is four hundred). Even though we see two dots in the highest row, the value of that is eight-hundred i.e. two multiplied by four-hundred. The two dots and one bar in the next row have the value of seven multiplied by twenty, which is one-hundred and forty. And finally the last row containing four dots, similarly to decimal, is simply four. Adding the three terms together we can see that what we wrote down isn’t 274, but rather 944! Here is what 274 in Mayan actually looks like.
 
 \*Without going into the detail of explaining the underlying mathematics, any number (in this case twenty) raised to the power of zero, is one.
 
@@ -148,13 +155,13 @@ The problem we haven’t thought about, however, is that the Mayan base is twent
 
 This depiction is represented by the Mayan symbols for thirteen (two bars and three dots) followed by fourteen (two bars and four dots). You can verify yourself that:
 
-\\\[13 \\times 20^{1} + 14 \\times 20^{0} =\\\]
+\[13 \times 20^{1} + 14 \times 20^{0} =\]
 
-\\\[(13 \\times 20) + (14 \\times 1) =\\\]
+\[(13 \times 20) + (14 \times 1) =\]
 
-\\\[260 + 14 =\\\]
+\[260 + 14 =\]
 
-\\\[274\\\]
+\[274\]
 
  
 

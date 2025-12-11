@@ -58,39 +58,39 @@ Already though it's becoming apparent just how long a month is. A couple of time
 
 **1: 3D Bookmarks**
 
-_The sites we go to nowadays are varied and ever expanding. It's not enough to have a list of them all together or even classifications and sub-categories. They should be stored in a 3D space that we can visualise and organise in a way of our choosing._
+The sites we go to nowadays are varied and ever expanding. It's not enough to have a list of them all together or even classifications and sub-categories. They should be stored in a 3D space that we can visualise and organise in a way of our choosing.
 
-_Rather than going to a list of sites, we take a walk around a room that we've designed. In this room are cubes with favicon.ico images on each side. Go up to a cube representing a website we want to browse to, click on it and it opens up another tab in our browser._
+Rather than going to a list of sites, we take a walk around a room that we've designed. In this room are cubes with favicon.ico images on each side. Go up to a cube representing a website we want to browse to, click on it and it opens up another tab in our browser.
 
 **2: Money as Time**
 
-_Think about money in a completely different metric than how much you have in your wallet or bank account: think about it as a unit of time! Every penny you earn will eventually be spent, it’s just a matter of when. The more you save, the better you manage your money, the further into the future it becomes when you’ll spend that money. Conversely, if you’re bad with your money, or in debt, the day you spend the money you’ve earned could be in the past._
+Think about money in a completely different metric than how much you have in your wallet or bank account: think about it as a unit of time! Every penny you earn will eventually be spent, it’s just a matter of when. The more you save, the better you manage your money, the further into the future it becomes when you’ll spend that money. Conversely, if you’re bad with your money, or in debt, the day you spend the money you’ve earned could be in the past.
 
-_Our task is to create a mobile app. Enter how much money you have in the bank/wallet now, when you get paid and any direct debits or standing orders. Then you just update the app anytime you spend money (you don’t need to say what you bought, just how much you spent). It will give you a date in the future (or past) of when the money you have now will be spent. Unlike your salary or bank balance, this is a metric that you can feel comfortable enough to share with others and can help anyone to keep an eye on how their day-to-day spending measures up to their income without having to do any complicated budgeting._
+Our task is to create a mobile app. Enter how much money you have in the bank/wallet now, when you get paid and any direct debits or standing orders. Then you just update the app anytime you spend money (you don’t need to say what you bought, just how much you spent). It will give you a date in the future (or past) of when the money you have now will be spent. Unlike your salary or bank balance, this is a metric that you can feel comfortable enough to share with others and can help anyone to keep an eye on how their day-to-day spending measures up to their income without having to do any complicated budgeting.
 
 **3: Theory to Practice in 50 pages**
 
-_Not a coding project per se, but rather an eBook. Most of the problems with mathematics and theory heavy computer science topics e.g. Group Theory, NP-Complete problems (obviously, subjects close to my heart) etc. are that they’re taught as complex university level subjects with little consideration of why they’re important._
+Not a coding project per se, but rather an eBook. Most of the problems with mathematics and theory heavy computer science topics e.g. Group Theory, NP-Complete problems (obviously, subjects close to my heart) etc. are that they’re taught as complex university level subjects with little consideration of why they’re important.
 
-_In a similar offshoot to the massive online compsci courses, we take a honours degree level subject we were taught, sum up why it’s important with real world examples, and take the content through to a complex example with code samples throughout. In just 50 pages._
+In a similar offshoot to the massive online compsci courses, we take a honours degree level subject we were taught, sum up why it’s important with real world examples, and take the content through to a complex example with code samples throughout. In just 50 pages.
 
 **4: Running songs**
 
-_An accelerometer phone app but hopefully a small enough one to be not too technically challenging. For joggers who listen to music while running: note the speed they’re running at when a song starts, the average speed during the song, and the final speed at the end of the song. We rank their songs from fastest to slowest allowing them to empirically gauge which songs work best for their workouts._
+An accelerometer phone app but hopefully a small enough one to be not too technically challenging. For joggers who listen to music while running: note the speed they’re running at when a song starts, the average speed during the song, and the final speed at the end of the song. We rank their songs from fastest to slowest allowing them to empirically gauge which songs work best for their workouts.
 
 **5: Red Amber Green**
 
-_Whether walking, running or driving we have map applications that can get us from point A to point B. But for many routes that we take commonly we don’t need to know directions, we need to know if we’re going to be on time._
+Whether walking, running or driving we have map applications that can get us from point A to point B. But for many routes that we take commonly we don’t need to know directions, we need to know if we’re going to be on time.
 
-_This mobile app would interact with, say, google maps and GPS to let the user know if they were on target for arriving at their destination in the required time._
+This mobile app would interact with, say, google maps and GPS to let the user know if they were on target for arriving at their destination in the required time.
 
 **6: Crude 3D map explorer**
 
-_An existing idea of mine and one I’ve blogged about (a first step on the way to create a big immersive game). Create a website that takes Open Street Map data and displays a representation of the real world i.e. create a pseudo-random building based on a rough template for houses, roads, hospitals, shops etc._
+An existing idea of mine and one I’ve blogged about (a first step on the way to create a big immersive game). Create a website that takes Open Street Map data and displays a representation of the real world i.e. create a pseudo-random building based on a rough template for houses, roads, hospitals, shops etc.
 
 **7: First Class Function URL**
 
-_One of the most powerful Javascript features is that first class functions are passed all around the place. We could create a service where coders could upload a Javascript function snippet and we provide them with a URL which could be used in someone else’s code e.g. an AJAX call. It’s a lighter-weight version of a Javascript library._
+One of the most powerful Javascript features is that first class functions are passed all around the place. We could create a service where coders could upload a Javascript function snippet and we provide them with a URL which could be used in someone else’s code e.g. an AJAX call. It’s a lighter-weight version of a Javascript library.
 
  
 
@@ -104,31 +104,31 @@ At this stage coming up with a new idea every day is becoming a bit of a chore. 
 
 **8: Electronic Wallet**
 
-_I’d be surprised if there wasn’t already something like this but... an encrypted folder for documents that can be stored anywhere. It takes sensitivity of documents out of the hands of cloud storage providers. We could offer some integration support with the OS and DropBox / SkyDrive / iCloud, e.g. preview files in a desktop application, sync with the cloud storage drive of your choice. Make the encryption process open source to convince others it works._
+I’d be surprised if there wasn’t already something like this but... an encrypted folder for documents that can be stored anywhere. It takes sensitivity of documents out of the hands of cloud storage providers. We could offer some integration support with the OS and DropBox / SkyDrive / iCloud, e.g. preview files in a desktop application, sync with the cloud storage drive of your choice. Make the encryption process open source to convince others it works.
 
 **9: Jury of your peers**
 
-_Similar to sketchswap.com where you draw a picture and get a picture, we create a website that acts as mini-courtroom for a dispute between parties who are prepared to allow the anonymous internet hordes to decide their fate. You and the other party submit an issue for resolution - each one gets to write the problem in their own words. Twelve people read both accounts of the case and vote in favour of one party or abstain. For each issue you ask to resolve, you get 6 votes in other people’s problems so there’s a constant equilibrium of 12 votes for every issue._
+Similar to sketchswap.com where you draw a picture and get a picture, we create a website that acts as mini-courtroom for a dispute between parties who are prepared to allow the anonymous internet hordes to decide their fate. You and the other party submit an issue for resolution - each one gets to write the problem in their own words. Twelve people read both accounts of the case and vote in favour of one party or abstain. For each issue you ask to resolve, you get 6 votes in other people’s problems so there’s a constant equilibrium of 12 votes for every issue.
 
 **10: Notepad**
 
-_There is nothing new under the sun. We should write a plain old notepad app... for [a new platform](https://hacks.mozilla.org/2012/10/creating-the-future-of-mobile-with-firefox-os/ "Firefox OS")._
+There is nothing new under the sun. We should write a plain old notepad app... for [a new platform](https://hacks.mozilla.org/2012/10/creating-the-future-of-mobile-with-firefox-os/ "Firefox OS").
 
 **11: Development Environment Top Trumps**
 
-_Invite the community to pick their favourite development environment variables, both tech-related and non-tech related. For instance, favourite: beverage, snack, monitor setup, OS, IDE (or text editor), development platform (server, desktop, browser, mobile etc.), test bed application (Firebug, IDE debugger), language, continuous integration framework (TeamCity, Jenkins), instant messenger, source control system or tool (Git or GitHub, BitBucket), two-hour window of the day to do coding, music to code to, view from desk, location of desk (home, office, open plan). Only allow one choice per category. Allow coders to have badges linking to their StackOverflow, TopCoder, Twitter pages etc. and ask them some questions regarding experience / responsibility. Let users query the data on various keys a la, “Show me distribution of StackOverflow score by beverage choice”, “Number of websites run by development platform”._
+Invite the community to pick their favourite development environment variables, both tech-related and non-tech related. For instance, favourite: beverage, snack, monitor setup, OS, IDE (or text editor), development platform (server, desktop, browser, mobile etc.), test bed application (Firebug, IDE debugger), language, continuous integration framework (TeamCity, Jenkins), instant messenger, source control system or tool (Git or GitHub, BitBucket), two-hour window of the day to do coding, music to code to, view from desk, location of desk (home, office, open plan). Only allow one choice per category. Allow coders to have badges linking to their StackOverflow, TopCoder, Twitter pages etc. and ask them some questions regarding experience / responsibility. Let users query the data on various keys a la, “Show me distribution of StackOverflow score by beverage choice”, “Number of websites run by development platform”.
 
 **12: Location based reminders**
 
-_Often we create reminders for ourselves via calendar items e.g. put thing in oven at 18:00. But also we need reminding to do things when we’re near something e.g. when you’re in the town centre, pick up a passport form from the post office. Make a location based reminder application._
+Often we create reminders for ourselves via calendar items e.g. put thing in oven at 18:00. But also we need reminding to do things when we’re near something e.g. when you’re in the town centre, pick up a passport form from the post office. Make a location based reminder application.
 
 **13: More location shenanigans**
 
-_Want to meet people who live parallel lives to you? Send messages to other users based on conditions you propose. For instance, send a message to people who go to your favourite bar, shop (location specific) and club night (time and location specific) within one month._
+Want to meet people who live parallel lives to you? Send messages to other users based on conditions you propose. For instance, send a message to people who go to your favourite bar, shop (location specific) and club night (time and location specific) within one month.
 
 **14: Personalised music creation**
 
-_Really simple instrument set with a few beat, chord progression, melody creation rules. Tie this to a simple neural net, ask the user to listen to loads of 15 second samples and rank them. Back propagate and you have a crude AI module that creates music you specifically like. Once it’s trained, produce tracks ~3-4 minutes long._
+Really simple instrument set with a few beat, chord progression, melody creation rules. Tie this to a simple neural net, ask the user to listen to loads of 15 second samples and rank them. Back propagate and you have a crude AI module that creates music you specifically like. Once it’s trained, produce tracks ~3-4 minutes long.
 
  
 
@@ -146,41 +146,41 @@ With regard to coming up with new ideas, this week is a collection of both the s
 
 **15: Football Manager**
 
-_It has come to this. I am forced to use existing ideas because I can’t think of any others. Create a really simple football manager game for an 11-a-side recreation a la Championship Manager 1993. We can port a successful model to a mobile platform. I’ve previously tried to make something like this with friends that fell apart because we made it too complicated (this is probably a lesson for all our project ideas), so ideally we should have a minimal DB (ORM) design that will take at most a day to code up._
+It has come to this. I am forced to use existing ideas because I can’t think of any others. Create a really simple football manager game for an 11-a-side recreation a la Championship Manager 1993. We can port a successful model to a mobile platform. I’ve previously tried to make something like this with friends that fell apart because we made it too complicated (this is probably a lesson for all our project ideas), so ideally we should have a minimal DB (ORM) design that will take at most a day to code up.
 
 **16: Gutenberg to e-book Converter**
 
-_I know nothing about electronic books but would there be any merit in converting the html text from the Gutenberg project to something that plays nicely on a Kindle?_
+I know nothing about electronic books but would there be any merit in converting the html text from the Gutenberg project to something that plays nicely on a Kindle?
 
 **17: Financial Risk, Valuation and Reporting in the Cloud**
 
-_The schlep idea that everyone ignores. Financial services are a weird cross between needing to be cutting edge to take advantage of ever increasing data collections and complex models, and yet they're hammering against the door of quant modellers who can't accept that the world has moved on from VBA at the back of an Excel spreadsheet._
+The schlep idea that everyone ignores. Financial services are a weird cross between needing to be cutting edge to take advantage of ever increasing data collections and complex models, and yet they're hammering against the door of quant modellers who can't accept that the world has moved on from VBA at the back of an Excel spreadsheet.
 
-_We start small with some simple valuation routines for vanilla trade types but essentially we allow users to upload financial data and custom code to the cloud where we perform various calculations. We offer archiving, reports and graphs._
+We start small with some simple valuation routines for vanilla trade types but essentially we allow users to upload financial data and custom code to the cloud where we perform various calculations. We offer archiving, reports and graphs.
 
 **18: <Top Secret Idea>**
 
 _<...idea censored...>_
 
-_I can see this revolutionising <idea subject matter>, nay, the world._
+I can see this revolutionising <idea subject matter>, nay, the world.
 
 **19: Decision Support Designer**
 
-_There are two things wrong with the Constraint Programming community that lead to ludicrous cognitive dissonance. Firstly they love the Eugene C. Freuder quote from the seventies/eighties: "Constraint Programming rocks. You describe the problem and the computer solves it." (I'm paraphrasing slightly). But it's true and it is really cool, you don't have to solve a problem, just describe it. And the description process in its simplest form is really straightforward._
+There are two things wrong with the Constraint Programming community that lead to ludicrous cognitive dissonance. Firstly they love the Eugene C. Freuder quote from the seventies/eighties: "Constraint Programming rocks. You describe the problem and the computer solves it." (I'm paraphrasing slightly). But it's true and it is really cool, you don't have to solve a problem, just describe it. And the description process in its simplest form is really straightforward.
 
-_The problem comes in two ways after this. The price of having a generic solver for all problems is that it isn't an expert system. It is slower for pretty much every problem it tries to solve compared to a specialised algorithm designed solely for that problem. The constraint solving community address this by making their constraint solvers better but generally speaking, better and more complicated. More knowledge is required about how best to model your problem. Special purpose constraints can be used but only in certain cases and will require additional setup._
+The problem comes in two ways after this. The price of having a generic solver for all problems is that it isn't an expert system. It is slower for pretty much every problem it tries to solve compared to a specialised algorithm designed solely for that problem. The constraint solving community address this by making their constraint solvers better but generally speaking, better and more complicated. More knowledge is required about how best to model your problem. Special purpose constraints can be used but only in certain cases and will require additional setup.
 
-_In the end, to make themselves more performant they've sacrificed the raison d'etre advantage of constraint programming: to make it easy to describe and solve a problem. And though the complexity may result in faster runtimes, they are still lower than the best specialised algorithm. So, in conclusion Constraint Programming is a way to get slow runtimes in a really complicated way._
+In the end, to make themselves more performant they've sacrificed the raison d'etre advantage of constraint programming: to make it easy to describe and solve a problem. And though the complexity may result in faster runtimes, they are still lower than the best specialised algorithm. So, in conclusion Constraint Programming is a way to get slow runtimes in a really complicated way.
 
-_After all that rambling, the idea: make an easy to use graphical toolkit for solving general purpose NP-complete problems. These could be timetabling, planning, scheduling, bin-packing problems, for example, travelling salesman. Convert the problem to a CSP and send it to a constraint solver in the cloud. To compensate for the reduced efficiency of the general purpose tool, the user can choose to pay for more parallel cores up to a practically unlimited amount if time is precious to them._
+After all that rambling, the idea: make an easy to use graphical toolkit for solving general purpose NP-complete problems. These could be timetabling, planning, scheduling, bin-packing problems, for example, travelling salesman. Convert the problem to a CSP and send it to a constraint solver in the cloud. To compensate for the reduced efficiency of the general purpose tool, the user can choose to pay for more parallel cores up to a practically unlimited amount if time is precious to them.
 
 **20: 1, 2, 3 Note Tester**
 
-_Game to improve your musical ability. A note is played within a certain range and the user has to state what it is e.g. middle G#. Once the user is good enough at the one note version, they move on to ascertaining two notes at a time, then the full three note chord._
+Game to improve your musical ability. A note is played within a certain range and the user has to state what it is e.g. middle G#. Once the user is good enough at the one note version, they move on to ascertaining two notes at a time, then the full three note chord.
 
 **21: Geolocation Pictures**
 
-_Another location base phone app. Scour public APIs for location tagged pictures. Show on the users device a list of pictures that were taken within, say, 100m of their current spot. Allow users to add pictures._
+Another location base phone app. Scour public APIs for location tagged pictures. Show on the users device a list of pictures that were taken within, say, 100m of their current spot. Allow users to add pictures.
 
  
 
@@ -194,47 +194,47 @@ Now that barrel has been scraped and a low bar been set for what could constitut
 
 **22: Rate my 'X'**
 
-_I'm only just now in my thirties learning how to make a decent cup of tea. There are too many variables and it's not easy to know how each affects the process. Create an app that allows users to enter all the variables they care about (temp of water, full/half/rounded teaspoon, length of infusion) and provide a rating out of 10 for the finished product. Over time we can state the most important variable conditions for making a good cuppa/brioche/white russian/pot plant etc._
+I'm only just now in my thirties learning how to make a decent cup of tea. There are too many variables and it's not easy to know how each affects the process. Create an app that allows users to enter all the variables they care about (temp of water, full/half/rounded teaspoon, length of infusion) and provide a rating out of 10 for the finished product. Over time we can state the most important variable conditions for making a good cuppa/brioche/white russian/pot plant etc.
 
 **23: Recommendations**
 
-_Another "give one, get one" style site. Each person wants a recommendation for a certain something: book, game, album, single, museum, film etc. As a recommender you are allowed to ask up to three questions to gauge the person and their interests. You score a point if the recommendation was well received._
+Another "give one, get one" style site. Each person wants a recommendation for a certain something: book, game, album, single, museum, film etc. As a recommender you are allowed to ask up to three questions to gauge the person and their interests. You score a point if the recommendation was well received.
 
 **24: WTF's Wrong With This GUI?**
 
-_While no-one in the world knows how to make a good user interface, every man and his dog can spot a bad one. Create a site where someone can upload a screenshot of a UI they've created and allow other devs to pour scorn on exactly what's wrong with it and what they should do instead. StackOverflow style voting for answers/suggestions._
+While no-one in the world knows how to make a good user interface, every man and his dog can spot a bad one. Create a site where someone can upload a screenshot of a UI they've created and allow other devs to pour scorn on exactly what's wrong with it and what they should do instead. StackOverflow style voting for answers/suggestions.
 
 **25: Food Miles View**
 
-_Don’t know how we’d easily automate this. Put in what you eat/drink on a daily basis and get a global view about where everything came from. Cool stuff would be German beer then there’s the unexpected South African apples, South American baby corn, Greek olive oil and New Zealand lamb._
+Don’t know how we’d easily automate this. Put in what you eat/drink on a daily basis and get a global view about where everything came from. Cool stuff would be German beer then there’s the unexpected South African apples, South American baby corn, Greek olive oil and New Zealand lamb.
 
 **26: Showstoppers**
 
-_A website where we classify every conceivable software technology category. Within each category we list possible solutions (libraries, languages, platforms etc.) We allow users to upload reasons not why it’s good or bad, but why it simply won’t work. Other users of the site who are thinking about using a solution can read about potential showstoppers before they get started and come to a conclusion about whether the flaws will mean they can’t adopt that technology._
+A website where we classify every conceivable software technology category. Within each category we list possible solutions (libraries, languages, platforms etc.) We allow users to upload reasons not why it’s good or bad, but why it simply won’t work. Other users of the site who are thinking about using a solution can read about potential showstoppers before they get started and come to a conclusion about whether the flaws will mean they can’t adopt that technology.
 
-_Some technologies will span several categories, but the flaws will only be listed in the relevant category e.g. .Net solves loads of problems and will be added as a potential solution in a lot of categories. However, if a comms expert notices that some TCP/IP packets lag in certain cases using .Net’s networking libraries, that showstopper is described only in the TCP/IP Networking category._
+Some technologies will span several categories, but the flaws will only be listed in the relevant category e.g. .Net solves loads of problems and will be added as a potential solution in a lot of categories. However, if a comms expert notices that some TCP/IP packets lag in certain cases using .Net’s networking libraries, that showstopper is described only in the TCP/IP Networking category._
 
-_We allow users to vote up/down the showstopper to give a feel for reproducibility / confirmation._
+We allow users to vote up/down the showstopper to give a feel for reproducibility / confirmation.
 
 **27: Shopping List**
 
-_There’s stuff you need to get on the way home and also lists of things you want e.g. Amazon wish list. How about a version that other people can add to (with your permission) so your spouse can request you pick up milk. Because they’re lazy and they hate you._
+There’s stuff you need to get on the way home and also lists of things you want e.g. Amazon wish list. How about a version that other people can add to (with your permission) so your spouse can request you pick up milk. Because they’re lazy and they hate you.
 
 **28: You suck**
 
-_We compile a list of some of the most impressive achievements of men and women throughout the ages and the exact ages they were when they achieved them. Every day the application mocks you by telling you what they managed when they were your age. I think at the age of 32 and 38 respectively ;) we could have some real suicide inducers._
+We compile a list of some of the most impressive achievements of men and women throughout the ages and the exact ages they were when they achieved them. Every day the application mocks you by telling you what they managed when they were your age. I think at the age of 32 and 38 respectively ;) we could have some real suicide inducers.
 
 **29: Local Best**
 
-_Recommendation site. You’re allowed to only recommend local businesses (one per category) using some kind of post code / location verification. Good for visiting a foreign town and you just want somewhere decent where you won’t get tourist-shafted._
+Recommendation site. You’re allowed to only recommend local businesses (one per category) using some kind of post code / location verification. Good for visiting a foreign town and you just want somewhere decent where you won’t get tourist-shafted.
 
 **30: Morph and Age**
 
-_Take a picture of yourself on a given date. We resize and centre your face and morph through the series so you can see yourself age. Sweet Zombie Jesus, my spirit has just about left this exercise if that’s the quality of idea I’m coming up with._
+Take a picture of yourself on a given date. We resize and centre your face and morph through the series so you can see yourself age. Sweet Zombie Jesus, my spirit has just about left this exercise if that’s the quality of idea I’m coming up with.
 
 **31: All jobs/companies suck**
 
-_Similar to the “100 Reasons Not To Go To Graduate School” site. We allow anonymous submissions for why job <x> or company <y> sucks. It will allow people to vent about their frustrations. For example, my company is about to enact a no-web mail policy post network migration to our parent company. To finish with though there should be a yes/no opinion from the author about whether this is bad enough to make the whole thing unadvisable or whether it’s a pain you can live with._
+Similar to the “100 Reasons Not To Go To Graduate School” site. We allow anonymous submissions for why job <x> or company <y> sucks. It will allow people to vent about their frustrations. For example, my company is about to enact a no-web mail policy post network migration to our parent company. To finish with though there should be a yes/no opinion from the author about whether this is bad enough to make the whole thing unadvisable or whether it’s a pain you can live with.
 
  
 
