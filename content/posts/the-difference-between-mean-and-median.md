@@ -36,11 +36,11 @@ In order to understand a series, which can sometimes contain millions of numbers
 
 - _**Mean** (first statistical moment): the sum of the samples within the series divided by the number of samples in the series_
 
-More simply, the mean is the average value of the series. For a standard die with a large enough series the mean tends toward 3.5. Let's say for the sake of simplicity we hand pick the smallest sample that has the same distribution as an arbitrarily large number of rolls of a fair six sided die: the six values from 1 to 6. The mean is calculated like this: \( \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3.5 \).
+More simply, the mean is the average value of the series. For a standard die with a large enough series the mean tends toward 3.5. Let's say for the sake of simplicity we hand pick the smallest sample that has the same distribution as an arbitrarily large number of rolls of a fair six sided die: the six values from 1 to 6. The mean is calculated like this: $ \frac{1 + 2 + 3 + 4 + 5 + 6}{6} = 3.5 $.
 
 - _**Median**: the value of the middle sample in a series with an odd number of samples, or the mean of the middle two samples in a series with an even number of samples_
 
-This definition seems more complex than it actually is purely down to the fact that you calculate it differently depending on whether you have an even or odd number of samples in your series. Given a series, the median is the middle value. So given a series {1, 7, 8}, the median is 7. If the sample is even there isn't _one_ middle element but rather _two_, so we take the mean (average) of the middle two. For example, given a series {1, 3, 7, 8}, we take the average of the middle two samples and get a median of \( \frac{3+7}{2} = 5 \).
+This definition seems more complex than it actually is purely down to the fact that you calculate it differently depending on whether you have an even or odd number of samples in your series. Given a series, the median is the middle value. So given a series {1, 7, 8}, the median is 7. If the sample is even there isn't _one_ middle element but rather _two_, so we take the mean (average) of the middle two. For example, given a series {1, 3, 7, 8}, we take the average of the middle two samples and get a median of $ \frac{3+7}{2} = 5 $.
 
 ## The difference between Mean and Median
 
@@ -48,13 +48,13 @@ The problem in understanding the difference between mean and median values isn't
 
 #### Example 1: Mean = Median
 
-Let's go back to the die rolls. We've already calculated the mean as 3.5, now let's consider the median. For the hand chosen {1, 2, 3, 4, 5, 6} sample we considered earlier, the middle two elements are 3 and 4 and their average is \(\frac{3 + 4}{2} = 3.5\). Both the mean and median values of six sided die rolls tend to 3.5.
+Let's go back to the die rolls. We've already calculated the mean as 3.5, now let's consider the median. For the hand chosen {1, 2, 3, 4, 5, 6} sample we considered earlier, the middle two elements are 3 and 4 and their average is $\frac{3 + 4}{2} = 3.5$. Both the mean and median values of six sided die rolls tend to 3.5.
 
 In the main, the mean and median are similar if there's a symmetrical distribution at the low and high ends of the series. To help shine a light on the differences we now consider a situation where the ends are seriously skewed.
 
 #### Example 2: Mean ≠ Median
 
-Say we have a small distribution that looks at how much money five people have on them. The first four have £1, £2, £3 and £4 respectively. The fifth person is on their way to Sotheby's, however, and has cashier notes totalling £5m. This is an extremely skewed sample to say the least. First, we calculate the mean, \(\frac{1+2+3+4+5000000}{5} = 1000002\).
+Say we have a small distribution that looks at how much money five people have on them. The first four have £1, £2, £3 and £4 respectively. The fifth person is on their way to Sotheby's, however, and has cashier notes totalling £5m. This is an extremely skewed sample to say the least. First, we calculate the mean, $\frac{1+2+3+4+5000000}{5} = 1000002$.
 
 ![Mean of the series](/images/mean.png)
 

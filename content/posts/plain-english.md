@@ -4,6 +4,7 @@ date: "2013-09-18"
 category: "compsci"
 tags: 
   - "compsci-in-plain-english"
+legacySlug: "plain-english1"
 ---
 
 Computer science is a subject dear to my heart and I feel constantly aggrieved by how misunderstood and misreported the discipline is by the media, programmers and everyone inbetween (see my complaint with [University Challenge](http://lifebeyondfife.com/85-university-challenge-html/ "What University Challenge considers Computer Science")). I decided therefore to write a short series of blog posts that explains computer science from the very basics, the most fundamental principles. I want everyone to know that computer science has nothing to do with technology and everything to do with, well, I'm about to explain exactly what...
@@ -106,4 +107,4 @@ I am here to tell you today that they were wrong. Computer Science is more impor
 
  
 
-Hopefully this has motivated those who aren't familiar with Computer Science to learn some more. If so, follow the "CompSci in Plain English" tag [here on Life Beyond Fife](http://lifebeyondfife.com/tag/compsci-in-plain-english/ "Computer Science in Plain English") for future posts where I'll ease you into the subject and slowly the lights will switch on one by one about so many of your technology experiences that perhaps before felt so alien and confusing.
+Hopefully this has motivated those who aren't familiar with Computer Science to learn some more. If so, follow the compsci category here on Life Beyond Fife (see link below) for future posts where I'll ease you into the subject and slowly the lights will switch on one by one about so many of your technology experiences that perhaps before felt so alien and confusing.

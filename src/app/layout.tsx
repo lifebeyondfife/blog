@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MathJaxProvider } from "@/components/MathJaxProvider";
 import { SITE_CONFIG, SEO_CONFIG } from "@/lib/constants";
 
 const raleway = Raleway({ 
@@ -44,7 +44,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <MathJaxProvider />
       </body>
     </html>
   );

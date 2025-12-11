@@ -45,7 +45,7 @@ Patterns can emerge from chaos as well as order. Consider a number of points mak
 
 Fractals appear all around us in nature. A fractal is simply a structure or shape that repeats and appears again as you look at it from further back and similarly as you zoom in. We can create a fractal by repeatedly applying a transformation to an initial structure. The fractal we're going to look at is a transformation to a straight line, breaking it up into three straight lines. After a second application we would have nine straight lines, then twenty-seven etc.
 
-Our transformation is to scale the line down by 50%, rotate \\(\\frac{\\pi}{3}\\) anti-clockwise, draw a line. Rotate \\(\\frac{\\pi}{3}\\) clockwise and draw another line. Finally rotate \\(\\frac{\\pi}{3}\\) clockwise again and draw one last line. We'll also add a little complexity to this fractal by alternating the direction of the rotations from one application to the next.
+Our transformation is to scale the line down by 50%, rotate \$\\frac{\\pi}{3}\$ anti-clockwise, draw a line. Rotate \$\\frac{\\pi}{3}\$ clockwise and draw another line. Finally rotate \$\\frac{\\pi}{3}\$ clockwise again and draw one last line. We'll also add a little complexity to this fractal by alternating the direction of the rotations from one application to the next.
 
 ![](/images/fractal.png)
 

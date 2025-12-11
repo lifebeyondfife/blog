@@ -114,7 +114,7 @@ These large departures are risky on the part of researchers - they take a large 
 
  
 
-From the House of Commons Library ([Standard Note:  SN/SG/4252 \[PDF\]](http://www.parliament.uk/briefing-papers/sn04252.pdf "Education: Historical Statistics")), in 1970, 51,189 students were awarded their first degree. Since the promotion of former polytechnics to award degrees, that number rose by nearly a factor of five to 243,246 in 2000. Even in the last ten years that number has risen considerably to 350,800 by 2011. All these extra students have required lecturers to teach them. But also they have been inspired to enter the world of research themselves.
+From the House of Commons Library ([Standard Note:  SN/SG/4252 $$PDF$$](http://www.parliament.uk/briefing-papers/sn04252.pdf "Education: Historical Statistics")), in 1970, 51,189 students were awarded their first degree. Since the promotion of former polytechnics to award degrees, that number rose by nearly a factor of five to 243,246 in 2000. Even in the last ten years that number has risen considerably to 350,800 by 2011. All these extra students have required lecturers to teach them. But also they have been inspired to enter the world of research themselves.
 
  
 

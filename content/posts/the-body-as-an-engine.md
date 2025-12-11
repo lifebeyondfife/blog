@@ -6,9 +6,9 @@ category: "fitness"
 
 Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula:
 
-\[\partial fat = calories - exercise\]
+$$\partial fat = calories - exercise$$
 
-For those needing a calculus refresher, \(\partial\) just means the rate of change of something i.e. the rate of change of fat in the body is equal to how much you eat minus how much you exercise. In order to lose fat, you need the rate of change of fat to be negative (\(-ve\)) for a period of time.
+For those needing a calculus refresher, $\partial$ just means the rate of change of something i.e. the rate of change of fat in the body is equal to how much you eat minus how much you exercise. In order to lose fat, you need the rate of change of fat to be negative ($-ve$) for a period of time.
 
   
 
@@ -18,7 +18,7 @@ This simple formula is too much of a simplification, however, owing to its gener
 
 To answer this question we must add a third term to the formula:
 
-\[\partial fat = calories - exercise - engine\]
+$$\partial fat = calories - exercise - engine$$
 
 Every person has an engine within themselves that burns calories. It burns as they breathe in and out, it burns while they sit, while they sleep even. And professional athletes have amazing engines — they will burn through the largest calorific banquets while they do nothing more than move from the dining table to the couch. Mere mortals can have this talent as well though. Even noting that genetics plays a part, we all have a friend who can eat huge portions of sugar and fat laden foods without their waistline giving a centimetre, let alone an inch. It is all down to the body’s engine.
 

@@ -65,7 +65,7 @@ The Python Higher Order function filter is called like so:
 filter(greater_than_five, data)
 ```
 
-The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: \(6, 9, 8, 7\). That is, all the elements of data that are greater than five. The filter function invokes greater\_than\_five with each element from the list, data. Only elements that get a response of True are kept.
+The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: $6, 9, 8, 7$. That is, all the elements of data that are greater than five. The filter function invokes greater\_than\_five with each element from the list, data. Only elements that get a response of True are kept.
 
  
 
