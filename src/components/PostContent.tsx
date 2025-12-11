@@ -44,8 +44,7 @@ export default function PostContent({ html }: PostContentProps) {
         prose-th:border prose-th:border-gray-300 prose-th:bg-gray-50
         prose-th:px-4 prose-th:py-2
         prose-td:border prose-td:border-gray-300 prose-td:px-4 prose-td:py-2
-        prose-hr:my-8 prose-hr:border-gray-300
-        [&_.math-inline]:inline [&_.math-block]:my-4 [&_.math-block]:text-center"
+        prose-hr:my-8 prose-hr:border-gray-300"
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
