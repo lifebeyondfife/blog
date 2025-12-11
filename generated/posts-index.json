@@ -246,7 +246,7 @@
       "category": "fitness",
       "title": "The body as an engine",
       "date": "2020-09-15",
-      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: \\\\\\[\\\\partial fat = calories - exercise\\\\\\]...",
+      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: \\[\\partial fat = calories - exercise\\]...",
       "tags": [],
       "readingTime": 5,
       "featuredImage": "/images/bmw.jpg"
@@ -603,7 +603,7 @@
       "date": "2015-05-13",
       "excerpt": "It's hopefully old news to you all but the free lunch is over (NB this article is 10 years old). TL;DR – as we come up against the physical limits of how small transistors can be future computation gains will come from more processors, not faster processors. We can already see this looking at the number of cores we have available in development standard laptops. Writing code that can distribute its workload across multiple cores will only become more important as time goes on. As we move more and more services to AWS ensuring we get the most value for...",
       "tags": [],
-      "readingTime": 8,
+      "readingTime": 9,
       "featuredImage": "/images/functions.jpg"
     },
     {
@@ -648,7 +648,7 @@
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 10,
+      "readingTime": 12,
       "featuredImage": "/images/sherlock-holmes-by-piet-mondrian.png"
     },
     {
@@ -665,11 +665,11 @@
       "category": "compsci",
       "title": "Confusing Christmas with Halloween",
       "date": "2014-02-28",
-      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to things that we more naturally understand. Unfortunately, there’s no escaping the mathematics of it – converting binary numbers to decimal and vice versa is an algebraic operation. Though it can be done with a scientific calculator, the process is straightforward and can be done simply enough with a pen and some paper. To convert from binary to decimal is the easiest base transformation there is. We’ll walk through an example by converting \\\\(1001 \\\\space...",
+      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to things that we more naturally understand. Unfortunately, there’s no escaping the mathematics of it – converting binary numbers to decimal and vice versa is an algebraic operation. Though it can be done with a scientific calculator, the process is straightforward and can be done simply enough with a pen and some paper. To convert from binary to decimal is the easiest base transformation there is. We’ll walk through an example by converting \\(1001 \\space...",
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 8
+      "readingTime": 9
     },
     {
       "slug": "how-not-to-do-a-hackathon",
@@ -725,7 +725,7 @@
       "featuredImage": "/images/tree.png"
     },
     {
-      "slug": "plain-english1",
+      "slug": "plain-english",
       "category": "compsci",
       "title": "Computer Science in Plain English",
       "date": "2013-09-18",
@@ -733,7 +733,7 @@
       "tags": [
         "compsci-in-plain-english"
       ],
-      "readingTime": 8,
+      "readingTime": 7,
       "featuredImage": "/images/ibuprofen.png"
     },
     {
@@ -872,7 +872,7 @@
       "category": "essays",
       "title": "Becoming a Web Developer",
       "date": "2012-11-20",
-      "excerpt": "\"\\[Stanford's\\] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly \\[think\\]: what is it with all these other languages?\" Dynamic Languages Strike Back – Steve Yegge A blaze of nepotism from my sister saw me land my first paid contracting gig back in 1998. The company was technologically naïve and it was pure HTML/CSS. The start to a potentially exciting story perhaps, but alas, the summer ended and I went back to finish the last two years of my undergraduate degree in computer science and –...",
+      "excerpt": "\"[Stanford's] students come out, and they believe that C and C++ are the fabric with which God wove the Universe. OK? And they truly [think]: what is it with all these other languages?\" Dynamic Languages Strike Back – Steve Yegge A blaze of nepotism from my sister saw me land my first paid contracting gig back in 1998. The company was technologically naïve and it was pure HTML/CSS. The start to a potentially exciting story perhaps, but alas, the summer ended and I went back to finish the last two years of my undergraduate degree in computer science and –...",
       "tags": [
         "development-in-practice",
         "web-development"

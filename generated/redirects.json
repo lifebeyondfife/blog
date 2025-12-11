@@ -1,5 +1,9 @@
 [
   {
+    "legacySlug": "plain-english1",
+    "canonicalUrl": "https://blog.chezmcdonald.info/compsci/plain-english/"
+  },
+  {
     "legacySlug": "fantasy-football",
     "canonicalUrl": "https://blog.chezmcdonald.info/coding/fantasy-football-2013-14/"
   },

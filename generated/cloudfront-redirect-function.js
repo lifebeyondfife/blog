@@ -1,5 +1,6 @@
 var siteUrl = 'https://blog.chezmcdonald.info';
 var redirects = {
+  "/plain-english1": "https://blog.chezmcdonald.info/compsci/plain-english/",
   "/fantasy-football": "https://blog.chezmcdonald.info/coding/fantasy-football-2013-14/",
   "/98-whats-new-music-html": "https://blog.chezmcdonald.info/follies/whats-new-music/",
   "/97-web-developer-html": "https://blog.chezmcdonald.info/essays/web-developer/",

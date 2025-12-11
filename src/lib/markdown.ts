@@ -1,13 +1,14 @@
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
 import remarkRehype from 'remark-rehype';
 import rehypeStringify from 'rehype-stringify';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeKatex from 'rehype-katex';
 import rehypeOptimisedImages from '@/lib/rehype-optimised-images';
 import matter from 'gray-matter';
-import { protectMathDelimiters, restoreMathDelimiters } from '@/lib/math-protection';
 
 export interface Frontmatter {
   [key: string]: any;
@@ -33,21 +34,19 @@ export function parseFrontmatter(source: string): ParsedMarkdown {
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
-  const { processedContent, mathExpressions } = protectMathDelimiters(markdown);
-
   const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
+    .use(remarkMath)
     .use(remarkRehype)
     .use(rehypeSlug)
     .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
+    .use(rehypeKatex)
     .use(rehypeOptimisedImages)
     .use(rehypeStringify);
 
-  const file = await processor.process(processedContent);
-  const htmlWithPlaceholders = String(file);
-
-  return restoreMathDelimiters(htmlWithPlaceholders, mathExpressions);
+  const file = await processor.process(markdown);
+  return String(file);
 }
 
 export async function parseMarkdown(

@@ -50,11 +50,11 @@ So here it was, an area in which I felt I had a significant amount of knowledge,
 
  
 
-My offer of help was accepted and I was introduced to the problem of [Phase Locked Loops](https://en.wikipedia.org/wiki/Phase-locked_loop). Given an input frequency and a desired output frequency, choose values for the integers \(f\) and \(r\), and the power of 2, \(q\), that satisfies the following equation:
+My offer of help was accepted and I was introduced to the problem of [Phase Locked Loops](https://en.wikipedia.org/wiki/Phase-locked_loop). Given an input frequency and a desired output frequency, choose values for the integers $f$ and $r$, and the power of 2, $q$, that satisfies the following equation:
 
  
 
-\[output = \frac{input.f}{r.q}\]
+$$output = \frac{input.f}{r.q}$$
 
  
 
@@ -62,11 +62,11 @@ This could be solved in an acceptable amount of time with a brute force search, 
 
  
 
-\[output = \frac{tmp.f2}{r2.q2}\] \[tmp = \frac{input.f1}{r1.q1}\]
+$$output = \frac{tmp.f2}{r2.q2}$$ $$tmp = \frac{input.f1}{r1.q1}$$
 
  
 
-Finding the values for \(f1\), \(r1\) and \(q1\) requires simultaneously searching the possible combinations of \(f2\), \(r2\), \(q2\). Thus, the complexity of the problem.
+Finding the values for $f1$, $r1$ and $q1$ requires simultaneously searching the possible combinations of $f2$, $r2$, $q2$. Thus, the complexity of the problem.
 
  
 
@@ -94,7 +94,7 @@ for (int r1 = 1; r1 < = 64; ++r1)
 ```
  
 
-At the heart of the deepest level is a check to see if the values satisfy the above formula. By considering the bounds of this problem i.e. the range of valid values for each unknown, we can calculate the number of possible combinations. The \(f\) variables can be between 1 and 256, the \(r\) variables between 1 and 64 and the \(q\) powers of 2 can be from 1 to 256, so there are eight potential values. This leads to a total of \(256^2.64^2.8^2\), or \(17,179,869,184\) - a staggering number of combinations to enumerate in a device driver.
+At the heart of the deepest level is a check to see if the values satisfy the above formula. By considering the bounds of this problem i.e. the range of valid values for each unknown, we can calculate the number of possible combinations. The $f$ variables can be between 1 and 256, the $r$ variables between 1 and 64 and the $q$ powers of 2 can be from 1 to 256, so there are eight potential values. This leads to a total of $256^2.64^2.8^2$, or $17,179,869,184$ - a staggering number of combinations to enumerate in a device driver.
 
  
 
@@ -114,7 +114,7 @@ I've heard some Computer Science lecturers glaze over at the term "NP-complete".
 
  
 
-Most good programmers have a solid grasp of [Big-O notation](https://en.wikipedia.org/wiki/Big_O_notation). They can tell you that the most efficient algorithm for ordering (randomised) data is Quicksort, which has a Big-O notation of \(O(n \log n)\). This is preferable to Bubblesort which has a Big-O notation of \(O(n^2)\). However, in terms of Complexity Theory, these algorithms are two peas in the same pod in that they're both members of the classification of problems denoted by P.
+Most good programmers have a solid grasp of [Big-O notation](https://en.wikipedia.org/wiki/Big_O_notation). They can tell you that the most efficient algorithm for ordering (randomised) data is Quicksort, which has a Big-O notation of $O(n \log n)$. This is preferable to Bubblesort which has a Big-O notation of $O(n^2)$. However, in terms of Complexity Theory, these algorithms are two peas in the same pod in that they're both members of the classification of problems denoted by P.
 
  
 
@@ -130,12 +130,12 @@ This complexity class is a superset of P i.e. every problem in P is also in NP. 
 
  
 
-Though every problem in P is in NP, the relationship between P, NP and NP-complete is not so well known. The definition of NP-complete, though oft misunderstood, requires only two conditions to be met. A problem \(Z\) is NP-complete if:
+Though every problem in P is in NP, the relationship between P, NP and NP-complete is not so well known. The definition of NP-complete, though oft misunderstood, requires only two conditions to be met. A problem $Z$ is NP-complete if:
 
  
 
-1. Every problem in NP can be polynomial time reduced i.e. mapped, to \(Z\)
-2. The output of the algorithm solving \(Z\), known as a token or certificate, can be verified as a valid solution in polynomial time
+1. Every problem in NP can be polynomial time reduced i.e. mapped, to $Z$
+2. The output of the algorithm solving $Z$, known as a token or certificate, can be verified as a valid solution in polynomial time
 
  
 
@@ -163,17 +163,17 @@ But in the style of Mr Miagi, I'll defer the _why_ until later. My apologies ;)
 
  
 
-Back to the task at hand. Given a combinatorial problem that consists of \(n\) unknowns, that each have \(d\) possible values, and must satisfy one or more properties, how best are we to solve this mammoth task? First of all, understand that the Big-O notation for bruteforce enumeration of the combinations that exist in this problem is \(O(d^n)\). If \(d\) and \(n\) are double-digit numbers it's likely that this naive implementation cannot be relied upon.
+Back to the task at hand. Given a combinatorial problem that consists of $n$ unknowns, that each have $d$ possible values, and must satisfy one or more properties, how best are we to solve this mammoth task? First of all, understand that the Big-O notation for bruteforce enumeration of the combinations that exist in this problem is $O(d^n)$. If $d$ and $n$ are double-digit numbers it's likely that this naive implementation cannot be relied upon.
 
  
 
-Given that there is an exponential number of possibilities there are two main approaches. In the first case, if the problem is well understood there may be optimal algorithms with acceptable efficiency, for instance [graph colouring](https://en.wikipedia.org/wiki/Graph_coloring) is one such problem. For lesser known or less generic problems, there are common strategies that can be applied that will greatly reduce the worst case \(O(d^n)\).
+Given that there is an exponential number of possibilities there are two main approaches. In the first case, if the problem is well understood there may be optimal algorithms with acceptable efficiency, for instance [graph colouring](https://en.wikipedia.org/wiki/Graph_coloring) is one such problem. For lesser known or less generic problems, there are common strategies that can be applied that will greatly reduce the worst case $O(d^n)$.
 
  
 
 ###### 1\. One choice at a time
 
-Instead of considering a full combination of choices for each unknown and testing whether all the conditions are satisfied, take one choice at a time and test whether any one of the conditions is inconsistent. Or to put it another way, consider the naive enumeration of the full combinations to be a breadth first search at the lowest level of a tree, n nodes deep with d children at each node (remember, \(d^n\) combinations).
+Instead of considering a full combination of choices for each unknown and testing whether all the conditions are satisfied, take one choice at a time and test whether any one of the conditions is inconsistent. Or to put it another way, consider the naive enumeration of the full combinations to be a breadth first search at the lowest level of a tree, n nodes deep with d children at each node (remember, $d^n$ combinations).
 
  
 
@@ -181,13 +181,13 @@ Instead of considering a full combination of choices for each unknown and testin
 
  
 
-We want to consider choosing a value for just the first unknown to begin with then looking to see if there are any inconsistencies. To take PLL as an example, the first choice would be \(f1=1\). As yet, there are no apparent inconsistencies so we continue to traverse the search space until we do. By employing a depth-first search we can (a) navigate the entire exponential search space using just \(O(d.n)\) memory and (b) we can backtrack from any node with inconsistencies and thus avoid enumerating the children nodes of that subtree. For example, in the above diagram consider \(v1=2\), marked in purple, to be an invalid state. We can automatically rule out all the child nodes in the tree and save exploration of one third of all full enumerable states.
+We want to consider choosing a value for just the first unknown to begin with then looking to see if there are any inconsistencies. To take PLL as an example, the first choice would be $f1=1$. As yet, there are no apparent inconsistencies so we continue to traverse the search space until we do. By employing a depth-first search we can (a) navigate the entire exponential search space using just $O(d.n)$ memory and (b) we can backtrack from any node with inconsistencies and thus avoid enumerating the children nodes of that subtree. For example, in the above diagram consider $v1=2$, marked in purple, to be an invalid state. We can automatically rule out all the child nodes in the tree and save exploration of one third of all full enumerable states.
 
  
 
 ###### 2\. Inference
 
-If we have a condition that says an unknown \(a\) must be less than \(b\), and the node in the search tree we're currently at has chosen \(a\) to be 5, we can reason that \(b\) must be at least 6. We now no longer have to consider \(b\) equal to 1, 2 or 3 etc. This is because we understand the semantics of the binary less-than operator. The great benefit of these removals is that each one itself is the root node of an exponential subtree. Any polynomial computation performed in finding inconsistent states ahead of time will likely be worth it in the long run.
+If we have a condition that says an unknown $a$ must be less than $b$, and the node in the search tree we're currently at has chosen $a$ to be 5, we can reason that $b$ must be at least 6. We now no longer have to consider $b$ equal to 1, 2 or 3 etc. This is because we understand the semantics of the binary less-than operator. The great benefit of these removals is that each one itself is the root node of an exponential subtree. Any polynomial computation performed in finding inconsistent states ahead of time will likely be worth it in the long run.
 
  
 
@@ -217,7 +217,7 @@ It had been a while since I'd worked on my constraint solver - over a year. I us
 
  
 
-As well as the central constraints represented as two connected formulae shown in The Problem section, there were valid ranges for certain frequency bounds. For example, \(10 \leq \frac{input}{r1} \leq 1000\). These are fantastic constraints because they have what's know as a small arity i.e. the constraint acts on a small number of variables. More often than not, this makes for better propagation than one that acts on several.
+As well as the central constraints represented as two connected formulae shown in The Problem section, there were valid ranges for certain frequency bounds. For example, $10 \leq \frac{input}{r1} \leq 1000$. These are fantastic constraints because they have what's know as a small arity i.e. the constraint acts on a small number of variables. More often than not, this makes for better propagation than one that acts on several.
 
  
 
@@ -241,7 +241,7 @@ When writing a low-level hardware driver in C, being responsive is paramount. On
 
  
 
-As briefly discussed above, arithmetic constraints are useful because the binary operators propagate well. Given a[1..5], b[1..5] and c[1..100] and the constraint a + b = c, we can infer a reduced set of bounds for c, [2..10]. Constructing propagators for the multiplication and equality operators (those found in the implied constraint for the PLL problem \(output.r1.r2.q1.q2 = input.f1.f2\)) is fairly straightforward. The difficulty comes however in constructing a system to update bounds dynamically at each node during a depth-first search tree traversal - that we incidentally have also not yet written.
+As briefly discussed above, arithmetic constraints are useful because the binary operators propagate well. Given a[1..5], b[1..5] and c[1..100] and the constraint a + b = c, we can infer a reduced set of bounds for c, [2..10]. Constructing propagators for the multiplication and equality operators (those found in the implied constraint for the PLL problem $output.r1.r2.q1.q2 = input.f1.f2$) is fairly straightforward. The difficulty comes however in constructing a system to update bounds dynamically at each node during a depth-first search tree traversal - that we incidentally have also not yet written.
 
  
 
@@ -249,7 +249,7 @@ Though the arithmetic constraint is useful, a much simpler optimisation came fro
 
  
 
-\[25 \leq input \leq 600\] \[10 \leq \frac{input}{r} \leq 1000\] \[1600 \leq \frac{input.f}{r} \leq 3200\]
+$$25 \leq input \leq 600$$ $$10 \leq \frac{input}{r} \leq 1000$$ $$1600 \leq \frac{input.f}{r} \leq 3200$$
 
  
 
@@ -289,11 +289,11 @@ The request for help came to me from someone who had already realised the most c
 
  
 
-Bubblesort, the \(O(n^2)\) implementation of sorting is bad. Inserting into or searching from an array carries a \(O(n)\) penality which implies the wrong data structure is being used. Perhaps an ill thought out needless repetition turns a \(O(n^3)\) operation into a \(O(n^5)\)? These are all bad inefficiencies and poor programming. But they are nothing in comparison to an NP-complete problem.
+Bubblesort, the $O(n^2)$ implementation of sorting is bad. Inserting into or searching from an array carries a $O(n)$ penality which implies the wrong data structure is being used. Perhaps an ill thought out needless repetition turns a $O(n^3)$ operation into a $O(n^5)$? These are all bad inefficiencies and poor programming. But they are nothing in comparison to an NP-complete problem.
 
  
 
-When we're introduced to concept of Big-O notation, it usually accompanies a graph such as this. The \(n \log n\) is preferable because it grows slower than the rest, and the exponential \(1.1^n\) term should be avoided.
+When we're introduced to concept of Big-O notation, it usually accompanies a graph such as this. The $n \log n$ is preferable because it grows slower than the rest, and the exponential $1.1^n$ term should be avoided.
 
  
 

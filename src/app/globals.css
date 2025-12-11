@@ -13,25 +13,3 @@
     text-wrap: balance;
   }
 }
-
-.math-inline {
-  display: inline;
-}
-
-.math-inline mjx-container {
-  display: inline !important;
-}
-
-.math-inline mjx-container svg {
-  display: inline !important;
-}
-
-.math-block {
-  display: block;
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.math-block mjx-container {
-  display: block !important;
-}
