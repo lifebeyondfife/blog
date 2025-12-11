@@ -246,7 +246,7 @@
       "category": "fitness",
       "title": "The body as an engine",
       "date": "2020-09-15",
-      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: \\[\\partial fat = calories - exercise\\]...",
+      "excerpt": "Up to now you may have thought of fitness or looking good as simply losing weight. Or more specifically, losing fat. Everyone knows if you want to lose fat, the key to doing so is down to diet and exercise. Fat is one of the two important energy storage supplies that the body has access to, and by limiting the amount of food you eat, you give the body less raw material to turn into fat; likewise, exercising burns up more fat than being sedantry. You could even write it down as a formula: $$\\partial fat = calories - exercise$$...",
       "tags": [],
       "readingTime": 5,
       "featuredImage": "/images/bmw.jpg"
@@ -665,7 +665,7 @@
       "category": "compsci",
       "title": "Confusing Christmas with Halloween",
       "date": "2014-02-28",
-      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to things that we more naturally understand. Unfortunately, there’s no escaping the mathematics of it – converting binary numbers to decimal and vice versa is an algebraic operation. Though it can be done with a scientific calculator, the process is straightforward and can be done simply enough with a pen and some paper. To convert from binary to decimal is the easiest base transformation there is. We’ll walk through an example by converting \\(1001 \\space...",
+      "excerpt": "Understanding how computers work is essential in allowing us to use them as tools. We therefore need to translate some of their codes and numbers to things that we more naturally understand. Unfortunately, there’s no escaping the mathematics of it – converting binary numbers to decimal and vice versa is an algebraic operation. Though it can be done with a scientific calculator, the process is straightforward and can be done simply enough with a pen and some paper. To convert from binary to decimal is the easiest base transformation there is. We’ll walk through an example by converting $1001 \\space...",
       "tags": [
         "compsci-in-plain-english"
       ],
