@@ -17,9 +17,9 @@ But before rushing in, review the changes you want to make using the helpful git
 The log command gives a history of the branch you're working on an shows the previous commits that have been made leading up to your new epic one.
 
  
-
+```
 $ git log --oneline -n 5
-
+```
  
 
 ## Right files
@@ -27,9 +27,9 @@ $ git log --oneline -n 5
 The status command gives an overview of the files you've added, changed and removed. It also shows the changes you've made but haven't staged.
 
  
-
+```
 $ git status
-
+```
  
 
 ## Right changes
@@ -37,5 +37,6 @@ $ git status
 The diff command give a clear indication of the line-by-line additions and removals you've made to each changed file.
 
  
-
+```
 $ git diff
+```

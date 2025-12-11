@@ -92,11 +92,15 @@ To consider what a real MVP looks like, compare the Team screen of the MVP with 
 
  
 
-[![Minimum Viable Product](/images/MVP.png)](/images/originals/MVP.png)Minimum
+[![Minimum Viable Product](/images/MVP.png)](/images/originals/MVP.png)
+
+Minimum
 
  
 
-[![Not a minimum feature set](/images/WorkInProgress.png)](/images/originals/WorkInProgress.png)Not Minimum
+[![Not a minimum feature set](/images/WorkInProgress.png)](/images/originals/WorkInProgress.png)
+
+Not Minimum
 
  
 

@@ -13,9 +13,9 @@ Hopefully you, and the powers that be at your company, are convinced: git is the
 A git server can hold multiple code repositories known as repos. The simplest way to get started with git is to create a new directory with an empty repo.
 
  
-
+```
 $ git init MyFirstRepo
-
+```
  
 
 Congratulations. You created a git repo to hold the version changes of a new codebase. This command created a directory named MyFirstRepo that contains a (hidden) folder named .git. This directory is where git stores all necessary data about the repo: the commits and their deltas; the branches; the configuration settings. You never need to look in or modify the contents of this directory, and you should obviously _never_ delete it.
@@ -31,9 +31,9 @@ In addition, you may wish to create a text file, .gitignore, in the MyFirstRepo 
 The most common way of getting started, however, is with an existing git repo to which you wish to collaborate and help extend. The clone command is similar to init except you specify the URL of the origin repo.
 
  
-
+```
 $ git clone https://github.com/lifebeyondfife/Sierpinski.git
-
+```
  
 
 This does two things. It clones (copies) the current state of the codebase into the directory Sierpinski and crucially it sets the origin of the git repo server.

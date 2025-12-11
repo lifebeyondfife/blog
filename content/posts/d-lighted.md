@@ -19,7 +19,7 @@ D-Lighted is a free, open-source Windows database tool that allows users to conn
 
 ## Databases: Serious Business
 
-![](/images/database.png)
+![](/images/database-icon.png)
 
 As anyone who has worked on a large software project will attest, databases can be complicated beasts with accompanying behemoth tools for managing them. Mostly with good cause as a good setup for one application or web-service may have completely different requirements to another. However, it's quite often the case that different projects will require different database platforms entirely. And though SQL Server Management Studio, for example, is essential for configuring the throttling rate or the maximum number of simultaneous connections, 95% of the time its users just want to examine the data it holds and possibly edit a troublesome field.
 

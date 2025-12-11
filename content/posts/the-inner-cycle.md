@@ -17,45 +17,46 @@ Anytime you're happy with a small increment of coding, you can commit your chang
 After developing such an increment, examine the status of the changes made.
 
  
-
+```
 $ git status
-
+```
  
 
 The messages git returns should be clear, especially to those who read the entry on staging. Look at the diff between your current state and the last commit.
 
  
-
+```
 $ git diff
-
+```
  
 
 When you're happy the changes made are correct, add the changes to staging.
 
  
-
+```
 $ git add ChangeFile1.js ./subdirectory/ChangeStyle.css
-
+```
  
 
 If you deleted any old files because they're no longer needed, explicitly tell git using the remove command. NOTE – this will also delete the file from this branch if it's still there.
 
  
-
+```
 $ git rm OldFileNoLongerNeeded.cs
-
+```
  
 
 To see diffs of files that you've staged, use `git diff HEAD`. Once you've finished staging, re-examine the status again.
 
  
-
+```
 $ git status
+```
 
- 
 
 If everything looks in order and all the changes you wish to make are marked as staged, commit your changes along with a small description of what changes have been made.
 
  
-
+```
 $ git commit -m "Add a new function to read in the config file."
+```

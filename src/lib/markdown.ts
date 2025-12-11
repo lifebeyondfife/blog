@@ -7,6 +7,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeOptimisedImages from '@/lib/rehype-optimised-images';
 import matter from 'gray-matter';
+import { protectMathDelimiters, restoreMathDelimiters } from '@/lib/math-protection';
 
 export interface Frontmatter {
   [key: string]: any;
@@ -32,6 +33,8 @@ export function parseFrontmatter(source: string): ParsedMarkdown {
 }
 
 export async function markdownToHtml(markdown: string): Promise<string> {
+  const { processedContent, mathExpressions } = protectMathDelimiters(markdown);
+
   const processor = unified()
     .use(remarkParse)
     .use(remarkGfm)
@@ -41,8 +44,10 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(rehypeOptimisedImages)
     .use(rehypeStringify);
 
-  const file = await processor.process(markdown);
-  return String(file);
+  const file = await processor.process(processedContent);
+  const htmlWithPlaceholders = String(file);
+
+  return restoreMathDelimiters(htmlWithPlaceholders, mathExpressions);
 }
 
 export async function parseMarkdown(

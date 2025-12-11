@@ -56,7 +56,7 @@ So let us return to our definitions above, namely, \( f(x) = e^x \) and \( g(x) 
 
 The meeting point of \(f\) and \(g\) we want to sketch is \(x = e\). Lets compare gradients at that point.
 
-$ f'(e) = e^e $
+\[ f'(e) = e^e \]
 
 \[ g'(e) = e.e^{e - 1} = e^e \]
 

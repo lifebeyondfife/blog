@@ -33,6 +33,7 @@ Given a candidate XML file we can ensure it holds to our desired structure by va
 
 The whole idea of creating a library is to make the hard lifting simple so that we end up with just a few lines like this:
 
+```
 using LbF.XmlSerialisation;
 namespace Demo
 {
@@ -41,18 +42,19 @@ namespace Demo
         const string XmlFile = @"C:\\St Johnstone.xml";
         const string XsdFile = @"C:\\FootballClub.xsd"
 
-        public static void Main(string\[\] args)
+        public static void Main(string[] args)
         {
             if (!XmlSerialisationHelper.IsValidXml(XmlFile, XsdFile))
                 return;	// Error in XML file
 
-            var xmlHelper = new XmlSerialisationHelper< FootballClub >();
+            var xmlHelper = new XmlSerialisationHelper<FootballClub>();
             var stJohnstone = xmlHelper.Deserialise(XmlFile);
 
-            Console.WriteLine("Manager:\\t{0}", stJohnstone.Manager.Name);
+            Console.WriteLine("Manager:\t{0}", stJohnstone.Manager.Name);
         }
     }
 }
+```
 
 As you can see, the namespace LbF.XmlSerialisation introduces a generic class, XmlSerialisationHelper which serialises and deserialises XML files against a specified class structure. The namespace also contains a static validation function, the simplest version of which is shown above. The beauty of XSD schema validation is that if there are any unexpected XML elements or missing attributes, the validation process will let us know exactly what's wrong - and more importantly exactly where in the XML file the error occurred. Consult the full API for an IsValidXml method that returns detailed error reporting via an out parameter.
 

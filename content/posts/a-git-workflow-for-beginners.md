@@ -31,7 +31,7 @@ Once you've read this article in full, refer back to this diagram, of which ther
 
  
 
-This workflow assumes, and unrealistically so, a fairly straightforward progression where nothing goes wrong. When it _does_, consult the resources linked to at the beginning of this guide. The central idea is that **we wish to add one feature to an existing repository**. To do so we **create one branch**,which is where we persist the code changes for this feature. Once the feature has been completed, we **push this branch to GitHub**, and **merge it back into the original master branch**.
+This workflow assumes, and unrealistically so, a fairly straightforward progression where nothing goes wrong. When it _does_, consult the resources linked to at the beginning of this guide. The central idea is that we wish to add one feature to an existing repository. To do so we create one branch,which is where we persist the code changes for this feature. Once the feature has been completed, we push this branch to GitHub, and merge it back into the original master branch.
 
  
 
@@ -43,7 +43,7 @@ Let's begin by expanding the numbered items in the diagram
 
  
 
-**1.** Download and install GitHub's tool for windows: [https://windows.github.com/](https://windows.github.com/). The executable can be found directly here: [http://github-windows.s3.amazonaws.com/GitHubSetup.exe](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
+1. Download and install GitHub's tool for windows: [https://windows.github.com/](https://windows.github.com/). The executable can be found directly here: [http://github-windows.s3.amazonaws.com/GitHubSetup.exe](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
 
 [![git install](/images/git-install.png)](/images/originals/git-install.png)
 
@@ -51,7 +51,7 @@ Let's begin by expanding the numbered items in the diagram
 
  
 
-**2.** From a GitHub repo you're interested in, copy the clone string from the right of the screen - search for "HTTPS clone URL". For this initial example, I've selected jQuery-UI.
+2. From a GitHub repo you're interested in, copy the clone string from the right of the screen - search for "HTTPS clone URL". For this initial example, I've selected jQuery-UI.
 
 [![github clone](/images/github-clone.png)](/images/originals/github-clone.png)
 
@@ -67,7 +67,7 @@ In order to commit the changes back to GitHub's servers, a fork of the project i
 
  
 
-**3.** Run GitHub's Git Shell tool and navigate to the directory where you'd like your code to live.
+3. Run GitHub's Git Shell tool and navigate to the directory where you'd like your code to live.
 
 [![git shell](/images/git-shell.png)](/images/originals/git-shell.png)
 
@@ -75,10 +75,19 @@ In order to commit the changes back to GitHub's servers, a fork of the project i
 
  
 
-**4.** Run the following command to clone the repo. NB – you'll have the jQuery-UI git URL in your clipboard.
+4. Run the following command to clone the repo. NB – you'll have the jQuery-UI git URL in your clipboard.
 
-C:\\Users\\iain\\Documents\\GitHub> git clone https://github.com/jquery/jquery-ui.git jquery-ui Cloning into ‘jquery-ui’… remote: Counting objects: 59735, done. remote: Total 59735 (delta 0), reused 0 (delta 0) Receiving objects: 100% (59735/59735), 23.90 MiB | 6.54 MiB/s, done. Resolving deltas: 100% (42995/42995), done. Checking connectivity… done. C:\\Users\\iain\\Documents\\GitHub> cd .\\jquery-ui C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\>
-
+```
+C:\Users\iain\Documents\GitHub> git clone https://github.com/jquery/jquery-ui.git jquery-ui
+Cloning into ‘jquery-ui’…
+remote: Counting objects: 59735, done.
+remote: Total 59735 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (59735/59735), 23.90 MiB | 6.54 MiB/s, done.
+Resolving deltas: 100% (42995/42995), done.
+Checking connectivity… done.
+C:\Users\iain\Documents\GitHub> cd .\jquery-ui
+C:\Users\iain\Documents\GitHub\jquery-ui [master]>
+```
  
 
 This is the conclusion of the Setup phase – reward yourself with a cup of tea if you'd like. These steps do not need to repeated for the jQuery-UI project. If you wish to work on another project, start again from Step 2.
@@ -87,125 +96,201 @@ This is the conclusion of the Setup phase – reward yourself with a cup of tea 
 
  
 
-**5.** Pull changes from the central master repository. If you've just completed Step 4, you'll see the output below. However, if this is the beginning of a new loop, there may well be changes to be pulled down.
+5. Pull changes from the central master repository. If you've just completed Step 4, you'll see the output below. However, if this is the beginning of a new loop, there may well be changes to be pulled down.
 
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\> git pull Already up-to-date. C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\>
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git pull
+Already up-to-date.
+C:\Users\iain\Documents\GitHub\jquery-ui [master]>
+```
+ 
 
+6. Before making any changes yourself, create a new branch for the feature you want to make. Never, ever, ever make changes to the master branch directly. Ever!
+
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git branch BigButtons
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git branch
+  BigButtons
+* master
+C:\Users\iain\Documents\GitHub\jquery-ui [master]>
+```
+
+ 
+
+7. Checkout your new branch.
+
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git checkout BigButtons
+Switched to branch 'BigButtons'
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+```
+ 
+
+8. Change the code! As you do, hitting return on the console will let you know about changes you've made. These numbers refer to the count of files added, lines altered, and files deleted, respectively.
+
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]>
+```
  
 
  
 
-**6.** Before making any changes yourself, create a new branch for the feature you want to make. Never, ever, ever make changes to the master branch directly. Ever!
+9. Before we can persist these changes, we need to let git know explicitly that we want to make them. First we'll check what the changes are so far to verify they're intended. A high level overview is shown using the status command.
 
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**master\]\> git branch BigButtons C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**master\]\> git branch   BigButtons \* master C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\>
-
- 
-
- 
-
-**7.** Checkout your new branch.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\> git checkout BigButtons Switched to branch 'BigButtons' C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\>
-
- 
-
- 
-
-**8.** Change the code! As you do, hitting return on the console will let you know about changes you've made. These numbers refer to the count of files added, lines altered, and files deleted, respectively.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\> C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\>
-
- 
-
- 
-
-**9.** Before we can persist these changes, we need to let git know explicitly that we want to make them. First we'll check what the changes are so far to verify they're intended. A high level overview is shown using the status command.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**BigButtons+0 ~2 -1\]\> git status On branch BigButtons Changes not staged for commit: (use “git add/rm …” to update what will be committed) (use “git checkout — …” to discard changes in working directory)  
-**modified: themes/base/base.css** **modified: themes/base/button.css** **deleted: themes/base/progressbar.css**  
-no changes added to commit (use “git add” and/or “git commit -a”) C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**BigButtons+0 ~2 -1\]\>
-
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]> git status
+On branch BigButtons
+Changes not staged for commit:
+(use “git add/rm …” to update what will be committed)
+(use “git checkout — …” to discard changes in working directory)  
+modified: themes/base/base.css
+modified: themes/base/button.css
+deleted: themes/base/progressbar.css  
+no changes added to commit (use “git add” and/or “git commit -a”)
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]>
+```
  
 
 A more detailed look can be found using diff.
 
  
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\> git diff **diff –git a/themes/base/base.css b/themes/base/base.css** **index 479c327..89a5def 100644** **— a/themes/base/base.css** **+++ b/themes/base/base.css** **@@ -17,7 +17,6 @@** @import url(“dialog.css”); @import url(“draggable.css”); @import url(“menu.css”); **\-@import url(“progressbar.css”);** @import url(“resizable.css”); @import url(“selectable.css”); @import url(“selectmenu.css”); **diff –git a/themes/base/button.css b/themes/base/button.css** **index 43ff15c..b64c624 100644** **— a/themes/base/button.css** **+++ b/themes/base/button.css** **@@ -45,9 +45,7 @@**button.ui-button-icons-only { .ui-button .ui-button-text { display: block; line-height: normal; **\-}** **\-.ui-button-text-only .ui-button-text {** **\- padding: .4em 1em;** **\+ font-size: 180%;** C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\>
-
- 
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]> git diff
+diff –git a/themes/base/base.css b/themes/base/base.css
+index 479c327..89a5def 100644
+— a/themes/base/base.css
++++ b/themes/base/base.css
+@@ -17,7 +17,6 @@
+@import url(“dialog.css”);
+@import url(“draggable.css”);
+@import url(“menu.css”);
+-@import url(“progressbar.css”);
+@import url(“resizable.css”);
+@import url(“selectable.css”);
+@import url(“selectmenu.css”);
+diff –git a/themes/base/button.css b/themes/base/button.css
+index 43ff15c..b64c624 100644
+— a/themes/base/button.css
++++ b/themes/base/button.css
+@@ -45,9 +45,7 @@button.ui-button-icons-only {
+.ui-button .ui-button-text {
+display: block;
+line-height: normal;
+-}
+-.ui-button-text-only .ui-button-text {
+- padding: .4em 1em;
++ font-size: 180%;
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]>
+```
 
 The changes made are all explicit. Styling is being removed on progress bars, buttons are losing their padding in favour of increased font size.
 
  
 
- 
+10. Once happy with the changes you want to make. You need to specifically add changed and new files, and remove deleted files.
 
-**10.** Once happy with the changes you want to make. You need to specifically add changed and new files, and remove deleted files.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\> git rm themes/base/progressbar.css rm ‘themes/base/progressbar.css’ C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~0 -1 |+0 ~2 -0\]**\> git add themes/base/base.css themes/base/button.css C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\> git status On branch BigButtons Changes to be committed: (use “git reset HEAD …” to unstage)  
-**modified: themes/base/base.css** **modified: themes/base/button.css** **deleted: themes/base/progressbar.css**  
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons+0 ~2 -1\]**\>
-
- 
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]> git rm themes/base/progressbar.css
+rm ‘themes/base/progressbar.css’
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~0 -1 |+0 ~2 -0]> git add themes/base/base.css themes/base/button.css
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]> git status
+On branch BigButtons
+Changes to be committed:
+(use “git reset HEAD …” to unstage)  
+modified: themes/base/base.css
+modified: themes/base/button.css
+deleted: themes/base/progressbar.css  
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]>
+```
 
 Checking the status now sees the changes coloured in green to denote that we've confirmed these are intentional changes.
 
- 
 
- 
 
-**11.** The last step in persisting your changes into a single checkin: commit your changes. Only because this is an example walkthrough, we'll break the best practice rule of checking in two feature changes on one commit ;)
+11. The last step in persisting your changes into a single checkin: commit your changes. Only because this is an example walkthrough, we'll break the best practice rule of checking in two feature changes on one commit ;)
 
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**BigButtons+0 ~2 -1\]\> git commit -m “Make the button font size larger. Remove styling on progress bars.” \[BigButtons e078989\] Make the button font size larger. Remove styling on progress bars. 3 files changed, 1 insertion(+), 32 deletions(-) delete mode 100644 themes/base/progressbar.css C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\> git status On branch BigButtons nothing to commit, working directory clean C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\>
-
- 
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons+0 ~2 -1]> git commit -m “Make the button font size larger. Remove styling on progress bars.”
+[BigButtons e078989] Make the button font size larger. Remove styling on progress bars.
+3 files changed, 1 insertion(+), 32 deletions(-)
+delete mode 100644 themes/base/progressbar.css
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]> git status
+On branch BigButtons
+nothing to commit, working directory clean
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+```
 
 The status command show the working directory is clean i.e. there are no changes to be committed. Using the log command can show the previous commits made to this branch.
 
- 
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**BigButtons\]\> git log –oneline -n 5 **e078989** Make the button font size larger. Remove styling on progress bars. **2a99bb7** Build: Fix typo **24ce1c8** Dialog: Updating demo style based on changes to theme and demo CSS **fe75984** Easing: Fixed small typo in easing demo **b5f1ffd** Build: Remove manifest files; move metadata to source files C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\>
-
- 
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]> git log –oneline -n 5
+e078989 Make the button font size larger. Remove styling on progress bars.
+2a99bb7 Build: Fix typo
+24ce1c8 Dialog: Updating demo style based on changes to theme and demo CSS
+fe75984 Easing: Fixed small typo in easing demo
+b5f1ffd Build: Remove manifest files; move metadata to source files
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+```
 
 Even though only one commit has been made to this branch, BigButtons shares the ancestory of the master branch and all its previous commits.
 
- 
 
- 
-
-**12.** Now we want to put our changes back onto the repo server. But alas, our colleague has told us they updated the master branch while we working on our changes!
+12. Now we want to put our changes back onto the repo server. But alas, our colleague has told us they updated the master branch while we working on our changes!
 
 First let's get the latest version of the master code. Begin this by moving from the MakeButtonsRectangular branch to the master branch.
 
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[**BigButtons\]\> git checkout master Switched to branch ‘master’ Your branch is up-to-date with ‘origin/master’. C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\> git pull Updating 24ce1c8..2a99bb7 Fast-forward ui/resizable.js | 2 **+\-** 1 file changed, 1 insertion(+), 1 deletion(-) C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\>
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]> git checkout master
+Switched to branch ‘master’
+Your branch is up-to-date with ‘origin/master’.
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git pull
+Updating 24ce1c8..2a99bb7
+Fast-forward
+ui/resizable.js | 2 +\-
+1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\iain\Documents\GitHub\jquery-ui [master]>
+```
+
+13. You now have an up-to-date version of master including your colleague's changes. You need to merge their changes into your branch.
+
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [master]> git checkout BigButtons
+Switched to branch ‘BigButtons’
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]> git merge master
+Merge made by the ‘recursive’ strategy.
+ui/resizable.js | 2 +\-
+1 file changed, 1 insertion(+), 1 deletion(-)
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+```
+
+
+14. Your branch is now ready to merged into the master branch on the repo server. You pulled their changes, you push your changes.
+
+
+```
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]> git push -u https://github.com/lifebeyondfife/jquery-ui BigButtons
+Username for ‘https://github.com’: lifebeyondfife
+Password for ‘https://lifebeyondfife@github.com’:
+Counting objects: 34, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 802 bytes | 0 bytes/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+To https://github.com/lifebeyondfife/jquery-ui
+* [new branch] BigButtons -> BigButtons
+Branch BigButtons set up to track remote branch BigButtons from https://github.com/lifebeyondfife/jquery-ui.
+C:\Users\iain\Documents\GitHub\jquery-ui [BigButtons]>
+```
+ 
+
+NB – because we don't have admin rights to the jQuery-UI project, we push the changes not to where we originally cloned the repo from, but rather to our personal fork. If you were pushing a change back to the same server as where you initially cloned the repo, swap `-u https://github.com/lifebeyondfife/jquery-ui` for `origin`.
 
  
 
  
 
-**13.** You now have an up-to-date version of master including your colleague's changes. You need to merge their changes into your branch.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[master\]**\> git checkout BigButtons Switched to branch ‘BigButtons’ C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\> git merge master Merge made by the ‘recursive’ strategy. ui/resizable.js | 2 **+\-** 1 file changed, 1 insertion(+), 1 deletion(-) C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\>
-
- 
-
- 
-
-**14.** Your branch is now ready to merged into the master branch on the repo server. You pulled their changes, you push your changes.
-
-C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\> git push -u https://github.com/lifebeyondfife/jquery-ui BigButtons Username for ‘https://github.com’: lifebeyondfife Password for ‘https://lifebeyondfife@github.com’: Counting objects: 34, done. Delta compression using up to 2 threads. Compressing objects: 100% (7/7), done. Writing objects: 100% (8/8), 802 bytes | 0 bytes/s, done. Total 8 (delta 5), reused 0 (delta 0) To https://github.com/lifebeyondfife/jquery-ui \* \[new branch\] BigButtons -> BigButtons Branch BigButtons set up to track remote branch BigButtons from https://github.com/lifebeyondfife/jquery-ui. C:\\Users\\iain\\Documents\\GitHub\\jquery-ui **\[BigButtons\]**\>
-
- 
-
-NB – because we don't have admin rights to the jQuery-UI project, we push the changes not to where we originally cloned the repo from, but rather to our personal fork. If you were pushing a change back to the same server as where you initially cloned the repo, swap \-u https://github.com/lifebeyondfife/jquery-ui for origin.
-
- 
-
- 
-
-**15.** Final stage. Go to the GitHub website and make a "Pull Request" for your branch. An administrator will then review your branches changes and will either accept it or suggest changes.
+15. Final stage. Go to the GitHub website and make a "Pull Request" for your branch. An administrator will then review your branches changes and will either accept it or suggest changes.
 
  
 
@@ -223,7 +308,7 @@ Now that we're familiar with some of the features of git, let's return to the th
 
  
 
-### **One Hour Loop**
+### One Hour Loop
 
 The most important loop. Whenever you're actively writing code, you should be looking at the changes you're making and commiting them to your local branch at least once per hour. The code doesn't need to be in a working state with all unit and integration tests passing – think of this like hitting a save point while playing Tomb Raider. Consistently committing the changes you make means that you never waste more than one hour undoing a coding mess you've inadvertantly created.
 
@@ -233,7 +318,7 @@ When you start actively developing note that once an hour you should complete a 
 
  
 
-### **One Day Loop**
+### One Day Loop
 
 When you have a busy period of multiple people all making code changes at once, complex and large threeway merges are commonplace. With git's merge feature and independent code branches each based on a common ancestor, you're free to merge the changes from other developers as frequently as you like.
 
@@ -243,7 +328,7 @@ The daily loop includes the steps from the hourly loop and in total describe Ste
 
  
 
-### **One Week Loop**
+### One Week Loop
 
 Strictly speaking these loops are all suggested upper bounds, none more so than the weekly loop. Development features should be as discrete as possible and take no more than one week to finish. You may end up completing this loop every half day, for example.
 

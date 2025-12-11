@@ -69,13 +69,15 @@ It has two inputs, A and B, and one output X. It works in a similar way to the E
 
 Here, we could model our English sentences using the logic gate if we map the inputs and outputs being 0 or 1 to specific outcomes. So, if A is 0, that means Alice did not go to the cinema last night. If A is 1, that means Alice did go to the cinema last night. The same rules apply for B and whether or not Bob went to the cinema last night. The output value X, of A AND B, is 1 if both Alice and Bob went to the cinema last night, otherwise it's 0. Writing this down purely as zeros and ones, is called a _truth table_.
 
- 
 
-AND Gate Truth Table
+### AND Gate Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>A</strong></td><td width="45"><strong>B</strong></td><td width="45"><strong>X</strong></td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>
-
- 
+| A | B | X |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 1 | 1 |
 
 While the English sentences used above help try to explain the semantics of what a logic gate is doing, the truth table is brutally logical. A truth table doesn't so much _explain_ what a logic gate is doing, it _tells_ you what it does.
 
@@ -119,15 +121,26 @@ Essentially it means you can exclusively have one option or the other but not bo
 
  
 
-OR Gate Truth Table
+### OR Gate Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>A</strong></td><td width="45"><strong>B</strong></td><td width="45"><strong>X</strong></td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+| A | B | X |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 1 |
 
- 
 
-XOR Gate Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>A</strong></td><td width="45"><strong>B</strong></td><td width="45"><strong>X</strong></td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></tbody></table>
+### XOR Gate Truth Table
+
+| A | B | X |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 1 | 0 | 1 |
+| 0 | 1 | 1 |
+| 1 | 1 | 0 |
+
 
  
 
@@ -159,9 +172,13 @@ This is stated in advance of the example below in case the train of thought is n
 
  
 
-NOT Gate Truth Table
+### NOT Gate Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>A</strong></td><td width="45"><strong>X</strong></td></tr><tr><td>0</td><td>1</td></tr><tr><td>1</td><td>0</td></tr></tbody></table>
+| A | X |
+| --- | --- |
+| 0 | 1 |
+| 1 | 0 |
+
 
  
 
@@ -169,9 +186,15 @@ A simple logic gate for adding single digit binary numbers will require two inpu
 
  
 
-Single Digit Binary Addition Truth Table
+### Single Digit Binary Addition Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>A</strong></td><td width="45"><strong>B</strong></td><td width="45"><strong>C</strong></td><td width="45"><strong>S</strong></td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td><td>0</td></tr></tbody></table>
+| A | B | C | S |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 1 |
+| 0 | 1 | 0 | 1 |
+| 1 | 1 | 1 | 0 |
+
 
  
 
@@ -187,9 +210,15 @@ We can make an XOR gate by creating an intermediate stage which we'll call A' wh
 
  
 
-XOR using ANDs, ORs and NOTs
+### XOR using ANDs, ORs and NOTs
 
-<table cellpadding="5"><tbody><tr><td width="40"><strong>A</strong></td><td width="40"><strong>B</strong></td><td></td><td width="85"><strong>A or B</strong></td><td width="115"><strong>not (A and B)</strong></td><td></td><td width="85"><strong>A' and B'</strong></td></tr><tr><td>0</td><td>0</td><td colspan="1" rowspan="4"></td><td>0</td><td>1</td><td colspan="1" rowspan="4"></td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td></tr></tbody></table>
+
+| A | B | A or B | not (A and B) | A' and B' |
+| --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 1 |
+| 1 | 0 | 1 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 |
 
  
 
@@ -229,9 +258,19 @@ Here is the truth table of the Full Adder. We've renamed the original C to Cout 
 
  
 
-Full Adder Truth Table
+### Full Adder Truth Table
 
-<table cellpadding="5"><tbody><tr><td width="45"><strong>C<sub>in</sub></strong></td><td width="45"><strong>A</strong></td><td width="45"><strong>B</strong></td><td width="45"><strong>C<sub>out</sub></strong></td><td width="45"><strong>S</strong></td></tr><tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td></tr><tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table>
+
+| C_in | A | B | C | S |
+| --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 1 |
+| 1 | 1 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 1 |
 
  
 

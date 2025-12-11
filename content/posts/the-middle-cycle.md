@@ -13,41 +13,41 @@ The middle cycle helps reduce the complexity of your final commit. This daily ta
 The developer begins by completing one or more repetitions of the inner most cycle. Once some time has elapsed and there are code changes made locally, you can pull changes from the origin repo and merge them with your own. Begin by checking out the master branch.
 
  
-
+```
 $ git checkout master
-
+```
  
 
 Pull the updated code with changes from your fellow coders.
 
  
-
+```
 $ git pull
-
+```
  
 
 Revisit the feature branch that you've been working on.
 
  
-
+```
 $ git checkout MyNewTask
-
+```
  
 
 Merge in the changes made by others into your own local branch.
 
  
-
+```
 $ git merge master
-
+```
  
 
 Depending on the complexity of the code changes, git should correctly perform the merge without requiring any input from you – the successfully completed merge should be observable as the last commit using the git log command.
 
  
-
+```
 $ git log --oneline -n 3
-
+```
  
 
 If there were any error messages after executing the above merge, consult the web regarding the git mergetool command and how to complete the merge commit manually.

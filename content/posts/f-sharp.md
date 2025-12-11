@@ -109,7 +109,7 @@ This is equivalent to the C# code:
 
  
 
-    T Add< T >(T param1, T param2)
+    T Add<T>(T param1, T param2)
     {
         return param1 + param2;
     }
@@ -138,11 +138,9 @@ Of course, this being implicit functional programming we don't have to assign a 
 
 But we can still use this approach if we want to assign it to a variable though. These two lines are equivalent:
 
- 
 
     let add param1 param2 = param1 + param2
     let add = fun param1 param2 -> param1 + param2
-
  
 
 Which brings me on to my next point.
@@ -165,7 +163,7 @@ Here is probably the simplest way to create a list in F#:
 
  
 
-    let a = \[1; 2; 3\]
+    let a = [1; 2; 3]
 
  
 
@@ -173,11 +171,11 @@ For .Net people, the type of a is FSharpList<Int32>, essentially a list of integ
 
  
 
-    let b = 4 :: \[5; 6\]
+    let b = 4 :: [5; 6]
 
  
 
-Notice that the head is an 'int' and the tail is a 'list of ints'. The result, b, is another list of ints, namely \[4; 5; 6\].
+Notice that the head is an 'int' and the tail is a 'list of ints'. The result, b, is another list of ints, namely [4; 5; 6].
 
 I think you're ready for some nastier stuff now. Let's take this next line one step at a time and try to decipher it.
 
@@ -187,7 +185,7 @@ I think you're ready for some nastier stuff now. Let's take this next line one s
 
  
 
-First up, the code in brackets contains the keyword fun so it's defining a function implicitly. This means the line takes the form of our above function parameter1 parameter2 pattern from section 3 i.e. the implicitly created function is immediately invoked thereafter. Consider what this function is doing then. It takes two parameters and returns the result of using the list concatenation operator, @, on them. We then call this implicit function with parameters a and b. Recall that a is \[1; 2; 3\] and b is \[4; 5; 6\], so the result of this F# expression is the list \[1; 2; 3; 4; 5; 6\].
+First up, the code in brackets contains the keyword fun so it's defining a function implicitly. This means the line takes the form of our above function parameter1 parameter2 pattern from section 3 i.e. the implicitly created function is immediately invoked thereafter. Consider what this function is doing then. It takes two parameters and returns the result of using the list concatenation operator, @, on them. We then call this implicit function with parameters a and b. Recall that a is [1; 2; 3] and b is [4; 5; 6], so the result of this F# expression is the list [1; 2; 3; 4; 5; 6].
 
 Trust me, we're getting there.
 
@@ -201,7 +199,7 @@ I just showed you that you can create a new list using the :: operator to add a 
 
  
 
-    let a = \[1; 2; 3\]
+    let a = [1; 2; 3]
     let HeadTail list =
         match list with
         | head :: tail -> head, tail
@@ -215,18 +213,18 @@ Also, F# functions can return more than one variable. Here's a not-quite-legal p
 
  
 
-    object\[\] HeadTail(IList< T > list)
+    object[] HeadTail(IList<T> list)
     {
         switch (list)
         {
             case head :: tail:
-            return new\[\] { head, tail };
+            return new[] { head, tail };
         }
     }
 
  
 
-Finally the last line of F# above invokes the HeadTail function we've just created with the parameter a. This returns the head value, 1, and the remainder of the list \[2; 3\] and stores each in the head and tail variables. There are many other patterns that F# is powerful enough to match using this syntax.
+Finally the last line of F# above invokes the HeadTail function we've just created with the parameter a. This returns the head value, 1, and the remainder of the list [2; 3] and stores each in the head and tail variables. There are many other patterns that F# is powerful enough to match using this syntax.
 
 Keep strong, nearly done.
 
@@ -246,10 +244,10 @@ And because I'm nice, here are the equivalent C# implementations to help your un
 
  
 
-    IList< TRes > Map< TSource, TRes >(Func< TSource, TRes > function,
-         IList< TSource > list)
+    IList<TRes> Map<TSource, TRes>(Func<TSource, TRes> function,
+         IList<TSource> list)
     {
-        var result = new List< TRes >();
+        var result = new List<TRes>();
 
         foreach (var item in list)
             result.Add(function(item));
@@ -257,9 +255,9 @@ And because I'm nice, here are the equivalent C# implementations to help your un
         return result;
     }
 
-    IList< T > Filter< T >(Func< T, bool > function, IList< T > list)
+    IList<T> Filter<T>(Func<T, bool> function, IList<T> list)
     {
-        var result = new List< T >();
+        var result = new List<T>();
 
         foreach (var item in list)
         {
@@ -270,10 +268,10 @@ And because I'm nice, here are the equivalent C# implementations to help your un
         return result;
     }
 
-    object\[\] Partition< T >(Func< T, bool > function, IList< T > list)
+    object[] Partition<T>(Func<T, bool> function, IList<T> list)
     {
-        var first = new List< T >();
-        var second = new List< T >();
+        var first = new List<T>();
+        var second = new List<T>();
 
         foreach (var item in list)
         {
@@ -283,7 +281,7 @@ And because I'm nice, here are the equivalent C# implementations to help your un
                 second.Add(item);
         }
 
-        return new\[\] { first, second };
+        return new[] { first, second };
     }
 
  
@@ -292,13 +290,13 @@ And here's how to use one of these List functions in F#
 
  
 
-    let list = \[1; 2; 3; 4; 5; 6; 7; 8\]
+    let list = [1; 2; 3; 4; 5; 6; 7; 8]
     let greaterThanFive item = item > 5
     let greatList = List.filter greaterThanFive list
 
  
 
-The variable greatList contains the list \[6; 7; 8\].
+The variable greatList contains the list [6; 7; 8].
 
  
 
@@ -320,7 +318,7 @@ Well done for making it this far. Let's start off with an unordered list.
 
  
 
-    let unorderedList = \[4; 5; 3; 8; 1; 6; 4; 7; 3; 9; 2\]
+    let unorderedList = [4; 5; 3; 8; 1; 6; 4; 7; 3; 9; 2]
 
  
 
@@ -337,11 +335,11 @@ First off we want to return the list unchanged if it's empty. This can be done w
  
 
     match list with
-    | \[\] -> \[\]
+    | [] -> []
 
  
 
-Remember this is basically a switch statement so we're saying that if list is \[\], the empty list, then return it. Now to the next case. We split the list up into a head and tail and use the head as a pivot.
+Remember this is basically a switch statement so we're saying that if list is [], the empty list, then return it. Now to the next case. We split the list up into a head and tail and use the head as a pivot.
 
  
 
@@ -378,7 +376,7 @@ The quicksort function is called twice more and the list operations @ and :: are
 
  
 
-    quicksort(smaller) @ \[head\] @ quicksort(larger)
+    quicksort(smaller) @ [head] @ quicksort(larger)
 
  
 
@@ -388,11 +386,11 @@ Here is all the code with an example invocation on the unordered list we created
 
  
 
-    let unorderedList = \[4; 7; 2; 0; 9; 1; 6; 7; 5; 4; 3; 8; 6\]
+    let unorderedList = [4; 7; 2; 0; 9; 1; 6; 7; 5; 4; 3; 8; 6]
 
     let rec quicksort list =
         match list with
-        | \[\] -> \[\]
+        | [] -> []
         | head :: tail ->
             let smaller, larger =
                 List.partition (fun item -> item < head) tail
