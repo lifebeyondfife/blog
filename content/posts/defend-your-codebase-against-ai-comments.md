@@ -23,7 +23,7 @@ Human nature’s propensity for shortcuts creates an even deeper problem than bu
 
 AI tools don’t just generate code, they also want to explain their work, linking the natural language semantics back to the high-level code. The motivations of a manager should always reflect their key accountability, to keep the service running. AI’s goal of being helpful may reduce the Lottery Factor, and put the effective running of the service at risk.
 
-The inexact nature of language, especially the English language, opens ups opportunities for misinterpretation e.g. “Get a carton of milk, and if they have eggs, get a dozen.” https://tapas.io/episode/1086317. Once the AI assisted code is written, the human plays the most important role in quality control. It’s not enough for the code to be syntactically valid, or even semantically correct. It must be understood, and ‘owned’ by the team. The code review becomes the place where this happens.
+The inexact nature of language, especially the English language, opens up opportunities for misinterpretation e.g. “Get a carton of milk, and if they have eggs, get a dozen.” https://tapas.io/episode/1086317. Once the AI assisted code is written, the human plays the most important role in quality control. It’s not enough for the code to be syntactically valid, or even semantically correct. It must be understood, and ‘owned’ by the team. The code review becomes the place where this happens.
 
 Teams should use AI to create high quality code, which is semantically correct, and self-documenting. This can be achieved by setting expectations for engineers prior to submitting for merge:
 
