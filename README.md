@@ -7,21 +7,24 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 ```
 .
 ├── src/
-│   ├── app/                          # Next.js App Router pages
+│   ├── app/
 │   │   ├── layout.tsx                # Root layout and metadata
 │   │   ├── page.tsx                  # Homepage
-│   │   ├── about/                    # Static about page
-│   │   ├── categories/               # Category listing and posts
-│   │   │   ├── page.tsx              # All categories
+│   │   ├── not-found.tsx             # Custom 404 page
+│   │   ├── globals.css               # Global styles and Tailwind imports
+│   │   ├── about/
+│   │   │   └── page.tsx              # Static about page
+│   │   ├── categories/
+│   │   │   ├── page.tsx              # All categories listing
 │   │   │   └── [category]/
 │   │   │       ├── page.tsx          # Category post listing
 │   │   │       └── [slug]/
 │   │   │           └── page.tsx      # Individual post
-│   │   └── posts/                    # Paginated post listings
-│   │       ├── page.tsx              # Page 1
+│   │   └── posts/
+│   │       ├── page.tsx              # Paginated post listing (page 1)
 │   │       └── [page]/
-│   │           └── page.tsx          # Page 2+
-│   ├── components/                   # React components
+│   │           └── page.tsx          # Paginated post listing (page 2+)
+│   ├── components/
 │   │   ├── Header.tsx
 │   │   ├── Footer.tsx
 │   │   ├── PostCard.tsx
@@ -29,40 +32,41 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 │   │   ├── Pagination.tsx
 │   │   ├── CategoryList.tsx
 │   │   └── OptimisedImage.tsx
-│   ├── lib/                          # Utility functions
+│   ├── lib/
 │   │   ├── posts.ts                  # Post data access
 │   │   ├── markdown.ts               # Markdown processing
 │   │   ├── categories.ts             # Category utilities
-│   │   └── constants.ts              # Site configuration
-│   └── types/                        # TypeScript interfaces
-│       ├── images.ts                 # Image metadata
-│       └── post.ts                   # Post data access
+│   │   ├── constants.ts              # Site configuration
+│   │   └── rehype-optimised-images.ts  # Rehype plugin for responsive images
+│   └── types/
+│       ├── images.ts                 # Image manifest types
+│       └── post.ts                   # Post and category types
 ├── content/
-│   └── posts/                        # Markdown blog posts
+│   └── posts/
 │       └── *.md
-├── public/                           # Static assets
+├── public/
 │   ├── images/
 │   │   ├── originals/                # Source images
 │   │   └── optimised/                # Generated responsive images
-│   ├── favicon.ico
-│   └── robots.txt
-├── scripts/                          # Build scripts
+│   └── favicon.ico
+├── scripts/
 │   ├── generate-metadata.ts          # Create post/category indices
 │   ├── optimise-images.ts            # Process images
 │   ├── generate-redirects.ts         # Create redirect function
-│   └── generate-sitemap.ts           # Generate sitemap.xml
+│   ├── generate-sitemap.ts           # Generate sitemap.xml
+│   └── generate-robots.ts            # Generate robots.txt
 ├── generated/                        # Build artifacts
 │   ├── posts-index.json              # Post metadata for listings
 │   ├── categories.json               # Category-to-post mappings
-│   ├── image-manifest.json           # Image dimensions and sizes
+│   ├── image-manifest.json           # Image dimensions and available sizes
 │   ├── redirects.json                # Legacy URL mappings
-│   └── cloudfront-redirect-function.js  # CloudFront redirect handler
+│   └── cloudfront-redirect-function.js
 ├── out/                              # Static build output
-├── next.config.mjs                   # Next.js configuration
-├── tailwind.config.ts                # Tailwind CSS configuration
-├── postcss.config.js                 # PostCSS configuration
-├── tsconfig.json                     # TypeScript configuration
-└── package.json                      # Dependencies and scripts
+├── next.config.mjs
+├── tailwind.config.ts
+├── postcss.config.js
+├── tsconfig.json
+└── package.json
 ```
 
 ## Development
