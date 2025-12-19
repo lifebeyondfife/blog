@@ -308,6 +308,17 @@
     ],
     "isAnimated": false
   },
+  "best-books": {
+    "originalWidth": 4096,
+    "originalHeight": 2038,
+    "availableSizes": [
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "isAnimated": false
+  },
   "big-o": {
     "originalWidth": 623,
     "originalHeight": 441,
