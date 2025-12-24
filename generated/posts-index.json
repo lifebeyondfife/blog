@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "i-have-a-book-for-that",
+      "category": "management",
+      "title": "I have a book for that",
+      "date": "2025-12-19",
+      "excerpt": "I realised I had gained a reputation for recommending books when it became a joke on Slack. I'm not even particularly well read, but there are some foundational concepts in teamwork, management, leadership, and tech, that come up time and time again. Sometimes the key lesson only takes a sentence to explain, but a book will reinforce the idea much more strongly. Here are the most impactful books I know about, and why I recommend reading them. First, Break All The Rules by Marcus Buckingham — this is the book every new manager must reader. Based on over 80,000 interviews...",
+      "tags": [],
+      "readingTime": 3,
+      "featuredImage": "/images/best-books.jpg"
+    },
+    {
       "slug": "defend-your-codebase-against-ai-comments",
       "category": "essays",
       "title": "Defend your codebase against AI comments",
@@ -1234,5 +1244,5 @@
       "featuredImage": "/images/sabbatical.jpg"
     }
   ],
-  "totalPosts": 113
+  "totalPosts": 114
 }

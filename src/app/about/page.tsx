@@ -44,7 +44,7 @@ export default function AboutPage() {
               Engineering leader and AI PhD with two decades of industry experience, scaling teams, processes, and technology. Manager at Skyscanner (acquired for £1.4bn) for B2B white label and travel widget products, and SEO pages. Part of the engineering senior leadership team at Smartsheet (acquired for $8.4bn) for advanced automation, and audit, history, and event platforms — petabytes of storage, processing 100k events per second.
             </p>
             <p className="text-lg text-slate-700 mb-6">
-              I've cultivated a deep understanding of what makes engineering teams thrive. My approach combines technical excellence with empathetic management, always prioritizing sustainable delivery and team growth.
+              I've cultivated a deep understanding of what makes engineering teams thrive. My approach combines technical excellence with empathetic management, always prioritising sustainable delivery and team growth.
             </p>
             <div className="space-y-3">
               <h3 className="font-semibold text-slate-900 text-lg mb-3">Key Resources:</h3>
