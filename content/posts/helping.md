@@ -62,7 +62,9 @@ This could be solved in an acceptable amount of time with a brute force search, 
 
  
 
-$$output = \frac{tmp.f2}{r2.q2}$$ $$tmp = \frac{input.f1}{r1.q1}$$
+$$output = \frac{tmp.f2}{r2.q2}$$
+
+$$tmp = \frac{input.f1}{r1.q1}$$
 
  
 
@@ -249,7 +251,11 @@ Though the arithmetic constraint is useful, a much simpler optimisation came fro
 
  
 
-$$25 \leq input \leq 600$$ $$10 \leq \frac{input}{r} \leq 1000$$ $$1600 \leq \frac{input.f}{r} \leq 3200$$
+$$25 \leq input \leq 600$$
+
+$$10 \leq \frac{input}{r} \leq 1000$$
+
+$$1600 \leq \frac{input.f}{r} \leq 3200$$
 
  
 

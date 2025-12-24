@@ -66,11 +66,11 @@ Hexadecimal isn’t wasteful however. The fact that sixteen is a power of two me
 
 
 
-And to complete the cycle $16\_{DEC} = 10\_{HEX}$.
+And to complete the cycle $16_{DEC} = 10_{HEX}$.
 
  
 
-The same technique for translating binary to decimal works for transforming hexadecimal to decimal. Begin with $123\_{HEX}$. This number has three digits so we need the first three powers of sixteen, namely, $16^{0}$, $16^{1}$ and $16^{2}$. Or $1, 16$ and $256$.
+The same technique for translating binary to decimal works for transforming hexadecimal to decimal. Begin with $123_{HEX}$. This number has three digits so we need the first three powers of sixteen, namely, $16^{0}$, $16^{1}$ and $16^{2}$. Or $1, 16$ and $256$.
 
  
 | _256_ | _16_ | _1_ |
@@ -79,7 +79,7 @@ The same technique for translating binary to decimal works for transforming hexa
 
  
 
-This is addition of all the individual digits multiplied by their powers: $(256 \times 1) + (16 \times 2) + (1 \times 3) = 256 + 32 + 3 = 291\_{DEC}$.
+This is addition of all the individual digits multiplied by their powers: $(256 \times 1) + (16 \times 2) + (1 \times 3) = 256 + 32 + 3 = 291_{DEC}$.
 
  
 
@@ -98,11 +98,11 @@ A calculator is required certainly but the steps to break down the conversion ar
 
  
 
-So $FACE0FF\_{HEX} = 262,988,031\_{DEC}$.
+So $FACE0FF_{HEX} = 262,988,031_{DEC}$.
 
  
 
-Now we’re more comfortable with hexadecimal, let’s consider representing a byte i.e. eight binary digits, as a hexadecimal number. $0\_{BIN}$ is similarly $0\_{HEX}$. What about a larger byte value though? $1010 \space 1100\_{BIN}$ is $172\_{DEC}$, but in hexadecimal it’s $AC\_{HEX}$ (incidentally for fans of Aussie rock, $ACDC\_{HEX} = 44,252\_{DEC}$, a good name for a tribute band that hits that crucial classic rock / Computer Science crossover movement). The lack of wastefulness becomes apparent when considering $1111 \space 1111\_{BIN}$ in hexadecimal: $FF\_{HEX}$. Note that the maximum binary value in eight digits is the maximum hexadecimal value in two digits. Adding one to this number pushes the binary form into the next column as does the hexadecimal form: $1 \space 0000 \space 0000\_{BIN} = 100\_{HEX}$, or $256\_{DEC}$. This relationship occurs again and again with these two number systems. It’s for this reason that hexadecimal is often used to neatly capture a binary number in a shorter form that humans are less likely to mistranscribe.
+Now we’re more comfortable with hexadecimal, let’s consider representing a byte i.e. eight binary digits, as a hexadecimal number. $0_{BIN}$ is similarly $0_{HEX}$. What about a larger byte value though? $1010 \space 1100_{BIN}$ is $172_{DEC}$, but in hexadecimal it’s $AC_{HEX}$ (incidentally for fans of Aussie rock, $ACDC_{HEX} = 44,252_{DEC}$, a good name for a tribute band that hits that crucial classic rock / Computer Science crossover movement). The lack of wastefulness becomes apparent when considering $1111 \space 1111_{BIN}$ in hexadecimal: $FF_{HEX}$. Note that the maximum binary value in eight digits is the maximum hexadecimal value in two digits. Adding one to this number pushes the binary form into the next column as does the hexadecimal form: $1 \space 0000 \space 0000_{BIN} = 100_{HEX}$, or $256_{DEC}$. This relationship occurs again and again with these two number systems. It’s for this reason that hexadecimal is often used to neatly capture a binary number in a shorter form that humans are less likely to mistranscribe.
 
  
 
@@ -110,20 +110,20 @@ Digression over, let’s return to binary number conversion – this time from d
 
  
 
-Converting the original example $154\_{DEC}$ back to binary is a little more complex but not unreasonably so. We discover the binary version by writing down one digit at a time from right to left. The digit written down is the remainder after dividing by the base. In this example we’re repeatedly dividing by two – if the number is divided by two exactly i.e. it’s an even number, then a $0$ is written, otherwise if the the number is divided by two with a remainder of $1$ i.e. it’s an odd number, then a $1$ is written.
+Converting the original example $154_{DEC}$ back to binary is a little more complex but not unreasonably so. We discover the binary version by writing down one digit at a time from right to left. The digit written down is the remainder after dividing by the base. In this example we’re repeatedly dividing by two – if the number is divided by two exactly i.e. it’s an even number, then a $0$ is written, otherwise if the the number is divided by two with a remainder of $1$ i.e. it’s an odd number, then a $1$ is written.
 
  
 
-154 divided by 2 is 77 with no remainder. A zero is written down. $$0$$ 77 divided by 2 is 38 with remainder one. A one is written to the left. $$10$$ 38 divided by 2 is 19 with no remainder. Another zero is written. $$010$$ 19 divided by 2 is 9 with remainder one. The pattern continues. $$1010$$ 9 divided by 2 is 4 with remainder one. $$1 \space 1010$$ 4 divided by 2 is 2 with no remainder. $$01 \space 1010$$ 2 divided by 2 is 1 with no remainder. $$001 \space 1010$$ And the final number left over is a one, which when divided by two yields zero remainder one. $$1001 \space 1010$$ Arriving at zero is the terminating case for this list of steps. Indeed, $1001 \space 1010\_{BIN}$ is the number we initially converted to $154\_{DEC}$.
+154 divided by 2 is 77 with no remainder. A zero is written down: $0$. 77 divided by 2 is 38 with remainder one. A one is written to the left: $10$. 38 divided by 2 is 19 with no remainder. Another zero is written: $010$. 19 divided by 2 is 9 with remainder one. The pattern continues: $1010$. 9 divided by 2 is 4 with remainder one: $1 \space 1010$. 4 divided by 2 is 2 with no remainder: $01 \space 1010$. 2 divided by 2 is 1 with no remainder: $001 \space 1010$. And the final number left over is a one, which when divided by two yields zero remainder one: $1001 \space 1010$. Arriving at zero is the terminating case for this list of steps. Indeed, $1001 \space 1010_{BIN}$ is the number we initially converted to $154_{DEC}$.
 
  
 
-One last example and we’ll conclude this extremely important topic. Another number system (admittedly used less frequently than binary or hexadecimal) is called Octal (OCT) which only has eight digits. Like binary, it uses the digits from the decimal system but just the first eight: $0, 1, 2, 3, 4, 5, 6$ and $7$. Similar patterns abound: $7\_{OCT} + 1\_{OCT} = 10\_{OCT} = 8\_{DEC}$.
+One last example and we’ll conclude this extremely important topic. Another number system (admittedly used less frequently than binary or hexadecimal) is called Octal (OCT) which only has eight digits. Like binary, it uses the digits from the decimal system but just the first eight: $0, 1, 2, 3, 4, 5, 6$ and $7$. Similar patterns abound: $7_{OCT} + 1_{OCT} = 10_{OCT} = 8_{DEC}$.
 
  
 
-Using the same rule for converting decimal numbers to binary, we will now convert $25\_{DEC}$ to octal.
+Using the same rule for converting decimal numbers to binary, we will now convert $25_{DEC}$ to octal.
 
  
 
-$25$ divided by $8$ is $3$ with remainder one. We write down the remainder at the far right. $$1$$ $3$ divided by $8$ is zero (the terminating case) with remainder three. The remainder is written down to the left of the previous digit. $$31$$ And already we’re done. $25\_{DEC} = 31\_{OCT}$. Which explains why Computer Scientists get Christmas and Halloween confused.
+$25$ divided by $8$ is $3$ with remainder one. We write down the remainder at the far right. $1$ $3$ divided by $8$ is zero (the terminating case) with remainder three. The remainder is written down to the left of the previous digit. $31$ And already we’re done. $25_{DEC} = 31_{OCT}$. Which explains why Computer Scientists get Christmas and Halloween confused.

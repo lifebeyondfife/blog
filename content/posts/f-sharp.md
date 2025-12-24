@@ -8,7 +8,7 @@ tags:
 legacySlug: "82-f-sharp-html"
 ---
 
-After recently remarking about how I finally "got" functional programming I was asked by one of my millions of [twitter followers](https://twitter.com/#%21/LifeBeyondFife)... ¬\_¬ to write up an explanation of a small F# program spoken in terms that fellow O-O programmers would understand. Before I become too entrenched into the functional programming way of thinking, that is, and can't explain it anymore. As a former tutor this is one of the major problems with being able to teach something once you understand it. You've forgotten how _not_ to make sense of the concept and what finally helped you get over the mental parapet.
+After recently remarking about how I finally "got" functional programming I was asked by one of my millions of [twitter followers](https://twitter.com/#%21/LifeBeyondFife)... ¬_¬ to write up an explanation of a small F# program spoken in terms that fellow O-O programmers would understand. Before I become too entrenched into the functional programming way of thinking, that is, and can't explain it anymore. As a former tutor this is one of the major problems with being able to teach something once you understand it. You've forgotten how _not_ to make sense of the concept and what finally helped you get over the mental parapet.
 
 The initial example that functional programming proponents often use is the Quick Sort sorting algorithm. This is done because it's an optimally efficient sorting algorithm - O(n log n) - and the implementation is only a few lines. Functional programming lends itself to very implicit code. This is just one of the reasons it's popular but it's the main reason it's hard to get into.
 

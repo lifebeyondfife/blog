@@ -5,9 +5,9 @@
       "category": "management",
       "title": "I have a book for that",
       "date": "2025-12-19",
-      "excerpt": "I realised I had gained a reputation for recommending books when it became a joke on Slack. I'm not even particularly well read, but there are some foundational concepts in teamwork, management, leadership, and tech, that come up time and time again. Sometimes the key lesson only takes a sentence to explain, but a book will reinforce the idea much more strongly. Here are the most impactful books I know about, and why I recommend reading them. First, Break All The Rules by Marcus Buckingham — this is the book every new manager must reader. Based on over 80,000 interviews...",
+      "excerpt": "I realised I had gained a reputation for recommending books when it became a joke on Slack. I'm not even particularly well read, but there are some foundational concepts in teamwork, management, leadership, and tech, that come up time and time again. Sometimes the key lesson only takes a sentence to explain, but a book will reinforce the idea much more strongly. Here are the most impactful books I invariably keep coming back to. First, Break All The Rules by Marcus Buckingham — This is the book every new manager must read. Based on over 80,000 interviews with real managers,...",
       "tags": [],
-      "readingTime": 3,
+      "readingTime": 4,
       "featuredImage": "/images/best-books.jpg"
     },
     {
@@ -574,7 +574,7 @@
       "category": "git",
       "title": "Backup as often as you like",
       "date": "2015-05-24",
-      "excerpt": "Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mixture of <Ctrl>+Z bashing and consulting the last known state in the VCS server? Or do you get round that by making occasional copies of files or subdirectories, possibly with \"\\v1\" suffixes? Well with git, there's a better way. You wouldn't commit code to the origin repo that was broken, incomplete or didn't pass all unit, integration and acceptance tests. And the same applies to the origin repo with DVCS as well. However, remember...",
+      "excerpt": "Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mixture of <Ctrl>+Z bashing and consulting the last known state in the VCS server? Or do you get round that by making occasional copies of files or subdirectories, possibly with \"v1\" suffixes? Well with git, there's a better way. You wouldn't commit code to the origin repo that was broken, incomplete or didn't pass all unit, integration and acceptance tests. And the same applies to the origin repo with DVCS as well. However, remember...",
       "tags": [],
       "readingTime": 2
     },
@@ -984,7 +984,7 @@
       "category": "follies",
       "title": "/Sabbatical",
       "date": "2012-04-06",
-      "excerpt": "Just so you know, I am still alive... ...but the sabbatical finally had to come to an end. I'm very excited to enter the world of work once more. No really. ¬\\¬ I'm sure my brand of proactive problem solving will have me going places soon enough... ...especially seeing as I'm no longer long-haired, bearded, nor a wearer of rock t-shirts, combats or skater shoes i.e. a typical software developer. I now own four suits. Four. Rest assured, now the upheaval of relocating and job hunting has ceased, blog posts shall once again resume. Possibly not at the rate of...",
+      "excerpt": "Just so you know, I am still alive... ...but the sabbatical finally had to come to an end. I'm very excited to enter the world of work once more. No really. ¬¬ I'm sure my brand of proactive problem solving will have me going places soon enough... ...especially seeing as I'm no longer long-haired, bearded, nor a wearer of rock t-shirts, combats or skater shoes i.e. a typical software developer. I now own four suits. Four. Rest assured, now the upheaval of relocating and job hunting has ceased, blog posts shall once again resume. Possibly not at the rate of...",
       "tags": [
         "sabbatical",
         "youtube"
@@ -1080,7 +1080,7 @@
       "category": "follies",
       "title": "Functional Programming For Object Oriented Programmers",
       "date": "2011-11-24",
-      "excerpt": "After recently remarking about how I finally \"got\" functional programming I was asked by one of my millions of twitter followers... ¬\\¬ to write up an explanation of a small Fprogram spoken in terms that fellow O-O programmers would understand. Before I become too entrenched into the functional programming way of thinking, that is, and can't explain it anymore. As a former tutor this is one of the major problems with being able to teach something once you understand it. You've forgotten how not to make sense of the concept and what finally helped you get over the mental parapet....",
+      "excerpt": "After recently remarking about how I finally \"got\" functional programming I was asked by one of my millions of twitter followers... ¬¬ to write up an explanation of a small Fprogram spoken in terms that fellow O-O programmers would understand. Before I become too entrenched into the functional programming way of thinking, that is, and can't explain it anymore. As a former tutor this is one of the major problems with being able to teach something once you understand it. You've forgotten how not to make sense of the concept and what finally helped you get over the mental parapet....",
       "tags": [
         "f",
         "functional-programming"

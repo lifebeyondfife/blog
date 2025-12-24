@@ -19,7 +19,7 @@ Before launching straight into recent history, I'll briefly cover my early caree
 
 Something about abstract mathematical concepts in computer science fascinated me, despite how impractical they appeared to friends engaged in systems research. Spending days and months empirically evaluating and theorising which were the best algorithms and why, led to the classic exclamation, "I'm not a theoretical computer scientist, and I can prove it!"
 
-O\_o
+O_o
 
 By the time the laughter had subsided, I was finished with research and found myself a software engineer with a largely unused doctorate. I loved writing code and solving problems - genuine problems with a business case - but I was always looking for more mathematical computer science avenues that would satisfy my interest and ability.
 
