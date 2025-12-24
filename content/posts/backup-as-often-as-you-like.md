@@ -4,7 +4,7 @@ date: "2015-05-24"
 category: "git"
 ---
 
-Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mixture of <Ctrl>+Z bashing and consulting the last known state in the VCS server? Or do you get round that by making occasional copies of files or subdirectories, possibly with "\_v1" suffixes? Well with git, there's a better way.
+Have you ever experimented with a few different approaches to solving a tricky problem only later to try to salvage an earlier working state with a mixture of <Ctrl>+Z bashing and consulting the last known state in the VCS server? Or do you get round that by making occasional copies of files or subdirectories, possibly with "_v1" suffixes? Well with git, there's a better way.
 
  
 

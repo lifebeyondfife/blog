@@ -16,7 +16,7 @@ Just so you know, I am still alive...
 
 ...but the sabbatical finally had to come to an end. I'm very excited to enter the world of work once more. No really.
 
-¬\_¬
+¬_¬
 
 I'm sure my brand of proactive problem solving will have me going places soon enough...
 

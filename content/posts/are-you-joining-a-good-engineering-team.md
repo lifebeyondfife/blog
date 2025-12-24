@@ -33,7 +33,7 @@ If asking direct questions about software development process will not tell you 
 
 #### #1 Good programmers
 
-Bad work environments will always make it hard to ship good code. But not having good programmers makes it impossible. If the salary or anything else about the job says RED FLAG to you, then it probably has to other competent coders. Also ask yourself, was I challenged in my interview? How bad could somebody be and \_still\_ pass whatever questions or tasks were thrown at them?
+Bad work environments will always make it hard to ship good code. But not having good programmers makes it impossible. If the salary or anything else about the job says RED FLAG to you, then it probably has to other competent coders. Also ask yourself, was I challenged in my interview? How bad could somebody be and _still_ pass whatever questions or tasks were thrown at them?
 
  
 

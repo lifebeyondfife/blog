@@ -52,7 +52,7 @@ Binding a variable was a non trivial task and required getting hold of the pytho
 
 ![](/images/bound_variable.png)
 
-Another possible "gotcha" is that you can't access any named XAML controls in the code behind [without decorating the name as a property](http://stackoverflow.com/questions/5853812/gui-development-with-ironpython-and-visual-studio-2010) otherwise, ahem, IronPython's tools kinda crash Visual Studio a little ¬\_¬
+Another possible "gotcha" is that you can't access any named XAML controls in the code behind [without decorating the name as a property](http://stackoverflow.com/questions/5853812/gui-development-with-ironpython-and-visual-studio-2010) otherwise, ahem, IronPython's tools kinda crash Visual Studio a little ¬_¬
 
 ![](/images/code_behind.png)
 

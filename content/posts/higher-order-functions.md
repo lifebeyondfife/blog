@@ -52,7 +52,7 @@ We wish to know which members of data are greater than 5. To do so we construct 
 greater_than_five = lambda x: x > 5
 ```
 
-We can now treat the variable greater\_than\_five like a function:
+We can now treat the variable greater_than_five like a function:
 
 ```
 greater_than_five(3)    # returns False
@@ -65,7 +65,7 @@ The Python Higher Order function filter is called like so:
 filter(greater_than_five, data)
 ```
 
-The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: $6, 9, 8, 7$. That is, all the elements of data that are greater than five. The filter function invokes greater\_than\_five with each element from the list, data. Only elements that get a response of True are kept.
+The result is a [generator](https://wiki.python.org/moin/Generators) that, once evaluated, gives us the following output: $6, 9, 8, 7$. That is, all the elements of data that are greater than five. The filter function invokes greater_than_five with each element from the list, data. Only elements that get a response of True are kept.
 
  
 
@@ -175,7 +175,7 @@ The intractably large data set can likewise be partitioned into manageable piece
 
 [![Diagram of a big block of data getting sliced into smaller pieces.](/images/data.png)](/images/originals/data.png)
 
-By changing the way we invoke the functional style cascading functions, we can call each in turn with the manageable pieces and merge the results (much like the merge operation in [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)). The deepest function (get\_answer\_functional\_4) is called first on each partition and results of each invocation are collated – the exact collation method depends on the Higher Order function in question. The process of partitioning begins again and the next function down is called with a slight modification:
+By changing the way we invoke the functional style cascading functions, we can call each in turn with the manageable pieces and merge the results (much like the merge operation in [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)). The deepest function (get_answer_functional_4) is called first on each partition and results of each invocation are collated – the exact collation method depends on the Higher Order function in question. The process of partitioning begins again and the next function down is called with a slight modification:
 
 ```
 def get_answer_functional_3(_data):
@@ -186,7 +186,7 @@ def get_answer_functional_3(_data):
 ```
 
 
-owing to the fact that data has already gone through the get\_answer\_functional\_4 stage.
+owing to the fact that data has already gone through the get_answer_functional_4 stage.
  
 
 ## No really, is this a joke?
@@ -207,7 +207,7 @@ The skill in being able to solve problems in a functional style comes from pract
 
 To this end I present you with a challenge. Here are two source code files for Python and C# that solve the same problem described earlier in both an Imperative and Functional style. Can you add a function that uses only chained Higher Order functions and finds the names of all programmers who have two skills greater than 75?
 
-[imperative\_functional.py](https://gist.github.com/lifebeyondfife/caf4db1fc87941e81dbb)
+[imperative_functional.py](https://gist.github.com/lifebeyondfife/caf4db1fc87941e81dbb)
 
 [ImperativeFunctional.cs](https://gist.github.com/lifebeyondfife/86e44a0d50becc800c59)
 

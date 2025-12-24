@@ -47,7 +47,7 @@ This is still not enough though. 5 whys analysis is linear, and locks the author
 
 One answer short of five, but the essence is clear: the ambience and snacks a restaurant offers is important to the lunchtime experience. If they could relax that constraint, or find somewhere similar that’s nearer to the office, they would be less likely to get soaking wet in future. But did you spot the implicit conceit in the first why? The sentence is made up of multiple clauses: which one are we asking why to?
 
-[<mark class="has-inline-color" style="background-color:#8ed1fc">I was in the rain for 10 minutes</mark>] [<mark class="has-inline-color" style="background-color:#f78da7">without shelter or protection</mark>]
+$$\colorbox{#8ed1fc}{I was in the rain for 10 minutes,} \colorbox{#f78da7}{without shelter or protection}$$
 
 The subsequent thread of whys, completely ignores the second half of the first sentence, discarding valuable root causes. Let’s try again and focus on the other clause in the first answer.
 
