@@ -1,17 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { SITE_CONFIG, GENERATED_DIRECTORY } from '@/lib/constants';
-
-interface RedirectEntry {
-  legacySlug: string;
-  canonicalUrl: string;
-}
-
-interface PostsIndex {
-  posts: any[];
-  totalPosts: number;
-  totalPages?: number;
-}
+import { RedirectEntry, PostsIndex } from '@/types/post';
 
 const GENERATED_DIR = path.join(process.cwd(), GENERATED_DIRECTORY);
 const REDIRECTS_JSON_PATH = path.join(GENERATED_DIR, 'redirects.json');
