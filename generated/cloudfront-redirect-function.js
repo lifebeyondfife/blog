@@ -27,7 +27,26 @@ var redirects = {
   "/74-fantasy-football-html": "https://blog.chezmcdonald.info/follies/fantasy-football-2011-12/",
   "/73-exhell-html": "https://blog.chezmcdonald.info/follies/exhell/",
   "/72-brown-field-html": "https://blog.chezmcdonald.info/essays/brown-field/",
-  "/70-sabbatical-html": "https://blog.chezmcdonald.info/follies/sabbatical/"
+  "/70-sabbatical-html": "https://blog.chezmcdonald.info/follies/sabbatical/",
+  "/page/1": "https://blog.chezmcdonald.info/posts/page/1/",
+  "/page/2": "https://blog.chezmcdonald.info/posts/page/2/",
+  "/page/3": "https://blog.chezmcdonald.info/posts/page/3/",
+  "/page/4": "https://blog.chezmcdonald.info/posts/page/4/",
+  "/page/5": "https://blog.chezmcdonald.info/posts/page/5/",
+  "/page/6": "https://blog.chezmcdonald.info/posts/page/6/",
+  "/page/7": "https://blog.chezmcdonald.info/posts/page/7/",
+  "/page/8": "https://blog.chezmcdonald.info/posts/page/8/",
+  "/page/9": "https://blog.chezmcdonald.info/posts/page/9/",
+  "/page/10": "https://blog.chezmcdonald.info/posts/page/10/",
+  "/page/11": "https://blog.chezmcdonald.info/posts/page/11/",
+  "/page/12": "https://blog.chezmcdonald.info/posts/page/12/",
+  "/page/13": "https://blog.chezmcdonald.info/posts/page/13/",
+  "/page/14": "https://blog.chezmcdonald.info/posts/page/14/",
+  "/page/15": "https://blog.chezmcdonald.info/posts/page/15/",
+  "/page/16": "https://blog.chezmcdonald.info/posts/page/16/",
+  "/page/17": "https://blog.chezmcdonald.info/posts/page/17/",
+  "/page/18": "https://blog.chezmcdonald.info/posts/page/18/",
+  "/page/19": "https://blog.chezmcdonald.info/posts/page/19/"
 };
 
 function handler(event) {
