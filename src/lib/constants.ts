@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   description: 'Engineering from the glorious Kingdom',
   byline: 'I love hacking together code to make awesome things; mainly I love sharing what\'s worked for me.',
   author: 'Iain McDonald',
-  siteUrl: 'https://blog.chezmcdonald.info',
+  siteUrl: 'https://lifebeyondfife.com',
   postsPerPage: 6,
   avatar: '/images/originals/me.jpg',
   bio: 'Engineering leader, writer, and creator.',
