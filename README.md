@@ -50,6 +50,7 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 │   │   └── optimised/                # Generated responsive images
 │   └── favicon.ico
 ├── scripts/
+│   ├── cloudfront-redirect-oac.js    # Redirects for Origin Access Control
 │   ├── generate-metadata.ts          # Create post/category indices
 │   ├── optimise-images.ts            # Process images
 │   ├── generate-redirects.ts         # Create redirect function

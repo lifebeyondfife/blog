@@ -1,14 +1,11 @@
 import fs from 'fs';
 import path from 'path';
 import { SITE_CONFIG, GENERATED_DIRECTORY } from '@/lib/constants';
-
-interface RedirectEntry {
-  legacySlug: string;
-  canonicalUrl: string;
-}
+import { RedirectEntry, PostsIndex } from '@/types/post';
 
 const GENERATED_DIR = path.join(process.cwd(), GENERATED_DIRECTORY);
 const REDIRECTS_JSON_PATH = path.join(GENERATED_DIR, 'redirects.json');
+const POSTS_INDEX_PATH = path.join(GENERATED_DIR, 'posts-index.json');
 const OUTPUT_PATH = path.join(GENERATED_DIR, 'cloudfront-redirect-function.js');
 const SIZE_LIMIT_BYTES = 10240;
 
@@ -27,12 +24,31 @@ function loadRedirectEntries(): RedirectEntry[] {
   return JSON.parse(content);
 }
 
-function buildRedirectsObject(entries: RedirectEntry[]): Record<string, string> {
+function loadPostsIndex(): PostsIndex {
+  if (!fs.existsSync(POSTS_INDEX_PATH)) {
+    throw new Error(`Posts index not found: ${POSTS_INDEX_PATH}`);
+  }
+
+  const content = fs.readFileSync(POSTS_INDEX_PATH, 'utf-8');
+  return JSON.parse(content);
+}
+
+function calculateTotalPages(totalPosts: number): number {
+  return Math.ceil(totalPosts / SITE_CONFIG.postsPerPage);
+}
+
+function buildRedirectsObject(entries: RedirectEntry[], totalPages: number): Record<string, string> {
   const redirects: Record<string, string> = {};
 
   for (const entry of entries) {
     const legacyPath = `/${entry.legacySlug}`;
     redirects[legacyPath] = entry.canonicalUrl;
+  }
+
+  for (let pageNum = 1; pageNum <= totalPages; pageNum++) {
+    const legacyPath = `/page/${pageNum}`;
+    const canonicalUrl = `${SITE_CONFIG.siteUrl}/posts/page/${pageNum}/`;
+    redirects[legacyPath] = canonicalUrl;
   }
 
   return redirects;
@@ -94,8 +110,13 @@ function main(): void {
   const entries = loadRedirectEntries();
   console.log(`Loaded ${entries.length} redirect entries`);
 
+  console.log('Loading posts index...');
+  const postsIndex = loadPostsIndex();
+  const totalPages = postsIndex.totalPages || calculateTotalPages(postsIndex.totalPosts);
+  console.log(`Total pages: ${totalPages}`);
+
   console.log('Building redirects object...');
-  const redirectsObject = buildRedirectsObject(entries);
+  const redirectsObject = buildRedirectsObject(entries, totalPages);
 
   console.log('Generating CloudFront Function...');
   const functionCode = generateCloudFrontFunction(redirectsObject);

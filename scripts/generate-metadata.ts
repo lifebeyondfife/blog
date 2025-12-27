@@ -3,22 +3,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { PostMeta, PostFrontmatter } from '@/types/post';
 import { SITE_CONFIG, POSTS_DIRECTORY, READING_TIME_CONFIG, EXCERPT_WORD_COUNT } from '@/lib/constants';
-
-interface CategoryData {
-  slug: string;
-  name: string;
-  postCount: number;
-  posts: string[];
-}
-
-interface CategoriesIndex {
-  categories: CategoryData[];
-}
-
-interface RedirectEntry {
-  legacySlug: string;
-  canonicalUrl: string;
-}
+import { RedirectEntry } from '@/types/post';
+import { CategoryData, CategoriesIndex } from '@/types/category'
 
 const CONTENT_DIR = path.join(process.cwd(), POSTS_DIRECTORY);
 const GENERATED_DIR = path.join(process.cwd(), 'generated');
