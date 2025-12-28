@@ -68,5 +68,11 @@ function handler(event) {
     };
   }
   
+  if (uri.endsWith('/')) {
+    request.uri = uri + 'index.html';
+  } else if (!uri.split('/').pop().includes('.')) {
+    request.uri += '/index.html';
+  }
+  
   return request;
 }
