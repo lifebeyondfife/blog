@@ -29,7 +29,7 @@ Ship, ship, ship. No one is paid to write software, but rather solve problems fo
 
 ## 05. Automate
 
-Go slow, to go fast. This is the other side of the coin to ## 04 Deliver. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/12## 05/). Concepts like blue/green deployments can mean literally every step after code review can be automated. This frees engineers from artifical constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
+Go slow, to go fast. This is the other side of the coin to _04 Deliver_. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/1205/). Concepts like blue/green deployments can mean literally every step after code review can be automated. This frees engineers from artifical constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
 
 ## 06. Data
 
@@ -49,7 +49,7 @@ Budget, features, timeliness: choose two. Users don’t know what they want, onl
 
 ## 10. Done
 
-When the work is mostly finished, at 8## 0% complete, you only have the remaining 8## 0% left to finish. Estimations for completion dates can be wildly wrong if only the time for the coding is considered. Ensure the definition of done is baked into every deliverable from the start: code is developed, manually tested, automated tests written, documentation updated, deployed to production, and in front of the user.
+When the work is mostly finished, at 80% complete, you only have the remaining 80% left to finish. Estimations for completion dates can be wildly wrong if only the time for the coding is considered. Ensure the definition of done is baked into every deliverable from the start: code is developed, manually tested, automated tests written, documentation updated, deployed to production, and in front of the user.
 
 ## 11. Unplanned
 
