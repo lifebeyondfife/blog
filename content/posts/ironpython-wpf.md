@@ -16,7 +16,7 @@ Many developers love Python and one of the reasons given by most who do is that 
 
 ## Dislike #1: Personal Bias
 
-I found myself commuting every month or so to join an Agile Scrum team about a 1,000 miles away working on a very successful enterprise level trading platform. One developed in a place fully embracing [in-house development](http://www.lifebeyondfife.com/76-in-house.html) and all the lovely issues that creates. The most heinous crime though was the architecture. The build process was over a full Visual Studio version behind the curve, no support for adding managed code or replacing existing unmanaged code. All of that would have been bearable were it not for the central functionality being packaged as Python code wrapped in a statically compiled C++ string that is parsed at runtime by a Python interpreter _built into_ the product. It's not enough to use popular technologies, use them how they are meant to be used! Based on this being how I was introduced to Python I suspect I have a personal and irrational bias against Python through no fault of the language itself.
+I found myself commuting every month or so to join an Agile Scrum team about a 1,000 miles away working on a very successful enterprise level trading platform. One developed in a place fully embracing [in-house development](http://lifebeyondfife.com/76-in-house.html) and all the lovely issues that creates. The most heinous crime though was the architecture. The build process was over a full Visual Studio version behind the curve, no support for adding managed code or replacing existing unmanaged code. All of that would have been bearable were it not for the central functionality being packaged as Python code wrapped in a statically compiled C++ string that is parsed at runtime by a Python interpreter _built into_ the product. It's not enough to use popular technologies, use them how they are meant to be used! Based on this being how I was introduced to Python I suspect I have a personal and irrational bias against Python through no fault of the language itself.
 
 ## Dislike #2: Dynamic Typing
 
@@ -40,7 +40,7 @@ Despite how easy it would probably have been to knock up a quick WinForms or Con
 
 ## Celsius / Fahrenheit Converter
 
-My favourite graphical user interface Hello World equivalent. Create a simple GUI with two text boxes and two labels. Every keystroke in either text box updates the converted value in the other. I started by designing this simple layout in XAML and even borrowed some gradient brushes from my [D-Lighted](http://www.lifebeyondfife.com/77-d-lighted.html) application. Were it not for the IronPython icon in the top left it would look like any other WPF application.
+My favourite graphical user interface Hello World equivalent. Create a simple GUI with two text boxes and two labels. Every keystroke in either text box updates the converted value in the other. I started by designing this simple layout in XAML and even borrowed some gradient brushes from my [D-Lighted](http://lifebeyondfife.com/77-d-lighted.html) application. Were it not for the IronPython icon in the top left it would look like any other WPF application.
 
 ![](/images/celsius_converter.png)
 

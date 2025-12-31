@@ -129,7 +129,7 @@ Hang on though. Part of the reason the code snippet was manufactured in this way
 
  
 
-I'll now discuss some more issues I encountered from modifying my most recent software project with a UI, [D-Lighted](http://www.lifebeyondfife.com/77-d-lighted.html), to take advantage of the new functionality. Here is a function in the WPF View's code behind that has been modified to be asynchronous.
+I'll now discuss some more issues I encountered from modifying my most recent software project with a UI, [D-Lighted](http://lifebeyondfife.com/77-d-lighted.html), to take advantage of the new functionality. Here is a function in the WPF View's code behind that has been modified to be asynchronous.
 
  
 ```
@@ -216,4 +216,4 @@ This is the fundamental point about UI design and creating applications responsi
 ```
  
 
-A static object was created to make sure that only one instruction was passed to the model at a time. A bit brutal for some systems but for a single user application where you can only look at one table at a time, locking non-UI threads creates a predictable and safe workflow. I've updated the [D-Lighted](http://www.lifebeyondfife.com/77-d-lighted.html) sourcecode and installer ready for your perusal. As much as I have complained about the issues with the async / await functionality, I still found it quite neat and a welcome improvement over managing threads and call-backs. If you're feeling keen, there are a series of [asynchronous video tutorials](http://msdn.microsoft.com/en-gb/hh378091) available.
+A static object was created to make sure that only one instruction was passed to the model at a time. A bit brutal for some systems but for a single user application where you can only look at one table at a time, locking non-UI threads creates a predictable and safe workflow. I've updated the [D-Lighted](http://lifebeyondfife.com/77-d-lighted.html) sourcecode and installer ready for your perusal. As much as I have complained about the issues with the async / await functionality, I still found it quite neat and a welcome improvement over managing threads and call-backs. If you're feeling keen, there are a series of [asynchronous video tutorials](http://msdn.microsoft.com/en-gb/hh378091) available.
