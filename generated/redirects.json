@@ -1,114 +1,114 @@
 [
   {
     "legacySlug": "plain-english1",
-    "canonicalUrl": "https://lifebeyondfife.com/compsci/plain-english/"
+    "newSlug": "plain-english"
   },
   {
     "legacySlug": "fantasy-football",
-    "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2013-14/"
+    "newSlug": "fantasy-football-2013-14"
   },
   {
     "legacySlug": "98-whats-new-music-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/whats-new-music/"
+    "newSlug": "whats-new-music"
   },
   {
     "legacySlug": "97-web-developer-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/web-developer/"
+    "newSlug": "web-developer"
   },
   {
     "legacySlug": "96-failure-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/failure/"
+    "newSlug": "failure"
   },
   {
     "legacySlug": "95-fantasy2-html",
-    "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2012-13/"
+    "newSlug": "fantasy-football-2012-13"
   },
   {
     "legacySlug": "93-prism-html",
-    "canonicalUrl": "https://lifebeyondfife.com/coding/prism/"
+    "newSlug": "prism"
   },
   {
     "legacySlug": "92-barrier-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/barrier/"
+    "newSlug": "barrier"
   },
   {
     "legacySlug": "91-mojo-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/mojo/"
+    "newSlug": "mojo"
   },
   {
     "legacySlug": "90-new-music-part-one-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/new-music-part-one/"
+    "newSlug": "new-music-part-one"
   },
   {
     "legacySlug": "89-man-at-work-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/man-at-work/"
+    "newSlug": "man-at-work"
   },
   {
     "legacySlug": "88-restful-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/restful/"
+    "newSlug": "restful"
   },
   {
     "legacySlug": "87-beauty-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/beauty/"
+    "newSlug": "beauty"
   },
   {
     "legacySlug": "85-university-challenge-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/university-challenge/"
+    "newSlug": "university-challenge"
   },
   {
     "legacySlug": "84-remote-dev-teams-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/remote-dev-teams/"
+    "newSlug": "remote-dev-teams"
   },
   {
     "legacySlug": "83-e-to-the-pi-or-pi-to-the-e-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/e-to-the-pi-or-pi-to-the-e/"
+    "newSlug": "e-to-the-pi-or-pi-to-the-e"
   },
   {
     "legacySlug": "82-f-sharp-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/f-sharp/"
+    "newSlug": "f-sharp"
   },
   {
     "legacySlug": "81-real-games-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/real-games/"
+    "newSlug": "real-games"
   },
   {
     "legacySlug": "80-async-await-html",
-    "canonicalUrl": "https://lifebeyondfife.com/coding/async-await/"
+    "newSlug": "async-await"
   },
   {
     "legacySlug": "79-ironpython-wpf-html",
-    "canonicalUrl": "https://lifebeyondfife.com/coding/ironpython-wpf/"
+    "newSlug": "ironpython-wpf"
   },
   {
     "legacySlug": "78-amdahls-law-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/amdahls-law/"
+    "newSlug": "amdahls-law"
   },
   {
     "legacySlug": "77-d-lighted-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/d-lighted/"
+    "newSlug": "d-lighted"
   },
   {
     "legacySlug": "76-in-house-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/in-house/"
+    "newSlug": "in-house"
   },
   {
     "legacySlug": "75-agile-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/agile/"
+    "newSlug": "agile"
   },
   {
     "legacySlug": "74-fantasy-football-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/fantasy-football-2011-12/"
+    "newSlug": "fantasy-football-2011-12"
   },
   {
     "legacySlug": "73-exhell-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/exhell/"
+    "newSlug": "exhell"
   },
   {
     "legacySlug": "72-brown-field-html",
-    "canonicalUrl": "https://lifebeyondfife.com/essays/brown-field/"
+    "newSlug": "brown-field"
   },
   {
     "legacySlug": "70-sabbatical-html",
-    "canonicalUrl": "https://lifebeyondfife.com/follies/sabbatical/"
+    "newSlug": "sabbatical"
   }
 ]

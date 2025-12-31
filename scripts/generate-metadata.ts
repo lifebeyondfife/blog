@@ -156,7 +156,7 @@ function generateRedirects(posts: PostMeta[]): RedirectEntry[] {
   const redirects: RedirectEntry[] = [];
 
   for (const post of posts) {
-    const canonicalUrl = `${SITE_CONFIG.siteUrl}/${post.category}/${post.slug}/`;
+    const newSlug = `${post.slug}`;
     
     const postFile = fs.readFileSync(
       path.join(CONTENT_DIR, `${post.slug}.md`),
@@ -167,7 +167,7 @@ function generateRedirects(posts: PostMeta[]): RedirectEntry[] {
     if (data.legacySlug) {
       redirects.push({
         legacySlug: data.legacySlug,
-        canonicalUrl,
+        newSlug,
       });
     }
   }

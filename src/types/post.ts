@@ -42,7 +42,7 @@ export interface CategoriesIndex {
 
 export interface RedirectEntry {
   legacySlug: string;
-  canonicalUrl: string;
+  newSlug: string;
 }
 
 export interface TableOfContentsItem {
