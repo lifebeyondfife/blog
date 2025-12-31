@@ -157,7 +157,8 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        location: { value: legacyRedirects[uri] }
+        location: { value: legacyRedirects[uri] },
+        'cache-control': { value: 'max-age=31536000' }
       }
     };
   }
@@ -168,7 +169,8 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        location: { value: '/posts/page/' + paginationMatch[1] }
+        location: { value: '/posts/page/' + paginationMatch[1] },
+        'cache-control': { value: 'max-age=31536000' }
       }
     };
   }
@@ -179,7 +181,8 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        location: { value: siteUrl + '/' + slugToCategory[slug] + '/' + slug + '/' }
+        location: { value: siteUrl + '/' + slugToCategory[slug] + '/' + slug + '/' },
+        'cache-control': { value: 'max-age=31536000' }
       }
     };
   }
