@@ -12,7 +12,7 @@ featuredImage: "/images/templates.png"
 legacySlug: "88-restful-html"
 ---
 
-This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat hunting in Edinburgh from my base back in Fife (thanks Mum & Dad ;) with most of my stuff, half of my CDs and most importantly my [guitar](http://www.lifebeyondfife.com/images/restful/preciousss.jpg) back in Cambridge \*sigh\* No matter, I press on with a mini project for a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) web service using ASP.Net and WCF.
+This is an amusing play-on-words type of blog post as I can't remember the last time I had a restful weekend. I'm simultaneously job hunting and flat hunting in Edinburgh from my base back in Fife (thanks Mum & Dad ;) with most of my stuff, half of my CDs and most importantly my [guitar](http://lifebeyondfife.com/images/restful/preciousss.jpg) back in Cambridge \*sigh\* No matter, I press on with a mini project for a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) web service using ASP.Net and WCF.
 
 A couple of weeks back I tweeted the following:
 

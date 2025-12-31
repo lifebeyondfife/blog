@@ -4,7 +4,7 @@ date: "2019-06-23"
 category: "fitness"
 ---
 
-This is the first in a long [series of posts about fitness](https://www.lifebeyondfife.com/fitness). By the end you will be better prepared than ever before to attack your personal path to fitness. But before we begin, let's tackle the elephant in the room: why the hell are you taking fitness tips, from a middle-aged, technology office worker!?
+This is the first in a long [series of posts about fitness](https://lifebeyondfife.com/fitness). By the end you will be better prepared than ever before to attack your personal path to fitness. But before we begin, let's tackle the elephant in the room: why the hell are you taking fitness tips, from a middle-aged, technology office worker!?
 
   
 

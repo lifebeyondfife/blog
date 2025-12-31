@@ -23,7 +23,7 @@ D-Lighted is a free, open-source Windows database tool that allows users to conn
 
 As anyone who has worked on a large software project will attest, databases can be complicated beasts with accompanying behemoth tools for managing them. Mostly with good cause as a good setup for one application or web-service may have completely different requirements to another. However, it's quite often the case that different projects will require different database platforms entirely. And though SQL Server Management Studio, for example, is essential for configuring the throttling rate or the maximum number of simultaneous connections, 95% of the time its users just want to examine the data it holds and possibly edit a troublesome field.
 
-With this in mind I updated a stripped down version of some [in-house development](http://www.lifebeyondfife.com/76-in-house.html) from some years back with a new WPF interface using the [M-V-VM](http://msdn.microsoft.com/en-us/magazine/dd419663.aspx) design pattern.
+With this in mind I updated a stripped down version of some [in-house development](http://lifebeyondfife.com/76-in-house.html) from some years back with a new WPF interface using the [M-V-VM](http://msdn.microsoft.com/en-us/magazine/dd419663.aspx) design pattern.
 
 ![](/images/players.png)
 
