@@ -158,6 +158,11 @@ function generateRedirects(posts: PostMeta[]): RedirectEntry[] {
   for (const post of posts) {
     const canonicalUrl = `${SITE_CONFIG.siteUrl}/${post.category}/${post.slug}/`;
     
+    redirects.push({
+      legacySlug: post.slug,
+      canonicalUrl,
+    });
+    
     const postFile = fs.readFileSync(
       path.join(CONTENT_DIR, `${post.slug}.md`),
       'utf-8'
