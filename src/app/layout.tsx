@@ -5,6 +5,7 @@ import "katex/dist/katex.min.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SITE_CONFIG, SEO_CONFIG } from "@/lib/constants";
+import Script from "next/script";
 
 const raleway = Raleway({ 
   subsets: ["latin"],
@@ -44,6 +45,11 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <Script
+          src="//gc.zgo.at/count.js"
+          data-goatcounter="https://lifebeyondfife.goatcounter.com/count"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
