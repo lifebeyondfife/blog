@@ -1,111 +1,567 @@
 [
   {
+    "legacySlug": "i-have-a-book-for-that",
+    "canonicalUrl": "https://lifebeyondfife.com/management/i-have-a-book-for-that/"
+  },
+  {
+    "legacySlug": "defend-your-codebase-against-ai-comments",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/defend-your-codebase-against-ai-comments/"
+  },
+  {
+    "legacySlug": "the-slow-path-to-everything",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/the-slow-path-to-everything/"
+  },
+  {
+    "legacySlug": "the-deployment-constraint-speed-safety-and-automation",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/the-deployment-constraint-speed-safety-and-automation/"
+  },
+  {
+    "legacySlug": "why-5-whys-isnt-enough",
+    "canonicalUrl": "https://lifebeyondfife.com/management/why-5-whys-isnt-enough/"
+  },
+  {
+    "legacySlug": "convincing-or-instructing",
+    "canonicalUrl": "https://lifebeyondfife.com/management/convincing-or-instructing/"
+  },
+  {
+    "legacySlug": "managing-expectations",
+    "canonicalUrl": "https://lifebeyondfife.com/management/managing-expectations/"
+  },
+  {
+    "legacySlug": "stop-saying-tech-debt",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/stop-saying-tech-debt/"
+  },
+  {
+    "legacySlug": "what-are-your-engineering-culture-values",
+    "canonicalUrl": "https://lifebeyondfife.com/management/what-are-your-engineering-culture-values/"
+  },
+  {
+    "legacySlug": "hiring-advice-for-bootcamp-graduates",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/hiring-advice-for-bootcamp-graduates/"
+  },
+  {
+    "legacySlug": "manager-readme-2021",
+    "canonicalUrl": "https://lifebeyondfife.com/management/manager-readme-2021/"
+  },
+  {
+    "legacySlug": "corporate-values-as-memes",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/corporate-values-as-memes/"
+  },
+  {
+    "legacySlug": "ready-to-start",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/ready-to-start/"
+  },
+  {
+    "legacySlug": "plateau",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/plateau/"
+  },
+  {
+    "legacySlug": "move-outwards-from-the-core",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/move-outwards-from-the-core/"
+  },
+  {
+    "legacySlug": "warming-up-and-down",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/warming-up-and-down/"
+  },
+  {
+    "legacySlug": "ratio-of-lifts",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/ratio-of-lifts/"
+  },
+  {
+    "legacySlug": "basis-of-strength",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/basis-of-strength/"
+  },
+  {
+    "legacySlug": "technique-is-key",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/technique-is-key/"
+  },
+  {
+    "legacySlug": "compound-lifts",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/compound-lifts/"
+  },
+  {
+    "legacySlug": "why-getting-strong-is-hard-part-iii",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/why-getting-strong-is-hard-part-iii/"
+  },
+  {
+    "legacySlug": "why-getting-strong-is-hard-part-ii",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/why-getting-strong-is-hard-part-ii/"
+  },
+  {
+    "legacySlug": "why-getting-strong-is-hard-part-i",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/why-getting-strong-is-hard-part-i/"
+  },
+  {
+    "legacySlug": "food",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/food/"
+  },
+  {
+    "legacySlug": "get-strong-first",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/get-strong-first/"
+  },
+  {
+    "legacySlug": "preparation-for-training",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/preparation-for-training/"
+  },
+  {
+    "legacySlug": "increase-calories",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/increase-calories/"
+  },
+  {
+    "legacySlug": "the-body-as-an-engine",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/the-body-as-an-engine/"
+  },
+  {
+    "legacySlug": "fitness-types",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/fitness-types/"
+  },
+  {
+    "legacySlug": "systems-not-goals",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/systems-not-goals/"
+  },
+  {
+    "legacySlug": "body-image",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/body-image/"
+  },
+  {
+    "legacySlug": "motivation",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/motivation/"
+  },
+  {
+    "legacySlug": "stress",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/stress/"
+  },
+  {
+    "legacySlug": "training",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/training/"
+  },
+  {
+    "legacySlug": "measure-the-right-thing",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/measure-the-right-thing/"
+  },
+  {
+    "legacySlug": "question-everything",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/question-everything/"
+  },
+  {
+    "legacySlug": "sacrifice-and-results",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/sacrifice-and-results/"
+  },
+  {
+    "legacySlug": "change-for-life",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/change-for-life/"
+  },
+  {
+    "legacySlug": "snake-oil",
+    "canonicalUrl": "https://lifebeyondfife.com/fitness/snake-oil/"
+  },
+  {
+    "legacySlug": "manager-readme",
+    "canonicalUrl": "https://lifebeyondfife.com/management/manager-readme/"
+  },
+  {
+    "legacySlug": "are-you-joining-a-good-engineering-team",
+    "canonicalUrl": "https://lifebeyondfife.com/management/are-you-joining-a-good-engineering-team/"
+  },
+  {
+    "legacySlug": "how-much-coding-should-a-manager-do",
+    "canonicalUrl": "https://lifebeyondfife.com/management/how-much-coding-should-a-manager-do/"
+  },
+  {
+    "legacySlug": "are-you-happy",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/are-you-happy/"
+  },
+  {
+    "legacySlug": "how-i-became-a-data-scientist",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/how-i-became-a-data-scientist/"
+  },
+  {
+    "legacySlug": "insurance-against-leftpad-level-events",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/insurance-against-leftpad-level-events/"
+  },
+  {
+    "legacySlug": "breaking-into-web-development",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/breaking-into-web-development/"
+  },
+  {
+    "legacySlug": "caveats",
+    "canonicalUrl": "https://lifebeyondfife.com/git/caveats/"
+  },
+  {
+    "legacySlug": "conclusion",
+    "canonicalUrl": "https://lifebeyondfife.com/git/conclusion/"
+  },
+  {
+    "legacySlug": "the-inner-cycle",
+    "canonicalUrl": "https://lifebeyondfife.com/git/the-inner-cycle/"
+  },
+  {
+    "legacySlug": "the-middle-cycle",
+    "canonicalUrl": "https://lifebeyondfife.com/git/the-middle-cycle/"
+  },
+  {
+    "legacySlug": "the-outer-cycle",
+    "canonicalUrl": "https://lifebeyondfife.com/git/the-outer-cycle/"
+  },
+  {
+    "legacySlug": "setup-the-origin-repo",
+    "canonicalUrl": "https://lifebeyondfife.com/git/setup-the-origin-repo/"
+  },
+  {
+    "legacySlug": "cycles-the-introduction",
+    "canonicalUrl": "https://lifebeyondfife.com/git/cycles-the-introduction/"
+  },
+  {
+    "legacySlug": "never-ever-push-to-master",
+    "canonicalUrl": "https://lifebeyondfife.com/git/never-ever-push-to-master/"
+  },
+  {
+    "legacySlug": "branch-off-commit-and-merge-back",
+    "canonicalUrl": "https://lifebeyondfife.com/git/branch-off-commit-and-merge-back/"
+  },
+  {
+    "legacySlug": "status-and-diff-and-log",
+    "canonicalUrl": "https://lifebeyondfife.com/git/status-and-diff-and-log/"
+  },
+  {
+    "legacySlug": "add-and-remove-checkout-and-reset",
+    "canonicalUrl": "https://lifebeyondfife.com/git/add-and-remove-checkout-and-reset/"
+  },
+  {
+    "legacySlug": "checkout-this-branch",
+    "canonicalUrl": "https://lifebeyondfife.com/git/checkout-this-branch/"
+  },
+  {
+    "legacySlug": "push-and-pull",
+    "canonicalUrl": "https://lifebeyondfife.com/git/push-and-pull/"
+  },
+  {
+    "legacySlug": "init-clone-and-origin",
+    "canonicalUrl": "https://lifebeyondfife.com/git/init-clone-and-origin/"
+  },
+  {
+    "legacySlug": "end-to-big-bang-commits",
+    "canonicalUrl": "https://lifebeyondfife.com/git/end-to-big-bang-commits/"
+  },
+  {
+    "legacySlug": "backup-as-often-as-you-like",
+    "canonicalUrl": "https://lifebeyondfife.com/git/backup-as-often-as-you-like/"
+  },
+  {
+    "legacySlug": "work-on-multiple-changes-concurrently",
+    "canonicalUrl": "https://lifebeyondfife.com/git/work-on-multiple-changes-concurrently/"
+  },
+  {
+    "legacySlug": "power-of-the-server-in-your-client",
+    "canonicalUrl": "https://lifebeyondfife.com/git/power-of-the-server-in-your-client/"
+  },
+  {
+    "legacySlug": "for-those-not-yet-using-git",
+    "canonicalUrl": "https://lifebeyondfife.com/git/for-those-not-yet-using-git/"
+  },
+  {
+    "legacySlug": "higher-order-functions",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/higher-order-functions/"
+  },
+  {
+    "legacySlug": "a-git-workflow-for-beginners",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/a-git-workflow-for-beginners/"
+  },
+  {
+    "legacySlug": "fantasy-football-2014-15",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2014-15/"
+  },
+  {
+    "legacySlug": "converting-xml-to-json",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/converting-xml-to-json/"
+  },
+  {
+    "legacySlug": "before-you-learn-to-program",
+    "canonicalUrl": "https://lifebeyondfife.com/compsci/before-you-learn-to-program/"
+  },
+  {
+    "legacySlug": "death-by-a-million-cuts",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/death-by-a-million-cuts/"
+  },
+  {
+    "legacySlug": "converting-bases",
+    "canonicalUrl": "https://lifebeyondfife.com/compsci/converting-bases/"
+  },
+  {
+    "legacySlug": "how-not-to-do-a-hackathon",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/how-not-to-do-a-hackathon/"
+  },
+  {
+    "legacySlug": "the-10-types-of-people",
+    "canonicalUrl": "https://lifebeyondfife.com/compsci/the-10-types-of-people/"
+  },
+  {
+    "legacySlug": "counting",
+    "canonicalUrl": "https://lifebeyondfife.com/compsci/counting/"
+  },
+  {
+    "legacySlug": "helping",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/helping/"
+  },
+  {
+    "legacySlug": "plain-english",
+    "canonicalUrl": "https://lifebeyondfife.com/compsci/plain-english/"
+  },
+  {
     "legacySlug": "plain-english1",
     "canonicalUrl": "https://lifebeyondfife.com/compsci/plain-english/"
+  },
+  {
+    "legacySlug": "fantasy-football-2013-14",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2013-14/"
   },
   {
     "legacySlug": "fantasy-football",
     "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2013-14/"
   },
   {
+    "legacySlug": "the-future-of-education",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/the-future-of-education/"
+  },
+  {
+    "legacySlug": "expert-or-generalist",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/expert-or-generalist/"
+  },
+  {
+    "legacySlug": "curiosity-killed-the-productivity",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/curiosity-killed-the-productivity/"
+  },
+  {
+    "legacySlug": "designing-your-wedding-ring-with-13-year-old-code",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/designing-your-wedding-ring-with-13-year-old-code/"
+  },
+  {
+    "legacySlug": "xml-serialisation",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/xml-serialisation/"
+  },
+  {
+    "legacySlug": "idea-a-day",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/idea-a-day/"
+  },
+  {
+    "legacySlug": "the-difference-between-mean-and-median",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/the-difference-between-mean-and-median/"
+  },
+  {
+    "legacySlug": "from-idea-to-launch-a-website-dissection",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/from-idea-to-launch-a-website-dissection/"
+  },
+  {
+    "legacySlug": "whats-new-music",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/whats-new-music/"
+  },
+  {
     "legacySlug": "98-whats-new-music-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/whats-new-music/"
+  },
+  {
+    "legacySlug": "web-developer",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/web-developer/"
   },
   {
     "legacySlug": "97-web-developer-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/web-developer/"
   },
   {
+    "legacySlug": "failure",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/failure/"
+  },
+  {
     "legacySlug": "96-failure-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/failure/"
+  },
+  {
+    "legacySlug": "fantasy-football-2012-13",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2012-13/"
   },
   {
     "legacySlug": "95-fantasy2-html",
     "canonicalUrl": "https://lifebeyondfife.com/coding/fantasy-football-2012-13/"
   },
   {
+    "legacySlug": "one-year-in",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/one-year-in/"
+  },
+  {
+    "legacySlug": "prism",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/prism/"
+  },
+  {
     "legacySlug": "93-prism-html",
     "canonicalUrl": "https://lifebeyondfife.com/coding/prism/"
+  },
+  {
+    "legacySlug": "barrier",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/barrier/"
   },
   {
     "legacySlug": "92-barrier-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/barrier/"
   },
   {
+    "legacySlug": "mojo",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/mojo/"
+  },
+  {
     "legacySlug": "91-mojo-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/mojo/"
+  },
+  {
+    "legacySlug": "new-music-part-one",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/new-music-part-one/"
   },
   {
     "legacySlug": "90-new-music-part-one-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/new-music-part-one/"
   },
   {
+    "legacySlug": "man-at-work",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/man-at-work/"
+  },
+  {
     "legacySlug": "89-man-at-work-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/man-at-work/"
+  },
+  {
+    "legacySlug": "restful",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/restful/"
   },
   {
     "legacySlug": "88-restful-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/restful/"
   },
   {
+    "legacySlug": "beauty",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/beauty/"
+  },
+  {
     "legacySlug": "87-beauty-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/beauty/"
+  },
+  {
+    "legacySlug": "banking-isnt-evil",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/banking-isnt-evil/"
+  },
+  {
+    "legacySlug": "university-challenge",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/university-challenge/"
   },
   {
     "legacySlug": "85-university-challenge-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/university-challenge/"
   },
   {
+    "legacySlug": "remote-dev-teams",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/remote-dev-teams/"
+  },
+  {
     "legacySlug": "84-remote-dev-teams-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/remote-dev-teams/"
+  },
+  {
+    "legacySlug": "e-to-the-pi-or-pi-to-the-e",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/e-to-the-pi-or-pi-to-the-e/"
   },
   {
     "legacySlug": "83-e-to-the-pi-or-pi-to-the-e-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/e-to-the-pi-or-pi-to-the-e/"
   },
   {
+    "legacySlug": "f-sharp",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/f-sharp/"
+  },
+  {
     "legacySlug": "82-f-sharp-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/f-sharp/"
+  },
+  {
+    "legacySlug": "real-games",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/real-games/"
   },
   {
     "legacySlug": "81-real-games-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/real-games/"
   },
   {
+    "legacySlug": "async-await",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/async-await/"
+  },
+  {
     "legacySlug": "80-async-await-html",
     "canonicalUrl": "https://lifebeyondfife.com/coding/async-await/"
+  },
+  {
+    "legacySlug": "ironpython-wpf",
+    "canonicalUrl": "https://lifebeyondfife.com/coding/ironpython-wpf/"
   },
   {
     "legacySlug": "79-ironpython-wpf-html",
     "canonicalUrl": "https://lifebeyondfife.com/coding/ironpython-wpf/"
   },
   {
+    "legacySlug": "amdahls-law",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/amdahls-law/"
+  },
+  {
     "legacySlug": "78-amdahls-law-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/amdahls-law/"
+  },
+  {
+    "legacySlug": "d-lighted",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/d-lighted/"
   },
   {
     "legacySlug": "77-d-lighted-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/d-lighted/"
   },
   {
+    "legacySlug": "in-house",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/in-house/"
+  },
+  {
     "legacySlug": "76-in-house-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/in-house/"
+  },
+  {
+    "legacySlug": "agile",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/agile/"
   },
   {
     "legacySlug": "75-agile-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/agile/"
   },
   {
+    "legacySlug": "fantasy-football-2011-12",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/fantasy-football-2011-12/"
+  },
+  {
     "legacySlug": "74-fantasy-football-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/fantasy-football-2011-12/"
+  },
+  {
+    "legacySlug": "exhell",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/exhell/"
   },
   {
     "legacySlug": "73-exhell-html",
     "canonicalUrl": "https://lifebeyondfife.com/follies/exhell/"
   },
   {
+    "legacySlug": "brown-field",
+    "canonicalUrl": "https://lifebeyondfife.com/essays/brown-field/"
+  },
+  {
     "legacySlug": "72-brown-field-html",
     "canonicalUrl": "https://lifebeyondfife.com/essays/brown-field/"
+  },
+  {
+    "legacySlug": "sabbatical",
+    "canonicalUrl": "https://lifebeyondfife.com/follies/sabbatical/"
   },
   {
     "legacySlug": "70-sabbatical-html",
