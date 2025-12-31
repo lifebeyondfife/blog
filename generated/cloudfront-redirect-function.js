@@ -1,34 +1,34 @@
 var siteUrl = 'https://lifebeyondfife.com';
 
 var legacyRedirects = {
-  "/plain-english1": "https://lifebeyondfife.com/compsci/plain-english/",
-  "/fantasy-football": "https://lifebeyondfife.com/coding/fantasy-football-2013-14/",
-  "/98-whats-new-music-html": "https://lifebeyondfife.com/follies/whats-new-music/",
-  "/97-web-developer-html": "https://lifebeyondfife.com/essays/web-developer/",
-  "/96-failure-html": "https://lifebeyondfife.com/essays/failure/",
-  "/95-fantasy2-html": "https://lifebeyondfife.com/coding/fantasy-football-2012-13/",
-  "/93-prism-html": "https://lifebeyondfife.com/coding/prism/",
-  "/92-barrier-html": "https://lifebeyondfife.com/essays/barrier/",
-  "/91-mojo-html": "https://lifebeyondfife.com/essays/mojo/",
-  "/90-new-music-part-one-html": "https://lifebeyondfife.com/follies/new-music-part-one/",
-  "/89-man-at-work-html": "https://lifebeyondfife.com/follies/man-at-work/",
-  "/88-restful-html": "https://lifebeyondfife.com/follies/restful/",
-  "/87-beauty-html": "https://lifebeyondfife.com/follies/beauty/",
-  "/85-university-challenge-html": "https://lifebeyondfife.com/follies/university-challenge/",
-  "/84-remote-dev-teams-html": "https://lifebeyondfife.com/essays/remote-dev-teams/",
-  "/83-e-to-the-pi-or-pi-to-the-e-html": "https://lifebeyondfife.com/follies/e-to-the-pi-or-pi-to-the-e/",
-  "/82-f-sharp-html": "https://lifebeyondfife.com/follies/f-sharp/",
-  "/81-real-games-html": "https://lifebeyondfife.com/follies/real-games/",
-  "/80-async-await-html": "https://lifebeyondfife.com/coding/async-await/",
-  "/79-ironpython-wpf-html": "https://lifebeyondfife.com/coding/ironpython-wpf/",
-  "/78-amdahls-law-html": "https://lifebeyondfife.com/essays/amdahls-law/",
-  "/77-d-lighted-html": "https://lifebeyondfife.com/follies/d-lighted/",
-  "/76-in-house-html": "https://lifebeyondfife.com/essays/in-house/",
-  "/75-agile-html": "https://lifebeyondfife.com/essays/agile/",
-  "/74-fantasy-football-html": "https://lifebeyondfife.com/follies/fantasy-football-2011-12/",
-  "/73-exhell-html": "https://lifebeyondfife.com/follies/exhell/",
-  "/72-brown-field-html": "https://lifebeyondfife.com/essays/brown-field/",
-  "/70-sabbatical-html": "https://lifebeyondfife.com/follies/sabbatical/"
+  "/plain-english1": "plain-english",
+  "/fantasy-football": "fantasy-football-2013-14",
+  "/98-whats-new-music-html": "whats-new-music",
+  "/97-web-developer-html": "web-developer",
+  "/96-failure-html": "failure",
+  "/95-fantasy2-html": "fantasy-football-2012-13",
+  "/93-prism-html": "prism",
+  "/92-barrier-html": "barrier",
+  "/91-mojo-html": "mojo",
+  "/90-new-music-part-one-html": "new-music-part-one",
+  "/89-man-at-work-html": "man-at-work",
+  "/88-restful-html": "restful",
+  "/87-beauty-html": "beauty",
+  "/85-university-challenge-html": "university-challenge",
+  "/84-remote-dev-teams-html": "remote-dev-teams",
+  "/83-e-to-the-pi-or-pi-to-the-e-html": "e-to-the-pi-or-pi-to-the-e",
+  "/82-f-sharp-html": "f-sharp",
+  "/81-real-games-html": "real-games",
+  "/80-async-await-html": "async-await",
+  "/79-ironpython-wpf-html": "ironpython-wpf",
+  "/78-amdahls-law-html": "amdahls-law",
+  "/77-d-lighted-html": "d-lighted",
+  "/76-in-house-html": "in-house",
+  "/75-agile-html": "agile",
+  "/74-fantasy-football-html": "fantasy-football-2011-12",
+  "/73-exhell-html": "exhell",
+  "/72-brown-field-html": "brown-field",
+  "/70-sabbatical-html": "sabbatical"
 };
 
 var slugToCategory = {
@@ -157,7 +157,7 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        'location': { value: legacyRedirects[uri] },
+        'location': { value: siteUrl + '/' + slugToCategory[uri] + '/' + legacyRedirects[uri] + '/' },
         'cache-control': { value: 'max-age=31536000' }
       }
     };

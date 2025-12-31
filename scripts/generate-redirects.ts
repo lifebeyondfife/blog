@@ -46,7 +46,7 @@ function buildLegacyRedirects(entries: RedirectEntry[]): LegacyRedirects {
 
   for (const entry of entries) {
     const normalizedPath = `/${entry.legacySlug}`;
-    legacyRedirects[normalizedPath] = entry.canonicalUrl;
+    legacyRedirects[normalizedPath] = entry.newSlug;
   }
 
   console.log(`Built legacy redirects map with ${Object.keys(legacyRedirects).length} entries`);
@@ -89,7 +89,7 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        'location': { value: legacyRedirects[uri] },
+        'location': { value: siteUrl + '/' + slugToCategory[uri] + '/' + legacyRedirects[uri] + '/' },
         'cache-control': { value: 'max-age=31536000' }
       }
     };
