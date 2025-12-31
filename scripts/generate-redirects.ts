@@ -89,7 +89,7 @@ function handler(event) {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        'location': { value: siteUrl + '/' + slugToCategory[uri] + '/' + legacyRedirects[uri] + '/' },
+        'location': { value: siteUrl + '/' + slugToCategory[legacyRedirects[uri]] + '/' + legacyRedirects[uri] + '/' },
         'cache-control': { value: 'max-age=31536000' }
       }
     };
