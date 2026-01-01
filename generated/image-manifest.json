@@ -855,6 +855,14 @@
     ],
     "isAnimated": false
   },
+  "miracle": {
+    "originalWidth": 829,
+    "originalHeight": 305,
+    "availableSizes": [
+      640
+    ],
+    "isAnimated": false
+  },
   "misunderstandings": {
     "originalWidth": 640,
     "originalHeight": 426,
