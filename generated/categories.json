@@ -37,8 +37,9 @@
     {
       "slug": "follies",
       "name": "Follies",
-      "postCount": 23,
+      "postCount": 24,
       "posts": [
+        "dystopia-or-hegemony",
         "how-i-became-a-data-scientist",
         "higher-order-functions",
         "a-git-workflow-for-beginners",
