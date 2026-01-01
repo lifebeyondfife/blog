@@ -38,6 +38,25 @@ jobs:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
 
+      - name: Update CloudFront redirect function
+        run: |
+          ETAG=$(aws cloudfront describe-function \
+            --name ${{ secrets.CLOUDFRONT_FUNCTION_NAME }} \
+            --query 'ETag' \
+            --output text)
+          
+          ETAG=$(aws cloudfront update-function \
+            --name ${{ secrets.CLOUDFRONT_FUNCTION_NAME }} \
+            --function-config Comment="Legacy URL redirects",Runtime=cloudfront-js-1.0 \
+            --function-code fileb://generated/cloudfront-redirect-function.js \
+            --if-match $ETAG \
+            --query 'ETag' \
+            --output text)
+          
+          aws cloudfront publish-function \
+            --name ${{ secrets.CLOUDFRONT_FUNCTION_NAME }} \
+            --if-match $ETAG
+
       - name: Sync build output to S3
         run: |
           aws s3 sync out/ s3://${{ secrets.S3_BUCKET_NAME }}/ --delete
