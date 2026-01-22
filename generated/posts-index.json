@@ -7,7 +7,7 @@
       "date": "2026-01-01",
       "excerpt": "I've finished rewriting my 15 year WordPress blog from the ground up as a static Next.js site. This was attempt number three, and I'm ~happy~ relieved to say this one was successful. Early in my career, my default was to over-engineer. When I started a blog in 2011, I wanted to own the entire stack myself, and despite knowing nothing about CMS tech, I wanted the most configurable solution available. I chose Drupal. After publishing 26 blog posts, I made the sensible switch to the more lightweight WordPress. Still requiring a server and database, and built on PHP (a truly...",
       "tags": [],
-      "readingTime": 17,
+      "readingTime": 18,
       "featuredImage": "/images/miracle.png"
     },
     {
