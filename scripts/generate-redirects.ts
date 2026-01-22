@@ -83,13 +83,15 @@ var slugToCategory = ${JSON.stringify(slugToCategory, null, 2)};
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
+  var n = uri.replace(/\\.html$/, '-html');
+  var target = legacyRedirects[uri] || legacyRedirects[n];
 
-  if (legacyRedirects[uri]) {
+  if (target) {
     return {
       statusCode: 301,
       statusDescription: 'Moved Permanently',
       headers: {
-        'location': { value: siteUrl + '/' + slugToCategory[legacyRedirects[uri]] + '/' + legacyRedirects[uri] + '/' },
+        'location': { value: siteUrl + '/' + slugToCategory[target] + '/' + target + '/' },
         'cache-control': { value: 'max-age=31536000' }
       }
     };
