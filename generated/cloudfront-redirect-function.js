@@ -152,8 +152,8 @@ var slugToCategory = {
 function handler(event) {
   var request = event.request;
   var uri = request.uri;
-  var n = uri.replace(/\.html$/, '-html');
-  var target = legacyRedirects[uri] || legacyRedirects[n];
+  var dotHtml = uri.replace(/\.html$/, '-html');
+  var target = legacyRedirects[uri] || legacyRedirects[dotHtml];
 
   if (target) {
     return {

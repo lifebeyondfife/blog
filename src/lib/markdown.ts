@@ -3,11 +3,13 @@ import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import remarkRehype from 'remark-rehype';
+import rehypeRaw from 'rehype-raw';
 import rehypeStringify from 'rehype-stringify';
 import rehypeSlug from 'rehype-slug';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeKatex from 'rehype-katex';
 import rehypeOptimisedImages from '@/lib/rehype-optimised-images';
+import rehypeSierpinskiWidget from '@/lib/rehype-sierpinski-widget';
 import matter from 'gray-matter';
 
 export interface Frontmatter {
@@ -38,11 +40,13 @@ export async function markdownToHtml(markdown: string): Promise<string> {
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkMath)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
+    .use(rehypeRaw)
     .use(rehypeSlug)
     .use(rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] })
     .use(rehypeKatex)
     .use(rehypeOptimisedImages)
+    .use(rehypeSierpinskiWidget)
     .use(rehypeStringify);
 
   const file = await processor.process(markdown);
