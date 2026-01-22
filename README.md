@@ -37,7 +37,8 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 │   │   ├── markdown.ts               # Markdown processing
 │   │   ├── categories.ts             # Category utilities
 │   │   ├── constants.ts              # Site configuration
-│   │   └── rehype-optimised-images.ts  # Rehype plugin for responsive images
+│   │   ├── rehype-optimised-images.ts  # Rehype plugin for responsive images
+│   │   └── rehype-sierpinski-widget.ts # Rehype plugin for Sierpinski demo
 │   └── types/
 │       ├── images.ts                 # Image manifest types
 │       └── post.ts                   # Post and category types
@@ -48,6 +49,8 @@ A static blog built with Next.js 16, deployed to AWS S3 + CloudFront.
 │   ├── images/
 │   │   ├── originals/                # Source images
 │   │   └── optimised/                # Generated responsive images
+│   ├── scripts/
+│   │   └── sierpinski.js             # Interactive Sierpinski demo
 │   └── favicon.ico
 ├── scripts/
 │   ├── generate-metadata.ts          # Create post/category indices
