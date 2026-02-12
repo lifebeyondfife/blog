@@ -37,8 +37,9 @@
     {
       "slug": "follies",
       "name": "Follies",
-      "postCount": 24,
+      "postCount": 25,
       "posts": [
+        "speedrunning-a-failed-business",
         "dystopia-or-hegemony",
         "how-i-became-a-data-scientist",
         "higher-order-functions",

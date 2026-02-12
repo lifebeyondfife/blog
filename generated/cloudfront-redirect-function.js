@@ -59,6 +59,7 @@ var slugToCategory = {
   "sacrifice-and-results": "fitness",
   "change-for-life": "fitness",
   "snake-oil": "fitness",
+  "speedrunning-a-failed-business": "follies",
   "dystopia-or-hegemony": "follies",
   "how-i-became-a-data-scientist": "follies",
   "higher-order-functions": "follies",
