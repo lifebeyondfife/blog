@@ -193,6 +193,16 @@
     ],
     "isAnimated": false
   },
+  "affiliate-report": {
+    "originalWidth": 1599,
+    "originalHeight": 552,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
   "agrades": {
     "originalWidth": 304,
     "originalHeight": 395,
@@ -892,6 +902,15 @@
     "originalHeight": 114,
     "availableSizes": [
       522
+    ],
+    "isAnimated": false
+  },
+  "newmusic": {
+    "originalWidth": 1225,
+    "originalHeight": 703,
+    "availableSizes": [
+      640,
+      960
     ],
     "isAnimated": false
   },

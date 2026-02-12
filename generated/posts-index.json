@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "speedrunning-a-failed-business",
+      "category": "follies",
+      "title": "Speedrunning A Failed Business",
+      "date": "2026-02-13",
+      "excerpt": "I've worked at two scale-ups over the last 12 years, and after two exits, I'm taking a break to work out what I want to do next. I have a list of projects that sound interesting to me, but mostly I'm staying curious and not being prescriptive about the path to take for a while. One of these impromptu projects led to me speed-running a failed business in two weeks. In the summer of 2013 I completed a Coursera MOOC called Startup Engineering. Knowing how to code, but nothing about business, I took away a key insight about how to...",
+      "tags": [],
+      "readingTime": 10,
+      "featuredImage": "/images/newmusic.png"
+    },
+    {
       "slug": "dystopia-or-hegemony",
       "category": "follies",
       "title": "Software Engineer Dystopia or Hegemony",
@@ -1254,5 +1264,5 @@
       "featuredImage": "/images/sabbatical.jpg"
     }
   ],
-  "totalPosts": 115
+  "totalPosts": 116
 }
