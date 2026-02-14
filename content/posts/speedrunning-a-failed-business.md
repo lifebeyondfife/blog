@@ -4,7 +4,7 @@ date: "2026-02-13"
 category: "follies"
 ---
 
-I've worked at two scale-ups over the last 12 years, and after two exits, I'm taking a break to work out what I want to do next. I have a list of projects that sound interesting to me, but mostly I'm staying curious and not being prescriptive about the path to take for a while. One of these impromptu projects led to me speed-running a failed business in two weeks.
+I've worked at two scale-ups over the last 12 years, and after two exits, I'm taking a break to work out what I want to do next. I have a list of projects that sound interesting to me, but mostly I'm staying curious and not being prescriptive about the path to take for a while. One of these impromptu projects led to me speedrunning a failed business in two weeks.
 
 In the summer of 2013 I completed a Coursera MOOC called Startup Engineering. Knowing how to code, but not a thing about making a business, I took away a key insight about how to build a multi-billion dollar empire: don't treat that as the end goal. The trick is, you're not trying to create a massively successful company, you're trying to invalidate a business idea. And because this is a disruptful tech startup, you're not looking to start a small business to be nutured slowly over the years; you're trying to achieve exponential growth.
 
@@ -36,7 +36,7 @@ One of the over-engineered decisions from that time 14 years ago, was full integ
     ensure compliance with our Operating Agreement. During our recent review, we found that
     the websites that you declared in your account are not accessible or not working.
 
-Normally I would have ignored this email and gone about my day, but something belligerent must have been brewing in me that day. Why not instead of ignoring the email, remake the website, much better than I did the first time round, and do it a week!? This is the beauty of being in complete control of the calendar: nothing to stop me literally giving it a go.
+Normally I would have ignored this email and gone about my day, but something belligerent must have been brewing in me. Why not instead of ignoring the email, remake the website, much better than I did the first time round, and do it a week? This is the beauty of being in complete control of the calendar: nothing to stop me literally giving it a go.
 
 Looking at the problem space with a more refined product manager hat on, I saw this app having three product problems to solve:
 
@@ -71,7 +71,7 @@ Also notable is the use of another of my existing projects, [simple-static-websi
 
 During the course of building the MVP, I uncovered a pretty big problem. First, Spotify only give API access to 25 named individuals during app development. To get out of the development stage and into production, you must be a legally registered company, and the app must have 250k monthly active users. Using Spotify could help bootstrap customer interviews, but the high MAU requirement meant it wouldn't be viable for a generally available launch. I would need another solution for specifying users' favourite artists, and finding their latest releases.
 
-For me though, it allowed for kicking some tyres. It was exciting to scroll through a list of albums from bands I liked that I'd never seen before! Two of my favourite alternative rock/metal acts from the early 2000s, Filter and Puddle of Mudd, had released albums I knew nothing about. I'm still waiting for the album by Filter to arrive, but Puddle of Mudd's paint-by-numbers atrocities made me question multiple life choices. Part of fun of buying music blind is not knowing what you're getting, but there are limits... more fool me.
+For me though, it allowed for kicking some tyres. It was exciting to scroll through a list of albums from bands I liked that I'd never seen before! Two of my favourite alternative rock/metal acts from the early 2000s, Filter and Puddle of Mudd, had released albums I knew nothing about. I'm still waiting for the album by Filter to arrive, but Puddle of Mudd's paint-by-numbers atrocities made me question multiple life choices. Part of the fun of buying music blind is not knowing what you're getting, but there are limits... more fool me.
 
 Purchasing these three CDs had a dual purpose. I could now login to my Amazon Affiliate account to validate the end-to-end flow of the app's affiliate tracking.
 
