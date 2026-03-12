@@ -7,8 +7,6 @@ category: "management"
 
 Perform an activity frequently enough, and you will start to see patterns. After being involved in the process of creating software for two decades, I’ve decided to curate a living document of the high level patterns which are most applicable for how to build and maintain software well.
 
-Before beginning, it’s crucial to make a statement which is obvious in retrospect: not all of these patterns are equally applicable to companies of differing maturity e.g. a one person startup is a vastly different animal to a 50,000 person megacorp. These observations most apply to mid-level startups, or large companies that are still growing. To borrow from Cringely’s [Commandos, Infantry, Police](https://blog.codinghorror.com/commandos-infantry-and-police/) analogy, these are mostly applicable to companies that are, or aspire to be, infantry.
-
 These are my engineering culture values, what are yours?
 
 ## 01. Tradeoff
@@ -29,7 +27,7 @@ Ship, ship, ship. No one is paid to write software, but rather solve problems fo
 
 ## 05. Automate
 
-Go slow, to go fast. This is the other side of the coin to _04 Deliver_. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/1205/). Concepts like blue/green deployments can mean literally every step after code review can be automated. This frees engineers from artifical constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
+Go slow, to go fast. This is the other side of the coin to _04 Deliver_. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/1205/). Concepts like metrics based phased rollout can mean literally every step after code review can be automated. This frees engineers from artifical constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
 
 ## 06. Data
 
@@ -37,7 +35,7 @@ Better decisions will be made with supporting data. All kinds of design, product
 
 ## 07. Blame
 
-The fault is in the system. Don’t blame a person for a mistake, fix the system. Blameless retrospectives, with root cause analysis (also known as “five whys”), is the foundation of maintaining great operational standards. Shooting the messenger is the quickest way to ensure that no one reports bad news, and encourages ongoing operational problems faced by users to be ignored.
+The fault is in the system. Don’t blame a person for a mistake, fix the system. Blameless retrospectives, with [root cause analysis](https://lifebeyondfife.com/management/why-5-whys-isnt-enough/), is the foundation of maintaining great operational standards. Shooting the messenger is the quickest way to ensure that no one reports bad news, and encourages ongoing operational problems faced by users to be ignored.
 
 ## 08. Temporary
 
@@ -61,7 +59,7 @@ Deliver the most important thing, and deliver it well. Autonomy should be the go
 
 ## 13. Opensource
 
-The open source community has led by example, showing how to build distributed software at scale. README.md documents are for strangers, not the team that works in the project day-to-day. Optimise for internal open source within your company: make README.md docs which are clear to engineers from other teams; make CONTRIBUTING.md docs which state the expectations for external merge requests.
+The open source community has led by example, showing how to build distributed software at scale. README.md documents are for strangers, not the team that works in the project day-to-day. Optimise for teams within your company to work as an "Away Team": make README.md docs which are clear to engineers from other teams; make CONTRIBUTING.md docs which state the expectations for external merge requests.
 
 ## 14. Hiring
 
@@ -69,9 +67,9 @@ Hire for weakness, hire for learning. Hiring managers and engineering interviewe
 
 ## 15. Lottery
 
-The lottery factor of a system, is the count of how many engineers understand it (assuming the engineers would instantly leave the company if they won the lottery). If you have a lottery factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the lottery factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
+The lottery factor of a heuristic to measure knowledge silos: how many engineers understand a system (assuming they'd leave instantly if they won the lottery)? If you have a lottery factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the lottery factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
 
-## 16. Duplification
+## 16. Duplication
 
 With everything being a tradeoff, one downside of autonomous teams is that they occasionally duplicate work. The best you can hope for is to be aware of it, and contain it to some degree. For a system that performs some specific service which is demonstrably valuable, it’s better to have one of them rather than two or three; however, it’s better to have two or three of them, than it is to have none.
 
@@ -82,3 +80,16 @@ Sometimes the only way to let progress and improvement happen, is to allow a con
 ## 18. Culture
 
 Culture is defined by what you let happen. If you’re aware of a pattern, process, or behaviour occurring, no matter what’s said, it is implicitly condoned. Often, suboptimal, or outright dangerous culture exists because it’s a deeply ingrained habit – those are hard, and time consuming to undo. Also, you cannot successfully unlearn multiple habits at once. Pick the most important culture change and reinforce.
+
+## 19. Burden
+
+Similar to the problem where only one person is capable of a task, is the problem where only one person ever steps up. If that individual is relied upon to make sure the important step gets done, they're not a hero, they're carrying a burden. And similar to knowledge silos, these are signals of fragility in your ability to successfully deliver.
+
+## 20. Competition
+
+Your competition is the other companies in your market. When the opportunities for career and financial growth in your company disappear, your engineers' competition becomes each other. If helping neighbours is not rewarded, collaboration dies, and the culture is eaten from the inside out.
+
+## 21. Standards
+
+Maintaining or improving standards will quickly reach a point where one individual thinks they're doing great, when they're still not hitting the bar. This leads to difficult calibration conversations. Radical candour is not, "Telling it like it is." Caring about standards requires caring about, and supporting, the individual first and foremost.
+
