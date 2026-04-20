@@ -5,7 +5,7 @@
       "category": "follies",
       "title": "Speedrunning A Failed Business",
       "date": "2026-02-13",
-      "excerpt": "I've worked at two scale-ups over the last 12 years, and after two exits, I'm taking a break to work out what I want to do next. I have a list of projects that sound interesting to me, but mostly I'm staying curious and not being prescriptive about the path to take for a while. One of these impromptu projects led to me speed-running a failed business in two weeks. In the summer of 2013 I completed a Coursera MOOC called Startup Engineering. Knowing how to code, but not a thing about making a business, I took away a key...",
+      "excerpt": "I've worked at two scale-ups over the last 12 years, and after two exits, I'm taking a break to work out what I want to do next. I have a list of projects that sound interesting to me, but mostly I'm staying curious and not being prescriptive about the path to take for a while. One of these impromptu projects led to me speedrunning a failed business in two weeks. In the summer of 2013 I completed a Coursera MOOC called Startup Engineering. Knowing how to code, but not a thing about making a business, I took away a key...",
       "tags": [],
       "readingTime": 10,
       "featuredImage": "/images/newmusic.png"
@@ -102,9 +102,9 @@
       "category": "management",
       "title": "What are your engineering culture values?",
       "date": "2022-11-20",
-      "excerpt": "Perform an activity frequently enough, and you will start to see patterns. After being involved in the process of creating software for two decades, I’ve decided to curate a living document of the high level patterns which are most applicable for how to build and maintain software well. Before beginning, it’s crucial to make a statement which is obvious in retrospect: not all of these patterns are equally applicable to companies of differing maturity e.g. a one person startup is a vastly different animal to a 50,000 person megacorp. These observations most apply to mid-level startups, or large companies that...",
+      "excerpt": "Perform an activity frequently enough, and you will start to see patterns. After being involved in the process of creating software for two decades, I’ve decided to curate a living document of the high level patterns which are most applicable for how to build and maintain software well. These are my engineering culture values, what are yours? 01. Tradeoff Everything is a tradeoff. When you make a decision, you’re choosing where you sit between two extremes. It’s a useful thought exercise to consider what those two extremes are first to calibrate your options. Many times there is no correct answer,...",
       "tags": [],
-      "readingTime": 7
+      "readingTime": 8
     },
     {
       "slug": "hiring-advice-for-bootcamp-graduates",

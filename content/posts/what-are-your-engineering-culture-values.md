@@ -27,11 +27,11 @@ Ship, ship, ship. No one is paid to write software, but rather solve problems fo
 
 ## 05. Automate
 
-Go slow, to go fast. This is the other side of the coin to _04 Deliver_. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/1205/). Concepts like metrics based phased rollout can mean literally every step after code review can be automated. This frees engineers from artifical constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
+Go slow, to go fast. This is the other side of the coin to _04 Deliver_. Because it’s so important to be relentless in the goal of shipping, automate everything that it [makes sense to](https://xkcd.com/1205/). Concepts like metrics based phased rollout can mean literally every step after code review can be automated. This frees engineers from artificial constraints of how small an incremental unit of software can be, before it’s ready to be shipped.
 
 ## 06. Data
 
-Better decisions will be made with supporting data. All kinds of design, product, and engineering questions can be bettered answered. This is why there are so many different monitoring tools: UI analytics, BI events, operational logs, APM, outside-in monitoring, A/B tests. These can support techniques like KPIs, and SLOs in an automated manner, guiding the right path for decision makers.
+Better decisions will be made with supporting data. All kinds of design, product, and engineering questions can be better answered. This is why there are so many different monitoring tools: UI analytics, BI events, operational logs, APM, outside-in monitoring, A/B tests. These can support techniques like KPIs, and SLOs in an automated manner, guiding the right path for decision makers.
 
 ## 07. Blame
 
@@ -67,7 +67,7 @@ Hire for weakness, hire for learning. Hiring managers and engineering interviewe
 
 ## 15. Lottery
 
-The lottery factor of a heuristic to measure knowledge silos: how many engineers understand a system (assuming they'd leave instantly if they won the lottery)? If you have a lottery factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the lottery factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
+The lottery factor is a heuristic to measure knowledge silos: how many engineers understand a system (assuming they'd leave instantly if they won the lottery)? If you have a lottery factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the lottery factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
 
 ## 16. Duplication
 

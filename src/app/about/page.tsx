@@ -92,7 +92,7 @@ export default function AboutPage() {
             </a>
             
             <div className="bg-cloud-grey rounded-lg p-6 border-2 border-solid border-slate-300">
-              <div data-skyscanner-widget="FlightSearchWidget" data-locale="en-GB" data-params="colour:#B4C7D8;fontColour:#3d6585;associateId:API_SSV_10880_00001" data-powered-by-logo-colour="dark" data-button-colour="lunar" data-origin-geo-lookup="true"></div>
+              <div data-skyscanner-widget="FlightSearchWidget" data-locale="en-GB" data-market="UK" data-currency="GBP" data-params="colour:#B4C7D8;fontColour:#3d6585;associateId:API_SSV_10880_00001" data-powered-by-logo-colour="dark" data-button-colour="lunar" data-origin-geo-lookup="true"></div>
               <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
             </div>
           </div>

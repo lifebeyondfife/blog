@@ -1,7 +1,10 @@
 import { visit } from 'unist-util-visit';
-import { Root, Element, Text } from 'hast';
+import { Root, Element } from 'hast';
 
 const MARKER_TEXT = 'sierpinski-widget';
+
+export const SIERPINSKI_PLACEHOLDER_ATTR = 'data-widget';
+export const SIERPINSKI_PLACEHOLDER_VALUE = 'sierpinski';
 
 function isCommentNode(node: unknown): node is { type: 'comment'; value: string } {
   return (
@@ -12,72 +15,14 @@ function isCommentNode(node: unknown): node is { type: 'comment'; value: string 
   );
 }
 
-function createCanvasElement(): Element {
-  return {
-    type: 'element',
-    tagName: 'canvas',
-    properties: {
-      id: 'myCanvas',
-      width: 640,
-      height: 570,
-      className: 'mx-auto border border-gray-300 rounded'
-    },
-    children: []
-  };
-}
-
-function createButton(onclickHandler: string, label: string): Element {
-  return {
-    type: 'element',
-    tagName: 'button',
-    properties: {
-      type: 'button',
-      onclick: onclickHandler,
-      className: 'px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors'
-    },
-    children: [{ type: 'text', value: label } as Text]
-  };
-}
-
-function createButtonContainer(): Element {
+function createPlaceholder(): Element {
   return {
     type: 'element',
     tagName: 'div',
     properties: {
-      className: 'flex flex-wrap gap-3 justify-center my-6'
+      [SIERPINSKI_PLACEHOLDER_ATTR]: SIERPINSKI_PLACEHOLDER_VALUE,
     },
-    children: [
-      createButton('additionSierpinski()', 'Adding Numbers'),
-      createButton('randomSierpinski()', 'Random Points'),
-      createButton('fractalSierpinski()', 'Fractal')
-    ]
-  };
-}
-
-function createScriptElement(): Element {
-  return {
-    type: 'element',
-    tagName: 'script',
-    properties: {
-      src: '/scripts/sierpinski.js'
-    },
-    children: []
-  };
-}
-
-function createWidgetContainer(): Element {
-  return {
-    type: 'element',
-    tagName: 'div',
-    properties: {
-      id: 'sierpinski-widget',
-      className: 'my-8'
-    },
-    children: [
-      createButtonContainer(),
-      createCanvasElement(),
-      createScriptElement()
-    ]
+    children: [],
   };
 }
 
@@ -89,8 +34,7 @@ export default function rehypeSierpinskiWidget() {
       }
 
       if (node.value.trim() === MARKER_TEXT) {
-        const widget = createWidgetContainer();
-        (parent.children as (Element | typeof node)[]).splice(index, 1, widget);
+        (parent.children as (Element | typeof node)[]).splice(index, 1, createPlaceholder());
       }
     });
   };
