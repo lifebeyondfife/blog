@@ -4,6 +4,8 @@ import Link from "next/link";
 import { getPostBySlug, generateStaticParams as getStaticParams } from "@/lib/posts";
 import PostContent from "@/components/PostContent";
 import { SITE_CONFIG } from "@/lib/constants";
+import "katex/dist/katex.min.css";
+import "./typography.css";
 
 interface PageProps {
   params: Promise<{ category: string; slug: string }>;
