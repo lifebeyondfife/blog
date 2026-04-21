@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import "katex/dist/katex.min.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SITE_CONFIG, SEO_CONFIG } from "@/lib/constants";
@@ -48,7 +47,7 @@ export default function RootLayout({
         <Script
           src="//gc.zgo.at/count.js"
           data-goatcounter="https://lifebeyondfife.goatcounter.com/count"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>

@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@plugin "@tailwindcss/typography";
-
 @theme {
   --color-ocean-blue: #4A7BA7;
   --color-ocean-dark: #3d6585;
