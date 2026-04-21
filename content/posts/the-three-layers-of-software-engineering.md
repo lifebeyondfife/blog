@@ -3,6 +3,7 @@ title: "The Three Layers of Software Engineering"
 date: "2026-04-21"
 category: "essays"
 featuredImage: "/images/pyramid-1-layers-light.png"
+standaloneSubdomain: "layers.lifebeyondfife.com"
 ---
 
 Code being written instantaneously by AI makes expertise in the craft of software engineering more valuable, not less. What a good software engineer looks like will have many subjective answers depending on who you ask. Some might want a driven finisher, some might want a meticulous bug fixer. But those aren't skills of a software engineer so much as personality traits; important ones to balance across a team.
