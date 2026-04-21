@@ -84,6 +84,7 @@ var slugToCategory = {
   "fantasy-football-2011-12": "follies",
   "exhell": "follies",
   "sabbatical": "follies",
+  "the-three-layers-of-software-engineering": "essays",
   "defend-your-codebase-against-ai-comments": "essays",
   "the-slow-path-to-everything": "essays",
   "the-deployment-constraint-speed-safety-and-automation": "essays",
