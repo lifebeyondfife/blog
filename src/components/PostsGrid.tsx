@@ -20,7 +20,7 @@ export function PostsGrid({
   if (posts.length === 0) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-600 text-lg">{emptyMessage}</p>
+        <p className="text-gray-600 dark:text-cloud-grey text-lg">{emptyMessage}</p>
       </div>
     );
   }

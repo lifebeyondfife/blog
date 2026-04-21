@@ -82,14 +82,14 @@ export const Pagination: React.FC<PaginationProps> = ({
           href={getPageUrl(currentPage - 1)}
           onClick={() => handlePageChange(currentPage - 1)}
           aria-label="Go to previous page"
-          className="px-3 py-2 rounded-md font-medium transition-colors bg-white text-gray-700 hover:bg-gray-100 border border-gray-300"
+          className="px-3 py-2 rounded-md font-medium transition-colors bg-white dark:bg-ocean-deep text-gray-700 dark:text-horizon hover:bg-gray-100 dark:hover:bg-ocean-slate border border-gray-300 dark:border-ocean-slate"
         >
           Previous
         </Link>
       ) : (
         <span
           aria-disabled="true"
-          className="px-3 py-2 rounded-md font-medium bg-gray-100 text-gray-400 cursor-not-allowed"
+          className="px-3 py-2 rounded-md font-medium bg-gray-100 dark:bg-ocean-deep/60 text-gray-400 dark:text-cloud-grey/40 cursor-not-allowed"
         >
           Previous
         </span>
@@ -101,7 +101,7 @@ export const Pagination: React.FC<PaginationProps> = ({
             return (
               <span
                 key={`ellipsis-${index}`}
-                className="px-3 py-2 text-gray-500"
+                className="px-3 py-2 text-gray-500 dark:text-cloud-grey/70"
                 aria-hidden="true"
               >
                 ...
@@ -118,7 +118,7 @@ export const Pagination: React.FC<PaginationProps> = ({
                 key={pageNumber}
                 aria-label={`Page ${pageNumber}`}
                 aria-current="page"
-                className="min-w-[40px] px-3 py-2 rounded-md font-medium bg-blue-600 text-white"
+                className="min-w-[40px] px-3 py-2 rounded-md font-medium bg-blue-600 dark:bg-sky-blue dark:text-ocean-night text-white"
               >
                 {pageNumber}
               </span>
@@ -144,14 +144,14 @@ export const Pagination: React.FC<PaginationProps> = ({
           href={getPageUrl(currentPage + 1)}
           onClick={() => handlePageChange(currentPage + 1)}
           aria-label="Go to next page"
-          className="px-3 py-2 rounded-md font-medium transition-colors bg-white text-gray-700 hover:bg-gray-100 border border-gray-300"
+          className="px-3 py-2 rounded-md font-medium transition-colors bg-white dark:bg-ocean-deep text-gray-700 dark:text-horizon hover:bg-gray-100 dark:hover:bg-ocean-slate border border-gray-300 dark:border-ocean-slate"
         >
           Next
         </Link>
       ) : (
         <span
           aria-disabled="true"
-          className="px-3 py-2 rounded-md font-medium bg-gray-100 text-gray-400 cursor-not-allowed"
+          className="px-3 py-2 rounded-md font-medium bg-gray-100 dark:bg-ocean-deep/60 text-gray-400 dark:text-cloud-grey/40 cursor-not-allowed"
         >
           Next
         </span>

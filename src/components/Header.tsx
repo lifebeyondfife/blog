@@ -3,7 +3,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 
 export function Header() {
   return (
-    <header className="bg-ocean-dark text-white shadow-lg">
+    <header className="bg-ocean-dark dark:bg-ocean-deep dark:border-b dark:border-ocean-slate text-white shadow-lg">
       <div className="container mx-auto px-4 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>

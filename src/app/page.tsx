@@ -34,7 +34,7 @@ export default function HomePage() {
             className="w-full h-full object-cover object-center"
             priority={true}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/60 via-ocean-blue/40 to-white" />
+          <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/60 via-ocean-blue/40 to-white dark:from-ocean-night/70 dark:via-ocean-deep/60 dark:to-ocean-night" />
         </div>
         <div className="relative h-full flex items-center justify-center">
           <div className="container mx-auto px-4 text-center">
@@ -44,13 +44,13 @@ export default function HomePage() {
             <div className="flex gap-4 justify-center flex-wrap">
               <Link
                 href="/posts"
-                className="inline-block bg-white text-ocean-dark px-8 py-3 rounded-lg font-medium hover:bg-cloud-grey hover:text-ocean-dark transition-colors shadow-lg"
+                className="inline-block bg-white text-ocean-dark px-8 py-3 rounded-lg font-medium hover:bg-cloud-grey hover:text-ocean-dark transition-colors shadow-lg dark:bg-ocean-slate dark:text-horizon dark:hover:bg-ocean-steel dark:hover:text-white"
               >
                 View All Posts
               </Link>
               <Link
                 href="/categories"
-                className="inline-block bg-ocean-blue/20 backdrop-blur-sm text-white border-2 border-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-ocean-blue transition-colors shadow-lg"
+                className="inline-block bg-ocean-blue/20 backdrop-blur-sm text-white border-2 border-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-ocean-blue transition-colors shadow-lg dark:border-horizon dark:hover:bg-horizon dark:hover:text-ocean-night"
               >
                 Browse Categories
               </Link>
@@ -60,7 +60,7 @@ export default function HomePage() {
       </section>
 
       <section className="container mx-auto px-4 py-16">
-        <h3 className="text-3xl font-bold text-gray-900 mb-8">Recent Posts</h3>
+        <h3 className="text-3xl font-bold text-gray-900 dark:text-horizon mb-8">Recent Posts</h3>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {recentPosts.map((post) => (
             <PostCard key={`${post.category}-${post.slug}`} post={post} />

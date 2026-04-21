@@ -276,7 +276,7 @@ export default function SierpinskiWidget() {
         ref={canvasRef}
         width={640}
         height={570}
-        className="mx-auto border border-gray-300 rounded"
+        className="mx-auto border border-gray-300 dark:border-ocean-steel rounded bg-white dark:bg-horizon"
       />
     </div>
   );

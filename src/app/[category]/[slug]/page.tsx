@@ -61,9 +61,9 @@ export default async function PostPage({ params }: PageProps) {
     <article className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
           <nav aria-label="Breadcrumb" className="mb-8 text-sm">
-            <ol className="flex items-center gap-2 text-gray-600">
+            <ol className="flex items-center gap-2 text-gray-600 dark:text-cloud-grey">
               <li>
-                <Link href="/" className="hover:text-ocean-blue transition-colors">
+                <Link href="/" className="hover:text-ocean-blue dark:hover:text-sky-blue transition-colors">
                   Home
                 </Link>
               </li>
@@ -71,24 +71,24 @@ export default async function PostPage({ params }: PageProps) {
               <li>
                 <Link
                   href={`/${post.category}`}
-                  className="hover:text-ocean-blue transition-colors capitalize"
+                  className="hover:text-ocean-blue dark:hover:text-sky-blue transition-colors capitalize"
                 >
                   {post.category}
                 </Link>
               </li>
               <li aria-hidden="true">›</li>
-              <li className="text-gray-900 font-medium" aria-current="page">
+              <li className="text-gray-900 dark:text-horizon font-medium" aria-current="page">
                 {post.title}
               </li>
             </ol>
           </nav>
 
           <header className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-horizon mb-4">
               {post.title}
             </h1>
 
-            <div className="flex items-center gap-4 text-gray-600">
+            <div className="flex items-center gap-4 text-gray-600 dark:text-cloud-grey">
               <time dateTime={post.date}>
                 {new Date(post.date).toLocaleDateString('en-GB', {
                   day: '2-digit',
@@ -105,10 +105,10 @@ export default async function PostPage({ params }: PageProps) {
 
           <PostContent html={post.content} />
 
-          <div className="mt-12 pt-8 border-t border-gray-200">
+          <div className="mt-12 pt-8 border-t border-gray-200 dark:border-ocean-slate">
             <Link
               href={`/${post.category}`}
-              className="inline-flex items-center text-ocean-dark hover:text-ocean-blue font-medium transition-colors"
+              className="inline-flex items-center text-ocean-dark dark:text-sky-blue hover:text-ocean-blue dark:hover:text-horizon font-medium transition-colors"
             >
               ← Back to {post.category} posts
             </Link>

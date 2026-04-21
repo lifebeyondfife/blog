@@ -19,17 +19,17 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-ocean-night dark:to-ocean-deep">
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-center mb-16">
           <div className="mb-8 flex justify-center">
             <img 
               src="/images/originals/me.jpg" 
               alt={SITE_CONFIG.author}
-              className="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white ring-2 ring-slate-200"
+              className="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-white dark:border-ocean-slate ring-2 ring-slate-200 dark:ring-ocean-steel"
             />
           </div>
-          <h1 className="text-5xl font-bold text-slate-900 mb-4">About {SITE_CONFIG.author}</h1>
+          <h1 className="text-5xl font-bold text-slate-900 dark:text-horizon mb-4">About {SITE_CONFIG.author}</h1>
         </div>
 
         <section className="mb-20">
@@ -37,27 +37,27 @@ export default function AboutPage() {
             <div className="bg-blue-600 p-4 rounded-lg">
               <Briefcase className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Engineering Leader</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">Engineering Leader</h2>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
-            <p className="text-lg text-slate-700 mb-6">
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
               Engineering leader and AI PhD with two decades of industry experience, scaling teams, processes, and technology. Manager at Skyscanner (acquired for £1.4bn) for B2B white label and travel widget products, and SEO pages. Part of the engineering senior leadership team at Smartsheet (acquired for $8.4bn) for advanced automation, and audit, history, and event platforms — petabytes of storage, processing 100k events per second.
             </p>
-            <p className="text-lg text-slate-700 mb-6">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
               I've cultivated a deep understanding of what makes engineering teams thrive. My approach combines technical excellence with empathetic management, always prioritising sustainable delivery and team growth.
             </p>
             <div className="space-y-3">
-              <h3 className="font-semibold text-slate-900 text-lg mb-3">Key Resources:</h3>
-              <Link href="/management/what-are-your-engineering-culture-values" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              <h3 className="font-semibold text-slate-900 dark:text-horizon text-lg mb-3">Key Resources:</h3>
+              <Link href="/management/what-are-your-engineering-culture-values" className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                 → What are your engineering culture values?
               </Link>
-              <Link href="/management/manager-readme-2021" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              <Link href="/management/manager-readme-2021" className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                 → Manager README 2021
               </Link>
-              <Link href="/management/manager-readme" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              <Link href="/management/manager-readme" className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                 → Manager README (2018)
               </Link>
-              {/* <Link href="/management/management-books-recommendations" className="block text-blue-600 hover:text-blue-700 hover:underline">
+              {/* <Link href="/management/management-books-recommendations" className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                 → Management Books I Recommend (coming soon)
               </Link> */}
             </div>
@@ -69,16 +69,16 @@ export default function AboutPage() {
             <div className="bg-emerald-600 p-4 rounded-lg">
               <Plane className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Travel Widgets</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">Travel Widgets</h2>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
-            <p className="text-lg text-slate-700 mb-6">
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
               In 2016, as an engineering manager at Skyscanner, I led the creation of Travel Widgets—configurable, 
               embeddable components that allow partners to integrate flight search functionality into their websites. 
               These widgets remain in production today, serving millions of searches globally and demonstrating the 
               power of well-architected, maintainable software.
             </p>
-            <p className="text-slate-700 mb-6">
+            <p className="text-slate-700 dark:text-cloud-grey mb-6">
               The widgets are highly customizable, supporting multiple languages, currencies, and design configurations 
               to seamlessly integrate with partner sites.
             </p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               href="https://www.partners.skyscanner.net/affiliates/travel-widgets" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block text-blue-600 hover:text-blue-700 hover:underline mb-8"
+              className="inline-block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline mb-8"
             >
               Learn more about Skyscanner Travel Widgets →
             </a>
@@ -103,60 +103,60 @@ export default function AboutPage() {
             <div className="bg-slate-800 p-4 rounded-lg">
               <Code className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">GitHub Projects</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">GitHub Projects</h2>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
-            <p className="text-lg text-slate-700 mb-6">
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
               My GitHub account showcases various projects spanning constraint programming, infrastructure as code, 
               and practical utilities. These projects reflect my passion for solving interesting problems and sharing 
               knowledge with the developer community.
             </p>
             <div className="space-y-6">
               <div className="border-l-4 border-blue-600 pl-6">
-                <h3 className="font-bold text-xl text-slate-900 mb-2">
+                <h3 className="font-bold text-xl text-slate-900 dark:text-horizon mb-2">
                   <a 
                     href="https://github.com/lifebeyondfife/Decider" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 hover:underline"
+                    className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline"
                   >
                     Decider ⭐ 150+
                   </a>
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-700 dark:text-cloud-grey">
                   A C# constraint programming library that makes solving complex combinatorial problems accessible and intuitive.
                 </p>
               </div>
               
               <div className="border-l-4 border-emerald-600 pl-6">
-                <h3 className="font-bold text-xl text-slate-900 mb-2">
+                <h3 className="font-bold text-xl text-slate-900 dark:text-horizon mb-2">
                   <a 
                     href="https://github.com/lifebeyondfife/simple-static-website" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 hover:underline"
+                    className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline"
                   >
                     simple-static-website
                   </a>
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-700 dark:text-cloud-grey">
                   CloudFormation script that provisions complete static website infrastructure on AWS — the very infrastructure 
                   powering this Next.js website you&apos;re reading now.
                 </p>
               </div>
 
               <div className="border-l-4 border-slate-600 pl-6">
-                <h3 className="font-bold text-xl text-slate-900 mb-2">
+                <h3 className="font-bold text-xl text-slate-900 dark:text-horizon mb-2">
                   <a 
                     href="https://github.com/lifebeyondfife/blog" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 hover:underline"
+                    className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline"
                   >
                     blog
                   </a>
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-700 dark:text-cloud-grey">
                   This Next.js TypeScript static website itself. Built from the ground up assisted by Anthropic Claude.
                 </p>
               </div>
@@ -180,15 +180,15 @@ export default function AboutPage() {
             <div className="bg-purple-600 p-4 rounded-lg">
               <Podcast className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Engineering Culture Podcast</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">Engineering Culture Podcast</h2>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
-            <p className="text-lg text-slate-700 mb-6">
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
               The Engineering Culture podcast explores the inner workings of great engineering teams. Through insights based
               on personal experience, we dive into the practices, values, and leadership principles that create environments where 
               engineers thrive and deliver exceptional work.
             </p>
-            <p className="text-slate-700 mb-6">
+            <p className="text-slate-700 dark:text-cloud-grey mb-6">
               The first half of Series 1 is now available on all major podcast platforms. Episodes explore topics 
               ranging from the growth mindset, product-market fit, engineering excellence, being data led, and more.
             </p>
@@ -200,7 +200,7 @@ export default function AboutPage() {
             >
               Listen Now on Acast
             </a>
-            <p className="text-sm text-slate-600 mt-4">
+            <p className="text-sm text-slate-600 dark:text-cloud-grey/80 mt-4">
               Also available on Apple Podcasts, Spotify, Google Podcasts, and other platforms
             </p>
           </div>
@@ -211,10 +211,10 @@ export default function AboutPage() {
             <div className="bg-amber-600 p-4 rounded-lg">
               <BookOpen className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-3xl font-bold text-slate-900">Blog Series</h2>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">Blog Series</h2>
           </div>
-          <div className="bg-white rounded-xl shadow-lg p-8 border border-slate-200">
-            <p className="text-lg text-slate-700 mb-8">
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-8">
               Over the years, I&apos;ve written comprehensive multi-part series exploring topics I&apos;m passionate about. 
               These deep dives provide practical knowledge and frameworks you can apply immediately.
             </p>
@@ -224,12 +224,12 @@ export default function AboutPage() {
                 <div className="flex items-start gap-3 mb-3">
                   <Dumbbell className="w-6 h-6 text-red-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                      <Link href="/fitness/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                    <h3 className="font-bold text-2xl text-slate-900 dark:text-horizon mb-2">
+                      <Link href="/fitness/" className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                         Route to Fitness
                       </Link>
                     </h3>
-                    <p className="text-slate-700 mb-3">
+                    <p className="text-slate-700 dark:text-cloud-grey mb-3">
                       A comprehensive 27-part series on strength training and sustainable fitness. Learn the fundamentals 
                       of getting strong, understanding your body, and building lifelong fitness habits that actually work.
                     </p>
@@ -246,24 +246,24 @@ export default function AboutPage() {
               </div>
 
               <div className="border-l-4 border-blue-500 pl-6">
-                <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                  <Link href="/compsci/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                <h3 className="font-bold text-2xl text-slate-900 dark:text-horizon mb-2">
+                  <Link href="/compsci/" className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                     Computer Science in Plain English
                   </Link>
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-700 dark:text-cloud-grey">
                   A 5-part series demystifying core computer science concepts. Perfect for those learning to program 
                   or wanting to understand the fundamentals without the academic jargon.
                 </p>
               </div>
 
               <div className="border-l-4 border-slate-700 pl-6">
-                <h3 className="font-bold text-2xl text-slate-900 mb-2">
-                  <Link href="/git/" className="text-blue-600 hover:text-blue-700 hover:underline">
+                <h3 className="font-bold text-2xl text-slate-900 dark:text-horizon mb-2">
+                  <Link href="/git/" className="text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                     Introduction to Git
                   </Link>
                 </h3>
-                <p className="text-slate-700">
+                <p className="text-slate-700 dark:text-cloud-grey">
                   A 19-part series on gently introducing simple patterns in Git. Using basic commands to grasp the mental models 
                   and workflows that make Git an incredibly powerful tool for individual developers and teams alike.
                 </p>

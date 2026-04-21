@@ -60,10 +60,10 @@ export default async function PaginatedPostsPage({ params }: PageProps) {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-6xl mx-auto">
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-horizon mb-4">
             All Posts
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-cloud-grey">
             Explore all articles from {SITE_CONFIG.title} - Page {pageNumber}
           </p>
         </header>

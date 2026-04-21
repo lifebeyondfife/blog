@@ -41,10 +41,10 @@ export default function CategoriesPage() {
     <div className="container mx-auto px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-horizon mb-4">
             Categories
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-cloud-grey">
             Browse posts by category on {SITE_CONFIG.title}
           </p>
         </header>
@@ -55,17 +55,17 @@ export default function CategoriesPage() {
               <Link
                 key={slug}
                 href={`/${slug}/`}
-                className="block p-6 bg-white border border-gray-200 rounded-lg hover:border-gray-300 hover:shadow-md transition-all duration-200"
+                className="block p-6 bg-white dark:bg-ocean-deep border border-gray-200 dark:border-ocean-slate rounded-lg hover:border-gray-300 dark:hover:border-ocean-steel hover:shadow-md transition-all duration-200"
               >
                 <div className="flex justify-between items-start mb-2">
-                  <h2 className="text-2xl font-semibold text-gray-900">
+                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-horizon">
                     {title}
                   </h2>
-                  <span className="inline-flex items-center justify-center px-3 py-1 text-sm font-medium text-gray-700 bg-gray-100 rounded-full">
+                  <span className="inline-flex items-center justify-center px-3 py-1 text-sm font-medium text-gray-700 dark:text-cloud-grey bg-gray-100 dark:bg-ocean-slate rounded-full">
                     {postCount} {postCount === 1 ? 'post' : 'posts'}
                   </span>
                 </div>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-cloud-grey">
                   View all {title.toLowerCase()} articles
                 </p>
               </Link>
@@ -73,7 +73,7 @@ export default function CategoriesPage() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-gray-600 text-lg">
+            <p className="text-gray-600 dark:text-cloud-grey text-lg">
               No categories available yet. Check back soon!
             </p>
           </div>
