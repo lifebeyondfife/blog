@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import ReactDOM from "react-dom";
 import { getPostsMeta } from "@/lib/posts";
 import { PostCard } from "@/components/PostCard";
 import { OptimisedImage } from "@/components/OptimisedImage";
@@ -23,17 +24,16 @@ export default function HomePage() {
   const { posts } = getPostsMeta(1);
   const recentPosts = posts.slice(0, SITE_CONFIG.postsPerPage);
 
+  ReactDOM.preload("/images/optimised/og-image/960.avif", {
+    as: "image",
+    type: "image/avif",
+    imageSrcSet: "/images/optimised/og-image/640.avif 640w, /images/optimised/og-image/960.avif 960w",
+    imageSizes: "100vw",
+    fetchPriority: "high",
+  });
+
   return (
     <div className="relative">
-      <link
-        rel="preload"
-        as="image"
-        type="image/avif"
-        href="/images/optimised/og-image/960.avif"
-        imageSrcSet="/images/optimised/og-image/640.avif 640w, /images/optimised/og-image/960.avif 960w"
-        imageSizes="100vw"
-        fetchPriority="high"
-      />
       <section className="relative h-[60vh] min-h-[400px] max-h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <OptimisedImage
