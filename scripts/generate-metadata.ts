@@ -117,6 +117,7 @@ function processMarkdownFiles(): PostMeta[] {
       tags: frontmatter.tags || [],
       readingTime: calculateReadingTime(content),
       ...(featuredImage && { featuredImage }),
+      ...(frontmatter.standaloneSubdomain && { standaloneSubdomain: frontmatter.standaloneSubdomain }),
     };
 
     posts.push(postMeta);

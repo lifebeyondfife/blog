@@ -25,6 +25,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const standaloneUrl = post.standaloneSubdomain ? `https://${post.standaloneSubdomain}/` : null;
+  const canonical = standaloneUrl ?? `/${post.category}/${post.slug}/`;
+  const ogUrl = standaloneUrl ?? `${SITE_CONFIG.siteUrl}/${post.category}/${post.slug}/`;
+
   return {
     title: `${post.title} | ${SITE_CONFIG.title}`,
     description: post.excerpt,
@@ -35,7 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       publishedTime: post.date,
       authors: [SITE_CONFIG.author],
       tags: post.tags,
-      url: `${SITE_CONFIG.siteUrl}/${post.category}/${post.slug}/`,
+      url: ogUrl,
       ...(post.featuredImage && {
         images: [{
           url: `${SITE_CONFIG.siteUrl}${post.featuredImage}`,
@@ -46,7 +50,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       }),
     },
     alternates: {
-      canonical: `/${post.category}/${post.slug}/`,
+      canonical,
     },
   };
 }

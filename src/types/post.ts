@@ -6,6 +6,7 @@ export interface PostFrontmatter {
   excerpt: string;
   legacySlug?: string;
   featuredImage?: string;
+  standaloneSubdomain?: string;
 }
 
 export interface PostMeta {
@@ -17,6 +18,7 @@ export interface PostMeta {
   tags: string[];
   readingTime: number;
   featuredImage?: string;
+  standaloneSubdomain?: string;
 }
 
 export interface Post extends PostMeta {
