@@ -8,11 +8,28 @@
   --color-sky-blue: #6FA8DC;
   --color-cloud-grey: #B4C7D8;
   --color-horizon: #D4E3EE;
+
+  --color-ocean-night: #0a1624;
+  --color-ocean-deep: #122134;
+  --color-ocean-slate: #1d3349;
+  --color-ocean-steel: #2a4661;
 }
 
 @layer base {
   html {
     font-family: var(--font-raleway), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--color-ocean-night);
+      color: var(--color-horizon);
+    }
   }
 }
 
