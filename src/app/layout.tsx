@@ -6,10 +6,11 @@ import { Footer } from "@/components/Footer";
 import { SITE_CONFIG, SEO_CONFIG } from "@/lib/constants";
 import Script from "next/script";
 
-const raleway = Raleway({ 
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-raleway",
+  preload: false,
 });
 
 export const metadata: Metadata = {

@@ -10,9 +10,10 @@ const OPTIMISED_DIR = path.join(PROJECT_ROOT, IMAGES_DIRECTORY, 'optimised');
 const MANIFEST_PATH = path.join(PROJECT_ROOT, GENERATED_DIRECTORY, 'image-manifest.json');
 
 const WIDTHS = [640, 960, 1280, 1920] as const;
-const FORMATS = ['webp', 'jpg'] as const;
-const QUALITY = { webp: 80, jpg: 85 } as const;
-const SHARP_FORMAT_MAP: Record<string, 'webp' | 'jpeg'> = {
+const FORMATS = ['avif', 'webp', 'jpg'] as const;
+const QUALITY = { avif: 55, webp: 80, jpg: 85 } as const;
+const SHARP_FORMAT_MAP: Record<string, 'avif' | 'webp' | 'jpeg'> = {
+  avif: 'avif',
   webp: 'webp',
   jpg: 'jpeg',
 };
@@ -56,6 +57,10 @@ async function shouldProcessImage(
 ): Promise<boolean> {
   try {
     const inputStat = await fs.stat(inputPath);
+    const inputMetadata = await sharp(inputPath).metadata();
+    const sourceWidth = inputMetadata.width || 0;
+    const expectedWidths = WIDTHS.filter(w => w <= sourceWidth);
+    const widths = expectedWidths.length > 0 ? expectedWidths : [sourceWidth];
 
     try {
       const outputFiles = await fs.readdir(outputDir);
@@ -65,6 +70,17 @@ async function shouldProcessImage(
         const outputStat = await fs.stat(path.join(outputDir, file));
         if (outputStat.mtime < inputStat.mtime) {
           return true;
+        }
+      }
+
+      for (const width of widths) {
+        for (const format of FORMATS) {
+          const expectedPath = path.join(outputDir, `${width}.${format}`);
+          try {
+            await fs.access(expectedPath);
+          } catch {
+            return true;
+          }
         }
       }
       return false;

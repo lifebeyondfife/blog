@@ -70,22 +70,32 @@ export function OptimisedImage({
     );
   }
 
+  const avifSrcSet = availableSizes
+    .map(w => `/images/optimised/${filename}/${w}.avif ${w}w`)
+    .join(', ');
+
   const webpSrcSet = availableSizes
     .map(w => `/images/optimised/${filename}/${w}.webp ${w}w`)
     .join(', ');
-  
+
   const jpegSrcSet = availableSizes
     .map(w => `/images/optimised/${filename}/${w}.jpg ${w}w`)
     .join(', ');
-  
+
   return (
     <picture>
+      <source
+        type="image/avif"
+        srcSet={avifSrcSet}
+        sizes={sizesAttr}
+      />
+
       <source
         type="image/webp"
         srcSet={webpSrcSet}
         sizes={sizesAttr}
       />
-      
+
       <source
         type="image/jpeg"
         srcSet={jpegSrcSet}
