@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Layers of Software Engineering</title>
+  <meta name="description" content="This is a model of what makes a great Software Engineer.">
+  <meta name="author" content="Iain McDonald">
+  <link rel="canonical" href="https://layers.lifebeyondfife.com/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The Three Layers of Software Engineering">
+  <meta property="og:description" content="This is a model of what makes a great Software Engineer.">
+  <meta property="og:url" content="https://layers.lifebeyondfife.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Three Layers of Software Engineering">
+  <meta name="twitter:description" content="This is a model of what makes a great Software Engineer.">
+  <meta property="og:image" content="https://layers.lifebeyondfife.com/images/pyramid-1-layers-light.png">
+  <meta name="twitter:image" content="https://layers.lifebeyondfife.com/images/pyramid-1-layers-light.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>:root {
+  --bg: #ffffff;
+  --text: #1f2937;
+  --heading: #111827;
+  --muted: #4b5563;
+  --link: #3d6585;
+  --link-hover: #4A7BA7;
+  --code-bg: #f3f4f6;
+  --code-text: #1f2937;
+  --border: #d1d5db;
+  --blockquote-border: #d1d5db;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a1624;
+    --text: #B4C7D8;
+    --heading: #D4E3EE;
+    --muted: #B4C7D8;
+    --link: #6FA8DC;
+    --link-hover: #D4E3EE;
+    --code-bg: #1d3349;
+    --code-text: #D4E3EE;
+    --border: #2a4661;
+    --blockquote-border: #2a4661;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: 'Raleway', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--heading);
+  margin: 0 0 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--heading);
+  margin: 2.5rem 0 1rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--heading);
+  margin: 2rem 0 0.75rem;
+  line-height: 1.4;
+}
+
+h4 { font-size: 1.15rem; font-weight: 600; color: var(--heading); margin: 1.5rem 0 0.5rem; }
+
+p { margin: 0 0 1.25rem; }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+strong { color: var(--heading); font-weight: 600; }
+
+ul, ol { margin: 0 0 1.25rem; padding-left: 1.5rem; }
+li { margin: 0.4rem 0; }
+
+blockquote {
+  margin: 1.5rem 0;
+  padding: 0.25rem 0 0.25rem 1rem;
+  border-left: 4px solid var(--blockquote-border);
+  color: var(--muted);
+  font-style: italic;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--code-bg);
+  color: var(--code-text);
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  border-top: 1px solid #d1d5db;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .actions { border-top-color: #2a4661; }
+}
+
+.actions-label {
+  font-size: 12px;
+  color: #2a4661;
+  margin-right: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .actions-label { color: #E5E3DB; }
+}
+
+
+pre {
+  background: var(--code-bg);
+  color: var(--code-text);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+pre code { background: transparent; padding: 0; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+table { border-collapse: collapse; width: 100%; margin: 1.5rem 0; }
+th, td { border: 1px solid var(--border); padding: 0.5rem 1rem; text-align: left; }
+th { background: var(--code-bg); font-weight: 600; }
+
+img, picture, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+p:has(img), p:has(picture) { text-align: center; }
+p picture, p img { display: inline-block; margin: 0; }
+
+figure { margin: 1.5rem 0; text-align: center; }
+
+::selection { background: var(--link); color: var(--bg); }</style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>The Three Layers of Software Engineering</h1>
+<p>This is a model of what makes a great Software Engineer.</p>
+
+<p>It consists of three layers, learned in order. Each one rests on the one below, fails in a characteristic way when it's weak, and teaches you something the layer above can't. This is a model for thinking about where an engineer actually stands, and where to put the next unit of effort.</p>
+<h2 id="the-three-layers">The Three Layers</h2>
+<div class="frame" data-filename="pyramid-1-layers">
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="d1-t d1-d">
+<title id="d1-t">The three layers of a great software engineer</title>
+<desc id="d1-d">A pyramid with Programming at the base, Development in the middle, and Operations at the top.</desc>
+<style>
+  svg text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  .title-size { font-size: 14px; font-weight: 500; }
+  .sub-size { font-size: 12px; font-weight: 400; }
+  .pink-bg { fill: #FBEAF0; }
+  .pink-border { stroke: #993556; }
+  .pink-title { fill: #72243E; }
+  .pink-sub { fill: #993556; }
+  .purple-bg { fill: #EEEDFE; }
+  .purple-border { stroke: #534AB7; }
+  .purple-title { fill: #3C3489; }
+  .purple-sub { fill: #534AB7; }
+  .blue-bg { fill: #E6F1FB; }
+  .blue-border { stroke: #185FA5; }
+  .blue-title { fill: #0C447C; }
+  .blue-sub { fill: #185FA5; }
+  .divider { stroke: #B4B2A9; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .pink-bg { fill: #72243E; }
+    .pink-border { stroke: #ED93B1; }
+    .pink-title { fill: #F4C0D1; }
+    .pink-sub { fill: #ED93B1; }
+    .purple-bg { fill: #3C3489; }
+    .purple-border { stroke: #AFA9EC; }
+    .purple-title { fill: #CECBF6; }
+    .purple-sub { fill: #AFA9EC; }
+    .blue-bg { fill: #0C447C; }
+    .blue-border { stroke: #85B7EB; }
+    .blue-title { fill: #B5D4F4; }
+    .blue-sub { fill: #85B7EB; }
+    .divider { stroke: #5F5E5A; }
+  }
+</style>
+<defs>
+  <clipPath id="pyr-1-clip"><polygon points="300,50 380,50 490,340 190,340"></polygon></clipPath>
+</defs>
+<g clip-path="url(#pyr-1-clip)">
+  <rect class="pink-bg" x="0" y="50" width="680" height="97"></rect>
+  <rect class="purple-bg" x="0" y="147" width="680" height="96"></rect>
+  <rect class="blue-bg" x="0" y="243" width="680" height="97"></rect>
+</g>
+<polygon class="divider" points="300,50 380,50 490,340 190,340" stroke-width="0.5"></polygon>
+<line class="divider" x1="263" y1="147" x2="417" y2="147" stroke-width="0.5"></line>
+<line class="divider" x1="227" y1="243" x2="453" y2="243" stroke-width="0.5"></line>
+<text class="title-size pink-title" x="340" y="88" text-anchor="middle" dominant-baseline="central">Operations</text>
+<text class="sub-size pink-sub" x="340" y="108" text-anchor="middle" dominant-baseline="central">Make it survive</text>
+<text class="title-size purple-title" x="340" y="185" text-anchor="middle" dominant-baseline="central">Development</text>
+<text class="sub-size purple-sub" x="340" y="205" text-anchor="middle" dominant-baseline="central">Make it shareable</text>
+<text class="title-size blue-title" x="340" y="281" text-anchor="middle" dominant-baseline="central">Programming</text>
+<text class="sub-size blue-sub" x="340" y="301" text-anchor="middle" dominant-baseline="central">Make it work</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
+</svg>
+<div class="actions">
+  <span class="actions-label">Download 1280px PNG:</span>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'light')">Light</button>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'dark')">Dark</button>
+</div>
+</div>
+
+<p><strong>Programming — you and the machine.</strong> The discipline is problem solving. The question is whether you can make a computer do what you intend. Competency shows up across data and types, flow and abstraction, algorithms, and paradigms. When this layer is weak, things work by accident rather than by understanding — and the engineer can't tell the difference.</p>
+<p><strong>Development — you and your collaborators.</strong> The discipline is collaboration. The question is whether the code you write today makes the codebase thrive in the months and years to come, be maintained by people who weren't in the room, and be shaped by decisions someone else can reconstruct. Competency clusters into craft, communication, and judgement. When this layer is weak, the code is unmaintainable and the choices untraceable — regardless of how clever the individual pieces are.</p>
+<p><strong>Operations — you and the world.</strong> The discipline is respecting physical reality. The question is whether your software survives, with finite networks, finite memory, finite time, real users, and real adversaries. Competency clusters into limits, delivery, resilience, and substrate. When this layer is weak, the system collapses under real load, real attackers, real failure.</p>
+<h2 id="scope-and-the-three-layers">Scope and The Three Layers</h2>
+<div class="frame" data-filename="pyramid-2-discipline-scope">
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="d2-t d2-d">
+<title id="d2-t">Each layer's discipline and scope</title>
+<desc id="d2-d">Pyramid annotated with the overarching skill each layer develops and the scope of responsibility it covers.</desc>
+<style>
+  svg text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  .title-size { font-size: 14px; font-weight: 500; }
+  .sub-size { font-size: 12px; font-weight: 400; }
+  .pink-bg { fill: #FBEAF0; }
+  .pink-border { stroke: #993556; }
+  .pink-title { fill: #72243E; }
+  .pink-sub { fill: #993556; }
+  .purple-bg { fill: #EEEDFE; }
+  .purple-border { stroke: #534AB7; }
+  .purple-title { fill: #3C3489; }
+  .purple-sub { fill: #534AB7; }
+  .blue-bg { fill: #E6F1FB; }
+  .blue-border { stroke: #185FA5; }
+  .blue-title { fill: #0C447C; }
+  .blue-sub { fill: #185FA5; }
+  .divider { stroke: #B4B2A9; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .pink-bg { fill: #72243E; }
+    .pink-border { stroke: #ED93B1; }
+    .pink-title { fill: #F4C0D1; }
+    .pink-sub { fill: #ED93B1; }
+    .purple-bg { fill: #3C3489; }
+    .purple-border { stroke: #AFA9EC; }
+    .purple-title { fill: #CECBF6; }
+    .purple-sub { fill: #AFA9EC; }
+    .blue-bg { fill: #0C447C; }
+    .blue-border { stroke: #85B7EB; }
+    .blue-title { fill: #B5D4F4; }
+    .blue-sub { fill: #85B7EB; }
+    .divider { stroke: #5F5E5A; }
+  }
+</style>
+<defs>
+  <clipPath id="pyr-2-clip"><polygon points="150,50 230,50 340,340 40,340"></polygon></clipPath>
+</defs>
+<g clip-path="url(#pyr-2-clip)">
+  <rect class="pink-bg" x="0" y="50" width="340" height="97"></rect>
+  <rect class="purple-bg" x="0" y="147" width="340" height="96"></rect>
+  <rect class="blue-bg" x="0" y="243" width="340" height="97"></rect>
+</g>
+<polygon class="divider" points="150,50 230,50 340,340 40,340" stroke-width="0.5"></polygon>
+<line class="divider" x1="113" y1="147" x2="267" y2="147" stroke-width="0.5"></line>
+<line class="divider" x1="77" y1="243" x2="303" y2="243" stroke-width="0.5"></line>
+<text class="title-size pink-title" x="190" y="98" text-anchor="middle" dominant-baseline="central">Operations</text>
+<text class="title-size purple-title" x="190" y="195" text-anchor="middle" dominant-baseline="central">Development</text>
+<text class="title-size blue-title" x="190" y="291" text-anchor="middle" dominant-baseline="central">Programming</text>
+<rect class="pink-bg pink-border" x="380" y="66" width="260" height="64" rx="8" stroke-width="0.5"></rect>
+<text class="title-size pink-title" x="398" y="88" dominant-baseline="central">Physical reality</text>
+<text class="sub-size pink-sub" x="398" y="110" dominant-baseline="central">You + the world</text>
+<rect class="purple-bg purple-border" x="380" y="163" width="260" height="64" rx="8" stroke-width="0.5"></rect>
+<text class="title-size purple-title" x="398" y="185" dominant-baseline="central">Collaboration</text>
+<text class="sub-size purple-sub" x="398" y="207" dominant-baseline="central">You + your collaborators</text>
+<rect class="blue-bg blue-border" x="380" y="259" width="260" height="64" rx="8" stroke-width="0.5"></rect>
+<text class="title-size blue-title" x="398" y="281" dominant-baseline="central">Problem solving</text>
+<text class="sub-size blue-sub" x="398" y="303" dominant-baseline="central">You + the machine</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
+</svg>
+<div class="actions">
+  <span class="actions-label">Download 1280px PNG:</span>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'light')">Light</button>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'dark')">Dark</button>
+</div>
+</div>
+
+<p>Each layer expands scope. Programming is you and one machine. Development adds other humans, present and future. Operations adds the physical world the software has to run in. You can't collaborate on software you can't write, and you can't reason about physical limits until you've built something complex enough, with other people, to hit them.</p>
+<p>The key lesson of the three layers is that each is the foundational starting point for the next. The pyramid isn't a ranking of importance. It's a ranking of order — each layer is what the next one is built upon.</p>
+<h2 id="learning-and-the-three-layers">Learning and The Three Layers</h2>
+<div class="frame" data-filename="pyramid-3-competencies">
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="d3-t d3-d">
+<title id="d3-t">Competency groups within each layer</title>
+<desc id="d3-d">Pyramid with the skill groupings that make up each layer listed alongside.</desc>
+<style>
+  svg text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  .title-size { font-size: 14px; font-weight: 500; }
+  .sub-size { font-size: 12px; font-weight: 400; }
+  .pink-bg { fill: #FBEAF0; }
+  .pink-border { stroke: #993556; }
+  .pink-title { fill: #72243E; }
+  .pink-sub { fill: #993556; }
+  .purple-bg { fill: #EEEDFE; }
+  .purple-border { stroke: #534AB7; }
+  .purple-title { fill: #3C3489; }
+  .purple-sub { fill: #534AB7; }
+  .blue-bg { fill: #E6F1FB; }
+  .blue-border { stroke: #185FA5; }
+  .blue-title { fill: #0C447C; }
+  .blue-sub { fill: #185FA5; }
+  .divider { stroke: #B4B2A9; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .pink-bg { fill: #72243E; }
+    .pink-border { stroke: #ED93B1; }
+    .pink-title { fill: #F4C0D1; }
+    .pink-sub { fill: #ED93B1; }
+    .purple-bg { fill: #3C3489; }
+    .purple-border { stroke: #AFA9EC; }
+    .purple-title { fill: #CECBF6; }
+    .purple-sub { fill: #AFA9EC; }
+    .blue-bg { fill: #0C447C; }
+    .blue-border { stroke: #85B7EB; }
+    .blue-title { fill: #B5D4F4; }
+    .blue-sub { fill: #85B7EB; }
+    .divider { stroke: #5F5E5A; }
+  }
+</style>
+<defs>
+  <clipPath id="pyr-3-clip"><polygon points="150,50 230,50 340,340 40,340"></polygon></clipPath>
+</defs>
+<g clip-path="url(#pyr-3-clip)">
+  <rect class="pink-bg" x="0" y="50" width="340" height="97"></rect>
+  <rect class="purple-bg" x="0" y="147" width="340" height="96"></rect>
+  <rect class="blue-bg" x="0" y="243" width="340" height="97"></rect>
+</g>
+<polygon class="divider" points="150,50 230,50 340,340 40,340" stroke-width="0.5"></polygon>
+<line class="divider" x1="113" y1="147" x2="267" y2="147" stroke-width="0.5"></line>
+<line class="divider" x1="77" y1="243" x2="303" y2="243" stroke-width="0.5"></line>
+<text class="title-size pink-title" x="190" y="98" text-anchor="middle" dominant-baseline="central">Operations</text>
+<text class="title-size purple-title" x="190" y="195" text-anchor="middle" dominant-baseline="central">Development</text>
+<text class="title-size blue-title" x="190" y="291" text-anchor="middle" dominant-baseline="central">Programming</text>
+<rect class="pink-bg pink-border" x="380" y="50" width="260" height="96" rx="8" stroke-width="0.5"></rect>
+<text class="title-size pink-title" x="398" y="71" dominant-baseline="central">Limits</text>
+<text class="sub-size pink-sub" x="468" y="71" dominant-baseline="central">network, compute, memory</text>
+<text class="title-size pink-title" x="398" y="91" dominant-baseline="central">Delivery</text>
+<text class="sub-size pink-sub" x="468" y="91" dominant-baseline="central">CI/CD, telemetry</text>
+<text class="title-size pink-title" x="398" y="111" dominant-baseline="central">Resilience</text>
+<text class="sub-size pink-sub" x="468" y="111" dominant-baseline="central">security, reliability</text>
+<text class="title-size pink-title" x="398" y="131" dominant-baseline="central">Substrate</text>
+<text class="sub-size pink-sub" x="468" y="131" dominant-baseline="central">cloud, containers</text>
+<rect class="purple-bg purple-border" x="380" y="156" width="260" height="78" rx="8" stroke-width="0.5"></rect>
+<text class="title-size purple-title" x="398" y="177" dominant-baseline="central">Craft</text>
+<text class="sub-size purple-sub" x="468" y="177" dominant-baseline="central">patterns, tests, architecture</text>
+<text class="title-size purple-title" x="398" y="197" dominant-baseline="central">Communication</text>
+<text class="sub-size purple-sub" x="506" y="197" dominant-baseline="central">writing, disagreement</text>
+<text class="title-size purple-title" x="398" y="217" dominant-baseline="central">Judgement</text>
+<text class="sub-size purple-sub" x="476" y="217" dominant-baseline="central">trade-offs, values, data</text>
+<rect class="blue-bg blue-border" x="380" y="243" width="260" height="96" rx="8" stroke-width="0.5"></rect>
+<text class="title-size blue-title" x="398" y="264" dominant-baseline="central">Data &#x26; types</text>
+<text class="title-size blue-title" x="398" y="284" dominant-baseline="central">Flow &#x26; abstraction</text>
+<text class="title-size blue-title" x="398" y="304" dominant-baseline="central">Algorithms</text>
+<text class="title-size blue-title" x="398" y="324" dominant-baseline="central">Paradigms</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
+</svg>
+<div class="actions">
+  <span class="actions-label">Download 1280px PNG:</span>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'light')">Light</button>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'dark')">Dark</button>
+</div>
+</div>
+
+<p>In progressing as a Software Engineer, you don't finish Programming and move on. You revisit every layer forever as the problems get harder. The layers direct where future learning efforts will pay the most impact. If you want to become an expert engineer begin at the lowest level where you are weak. The following are incomplete summaries of areas where your learning could begin.</p>
+<p><strong>Programming — "why does this number come out slightly wrong?"</strong></p>
+<p>Starting points cluster around four areas. <em>Data and types</em>: how integers and floating-point numbers are represented in memory, two's complement, and binary operations like left/right shift. <em>Flow and abstraction</em>: control flow from if/else through to pattern matching, how functions compose, how abstractions leak. <em>Algorithms</em>: the implementation and time/space complexity of common data structures, and the canonical algorithms on them, such as sorting, searching, rebalancing, shortest-path. <em>Paradigms</em>: the idiomatic problem-solving shape of imperative, declarative, object-oriented, and functional code, and the taste to know when each applies.</p>
+<p><strong>Development — "what will this codebase look like in eighteen months?"</strong></p>
+<p>Three clusters. <em>Craft</em>: Gang of Four design patterns, automated testing strategies at every level from unit to acceptance, and codebase architecture that ages well. The disciplined use of tools that share intent across the team: issue trackers, version control, wikis, and shared documents. <em>Communication</em>: written and verbal clarity, and specifically the techniques that enable productive disagreement (active listening, and non-violent communication). The difference between escalating and clarifying, and when to reach for synchronous ceremonies versus asynchronous messages. <em>Judgement</em>: working under uncertainty, evaluating trade-offs when no option is free, and being decisive using a mix of quantitative data, qualitative signal, and the values and targets of the individual, team, and company.</p>
+<p><strong>Operations — "what happens when this fails at 3am?"</strong></p>
+<p>Four clusters. <em>Limits</em>: the practical capacity of the servers running your code, the devices running your clients, and the networks between them, and the cascade of consequences each limit imposes on the layers above. <em>Delivery</em>: CI/CD pipelines that let you ship with confidence, and the breadth and depth of telemetry that makes the health of the service visible, especially the long tail. <em>Resilience</em>: security as a first-class concern, and the ability to evaluate the whole system against the quality attributes it needs to exhibit — correctness, reliability, durability, usability, timeliness, volatility — knowing which of these matter for this system at this stage, and balancing the cost of perfection against the need to do root-cause analysis when evidence says something has behaved unexpectedly. <em>Substrate</em>: designing distributed systems appropriately for their scale and maturity; when to reach for a queue versus a synchronous call, when a database versus object storage is correct, how designing for a data centre differs from cloud, and the complexity cost of service orchestration and service mesh.</p>
+<h2 id="diagnosis-and-the-three-layers">Diagnosis and The Three Layers</h2>
+<div class="frame" data-filename="pyramid-4-failure-modes">
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="d4-t d4-d">
+<title id="d4-t">What breaks when a layer is weak</title>
+<desc id="d4-d">Pyramid annotated with the characteristic failure mode of each layer when skipped or underdeveloped.</desc>
+<style>
+  svg text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+  .title-size { font-size: 14px; font-weight: 500; }
+  .sub-size { font-size: 12px; font-weight: 400; }
+  .pink-bg { fill: #FBEAF0; }
+  .pink-border { stroke: #993556; }
+  .pink-title { fill: #72243E; }
+  .pink-sub { fill: #993556; }
+  .purple-bg { fill: #EEEDFE; }
+  .purple-border { stroke: #534AB7; }
+  .purple-title { fill: #3C3489; }
+  .purple-sub { fill: #534AB7; }
+  .blue-bg { fill: #E6F1FB; }
+  .blue-border { stroke: #185FA5; }
+  .blue-title { fill: #0C447C; }
+  .blue-sub { fill: #185FA5; }
+  .divider { stroke: #B4B2A9; fill: none; }
+  @media (prefers-color-scheme: dark) {
+    .pink-bg { fill: #72243E; }
+    .pink-border { stroke: #ED93B1; }
+    .pink-title { fill: #F4C0D1; }
+    .pink-sub { fill: #ED93B1; }
+    .purple-bg { fill: #3C3489; }
+    .purple-border { stroke: #AFA9EC; }
+    .purple-title { fill: #CECBF6; }
+    .purple-sub { fill: #AFA9EC; }
+    .blue-bg { fill: #0C447C; }
+    .blue-border { stroke: #85B7EB; }
+    .blue-title { fill: #B5D4F4; }
+    .blue-sub { fill: #85B7EB; }
+    .divider { stroke: #5F5E5A; }
+  }
+</style>
+<defs>
+  <clipPath id="pyr-4-clip"><polygon points="150,50 230,50 340,340 40,340"></polygon></clipPath>
+</defs>
+<g clip-path="url(#pyr-4-clip)">
+  <rect class="pink-bg" x="0" y="50" width="340" height="97"></rect>
+  <rect class="purple-bg" x="0" y="147" width="340" height="96"></rect>
+  <rect class="blue-bg" x="0" y="243" width="340" height="97"></rect>
+</g>
+<polygon class="divider" points="150,50 230,50 340,340 40,340" stroke-width="0.5"></polygon>
+<line class="divider" x1="113" y1="147" x2="267" y2="147" stroke-width="0.5"></line>
+<line class="divider" x1="77" y1="243" x2="303" y2="243" stroke-width="0.5"></line>
+<text class="title-size pink-title" x="190" y="98" text-anchor="middle" dominant-baseline="central">Operations</text>
+<text class="title-size purple-title" x="190" y="195" text-anchor="middle" dominant-baseline="central">Development</text>
+<text class="title-size blue-title" x="190" y="291" text-anchor="middle" dominant-baseline="central">Programming</text>
+<rect class="pink-bg pink-border" x="380" y="66" width="260" height="64" rx="8" stroke-width="0.5" stroke-dasharray="4 3"></rect>
+<text class="title-size pink-title" x="398" y="88" dominant-baseline="central">Collapses under real load,</text>
+<text class="title-size pink-title" x="398" y="110" dominant-baseline="central">real attackers, real failure</text>
+<rect class="purple-bg purple-border" x="380" y="163" width="260" height="64" rx="8" stroke-width="0.5" stroke-dasharray="4 3"></rect>
+<text class="title-size purple-title" x="398" y="185" dominant-baseline="central">Code no one can maintain,</text>
+<text class="title-size purple-title" x="398" y="207" dominant-baseline="central">choices no one can trace</text>
+<rect class="blue-bg blue-border" x="380" y="259" width="260" height="64" rx="8" stroke-width="0.5" stroke-dasharray="4 3"></rect>
+<text class="title-size blue-title" x="398" y="281" dominant-baseline="central">Things work by accident,</text>
+<text class="title-size blue-title" x="398" y="303" dominant-baseline="central">not by understanding</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
+</svg>
+<div class="actions">
+  <span class="actions-label">Download 1280px PNG:</span>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'light')">Light</button>
+  <button class="dl-btn" onclick="downloadDiagram(this, 'dark')">Dark</button>
+</div>
+</div>
+
+<p>In considering where the limitations of an engineer exist, use the three layers as a diagnosis tool. When something feels off about an engineer, a team, or a candidate and you can't name why, the model tells you where to look: walk down the layers and find the instability. The gifted architect whose code no one can read has a Development problem, not an Operations one. The reliable shipper whose designs fall over at scale has an Operations problem, not a Development one. The senior engineer who can't explain why their code works has a Programming problem, no matter how much else they've built on top.</p>
+<p>Grow by resolving the lowest weak layer first. Everything above it is more load on ground that's already shifting.</p>
+
+<p style="text-align: right;"><a href="https://lifebeyondfife.com/the-three-layers-of-software-engineering/">https://lifebeyondfife.com/the-three-layers-of-software-engineering/</a></p>
+  </article>
+</main>
+<script>
+  function findMediaBlock(css) {
+    const marker = '@media (prefers-color-scheme: dark)';
+    const start = css.indexOf(marker);
+    if (start === -1) return null;
+    const openBrace = css.indexOf('{', start);
+    if (openBrace === -1) return null;
+    let depth = 1;
+    for (let i = openBrace + 1; i < css.length; i++) {
+      if (css[i] === '{') depth++;
+      else if (css[i] === '}') {
+        depth--;
+        if (depth === 0) {
+          return { start, end: i + 1, innerStart: openBrace + 1, innerEnd: i };
+        }
+      }
+    }
+    return null;
+  }
+
+  function forceTheme(css, mode) {
+    const block = findMediaBlock(css);
+    if (!block) return css;
+    if (mode === 'light') {
+      return css.slice(0, block.start) + css.slice(block.end);
+    }
+    const darkRules = css.slice(block.innerStart, block.innerEnd);
+    const withoutMedia = css.slice(0, block.start) + css.slice(block.end);
+    return withoutMedia + '\n' + darkRules;
+  }
+
+  function downloadDiagram(btn, mode) {
+    const frame = btn.closest('.frame');
+    const svg = frame.querySelector('svg');
+    const filename = frame.dataset.filename;
+
+    const clone = svg.cloneNode(true);
+    const styleEl = clone.querySelector('style');
+    if (styleEl) {
+      styleEl.textContent = forceTheme(styleEl.textContent, mode);
+    }
+
+    const bgColor = mode === 'dark' ? '#1A1A18' : '#FFFFFF';
+    const bgRect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    bgRect.setAttribute('x', '0');
+    bgRect.setAttribute('y', '0');
+    bgRect.setAttribute('width', '680');
+    bgRect.setAttribute('height', '380');
+    bgRect.setAttribute('fill', bgColor);
+    const firstChild = clone.firstChild;
+    clone.insertBefore(bgRect, firstChild);
+
+    clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+    const serialized = new XMLSerializer().serializeToString(clone);
+    const svgBlob = new Blob([serialized], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svgBlob);
+
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas');
+      const targetWidth = 1280;
+      canvas.width = targetWidth;
+      canvas.height = Math.round(targetWidth * (380 / 680));
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      URL.revokeObjectURL(url);
+
+      canvas.toBlob(blob => {
+        const downloadUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = downloadUrl;
+        a.download = filename + '-' + mode + '.png';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(downloadUrl), 100);
+      }, 'image/png');
+    };
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      alert('Download failed. Try a different browser if this persists.');
+    };
+    img.src = url;
+  }
+  </script>
+</body>
+</html>
