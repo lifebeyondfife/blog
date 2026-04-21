@@ -1076,6 +1076,46 @@
     ],
     "isAnimated": false
   },
+  "pyramid-1-layers-light": {
+    "originalWidth": 1280,
+    "originalHeight": 715,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
+  "pyramid-2-discipline-scope-light": {
+    "originalWidth": 1280,
+    "originalHeight": 715,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
+  "pyramid-3-competencies-light": {
+    "originalWidth": 1280,
+    "originalHeight": 715,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
+  "pyramid-4-failure-modes-light": {
+    "originalWidth": 1280,
+    "originalHeight": 715,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
   "python_cmd": {
     "originalWidth": 677,
     "originalHeight": 342,

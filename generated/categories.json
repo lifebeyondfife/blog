@@ -69,8 +69,9 @@
     {
       "slug": "essays",
       "name": "Essays",
-      "postCount": 21,
+      "postCount": 22,
       "posts": [
+        "the-three-layers-of-software-engineering",
         "defend-your-codebase-against-ai-comments",
         "the-slow-path-to-everything",
         "the-deployment-constraint-speed-safety-and-automation",
