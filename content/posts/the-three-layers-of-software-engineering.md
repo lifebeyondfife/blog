@@ -66,7 +66,7 @@ The fundamentals of making software will always still apply. Be brilliant at the
 <text class="sub-size purple-sub" x="340" y="205" text-anchor="middle" dominant-baseline="central">Make it shareable</text>
 <text class="title-size blue-title" x="340" y="281" text-anchor="middle" dominant-baseline="central">Programming</text>
 <text class="sub-size blue-sub" x="340" y="301" text-anchor="middle" dominant-baseline="central">Make it work</text>
-<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">foundations.lifebeyondfife.com</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
 </svg>
 
 **Programming — you and the machine.** The discipline is problem solving. The question is whether you can make a computer do what you intend. Competency shows up across data and types, flow and abstraction, algorithms, and paradigms. When this layer is weak, things work by accident rather than by understanding — and the engineer can't tell the difference.
@@ -136,7 +136,7 @@ The fundamentals of making software will always still apply. Be brilliant at the
 <rect class="blue-bg blue-border" x="380" y="259" width="260" height="64" rx="8" stroke-width="0.5"/>
 <text class="title-size blue-title" x="398" y="281" dominant-baseline="central">Problem solving</text>
 <text class="sub-size blue-sub" x="398" y="303" dominant-baseline="central">You + the machine</text>
-<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">foundations.lifebeyondfife.com</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
 </svg>
 
 Each layer expands scope. Programming is you and one machine. Development adds other humans, present and future. Operations adds the physical world the software has to run in. You can't collaborate on software you can't write, and you can't reason about physical limits until you've built something complex enough, with other people, to hit them.
@@ -218,7 +218,7 @@ The key lesson of the three layers is that each is the foundational starting poi
 <text class="title-size blue-title" x="398" y="284" dominant-baseline="central">Flow &amp; abstraction</text>
 <text class="title-size blue-title" x="398" y="304" dominant-baseline="central">Algorithms</text>
 <text class="title-size blue-title" x="398" y="324" dominant-baseline="central">Paradigms</text>
-<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">foundations.lifebeyondfife.com</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
 </svg>
 
 In progressing as a Software Engineer, you don't finish Programming and move on. You revisit every layer forever as the problems get harder. The layers direct where future learning efforts will pay the most impact. If you want to become an expert engineer begin at the lowest level where you are weak. The following are incomplete summaries of areas where your learning could begin.
@@ -298,7 +298,7 @@ Four clusters. *Limits*: the practical capacity of the servers running your code
 <rect class="blue-bg blue-border" x="380" y="259" width="260" height="64" rx="8" stroke-width="0.5" stroke-dasharray="4 3"/>
 <text class="title-size blue-title" x="398" y="281" dominant-baseline="central">Things work by accident,</text>
 <text class="title-size blue-title" x="398" y="303" dominant-baseline="central">not by understanding</text>
-<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">foundations.lifebeyondfife.com</text>
+<text x="340" y="368" text-anchor="middle" style="font-size: 10px; fill: #888780;">layers.lifebeyondfife.com</text>
 </svg>
 
 In considering where the limitations of an engineer exist, use the three layers as a diagnosis tool. When something feels off about an engineer, a team, or a candidate and you can't name why, the model tells you where to look: walk down the layers and find the instability. The gifted architect whose code no one can read has a Development problem, not an Operations one. The reliable shipper whose designs fall over at scale has an Operations problem, not a Development one. The senior engineer who can't explain why their code works has a Programming problem, no matter how much else they've built on top.
