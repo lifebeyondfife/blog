@@ -842,10 +842,13 @@
     "isAnimated": false
   },
   "me": {
-    "originalWidth": 424,
-    "originalHeight": 424,
+    "originalWidth": 2160,
+    "originalHeight": 2901,
     "availableSizes": [
-      424
+      640,
+      960,
+      1280,
+      1920
     ],
     "isAnimated": false
   },
