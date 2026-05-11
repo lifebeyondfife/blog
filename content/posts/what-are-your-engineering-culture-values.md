@@ -65,9 +65,9 @@ The open source community has led by example, showing how to build distributed s
 
 Hire for weakness, hire for learning. Hiring managers and engineering interviewers should recognise the bias *in* themselves, for people *like* themselves. When hiring, look for what’s missing. Is it a technical skill, or a people skill? Diversity of thought makes for better decisions — what viewpoints are you missing? Hiring decisions should be made by those who want people who can teach them something.
 
-## 15. Lottery
+## 15. Bus
 
-The lottery factor is a heuristic to measure knowledge silos: how many engineers understand a system (assuming they'd leave instantly if they won the lottery)? If you have a lottery factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the lottery factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
+The bus factor is a heuristic to measure knowledge silos: how many engineers understand a system (the grim implication of how many fatal accidents involving a bus can your team survive)? If you have a bus factor of 1 to a critical system, you are in a dangerous position. Reward those that make themselves redundant, those who increase the bus factor of everything. Ensure engineers know to share knowledge, rather than hoard it.
 
 ## 16. Duplication
 
