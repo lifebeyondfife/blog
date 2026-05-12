@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import  Link  from 'next/link';
-import { BookOpen, Code, Briefcase, Podcast, Plane, Dumbbell } from 'lucide-react';
+import { BookOpen, Code, Briefcase, Podcast, Plane, Dumbbell, Mic } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -60,6 +60,53 @@ export default function AboutPage() {
               {/* <Link href="/management/management-books-recommendations" className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline">
                 → Management Books I Recommend (coming soon)
               </Link> */}
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-20">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="bg-teal-700 p-4 rounded-lg">
+              <Mic className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-horizon">Keynote: Deploying at 5pm on Friday</h2>
+          </div>
+          <div className="bg-white dark:bg-ocean-deep rounded-xl shadow-lg p-8 border border-slate-200 dark:border-ocean-slate">
+            <p className="text-lg text-slate-700 dark:text-cloud-grey mb-6">
+              In February 2026, I gave the engineering keynote at Stockholm-based podcast platform Acast.
+              The talk argues that being able to deploy at 5pm on a Friday — calmly, without ceremony — is
+              the clearest signal of a healthy engineering culture, and a genuine business advantage rather
+              than a reckless habit.
+            </p>
+            <p className="text-slate-700 dark:text-cloud-grey mb-6">
+              Drawing on lessons from Skyscanner&apos;s journey from Edinburgh startup to £1.4bn exit, I unpack
+              the why, the how, and the what: blameless culture, painless local debug, continuous deployment,
+              and the business outcomes — adaptability, smaller tasks, more accurate planning, and calmer
+              engineers — that follow when deployments stop being scary.
+            </p>
+            <div className="aspect-video w-full overflow-hidden rounded-lg shadow-lg mb-6">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/81qOOg3G7aM"
+                title="Deploying at 5pm on Friday — and why you'd want to"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+            <div className="space-y-2">
+              <h3 className="font-semibold text-slate-900 dark:text-horizon text-lg">Related essays:</h3>
+              <Link
+                href="/essays/the-deployment-constraint-speed-safety-and-automation/"
+                className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline"
+              >
+                → The Deployment Constraint: Speed, Safety, and Automation
+              </Link>
+              <Link
+                href="/management/why-5-whys-isnt-enough/"
+                className="block text-blue-600 dark:text-sky-blue hover:text-blue-700 dark:hover:text-horizon hover:underline"
+              >
+                → Why 5 Whys Isn&apos;t Enough
+              </Link>
             </div>
           </div>
         </section>
