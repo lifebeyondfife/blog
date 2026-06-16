@@ -414,6 +414,17 @@
     ],
     "isAnimated": false
   },
+  "cm93-reprise": {
+    "originalWidth": 2644,
+    "originalHeight": 1662,
+    "availableSizes": [
+      640,
+      960,
+      1280,
+      1920
+    ],
+    "isAnimated": false
+  },
   "code_behind": {
     "originalWidth": 482,
     "originalHeight": 267,
@@ -533,6 +544,33 @@
     "originalHeight": 480,
     "availableSizes": [
       640
+    ],
+    "isAnimated": false
+  },
+  "fantasypl-setup": {
+    "originalWidth": 1131,
+    "originalHeight": 711,
+    "availableSizes": [
+      640,
+      960
+    ],
+    "isAnimated": false
+  },
+  "fantasypl-sidebar": {
+    "originalWidth": 1130,
+    "originalHeight": 1210,
+    "availableSizes": [
+      640,
+      960
+    ],
+    "isAnimated": false
+  },
+  "fantasypl-usage": {
+    "originalWidth": 1200,
+    "originalHeight": 500,
+    "availableSizes": [
+      640,
+      960
     ],
     "isAnimated": false
   },
@@ -693,6 +731,17 @@
     "availableSizes": [
       640,
       960
+    ],
+    "isAnimated": false
+  },
+  "godot": {
+    "originalWidth": 2144,
+    "originalHeight": 1368,
+    "availableSizes": [
+      640,
+      960,
+      1280,
+      1920
     ],
     "isAnimated": false
   },
@@ -1197,6 +1246,25 @@
     ],
     "isAnimated": false
   },
+  "shenzhen-html": {
+    "originalWidth": 1104,
+    "originalHeight": 744,
+    "availableSizes": [
+      640,
+      960
+    ],
+    "isAnimated": false
+  },
+  "shenzhen-solitaire": {
+    "originalWidth": 1600,
+    "originalHeight": 900,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
   "sherlock-holmes-by-piet-mondrian": {
     "originalWidth": 640,
     "originalHeight": 480,
@@ -1266,6 +1334,14 @@
     "originalHeight": 291,
     "availableSizes": [
       450
+    ],
+    "isAnimated": false
+  },
+  "the-good-place": {
+    "originalWidth": 825,
+    "originalHeight": 413,
+    "availableSizes": [
+      640
     ],
     "isAnimated": false
   },
