@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "sabbatical-ii",
+      "category": "follies",
+      "title": "Sabbatical II",
+      "date": "2026-06-16",
+      "excerpt": "Sabbaticals are about transition, and preparing to make the stage beyond the transition successful. They're also about taking a step back, and seeing if what you're doing makes sense. They give opportunities to recover, to learn, to try new things and think deeply about where next. So what have I been working on? Blog I rebuilt my WordPress blog from the ground-up, to a Jamstack site; one that you're reading right now! Low cost, low maintenance, low latency, easy to ship. Extremely happy with the results, and it got me thinking about the future of software. Keynote Talk for Acast...",
+      "tags": [],
+      "readingTime": 10,
+      "featuredImage": "/images/the-good-place.jpg"
+    },
+    {
       "slug": "the-three-layers-of-software-engineering",
       "category": "essays",
       "title": "The Three Layers of Software Engineering",
@@ -1275,5 +1285,5 @@
       "featuredImage": "/images/sabbatical.jpg"
     }
   ],
-  "totalPosts": 117
+  "totalPosts": 118
 }
