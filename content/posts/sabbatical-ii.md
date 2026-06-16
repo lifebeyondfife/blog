@@ -14,7 +14,17 @@ I rebuilt my WordPress blog from the ground-up, to a Jamstack site; one that you
 
 ## Keynote Talk for Acast
 
-Be open to saying yes to things that scare you. A friend and former Skyscanner colleague, Mark Fuller, asked me if I had anything to talk about on AI, data-driven development, CI/CD, or something else current. [CTO Craft Con](https://conference.ctocraft.com/london/)'s loss was [Acast](https://acast.com/)'s gain, as I had rough notes for a talk about how mature CI/CD supercharges engineering culture, called *Deploying at 5pm on a Friday*. You can watch that keynote [here](https://youtu.be/81qOOg3G7aM).
+Be open to saying yes to things that scare you. A friend and former Skyscanner colleague, Mark Fuller, asked me if I had anything to talk about on AI, data-driven development, CI/CD, or something else current. [CTO Craft Con](https://conference.ctocraft.com/london/)'s loss was [Acast](https://acast.com/)'s gain, as I had rough notes for a talk about how mature CI/CD supercharges engineering culture, called *Deploying at 5pm on a Friday*.
+
+<div className="aspect-video w-full overflow-hidden rounded-lg shadow-lg mb-6">
+    <iframe
+    className="w-full h-full"
+    src="https://www.youtube.com/embed/81qOOg3G7aM"
+    title="Deploying at 5pm on Friday — and why you'd want to"
+    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    ></iframe>
+</div>
 
 
 ## Speedrun a failed startup
