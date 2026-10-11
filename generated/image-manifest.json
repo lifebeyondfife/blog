@@ -433,6 +433,16 @@
     ],
     "isAnimated": false
   },
+  "collaborate": {
+    "originalWidth": 1376,
+    "originalHeight": 768,
+    "availableSizes": [
+      640,
+      960,
+      1280
+    ],
+    "isAnimated": false
+  },
   "comments": {
     "originalWidth": 768,
     "originalHeight": 1024,
