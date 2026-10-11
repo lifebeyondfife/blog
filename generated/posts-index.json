@@ -1,6 +1,16 @@
 {
   "posts": [
     {
+      "slug": "one-pager",
+      "category": "management",
+      "title": "Aligning Product and Engineering",
+      "date": "2026-10-11",
+      "excerpt": "How do you align product and engineering when communication has broken down? A product peer friend of mine is mentoring someone who has this problem, and they asked me to reach out to them to see if my engineering perspective might help. Ahead of time I thought my advice was going to lead straight to, \"You need DORA metrics in place, and to ask engineering to break work their work into smaller deliverables, then repeat.\" To be honest, that solves 90% of most team's delivery problems. But the issue isn't that they aren't shipping, but that they aren't delivering what...",
+      "tags": [],
+      "readingTime": 6,
+      "featuredImage": "/images/collaborate.jpg"
+    },
+    {
       "slug": "sabbatical-ii",
       "category": "follies",
       "title": "Sabbatical II",
@@ -1285,5 +1295,5 @@
       "featuredImage": "/images/sabbatical.jpg"
     }
   ],
-  "totalPosts": 118
+  "totalPosts": 119
 }
