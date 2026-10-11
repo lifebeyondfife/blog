@@ -43,7 +43,7 @@ In the end I realised I was stuck in a battle of answering, "How long is a piece
 
 ## Fantasy Football Premier League Optimiser
 
-Up to now most projects had a degree of seriousness; time to do something frivalous and fun. I rebuilt my [Fantasy Football Premier League optimiser](https://lifebeyondfife.com/fantasy-football-2011-12/) which was originally Visual Basic in the back of an Excel spreadsheet. The new version is a Google Sheet and some ActionScript. The season is over, but you can try this out yourself: [https://docs.google.com/spreadsheets/d/10-6NisjrvBDfrRzNjx5wmD4EG7pzZ7t0oVCNJh6ATgo](https://docs.google.com/spreadsheets/d/10-6NisjrvBDfrRzNjx5wmD4EG7pzZ7t0oVCNJh6ATgo)
+Up to now most projects had a degree of seriousness; time to do something frivalous and fun. I rebuilt my [Fantasy Football Premier League optimiser](https://lifebeyondfife.com/fantasy-football-2011-12/) which was originally Visual Basic in the back of an Excel spreadsheet. The new version is a Google Sheet and some Apps Script. The season is over, but you can try this out yourself: [https://docs.google.com/spreadsheets/d/10-6NisjrvBDfrRzNjx5wmD4EG7pzZ7t0oVCNJh6ATgo](https://docs.google.com/spreadsheets/d/10-6NisjrvBDfrRzNjx5wmD4EG7pzZ7t0oVCNJh6ATgo)
 
 This has seen reasonable usage for posting once in two subreddits. The fact it's increased beyond the end of the premier league makes me think maybe there's a world cup game going on? 🤷
 
@@ -121,7 +121,7 @@ My postie is a friendly man called Jimmy, who often stops to chat about how thin
 
 Retirement is still a long time away for me, but taking a break is an interesting preview of how your routine changes, and what life might be like. For me, I don't fear having nothing to do — I am constantly making work for myself, and breaks only show how there is far too much to do, more than I could ever properly finish.
 
-The conclusion of the sitcom The Good Place (watch it if you haven't already, and trust me, avoid all Season 1 spoilers) is that all we have is time. Work is complex and challenges us to do more with limited budget, people, and time. Even if we have unlimited time, our eyes are bigger than our bellies and there's always too much to do.
+The conclusion of the sitcom The Good Place (watch it if you haven't already, and trust me, avoid all Season 1 spoilers) is that all we have is time. Work is complex and challenges us to do more with less. Even if we have unlimited time, our eyes are bigger than our bellies and there's always too much to do.
 
 So don't stress. This is a game that no one can complete. Just keep working on what inspires, and don't be afraid to ship it.
 
